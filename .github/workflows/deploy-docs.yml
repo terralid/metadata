@@ -1,0 +1,60 @@
+name: Deploy Docs to GitHub Pages
+
+on:
+  push:
+    tags:
+      - '*'
+
+permissions:
+  contents: write
+
+jobs:
+  deploy-docs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install MkDocs and Mike
+        run: |
+          pip install mkdocs-material mike
+
+      - name: Install additional plugins
+        run: |
+          pip install -r requirements.txt
+      
+      - name: build MkDocs
+        run: |
+          mkdocs build -f ./mkdocs.yml
+
+      - name: Determine Version
+        run: |
+          cd docs/  # Ensure we are in the correct directory
+          TAG="${GITHUB_REF#refs/tags/}"
+
+          if [[ "$TAG" == "latest" ]]; then
+            VERSION=$(mike list --config-file ../mkdocs.yml | grep '\[latest\]' | awk '{print $1}')
+          else
+            VERSION="$TAG"
+          fi
+          
+          echo "VERSION=${VERSION}" >> $GITHUB_ENV
+      
+      - name: conigure git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "terralid@bergbaumuseum.de"
+
+
+      - name: Deploy Docs
+        run: |
+          cd docs
+          mike deploy --push --config-file ../mkdocs.yml --update-aliases ${{ env.VERSION }} latest
