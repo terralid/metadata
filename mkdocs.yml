@@ -1,0 +1,85 @@
+site_name: Metadata Profile
+site_url: http://localhost:8000/
+site_author: "TerraLID Core Team"
+repo_url: https://github.com/terralid/metadata
+repo_name: terralid/metadata
+edit_uri: ""
+docs_dir: ./docs
+site_dir: ./site
+
+theme:
+  name: material
+  font: false
+  logo: assets/TerraLID_logo_word_white.png
+  favicon: assets/favicon.png
+  icon: 
+    repo: fontawesome/brands/github
+  palette:
+#    - scheme: slate
+#      toggle:
+#        icon: material/toggle-switch
+#        name: Dark mode
+#      primary: green
+#      accent: deep purple
+    - scheme: terralid
+#      toggle:
+#        icon: material/toggle-switch-off-outline
+#        name: Light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.instant
+    - navigation.path
+
+nav:
+  - Home: index.md
+  - Test.md
+
+extra_css:
+  - ./stylesheets/extra.css
+
+# Mike and search plugins
+plugins:
+  - search
+  - mike:
+      alias_type: symlink
+      redirect_template: null
+      deploy_prefix: ''
+      canonical_version: null
+      version_selector: true
+      css_dir: css
+      javascript_dir: js
+  - include-markdown: # see https://pypi.org/project/mkdocs-include-markdown-plugin/ for reference
+      comments: true
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.caret
+  - pymdownx.tilde
+
+copyright: This work is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a>. <br> <a haref= "https://www.terralid.org/about.html">Legal information</a>.
+
+extra:
+  version:
+    provider: mike
+  generator: false
+  social:
+    - icon: fontawesome/brands/instagram 
+      link: https://www.instagram.com/terra_lid/
+      name: TerraLID on Instagram
+    - icon: fontawesome/regular/envelope 
+      link: mailto:terralid@bergbaumuseum.de
+      name: Contact the TerraLID team by email
+    - icon: fontawesome/solid/globe
+      link: https://www.terralid.org
+      name: TerraLID Webpage
