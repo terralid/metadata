@@ -30,10 +30,21 @@ theme:
     - navigation.tabs.sticky
     - navigation.instant
     - navigation.path
+    - navigation.sections
+    - toc.integrate
 
 nav:
-  - Home: index.md
-  - Test.md
+  - About: index.md
+  - Introduction: Test.md
+  - Metadata: 
+    - Sites: metadata_sites.md
+    - Assemblages: metadata_assemblages.md
+    - Objects: metadata_objects.md
+    - Samples: metadata_samples.md
+    - Analyses: metadata_analyses.md
+    - Material-specific: metadata_materials.md
+  - Mappings: mappings.md
+  - History: changelog.md
 
 extra_css:
   - ./stylesheets/extra.css
