@@ -8,7 +8,7 @@ docs_dir: ./docs
 site_dir: ./site
 
 theme:
-  name: material
+  name: material 
   font: false
   logo: assets/TerraLID_logo_word_white.png
   favicon: assets/favicon.png
@@ -36,7 +36,7 @@ theme:
 
 nav:
   - About: index.md
-  - Introduction: Test.md
+  - Introduction: introduction.md
   - Metadata: 
     - Sites: metadata_sites.md
     - Assemblages: metadata_assemblages.md
@@ -74,6 +74,7 @@ plugins:
 
 markdown_extensions:
   - attr_list
+  - admonition
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -87,7 +88,7 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.tilde
 
-copyright: This work is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a>. <br> <a haref= "https://www.terralid.org/about.html">Legal information</a>.
+copyright: This work is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a>. <br> <a href="https://www.terralid.org/about.html">Legal information</a>
 
 extra:
   version:
