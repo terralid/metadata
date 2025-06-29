@@ -26,12 +26,13 @@ theme:
 #        icon: material/toggle-switch-off-outline
 #        name: Light mode
   features:
-    - navigation.tabs
-    - navigation.tabs.sticky
+#    - navigation.tabs
+#    - navigation.tabs.sticky
     - navigation.instant
     - navigation.path
-    - navigation.sections
-    - toc.integrate
+    - navigation.expand
+#    - navigation.sections
+#    - toc.integrate
 
 nav:
   - About: index.md
@@ -42,7 +43,13 @@ nav:
     - Objects: metadata_objects.md
     - Samples: metadata_samples.md
     - Analyses: metadata_analyses.md
-    - Material-specific: metadata_materials.md
+    - Material-specific:
+      - Ore: metadata_ore.md
+      - Glass: metadata_glass.md
+      - Metal: 
+        - General: metadata_metal.md
+        - Coins: metadata_metal-coins.md
+      - Pigments: metadata_pigment.md  
   - Mappings: mappings.md
   - History: changelog.md
 
@@ -62,6 +69,8 @@ plugins:
       javascript_dir: js
   - include-markdown: # see https://pypi.org/project/mkdocs-include-markdown-plugin/ for reference
       comments: true
+  - add-number: # see https://github.com/ignorantshr/mkdocs-add-number-plugin for reference
+      order: 2
 
 markdown_extensions:
   - attr_list
