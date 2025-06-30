@@ -1,5 +1,5 @@
 site_name: Metadata Profile
-site_url: http://localhost:8000/
+site_url: https://terralid.github.io/metadata/
 site_author: "TerraLID Core Team"
 repo_url: https://github.com/terralid/metadata
 repo_name: terralid/metadata
