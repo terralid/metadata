@@ -1,0 +1,3576 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="TerraLID Core Team">
+      
+      
+        <link rel="canonical" href="https://terralid.github.io/metadata/v0.1.1/metadata_objects/">
+      
+      
+        <link rel="prev" href="../metadata_assemblages/">
+      
+      
+        <link rel="next" href="../metadata_samples/">
+      
+      
+      <link rel="icon" href="../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Objects - Metadata Profile</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="terralid" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#terralid-id" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Metadata Profile" class="md-header__button md-logo" aria-label="Metadata Profile" data-md-component="logo">
+      
+  <img src="../assets/TerraLID_logo_word_white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Metadata Profile
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Objects
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="terralid" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/terralid/metadata" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    terralid/metadata
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Metadata Profile" class="md-nav__button md-logo" aria-label="Metadata Profile" data-md-component="logo">
+      
+  <img src="../assets/TerraLID_logo_word_white.png" alt="logo">
+
+    </a>
+    Metadata Profile
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/terralid/metadata" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    terralid/metadata
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Metadata
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Metadata
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metadata_sites/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sites
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metadata_assemblages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Assemblages
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Objects
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Objects
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#terralid-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      TerraLID ID
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-collectors" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Collectors
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Collectors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 Role
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-first-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 First names
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-last-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 Last Name
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-orcid-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4 ORCID ID
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-affiliation-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5 Affiliation name
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-ror-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6 ROR ID
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-address" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7 Address
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-mail-address" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.8 Mail address
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-website" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.9 Website
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-contributors" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Contributors
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Contributors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Role
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-first-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 First names
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-last-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 Last Name
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-orcid-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 ORCID ID
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-affiliation-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5 Affiliation name
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-ror-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.6 ROR ID
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27-address" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.7 Address
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#28-mail-address" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8 Mail address
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#29-website" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.9 Website
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-object-title" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Object title
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-object-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Object description
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-object-identifiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Object identifiers
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Object identifiers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-value-of-persistent-identifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 Value of persistent identifier
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-type-of-persistent-identifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 Type of persistent identifier
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-value-of-other-identifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3 Value of other identifier
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-type-of-other-identifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.4 Type of other identifier
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-date-of-collection" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Date of collection
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-collection-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Collection method
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-object-housing" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Object housing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Object housing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-housing-material" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.1 Housing material
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-stage-of-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.2 Stage of Storage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-object-photo" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Object photo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-object-weight" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Object weight
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Object weight">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.1 Value
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.2 Unit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103-weight-condition" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.3 Weight condition
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-object-dimensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Object dimensions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. Object dimensions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111-height" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.1 Height
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-length" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.2 Length
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113-width" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.3 Width
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#114-unit-of-dimensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.4 Unit of Dimensions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-material" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. Material
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-bulk-pb-concentration" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. Bulk Pb concentration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13. Bulk Pb concentration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#131-analytical-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.1 Analytical method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#132-analysed-compound" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.2 Analysed compound
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#133-analysed-isotope" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.3 Analysed isotope
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#134-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.4 Value
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#135-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.5 Unit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#136-uncertainty-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.6 Uncertainty type
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#137-confidence-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.7 Confidence level
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#138-uncertainty-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.8 Uncertainty value
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-dating-of-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. Dating of object
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14. Dating of object">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#141-persistent-identifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.1 Persistent identifier
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14.1 Persistent identifier">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1411-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.1.1 Value
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1412-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.1.2 Type
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#142-date-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.2 Date type
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#143-absolute-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.3 Absolute Date
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14.3 Absolute Date">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1431-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.3.1 Start
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1432-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.3.2 End
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1433-dating-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.3.3 Dating method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1434-unit-of-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.3.4 Unit of date
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#144-relative-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.4 Relative Date
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14.4 Relative Date">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1441-chronological-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.4.1 Chronological unit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1442-dating-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.4.2 Dating method
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#145-cultural-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.5 Cultural unit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#146-orogenesis" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.6 Orogenesis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#147-definition-of-chronological-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.7 Definition of chronological unit
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14.7 Definition of chronological unit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1471-persistent-identifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.7.1 Persistent Identifier
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14711-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      # 14.7.1.1 Value
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14712-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      # 14.7.1.2 Type
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1472-full-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.7.2 Full reference
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1473-kind-of-relation" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.7.3 Kind of relation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1474-type-of-resource" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.7.4 Type of resource
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1475-additional-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.7.5 Additional details
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-keywords" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. Keywords
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-object-contamination" class="md-nav__link">
+    <span class="md-ellipsis">
+      16. Object contamination
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-status-of-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      17. Status of object
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="17. Status of object">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#171-institution" class="md-nav__link">
+    <span class="md-ellipsis">
+      17.1 Institution
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="17.1 Institution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1711-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      17.1.1 Name
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1712-ror" class="md-nav__link">
+    <span class="md-ellipsis">
+      17.1.2 ROR
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1713-address" class="md-nav__link">
+    <span class="md-ellipsis">
+      17.1.3 Address
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1714-storage-location" class="md-nav__link">
+    <span class="md-ellipsis">
+      17.1.4 Storage location
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1715-contact" class="md-nav__link">
+    <span class="md-ellipsis">
+      17.1.5 Contact
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#172-accessibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      17.2 Accessibility
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-authenticity-of-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      18. Authenticity of object
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="18. Authenticity of object">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#181-authenticity-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      18.1 Authenticity type
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#182-reasoning" class="md-nav__link">
+    <span class="md-ellipsis">
+      18.2 Reasoning
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19-relations" class="md-nav__link">
+    <span class="md-ellipsis">
+      19. Relations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="19. Relations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#191-persistent-identifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      19.1 Persistent Identifier
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="19.1 Persistent Identifier">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1911-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      19.1.1 Value
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1912-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      19.1.2 Type
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#192-full-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      19.2 Full reference
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#193-kind-of-relation" class="md-nav__link">
+    <span class="md-ellipsis">
+      19.3 Kind of relation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#194-type-of-resource" class="md-nav__link">
+    <span class="md-ellipsis">
+      19.4 Type of resource
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#195-additional-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      19.5 Additional details
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metadata_samples/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Samples
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metadata_analyses/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Analyses
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Material-specific
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Material-specific
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metadata_ore/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ore
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metadata_glass/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glass
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_6_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6_3" id="__nav_3_6_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Metal
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            Metal
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metadata_metal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    General
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metadata_metal-coins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Coins
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metadata_pigment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pigments
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mappings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mappings
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    History
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#terralid-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      TerraLID ID
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-collectors" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Collectors
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Collectors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 Role
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-first-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 First names
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-last-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 Last Name
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-orcid-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4 ORCID ID
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-affiliation-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5 Affiliation name
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-ror-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6 ROR ID
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-address" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7 Address
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-mail-address" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.8 Mail address
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-website" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.9 Website
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-contributors" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Contributors
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Contributors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Role
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-first-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 First names
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-last-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 Last Name
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-orcid-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 ORCID ID
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-affiliation-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5 Affiliation name
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-ror-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.6 ROR ID
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27-address" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.7 Address
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#28-mail-address" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8 Mail address
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#29-website" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.9 Website
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-object-title" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Object title
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-object-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Object description
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-object-identifiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Object identifiers
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Object identifiers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-value-of-persistent-identifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 Value of persistent identifier
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-type-of-persistent-identifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 Type of persistent identifier
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-value-of-other-identifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3 Value of other identifier
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-type-of-other-identifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.4 Type of other identifier
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-date-of-collection" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Date of collection
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-collection-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Collection method
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-object-housing" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Object housing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Object housing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-housing-material" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.1 Housing material
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-stage-of-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.2 Stage of Storage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-object-photo" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Object photo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-object-weight" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Object weight
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Object weight">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.1 Value
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.2 Unit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103-weight-condition" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.3 Weight condition
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-object-dimensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Object dimensions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. Object dimensions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111-height" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.1 Height
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-length" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.2 Length
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113-width" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.3 Width
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#114-unit-of-dimensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.4 Unit of Dimensions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-material" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. Material
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-bulk-pb-concentration" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. Bulk Pb concentration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13. Bulk Pb concentration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#131-analytical-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.1 Analytical method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#132-analysed-compound" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.2 Analysed compound
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#133-analysed-isotope" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.3 Analysed isotope
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#134-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.4 Value
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#135-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.5 Unit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#136-uncertainty-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.6 Uncertainty type
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#137-confidence-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.7 Confidence level
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#138-uncertainty-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.8 Uncertainty value
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-dating-of-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. Dating of object
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14. Dating of object">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#141-persistent-identifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.1 Persistent identifier
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14.1 Persistent identifier">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1411-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.1.1 Value
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1412-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.1.2 Type
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#142-date-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.2 Date type
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#143-absolute-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.3 Absolute Date
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14.3 Absolute Date">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1431-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.3.1 Start
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1432-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.3.2 End
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1433-dating-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.3.3 Dating method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1434-unit-of-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.3.4 Unit of date
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#144-relative-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.4 Relative Date
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14.4 Relative Date">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1441-chronological-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.4.1 Chronological unit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1442-dating-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.4.2 Dating method
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#145-cultural-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.5 Cultural unit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#146-orogenesis" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.6 Orogenesis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#147-definition-of-chronological-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.7 Definition of chronological unit
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14.7 Definition of chronological unit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1471-persistent-identifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.7.1 Persistent Identifier
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14711-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      # 14.7.1.1 Value
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14712-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      # 14.7.1.2 Type
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1472-full-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.7.2 Full reference
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1473-kind-of-relation" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.7.3 Kind of relation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1474-type-of-resource" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.7.4 Type of resource
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1475-additional-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.7.5 Additional details
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-keywords" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. Keywords
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-object-contamination" class="md-nav__link">
+    <span class="md-ellipsis">
+      16. Object contamination
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-status-of-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      17. Status of object
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="17. Status of object">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#171-institution" class="md-nav__link">
+    <span class="md-ellipsis">
+      17.1 Institution
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="17.1 Institution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1711-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      17.1.1 Name
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1712-ror" class="md-nav__link">
+    <span class="md-ellipsis">
+      17.1.2 ROR
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1713-address" class="md-nav__link">
+    <span class="md-ellipsis">
+      17.1.3 Address
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1714-storage-location" class="md-nav__link">
+    <span class="md-ellipsis">
+      17.1.4 Storage location
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1715-contact" class="md-nav__link">
+    <span class="md-ellipsis">
+      17.1.5 Contact
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#172-accessibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      17.2 Accessibility
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-authenticity-of-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      18. Authenticity of object
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="18. Authenticity of object">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#181-authenticity-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      18.1 Authenticity type
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#182-reasoning" class="md-nav__link">
+    <span class="md-ellipsis">
+      18.2 Reasoning
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19-relations" class="md-nav__link">
+    <span class="md-ellipsis">
+      19. Relations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="19. Relations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#191-persistent-identifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      19.1 Persistent Identifier
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="19.1 Persistent Identifier">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1911-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      19.1.1 Value
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1912-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      19.1.2 Type
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#192-full-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      19.2 Full reference
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#193-kind-of-relation" class="md-nav__link">
+    <span class="md-ellipsis">
+      19.3 Kind of relation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#194-type-of-resource" class="md-nav__link">
+    <span class="md-ellipsis">
+      19.4 Type of resource
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#195-additional-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      19.5 Additional details
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Objects</h1>
+
+<!-- Table: Objects -->
+
+<h2 id="terralid-id">TerraLID ID</h2>
+<p><strong>ID and name</strong>: O0 terralid_object_id<br />
+<strong>Provided by:</strong> TerraLID system<br />
+<strong>Obligation:</strong> mandatory<br />
+<strong>Occurrences:</strong> 1<br />
+<strong>Definition:</strong> The ID of the object in the TerraLID database.<br />
+<strong>Allowed values and other constraints:</strong> t.b.d.<br />
+<strong>Example:</strong> t.b.d.  </p>
+<h2 id="1-collectors">1. Collectors</h2>
+<p><strong>ID and name</strong>: O1 object_collectors<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> mandatory<br />
+<strong>Occurrences:</strong> 1–n<br />
+<strong>Definition:</strong> Details of the creator(s), excavator(s), or other person(s) intellectually responsible for the sample collection.  </p>
+<!-- BEGIN INCLUDE ../includes/metadata_blocks.md '&lt;!--person-start--&gt;' '&lt;!--person-end--&gt;' -->
+
+<p><em>with the nine subproperties:</em>  </p>
+<h4 id="11-role">1.1 Role</h4>
+<p><strong>ID and name</strong>: B1.1 person_role<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> mandatory<br />
+<strong>Occurrences:</strong> 1–n<br />
+<strong>Definition:</strong> The role in which the person is related to the linked information.<br />
+<strong>Allowed values and other constraints:</strong> controlled vocabulary<br />
+<strong>Example:</strong> Author  </p>
+<h4 id="12-first-names">1.2 First names</h4>
+<p><strong>ID and name</strong>: B1.2 person_name_first<br />
+<strong>Provided by:</strong> data provider, API (ORCID ID)<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–1<br />
+<strong>Definition:</strong> The first and middle name(s) of the person.<br />
+<strong>Allowed values and other constraints:</strong> free text<br />
+<strong>Example:</strong> Jane  </p>
+<h4 id="13-last-name">1.3 Last Name</h4>
+<p><strong>ID and name</strong>: B1.3 Person_name_last<br />
+<strong>Provided by:</strong> data provider, API (ORCID ID)<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–1<br />
+<strong>Definition:</strong> The last name of the person.<br />
+<strong>Allowed values and other constraints:</strong> free text<br />
+<strong>Example:</strong> Doe  </p>
+<h4 id="14-orcid-id">1.4 ORCID ID</h4>
+<p><strong>ID and name</strong>: B1.4 Person_ORCID<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–1<br />
+<strong>Definition:</strong> The <a href="https://orcid.org/">ORCID ID</a> of the person.<br />
+<strong>Allowed values and other constraints:</strong> is valid ORCID ID<br />
+<strong>Example:</strong> 0000–0001–2345–678X  </p>
+<h4 id="15-affiliation-name">1.5 Affiliation name</h4>
+<p><strong>ID and name</strong>: B1.5 person_affiliation_name<br />
+<strong>Provided by:</strong> data provider, API (ORCID ID, ROR ID)<br />
+<strong>Obligation:</strong> mandatory<br />
+<strong>Occurrences:</strong> 1–n<br />
+<strong>Definition:</strong> The name of the person's affiliation.<br />
+<strong>Allowed values and other constraints:</strong> free text<br />
+<strong>Example:</strong> Institute of Time Travels  </p>
+<h4 id="16-ror-id">1.6 ROR ID</h4>
+<p><strong>ID and name</strong>: B1.6 person_affiliation_ror<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–n<br />
+<strong>Definition:</strong> The <a href="https://ror.org/">ROR</a> of the person's affiliation.<br />
+<strong>Allowed values and other constraints:</strong> is valid ROR ID<br />
+<strong>Example:</strong> 09af7gtg53  </p>
+<h4 id="17-address">1.7 Address</h4>
+<p><strong>ID and name</strong>: B1.7 person_affiliation_address<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–n<br />
+<strong>Definition:</strong> The address of the person's affiliation.<br />
+<strong>Allowed values and other constraints:</strong> free text<br />
+<strong>Example:</strong> Teleporter Avenue 123, Ankh–Morpok, Unites Stated of Humanities  </p>
+<h4 id="18-mail-address">1.8 Mail address</h4>
+<p><strong>ID and name</strong>: B1.8 person_mail<br />
+<strong>Provided by:</strong> data provider, API (ORCID ID)<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–n<br />
+<strong>Definition:</strong> The mail address of the person. <br />
+<strong>Allowed values and other constraints:</strong> is valid mail address<br />
+<strong>Example:</strong> jane.doe@timetravels.int  </p>
+<h4 id="19-website">1.9 Website</h4>
+<p><strong>ID and name</strong>: B1.9 person_url<br />
+<strong>Provided by:</strong> data provider, API (ORCID ID)<br />
+<strong>Obligation:</strong> optional<br />
+<strong>Occurrences:</strong> 0–1<br />
+<strong>Definition:</strong> The URL  of a person.<br />
+<strong>Allowed values and other constraints:</strong> is valid URL<br />
+<strong>Example:</strong> https://www.timetravels.int/members/jane–doe  </p>
+<!-- END INCLUDE -->
+
+<h2 id="2-contributors">2. Contributors</h2>
+<p><strong>ID and name</strong>: O2 object_contributors<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–n<br />
+<strong>Definition:</strong> Individuals or organizations who have contributed to the resource.  </p>
+<!-- BEGIN INCLUDE ../includes/metadata_blocks.md '&lt;!--person-start--&gt;' '&lt;!--person-end--&gt;' -->
+
+<p><em>with the nine subproperties:</em>  </p>
+<h4 id="21-role">2.1 Role</h4>
+<p><strong>ID and name</strong>: B1.1 person_role<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> mandatory<br />
+<strong>Occurrences:</strong> 1–n<br />
+<strong>Definition:</strong> The role in which the person is related to the linked information.<br />
+<strong>Allowed values and other constraints:</strong> controlled vocabulary<br />
+<strong>Example:</strong> Author  </p>
+<h4 id="22-first-names">2.2 First names</h4>
+<p><strong>ID and name</strong>: B1.2 person_name_first<br />
+<strong>Provided by:</strong> data provider, API (ORCID ID)<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–1<br />
+<strong>Definition:</strong> The first and middle name(s) of the person.<br />
+<strong>Allowed values and other constraints:</strong> free text<br />
+<strong>Example:</strong> Jane  </p>
+<h4 id="23-last-name">2.3 Last Name</h4>
+<p><strong>ID and name</strong>: B1.3 Person_name_last<br />
+<strong>Provided by:</strong> data provider, API (ORCID ID)<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–1<br />
+<strong>Definition:</strong> The last name of the person.<br />
+<strong>Allowed values and other constraints:</strong> free text<br />
+<strong>Example:</strong> Doe  </p>
+<h4 id="24-orcid-id">2.4 ORCID ID</h4>
+<p><strong>ID and name</strong>: B1.4 Person_ORCID<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–1<br />
+<strong>Definition:</strong> The <a href="https://orcid.org/">ORCID ID</a> of the person.<br />
+<strong>Allowed values and other constraints:</strong> is valid ORCID ID<br />
+<strong>Example:</strong> 0000–0001–2345–678X  </p>
+<h4 id="25-affiliation-name">2.5 Affiliation name</h4>
+<p><strong>ID and name</strong>: B1.5 person_affiliation_name<br />
+<strong>Provided by:</strong> data provider, API (ORCID ID, ROR ID)<br />
+<strong>Obligation:</strong> mandatory<br />
+<strong>Occurrences:</strong> 1–n<br />
+<strong>Definition:</strong> The name of the person's affiliation.<br />
+<strong>Allowed values and other constraints:</strong> free text<br />
+<strong>Example:</strong> Institute of Time Travels  </p>
+<h4 id="26-ror-id">2.6 ROR ID</h4>
+<p><strong>ID and name</strong>: B1.6 person_affiliation_ror<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–n<br />
+<strong>Definition:</strong> The <a href="https://ror.org/">ROR</a> of the person's affiliation.<br />
+<strong>Allowed values and other constraints:</strong> is valid ROR ID<br />
+<strong>Example:</strong> 09af7gtg53  </p>
+<h4 id="27-address">2.7 Address</h4>
+<p><strong>ID and name</strong>: B1.7 person_affiliation_address<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–n<br />
+<strong>Definition:</strong> The address of the person's affiliation.<br />
+<strong>Allowed values and other constraints:</strong> free text<br />
+<strong>Example:</strong> Teleporter Avenue 123, Ankh–Morpok, Unites Stated of Humanities  </p>
+<h4 id="28-mail-address">2.8 Mail address</h4>
+<p><strong>ID and name</strong>: B1.8 person_mail<br />
+<strong>Provided by:</strong> data provider, API (ORCID ID)<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–n<br />
+<strong>Definition:</strong> The mail address of the person. <br />
+<strong>Allowed values and other constraints:</strong> is valid mail address<br />
+<strong>Example:</strong> jane.doe@timetravels.int  </p>
+<h4 id="29-website">2.9 Website</h4>
+<p><strong>ID and name</strong>: B1.9 person_url<br />
+<strong>Provided by:</strong> data provider, API (ORCID ID)<br />
+<strong>Obligation:</strong> optional<br />
+<strong>Occurrences:</strong> 0–1<br />
+<strong>Definition:</strong> The URL  of a person.<br />
+<strong>Allowed values and other constraints:</strong> is valid URL<br />
+<strong>Example:</strong> https://www.timetravels.int/members/jane–doe  </p>
+<!-- END INCLUDE -->
+
+<h2 id="3-object-title">3. Object title</h2>
+<p><strong>ID and name</strong>: O3 object_title<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> mandatory<br />
+<strong>Occurrences:</strong> 1<br />
+<strong>Definition:</strong> Name of the object to make it distinguishable.<br />
+<strong>Allowed values and other constraints:</strong> free text<br />
+<strong>Example:</strong> Coin 231 of hoard from the northwest palace in Atlantis  </p>
+<h2 id="4-object-description">4. Object description</h2>
+<p><strong>ID and name</strong>: O4 object_description<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–1<br />
+<strong>Definition:</strong> (Detailed) description of the object. Should include information about the object and its collection not captured in other properties. For example, the primary reason for object collection or selection in terms of analytics.<br />
+<strong>Allowed values and other constraints:</strong> free text<br />
+<strong>Example:</strong> Galena-rich sediment from washing pit.  </p>
+<h2 id="5-object-identifiers">5. Object identifiers</h2>
+<p><strong>ID and name</strong>: O5 object_identifiers<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> mandatory<br />
+<strong>Occurrences:</strong> 1–n<br />
+<strong>Definition:</strong> Identifiers associated to the object.  </p>
+<p><em>with the four subproperties:</em>  </p>
+<h3 id="51-value-of-persistent-identifier">5.1 Value of persistent identifier</h3>
+<p><strong>ID and name</strong>: O5.1 object_pid_value<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–n<br />
+<strong>Definition:</strong> The persistent identifier assigned to the object.<br />
+<strong>Allowed values and other constraints:</strong> valid persistent identifier according to <a href="./#52-type-of-persistent-identifier"><code>O5.2 Type of persistent identifier</code></a><br />
+<strong>Example:</strong> 10.60510/ABCD123EF4567  </p>
+<h3 id="52-type-of-persistent-identifier">5.2 Type of persistent identifier</h3>
+<p><strong>ID and name</strong>: O5.2 object_pid_type<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> mandatory<br />
+<strong>Occurrences:</strong> 1–n<br />
+<strong>Definition:</strong> The type of a persistent identifier that was assigned to the object. Mandatory if <a href="./#51-value-of-persistent-identifier"><code>O5.1 Value of persistent identifier</code></a> is provided.<br />
+<strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
+<h3 id="53-value-of-other-identifier">5.3 Value of other identifier</h3>
+<p><strong>ID and name</strong>: O5.3 object_id_value<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> mandatory<br />
+<strong>Occurrences:</strong> 1–n<br />
+<strong>Definition:</strong> Identifier by which the object is identified in a catalogue, database or comparable records (e.g., of the excavation catalogue or records of a laboratory).<br />
+<strong>Allowed values and other constraints:</strong> free text<br />
+<strong>Example:</strong> AG-01  </p>
+<h3 id="54-type-of-other-identifier">5.4 Type of other identifier</h3>
+<p><strong>ID and name</strong>: O5.4 object_id_type<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> mandatory<br />
+<strong>Occurrences:</strong> 1–n<br />
+<strong>Definition:</strong> The name of the catalogue, database or comparable records  to which the ID refers. Mandatory if <a href="./#53-value-of-other-identifier"><code>O5.3 Value of other identifier</code></a> is provided.<br />
+<strong>Allowed values and other constraints:</strong> free text<br />
+<strong>Example:</strong> catalogue in the final excavation report  </p>
+<h2 id="6-date-of-collection">6. Date of collection</h2>
+<p><strong>ID and name</strong>: O6 object_collection_date<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> mandatory<br />
+<strong>Occurrences:</strong> 1<br />
+<strong>Definition:</strong> Collection date of the object.<br />
+<strong>Allowed values and other constraints:</strong> date formatted as YYYY-MM-DD<br />
+<strong>Example:</strong> 1990-06-08  </p>
+<h2 id="7-collection-method">7. Collection method</h2>
+<p><strong>ID and name</strong>: O7 object_collection_method<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–1<br />
+<strong>Definition:</strong> How the object was collected or obtained.<br />
+<strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
+<h2 id="8-object-housing">8. Object housing</h2>
+<p><strong>ID and name</strong>: O8 object_housing<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 1–n<br />
+<strong>Definition:</strong> The material in which the object is currently stored or was stored at any time after its collection. At least the current state should be recorded.  </p>
+<p><em>with the two subproperties:</em>  </p>
+<h3 id="81-housing-material">8.1 Housing material</h3>
+<p><strong>ID and name</strong>: O8.1 object_housing_material<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–n<br />
+<strong>Definition:</strong> The material the object was or is stored in at the stage in its life cycle recorded in <a href="./#82-stage-of-storage"><code>O8.2 Stage of Storage</code></a>.<br />
+<strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
+<h3 id="82-stage-of-storage">8.2 Stage of Storage</h3>
+<p><strong>ID and name</strong>: O8.2 object_housing_stage<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> mandatory<br />
+<strong>Occurrences:</strong> 1–n<br />
+<strong>Definition:</strong> The stage of the objects life cycle when the object was stored in the material recorded in <a href="./#82-stage-of-storage"><code>O8.1 Housing material</code></a>. Mandatory if <a href="./#82-stage-of-storage"><code>O8.1 Housing material</code></a> is provided.<br />
+<strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
+<h2 id="9-object-photo">9. Object photo</h2>
+<p><strong>ID and name</strong>: O9 object_photo<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–n<br />
+<strong>Definition:</strong> Photograph of the object, preferably at the time of collection. For guidance on photographs, see e.g. <a href="https://www.bajr.org/wp-content/uploads/2024/08/Artefact-Photography-for-Archaeologists-2024.pdf">L. J. Fisher (2009), Photography for Archaeologists Part II: Artefact recording (BAJR Practical Guide Series 26)</a>.<br />
+<strong>Allowed values and other constraints:</strong> file path<br />
+<strong>Example:</strong> t.b.d.  </p>
+<h2 id="10-object-weight">10. Object weight</h2>
+<p><strong>ID and name</strong>: O10 object_weight<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> optional<br />
+<strong>Occurrences:</strong> 0–1<br />
+<strong>Definition:</strong> The weight of the object at the point of collection, before analysis.  </p>
+<p><em>with the three subproperties:</em>  </p>
+<h3 id="101-value">10.1 Value</h3>
+<p><strong>ID and name</strong>: O10.1 object_weight_value<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> optional<br />
+<strong>Occurrences:</strong> 0–1<br />
+<strong>Definition:</strong> The value of the weight.<br />
+<strong>Allowed values and other constraints:</strong> decimal number<br />
+<strong>Example:</strong> 120.3  </p>
+<h3 id="102-unit">10.2 Unit</h3>
+<p><strong>ID and name</strong>: O10.2 object_weight_unit<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> mandatory<br />
+<strong>Occurrences:</strong> 1<br />
+<strong>Definition:</strong> SI unit in which the weight is given. Mandatory if <a href="./#101-value"><code>O10.1 Value</code></a> is provided.<br />
+<strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
+<h3 id="103-weight-condition">10.3 Weight condition</h3>
+<p><strong>ID and name</strong>: O10.3 object_weight_condition<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> optional<br />
+<strong>Occurrences:</strong> 0–1<br />
+<strong>Definition:</strong> Additional information about state of object at the time the weight was measured.<br />
+<strong>Allowed values and other constraints:</strong> free text<br />
+<strong>Example:</strong> dry sandy material adhering to object  </p>
+<h2 id="11-object-dimensions">11. Object dimensions</h2>
+<p><strong>ID and name</strong>: O11 object_dimension<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> optional<br />
+<strong>Occurrences:</strong> 0–1<br />
+<strong>Definition:</strong> The dimensions of the object.  </p>
+<p><em>with the four subproperties:</em>  </p>
+<h3 id="111-height">11.1 Height</h3>
+<p><strong>ID and name</strong>: O11.1 object_dimension_height<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> optional<br />
+<strong>Occurrences:</strong> 0–1<br />
+<strong>Definition:</strong> The height of the object.<br />
+<strong>Allowed values and other constraints:</strong> decimal number<br />
+<strong>Example:</strong> 3.52  </p>
+<h3 id="112-length">11.2 Length</h3>
+<p><strong>ID and name</strong>: O11.2 object_dimension_length<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> optional<br />
+<strong>Occurrences:</strong> 0–1<br />
+<strong>Definition:</strong> The length of the object.<br />
+<strong>Allowed values and other constraints:</strong> decimal number<br />
+<strong>Example:</strong> 10.30  </p>
+<h3 id="113-width">11.3 Width</h3>
+<p><strong>ID and name</strong>: O11.3 object_dimension_width<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> optional<br />
+<strong>Occurrences:</strong> 0–1<br />
+<strong>Definition:</strong> The width of the object.<br />
+<strong>Allowed values and other constraints:</strong> decimal number<br />
+<strong>Example:</strong> 2.42  </p>
+<h3 id="114-unit-of-dimensions">11.4 Unit of Dimensions</h3>
+<p><strong>ID and name</strong>: O11.4 object_dimension_unit<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> mandatory<br />
+<strong>Occurrences:</strong> 1<br />
+<strong>Definition:</strong> Unit in which the dimensions of the object are provided. Mandatory if any of <a href="./#111-height"><code>O11.1 Height</code></a>, <a href="./#112-length"><code>O11.2 Length</code></a>, and <a href="./#113-width"><code>O11.3 Width</code></a> is provided.<br />
+<strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
+<h2 id="12-material">12. Material</h2>
+<p><strong>ID and name</strong>: O12 object_material<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> mandatory<br />
+<strong>Occurrences:</strong> 1<br />
+<strong>Definition:</strong> The material the object is made of.<br />
+<strong>Allowed values and other constraints:</strong> controlled vocabulary. This property determines which material-specific metadata will be additionally recorded. </p>
+<h2 id="13-bulk-pb-concentration">13. Bulk Pb concentration</h2>
+<p><strong>ID and name</strong>: O13 object_bulk_chemistry_pb<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–1<br />
+<strong>Definition:</strong> The bulk lead concentration of the object.  </p>
+<!-- BEGIN INCLUDE ../includes/metadata_blocks.md '&lt;!--chemistry-start--&gt;' '&lt;!--chemistry-end--&gt;' -->
+
+<p><em>with the eight subproperties:</em>  </p>
+<h4 id="131-analytical-method">13.1 Analytical method</h4>
+<p><strong>ID and name</strong>: B4.1 chemistry_method<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> mandatory<br />
+<strong>Occurrences:</strong> 1<br />
+<strong>Definition:</strong> The method used to determine the chemical composition. <br />
+<strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
+<h4 id="132-analysed-compound">13.2 Analysed compound</h4>
+<p><strong>ID and name</strong>: B4.2 chemistry_compound<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> mandatory<br />
+<strong>Occurrences:</strong> 1–n<br />
+<strong>Definition:</strong> The analysed chemical compound (chemical element or oxide). <br />
+<strong>Allowed values and other constraints:</strong> controlled vocabulary, not available if a mass spectrometric-method is recorded in <code>B4.1 Analytical method</code>.  </p>
+<h4 id="133-analysed-isotope">13.3 Analysed isotope</h4>
+<p><strong>ID and name</strong>: B4.3 chemistry_icp_isotope<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> mandatory<br />
+<strong>Occurrences:</strong> 1–n<br />
+<strong>Definition:</strong> The isotope used for quantification of a chemical element. <br />
+<strong>Allowed values and other constraints:</strong> controlled vocabulary, only available if a mass spectrometric-method is recorded in <code>B4.1 Analytical method</code>.</p>
+<h4 id="134-value">13.4 Value</h4>
+<p><strong>ID and name</strong>: B4.4 chemistry_value<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> mandatory<br />
+<strong>Occurrences:</strong> 1–n<br />
+<strong>Definition:</strong> The concentration of the analysed chemical compound. <br />
+<strong>Allowed values and other constraints:</strong> decimal number<br />
+<strong>Example:</strong> 15.3  </p>
+<h4 id="135-unit">13.5 Unit</h4>
+<p><strong>ID and name</strong>: B4.5 chemistry_unit<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> mandatory<br />
+<strong>Occurrences:</strong> 1–n<br />
+<strong>Definition:</strong> The unit in which the concentration of the analysed chemical compound is given. <br />
+<strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
+<h4 id="136-uncertainty-type">13.6 Uncertainty type</h4>
+<p><strong>ID and name</strong>: B4.6 chemistry_uncertainty_type<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–n<br />
+<strong>Definition:</strong> The type of analytical uncertainty.<br />
+<strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
+<h4 id="137-confidence-level">13.7 Confidence level</h4>
+<p><strong>ID and name</strong>: B4.7 chemistry_uncertainty_sigma<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–n<br />
+<strong>Definition:</strong> Sigma value of the reported absolute analytical uncertainty.<br />
+<strong>Allowed values and other constraints:</strong> 1, 2, 3<br />
+<strong>Example:</strong> 2  </p>
+<h4 id="138-uncertainty-value">13.8 Uncertainty value</h4>
+<p><strong>ID and name</strong>: B4.8 chemistry_uncertainty_value<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–n<br />
+<strong>Definition:</strong> Value of the absolute analytical uncertainty.<br />
+<strong>Allowed values and other constraints:</strong> numeric, is decimal number double precision<br />
+<strong>Example:</strong> 0.3  </p>
+<!-- END INCLUDE -->
+
+<h2 id="14-dating-of-object">14. Dating of object</h2>
+<p><strong>ID and name</strong>: O14 object_date<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> mandatory<br />
+<strong>Occurrences:</strong> 1–n<br />
+<strong>Definition:</strong> The date of the object.  </p>
+<!-- BEGIN INCLUDE ../includes/metadata_blocks.md '&lt;!--dating-start--&gt;' '&lt;!--dating-end--&gt;' -->
+
+<p><em>with the eight subproperties:</em>  </p>
+<h4 id="141-persistent-identifier">14.1 Persistent identifier</h4>
+<p><strong>ID and name</strong>: B3.1 date_pid<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–n  </p>
+<p><em>with the two subproperties:</em>  </p>
+<h5 id="1411-value">14.1.1 Value</h5>
+<p><strong>ID and name</strong>: B3.1.1 date_pid_value<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–1<br />
+<strong>Definition:</strong> The value of the persistent identifier. <br />
+<strong>Allowed values and other constraints:</strong> The periods's persistent identifier in one or more of the data infrastructures listed in <code>B3.1.2 Type</code>.<br />
+<strong>Example:</strong> 99152/p0qhb66vvth  </p>
+<h5 id="1412-type">14.1.2 Type</h5>
+<p><strong>ID and name</strong>: 3.1.2 date_pid_type<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> mandatory<br />
+<strong>Occurrences:</strong> 1<br />
+<strong>Definition:</strong> The name of the data infrastructure. Mandatory if <code>B3.1.1 Value</code> is provided.<br />
+<strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
+<h4 id="142-date-type">14.2 Date type</h4>
+<p><strong>ID and name</strong>: B3.2 date_type<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> mandatory<br />
+<strong>Occurrences:</strong> 1–n<br />
+<strong>Definition:</strong> Is this an archaeological or geological age? Archaeological dates must be given in calendar years, with BCE dates as negative values. Geological dates must be given in million years. <br />
+<strong>Allowed values and other constraints:</strong> geological, archaeological<br />
+<strong>Example:</strong> archaeological  </p>
+<h4 id="143-absolute-date">14.3 Absolute Date</h4>
+<p><strong>ID and name</strong>: B3.3 date_absolute<br />
+<strong>Provided by:</strong> data provider, API<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–1<br />
+<strong>Definition:</strong> The absolute date of a point in time or period.   </p>
+<p><em>with the four subproperties:</em>  </p>
+<h5 id="1431-start">14.3.1 Start</h5>
+<p><strong>ID and name</strong>: B3.3.1 date_absolute_start<br />
+<strong>Provided by:</strong> data provider, API<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–1<br />
+<strong>Definition:</strong> The oldest possible date of the period. <br />
+<strong>Allowed values and other constraints:</strong> integer<br />
+<strong>Example:</strong> -15  </p>
+<h5 id="1432-end">14.3.2 End</h5>
+<p><strong>ID and name</strong>: B3.3.2 date_absolute_end<br />
+<strong>Provided by:</strong> data provider, API<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–1<br />
+<strong>Definition:</strong> The youngest possible date of the period. <br />
+<strong>Allowed values and other constraints:</strong> integer<br />
+<strong>Example:</strong> 15  </p>
+<h5 id="1433-dating-method">14.3.3 Dating method</h5>
+<p><strong>ID and name</strong>: B3.3.3 date_absolute_method<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> mandatory<br />
+<strong>Occurrences:</strong> 1–n<br />
+<strong>Definition:</strong> The method used to determine the absolute date. Mandatory if <code>B3.3.1 Start</code> is provided.<br />
+<strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
+<h5 id="1434-unit-of-date">14.3.4 Unit of date</h5>
+<p><strong>ID and name</strong>: B3.3.4 date_absolute_unit<br />
+<strong>Provided by:</strong> TerraLID system<br />
+<strong>Obligation:</strong> mandatory<br />
+<strong>Occurrences:</strong> 1<br />
+<strong>Definition:</strong> The unit of the date. Mandatory if <code>B3.3.1 Start</code> is provided. <br />
+<strong>Allowed values and other constraints:</strong> a, Ma<br />
+<strong>Example:</strong> a  </p>
+<h4 id="144-relative-date">14.4 Relative Date</h4>
+<p><strong>ID and name</strong>: B3.4 date_relative<br />
+<strong>Provided by:</strong> data provider, API<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–1<br />
+<strong>Definition:</strong> The relative date of a point in time or period.   </p>
+<p><em>with the two subproperties:</em>  </p>
+<h5 id="1441-chronological-unit">14.4.1 Chronological unit</h5>
+<p><strong>ID and name</strong>: B3.4.1 date_relative_period<br />
+<strong>Provided by:</strong> data provider, API<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–1<br />
+<strong>Definition:</strong> The relative date expressed as chronological unit. <br />
+<strong>Allowed values and other constraints:</strong> free text<br />
+<strong>Example:</strong> Ha B2; Emsium  </p>
+<h5 id="1442-dating-method">14.4.2 Dating method</h5>
+<p><strong>ID and name</strong>: B3.4.2 date_relative_method<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> mandatory<br />
+<strong>Occurrences:</strong> 1–n<br />
+<strong>Definition:</strong> The method used to determine the relative date. Mandatory if <code>B3.4.1 Chronological unit</code> is provided.<br />
+<strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
+<h4 id="145-cultural-unit">14.5 Cultural unit</h4>
+<p><strong>ID and name</strong>: B3.5 date_archaeo_cultural<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> optional<br />
+<strong>Occurrences:</strong> 0–n<br />
+<strong>Definition:</strong> Relevant cultural and user created labels for the relative date of the item.<br />
+<strong>Allowed values and other constraints:</strong> free text, only available if <code>B3.2 Date type</code> = "archaeological".<br />
+<strong>Example:</strong> Roman  </p>
+<h4 id="146-orogenesis">14.6 Orogenesis</h4>
+<p><strong>ID and name</strong>: B3.6 date_geol_orogensis<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–1<br />
+<strong>Definition:</strong> The relative date expressed as orogenic event.<br />
+<strong>Allowed values and other constraints:</strong> controlled vocabulary, only available if <code>B3.2 Date type</code> = "geological".  </p>
+<h4 id="147-definition-of-chronological-unit">14.7 Definition of chronological unit</h4>
+<p><strong>ID and name</strong>: B3.7 date_relative_reference<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–n<br />
+<strong>Definition:</strong> The reference where the relative date or period name is defined.   </p>
+<!-- insert here container for relation by hand in the respective document -->
+
+<!-- END INCLUDE -->
+
+<!-- BEGIN INCLUDE ../includes/metadata_blocks.md '&lt;!--relation-start--&gt;' '&lt;!--relation-end--&gt;' -->
+
+<p><em>with the five subproperties:</em>  </p>
+<h6 id="1471-persistent-identifier">14.7.1 Persistent Identifier</h6>
+<p><strong>ID and name</strong>: B5.1 relation_pid<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–n<br />
+<strong>Definition:</strong> The persistent identifier or TerraLID ID associated with a resource or related research output. If referring to another entity in the TerraLID database, the TerraLID identifier must be used.   </p>
+<p><em>with the two subproperties:</em>  </p>
+<h6 id="14711-value"># 14.7.1.1 Value</h6>
+<p><strong>ID and name</strong>: B5.1.1 relation_pid_value<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–n<br />
+<strong>Definition:</strong> Value of the persistent identifier or TerraLID ID. <br />
+<strong>Allowed values and other constraints:</strong> valid persistent identifier according to the options listed in <code>B5.1.2 Type</code>.<br />
+<strong>Example:</strong> 10.60510/ICDP5054ESYI201  </p>
+<h6 id="14712-type"># 14.7.1.2 Type</h6>
+<p><strong>ID and name</strong>: B5.1.2 relation_pid_type<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> mandatory<br />
+<strong>Occurrences:</strong> 0–n<br />
+<strong>Definition:</strong> The type of the identifier.  Mandatory if <code>B5.1.1 Value</code> is provided.<br />
+<strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
+<h6 id="1472-full-reference">14.7.2 Full reference</h6>
+<p><strong>ID and name</strong>: B5.2 relation_text<br />
+<strong>Provided by:</strong> data provider, API (DOI)<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–1<br />
+<strong>Definition:</strong> The full reference of a publication. <br />
+<strong>Allowed values and other constraints:</strong> free text<br />
+<strong>Example:</strong> Palinkaš, L. A., 1985, Lead isotope patterns in galenas from some selected ore deposits in Croatia and NW Bosnia, Geološki Vjesnik, 38, 175–89.    </p>
+<h6 id="1473-kind-of-relation">14.7.3 Kind of relation</h6>
+<p><strong>ID and name</strong>: B5.3 relation_kind<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> mandatory<br />
+<strong>Occurrences:</strong> 1–n<br />
+<strong>Definition:</strong> Relationship between item and the research output. <br />
+<strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
+<h6 id="1474-type-of-resource">14.7.4 Type of resource</h6>
+<p><strong>ID and name</strong>: B5.4 relation_resource<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> mandatory<br />
+<strong>Occurrences:</strong> 1–n<br />
+<strong>Definition:</strong> Type of resource or research output. <br />
+<strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
+<h6 id="1475-additional-details">14.7.5 Additional details</h6>
+<p><strong>ID and name</strong>: B5.5 relation_detail<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> optional<br />
+<strong>Occurrences:</strong> 0–n<br />
+<strong>Definition:</strong> Additional information about the relation, e.g., if the related work addresses a specific aspect of the item (e.g., the geological setting). <br />
+<strong>Allowed values and other constraints:</strong> free text<br />
+<strong>Example:</strong> Information about the dating of the site.   </p>
+<!-- END INCLUDE -->
+
+<h2 id="15-keywords">15. Keywords</h2>
+<p><strong>ID and name</strong>: O15 object_keywords<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> optional<br />
+<strong>Occurrences:</strong> 0–n<br />
+<strong>Definition:</strong> Keywords to describe aspects of the sample not covered by other metadata.<br />
+<strong>Allowed values and other constraints:</strong> free text<br />
+<strong>Example:</strong> t.b.d.  </p>
+<h2 id="16-object-contamination">16. Object contamination</h2>
+<p><strong>ID and name</strong>: O16 object_contamination<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–1<br />
+<strong>Definition:</strong> Information about potential contamination or treatment of the object that might impact the relevance of retrieved information (e.g. by post-depositional processes or conservation treatment).<br />
+<strong>Allowed values and other constraints:</strong> free text<br />
+<strong>Example:</strong> Galvanic restauration of the surface in 1967  </p>
+<h2 id="17-status-of-object">17. Status of object</h2>
+<p><strong>ID and name</strong>: O17 object_status<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–1<br />
+<strong>Definition:</strong> Information about the current status of the object and how to access it.  </p>
+<!-- BEGIN INCLUDE ../includes/metadata_blocks.md '&lt;!--status-start--&gt;' '&lt;!--status-end--&gt;' -->
+
+<p><em>with the two subproperties:</em>  </p>
+<h4 id="171-institution">17.1 Institution</h4>
+<p><strong>ID and name</strong>: B2.1 status_institution<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> mandatory<br />
+<strong>Occurrences:</strong> 1–n<br />
+<strong>Definition:</strong> The institution at which the material is located.   </p>
+<p><em>with the five subproperties:</em>  </p>
+<h5 id="1711-name">17.1.1 Name</h5>
+<p><strong>ID and name</strong>: B2.1.1 status_institution_name<br />
+<strong>Provided by:</strong> data provider, API (ROR ID)<br />
+<strong>Obligation:</strong> mandatory<br />
+<strong>Occurrences:</strong> 1<br />
+<strong>Definition:</strong> Name of the institution. <br />
+<strong>Allowed values and other constraints:</strong> free text<br />
+<strong>Example:</strong> Institute of Time Travels  </p>
+<h5 id="1712-ror">17.1.2 ROR</h5>
+<p><strong>ID and name</strong>: B2.1.2 status_institution_ror<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–1<br />
+<strong>Definition:</strong> <a href="https://ror.org/">ROR</a> of the institution. <br />
+<strong>Allowed values and other constraints:</strong> is valid ROR ID<br />
+<strong>Example:</strong> 09af7gtg53  </p>
+<h5 id="1713-address">17.1.3 Address</h5>
+<p><strong>ID and name</strong>: B2.1.3 status_institution_address<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–1<br />
+<strong>Definition:</strong> Address of the institution. <br />
+<strong>Allowed values and other constraints:</strong> free text<br />
+<strong>Example:</strong> Teleporter Avenue 123, Ankh–Morpok, Unites States of Humanities  </p>
+<h5 id="1714-storage-location">17.1.4 Storage location</h5>
+<p><strong>ID and name</strong>: B2.1.4 status_institution_location<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–1<br />
+<strong>Definition:</strong> Location of the item within the institution.<br />
+<strong>Allowed values and other constraints:</strong> free text<br />
+<strong>Example:</strong> Archive 9, shelf 3, box 1  </p>
+<h5 id="1715-contact">17.1.5 Contact</h5>
+<p><strong>ID and name</strong>: B2.1.5 status_institution_contact<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> mandatory<br />
+<strong>Occurrences:</strong> 1–n<br />
+<strong>Definition:</strong> Contact information for inquiries about the material. This may include, for example, a mail address or phone number of the respective department within the institution or the identification of a specific contact person as well as constraints on the availability of the point of contact such as opening hours. <br />
+<strong>Allowed values and other constraints:</strong> free text<br />
+<strong>Example:</strong> t.b.d.  </p>
+<h4 id="172-accessibility">17.2 Accessibility</h4>
+<p><strong>ID and name</strong>: B2.2 status_accessibility<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–1<br />
+<strong>Definition:</strong> Is the material accessible to other researchers and do restrictions apply? <br />
+<strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
+<!-- END INCLUDE -->
+
+<h2 id="18-authenticity-of-object">18. Authenticity of object</h2>
+<p><strong>ID and name</strong>: O18.1 object_authenticity<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–1<br />
+<strong>Definition:</strong> The contemporary legal status of an object: whether it is a genuine archaeological object, contemporary imitation, or a modern imitation. For example, authentic numismatic objects were created by an authority that had the rights to do so, while contemporary imitations were not.  </p>
+<p><em>with the two subproperties:</em>  </p>
+<h3 id="181-authenticity-type">18.1 Authenticity type</h3>
+<p><strong>ID and name</strong>: O18.1 object_authenticity_type<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 1<br />
+<strong>Definition:</strong> The object's type of authenticity.<br />
+<strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
+<h3 id="182-reasoning">18.2 Reasoning</h3>
+<p><strong>ID and name</strong>: O18.2 object_authenticity_description<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–1<br />
+<strong>Definition:</strong> Reasoning for the given classification.<br />
+<strong>Allowed values and other constraints:</strong> free text<br />
+<strong>Example:</strong> The zinc content in the brass is higher than can be achieved with Roman technology. </p>
+<h2 id="19-relations">19. Relations</h2>
+<p><strong>ID and name</strong>: O19 object_relation<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> mandatory<br />
+<strong>Occurrences:</strong> 1–n<br />
+<strong>Definition:</strong> Information about related entities or other research outputs such as publications providing relevant information about the object.<br />
+<strong>Definition:</strong> Information about related entities, including samples belonging to the object, and other research output such as publications providing relevant information about the object. This includes any literature from which information about the object was extracted.  </p>
+<!-- BEGIN INCLUDE ../includes/metadata_blocks.md '&lt;!--relation-start--&gt;' '&lt;!--relation-end--&gt;' -->
+
+<p><em>with the five subproperties:</em>  </p>
+<h4 id="191-persistent-identifier">19.1 Persistent Identifier</h4>
+<p><strong>ID and name</strong>: B5.1 relation_pid<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–n<br />
+<strong>Definition:</strong> The persistent identifier or TerraLID ID associated with a resource or related research output. If referring to another entity in the TerraLID database, the TerraLID identifier must be used.   </p>
+<p><em>with the two subproperties:</em>  </p>
+<h5 id="1911-value">19.1.1 Value</h5>
+<p><strong>ID and name</strong>: B5.1.1 relation_pid_value<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–n<br />
+<strong>Definition:</strong> Value of the persistent identifier or TerraLID ID. <br />
+<strong>Allowed values and other constraints:</strong> valid persistent identifier according to the options listed in <code>B5.1.2 Type</code>.<br />
+<strong>Example:</strong> 10.60510/ICDP5054ESYI201  </p>
+<h5 id="1912-type">19.1.2 Type</h5>
+<p><strong>ID and name</strong>: B5.1.2 relation_pid_type<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> mandatory<br />
+<strong>Occurrences:</strong> 0–n<br />
+<strong>Definition:</strong> The type of the identifier.  Mandatory if <code>B5.1.1 Value</code> is provided.<br />
+<strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
+<h4 id="192-full-reference">19.2 Full reference</h4>
+<p><strong>ID and name</strong>: B5.2 relation_text<br />
+<strong>Provided by:</strong> data provider, API (DOI)<br />
+<strong>Obligation:</strong> recommended<br />
+<strong>Occurrences:</strong> 0–1<br />
+<strong>Definition:</strong> The full reference of a publication. <br />
+<strong>Allowed values and other constraints:</strong> free text<br />
+<strong>Example:</strong> Palinkaš, L. A., 1985, Lead isotope patterns in galenas from some selected ore deposits in Croatia and NW Bosnia, Geološki Vjesnik, 38, 175–89.    </p>
+<h4 id="193-kind-of-relation">19.3 Kind of relation</h4>
+<p><strong>ID and name</strong>: B5.3 relation_kind<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> mandatory<br />
+<strong>Occurrences:</strong> 1–n<br />
+<strong>Definition:</strong> Relationship between item and the research output. <br />
+<strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
+<h4 id="194-type-of-resource">19.4 Type of resource</h4>
+<p><strong>ID and name</strong>: B5.4 relation_resource<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> mandatory<br />
+<strong>Occurrences:</strong> 1–n<br />
+<strong>Definition:</strong> Type of resource or research output. <br />
+<strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
+<h4 id="195-additional-details">19.5 Additional details</h4>
+<p><strong>ID and name</strong>: B5.5 relation_detail<br />
+<strong>Provided by:</strong> data provider<br />
+<strong>Obligation:</strong> optional<br />
+<strong>Occurrences:</strong> 0–n<br />
+<strong>Definition:</strong> Additional information about the relation, e.g., if the related work addresses a specific aspect of the item (e.g., the geological setting). <br />
+<strong>Allowed values and other constraints:</strong> free text<br />
+<strong>Example:</strong> Information about the dating of the site.   </p>
+<!-- END INCLUDE -->
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      This work is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a>. <br> <a href="https://www.terralid.org/about.html">Legal information</a>
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://www.instagram.com/terra_lid/" target="_blank" rel="noopener" title="TerraLID on Instagram" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141m0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7m146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8m76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8M398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:terralid@bergbaumuseum.de" target="_blank" rel="noopener" title="Contact the TerraLID team by email" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M64 112c-8.8 0-16 7.2-16 16v22.1l172.5 141.6c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16zM48 212.2V384c0 8.8 7.2 16 16 16h384c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0zM0 128c0-35.3 28.7-64 64-64h384c35.3 0 64 28.7 64 64v256c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://www.terralid.org" target="_blank" rel="noopener" title="TerraLID Webpage" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M352 256c0 22.2-1.2 43.6-3.3 64H163.4c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64h185.3c2.2 20.4 3.3 41.8 3.3 64m28.8-64h123.1c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64m112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6 78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7 10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5 11.6 26 20.9 58.2 27 94.7m-209 0H18.6c30-74.1 93.6-130.9 172-151.6-25.5 34.2-45.3 87.7-55.3 151.6M8.1 192h123.1c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64m186.6 254.6c-11.6-26-20.9-58.2-27-94.6h176.6c-6.1 36.4-15.5 68.6-27 94.6-10.5 23.6-22.2 40.7-33.5 51.5-11.2 10.7-20.5 13.9-27.8 13.9s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6-78.4-20.7-142-77.5-172-151.6zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6 25.5-34.2 45.2-87.7 55.3-151.6h116.7z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.path", "navigation.expand"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>
