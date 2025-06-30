@@ -1,7 +1,5 @@
 ## TerraLID ID
 
-HTML
-
 **ID and name**: SI0 terralid_site_id  
 **Provided by:** TerraLID system  
 **Obligation:** mandatory  
