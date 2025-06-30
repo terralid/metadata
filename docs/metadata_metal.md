@@ -17,7 +17,7 @@
 **Definition:** The chemical composition of the metal with additional information.  
 
 {%
-  include-markdown "metadata_blocks.md"
+  include-markdown "../includes/metadata_blocks.md"
   start="<!--chemistry-start-->"
   end="<!--chemistry-end-->"
 %}

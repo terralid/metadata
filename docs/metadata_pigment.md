@@ -59,7 +59,7 @@
 **Definition:** If it is an inorganic pigment, the chemical composition of the pigment.  
 
 {%
-  include-markdown "metadata_blocks.md"
+  include-markdown "../includes/metadata_blocks.md"
   start="<!--chemistry-start-->"
   end="<!--chemistry-end-->"
 %}

@@ -52,7 +52,7 @@
 **Definition:** If the preparation protocol was already published, the publication of the protocol.  
 
 {%
-  include-markdown "metadata_blocks.md"
+  include-markdown "../includes/metadata_blocks.md"
   start="<!--relation-start-->"
   end="<!--relation-end-->"
 %}
@@ -92,7 +92,7 @@
 **Definition:** The publication of the protocol used for separating lead from the sample matrix.  
 
 {%
-  include-markdown "metadata_blocks.md"
+  include-markdown "../includes/metadata_blocks.md"
   start="<!--relation-start-->"
   end="<!--relation-end-->"
 %}
@@ -139,7 +139,7 @@
 **Definition:** The lead concentration of the analyte.  
 
 {%
-  include-markdown "metadata_blocks.md"
+  include-markdown "../includes/metadata_blocks.md"
   start="<!--chemistry-start-->"
   end="<!--chemistry-end-->"
 %}
@@ -195,7 +195,7 @@
 **Definition:** Publication of the reference material's lead isotope ratios used for mass bias correction.  
 
 {%
-  include-markdown "metadata_blocks.md"
+  include-markdown "../includes/metadata_blocks.md"
   start="<!--relation-start-->"
   end="<!--relation-end-->"
 %}
@@ -208,7 +208,7 @@
 **Definition:** The measured lead isotope ratios of the reference material.  
 
 {%
-  include-markdown "metadata_blocks.md"
+  include-markdown "../includes/metadata_blocks.md"
   start="<!--lia-start-->"
   end="<!--lia-end-->"
 %}
@@ -221,7 +221,7 @@
 **Definition:** The laboratory that performed the lead isotope analysis.  
 
 {%
-  include-markdown "metadata_blocks.md"
+  include-markdown "../includes/metadata_blocks.md"
   start="<!--person-start-->"
   end="<!--person-end-->"
 %}  
@@ -252,7 +252,7 @@
 **Definition:** Mass-bias corrected lead isotope ratios and analytical uncertainty. The TerraLID system will calculate all ratios not reported in the original publication.  
 
 {%
-  include-markdown "metadata_blocks.md"
+  include-markdown "../includes/metadata_blocks.md"
   start="<!--lia-start-->"
   end="<!--lia-end-->"
 %}
@@ -265,7 +265,7 @@
 **Definition:** Age model parameters calculated from the mass-bias corrected lead isotope ratios.  
 
 {%
-  include-markdown "metadata_blocks.md"
+  include-markdown "../includes/metadata_blocks.md"
   start="<!--agemodel-start-->"
   end="<!--agemodel-end-->"
 %}
@@ -278,7 +278,7 @@
 **Definition:** Information about related entities and other research output such as publications providing relevant information about the analysis. This includes any literature from which information about the analysis was extracted.  
 
 {%
-  include-markdown "metadata_blocks.md"
+  include-markdown "../includes/metadata_blocks.md"
   start="<!--relation-start-->"
   end="<!--relation-end-->"
 %}

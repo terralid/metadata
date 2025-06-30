@@ -17,7 +17,7 @@
 **Definition:** Details of the creator(s), excavator(s), or other person(s) intellectually responsible for the sample collection.  
 
 {%
-  include-markdown "metadata_blocks.md"
+  include-markdown "../includes/metadata_blocks.md"
   start="<!--person-start-->"
   end="<!--person-end-->"
 %}
@@ -30,7 +30,7 @@
 **Definition:** Individuals or organizations who have contributed to the resource.  
 
 {%
-  include-markdown "metadata_blocks.md"
+  include-markdown "../includes/metadata_blocks.md"
   start="<!--person-start-->"
   end="<!--person-end-->"
 %}
@@ -233,7 +233,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** The material the object is made of.  
-**Allowed values and other constraints:** controlled vocabulary. This property determines which [material-specific metadata](link-404.md) will be recorded about the object. 
+**Allowed values and other constraints:** controlled vocabulary. This property determines which material-specific metadata will be additionally recorded. 
 
 ## Bulk Pb concentration
 **ID and name**: O13 object_bulk_chemistry_pb  
@@ -243,7 +243,7 @@
 **Definition:** The bulk lead concentration of the object.  
 
 {%
-  include-markdown "metadata_blocks.md"
+  include-markdown "../includes/metadata_blocks.md"
   start="<!--chemistry-start-->"
   end="<!--chemistry-end-->"
 %}
@@ -256,13 +256,13 @@
 **Definition:** The date of the object.  
 
 {%
-  include-markdown "metadata_blocks.md"
+  include-markdown "../includes/metadata_blocks.md"
   start="<!--dating-start-->"
   end="<!--dating-end-->"
 %}
 
 {%
-  include-markdown "metadata_blocks.md"
+  include-markdown "../includes/metadata_blocks.md"
   heading-offset=2
   start="<!--relation-start-->"
   end="<!--relation-end-->"
@@ -294,7 +294,7 @@
 **Definition:** Information about the current status of the object and how to access it.  
 
 {%
-  include-markdown "metadata_blocks.md"
+  include-markdown "../includes/metadata_blocks.md"
   start="<!--status-start-->"
   end="<!--status-end-->"
 %}
@@ -334,7 +334,7 @@
 **Definition:** Information about related entities, including samples belonging to the object, and other research output such as publications providing relevant information about the object. This includes any literature from which information about the object was extracted.  
 
 {%
-  include-markdown "metadata_blocks.md"
+  include-markdown "../includes/metadata_blocks.md"
   start="<!--relation-start-->"
   end="<!--relation-end-->"
 %}

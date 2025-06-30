@@ -8,8 +8,14 @@
 
 !!! warning "Community feedback process ongoing"
 
-    This initial version of the TerraLID metadata profile is currently under discussion by the community. It will be revised according to the received feedback before publication, resulting in changes of the version presented here.   
-    [Learn about the community feedback process and how to join the discussion.](link-404.md)
+    This initial version of the TerraLID metadata profile is under discussion by the community until **October 15, 2025**. It will be revised according to the received feedback before publication, resulting in changes of the version presented here. 
+
+    Comment and discuss the draft asynchronously in our [collaborative document]() and/or join our drop-in calls for live discussion with the TerraLID team: 
+    
+    * [Friday, [date], 17:00 UTC](time and date.com)
+    * ...
+    
+    Room for all drop-in calls: [link], (Meeting-ID: | passcode: )
 
 Contributors to the TerraLID metadata profile in alphabetical order: 
 
@@ -38,3 +44,4 @@ Contributors to the TerraLID metadata profile in alphabetical order:
 * David Wigg-Wolf [![](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png)](https://orcid.org/0000-0002-8604-544X), Deutsches Archäologisches Institut, Römisch-Germanische Kommission [![](https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png)](https://ror.org/01fqayw81)
 * Grzegorz Żabiński [![](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png)](https://orcid.org/0000-0003-3091-1035), Jan Długosz University in Częstochowa [![](https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png)](https://ror.org/0566yhn94)
 
+The TerraLID Team gratefully acknowledges the valuable contributions of many other colleagues to the TerraLID metadata profile in discussions and various other formats. 

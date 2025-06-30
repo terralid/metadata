@@ -1,6 +1,6 @@
 # Coins
 
-Coin-specific metadata are a subset of the [Nomisma.org](https://nomisma.org/) [ontology](https://nomisma.org/ontology) and intended to be filled in the records of the coin in a numismatic data infrastructure using this ontology based on the type series and the coin's type series ID. The equivalent in the Nomisma ontology is given by the prefix `nmo`. Descriptions are copied from the [Nomisma ontology](https://nomisma.org/ontology). 
+Coin-specific metadata extent the [metal-specific metadata](metadata_metal.md) and are a subset of the [Nomisma](https://nomisma.org/) [ontology](https://nomisma.org/ontology) and intended to be filled in the records of the coin in a numismatic data infrastructure using this ontology based on the type series and the coin's type series ID. The equivalent in the Nomisma ontology is given by the prefix `nmo`. Descriptions are taken from the [Nomisma ontology](https://nomisma.org/ontology). 
 
 ## Type series
 **ID and name**: OM.C1 material_coin_type_series (`nmo:TypeSeries`)  

@@ -50,13 +50,13 @@
 **Definition:** Period when the mine was exploited for the metals listed in [`OO2.1 Targeted metals`](metadata_ore.md#21-targeted-metals).  
 
 {%
-  include-markdown "metadata_blocks.md"
+  include-markdown "../includes/metadata_blocks.md"
   start="<!--dating-start-->"
   end="<!--dating-end-->"
 %}
 
 {%
-  include-markdown "metadata_blocks.md"
+  include-markdown "../includes/metadata_blocks.md"
   heading-offset=2
   start="<!--relation-start-->"
   end="<!--relation-end-->"
@@ -105,7 +105,7 @@
 **Definition:** The chemical composition of the ore.  
 
 {%
-  include-markdown "metadata_blocks.md"
+  include-markdown "../includes/metadata_blocks.md"
   start="<!--chemistry-start-->"
   end="<!--chemistry-end-->"
 %}

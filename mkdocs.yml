@@ -53,6 +53,9 @@ nav:
   - Mappings: mappings.md
   - History: changelog.md
 
+watch: 
+  - includes
+
 extra_css:
   - ./stylesheets/extra.css
 
@@ -83,10 +86,10 @@ markdown_extensions:
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
-  - pymdownx.snippets
   - pymdownx.superfences
   - pymdownx.caret
   - pymdownx.tilde
+  - md_in_html
 
 copyright: This work is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a>. <br> <a href="https://www.terralid.org/about.html">Legal information</a>
 

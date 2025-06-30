@@ -173,7 +173,7 @@
 **Definition:** The bulk lead concentration of the sample.  
 
 {%
-    include-markdown "metadata_blocks.md"
+    include-markdown "../includes/metadata_blocks.md"
     start="<!--chemistry-start-->"
     end="<!--chemistry-end-->"
 %}
@@ -186,7 +186,7 @@
 **Definition:** Information about the person that took the sample.   
 
 {%
-    include-markdown "metadata_blocks.md"
+    include-markdown "../includes/metadata_blocks.md"
     start="<!--person-start-->"
     end="<!--person-end-->"
 %}
@@ -199,7 +199,7 @@
 **Definition:** Information about the current status of the sample and how to access it.   
 
 {%
-    include-markdown "metadata_blocks.md"
+    include-markdown "../includes/metadata_blocks.md"
     start="<!--status-start-->"
     end="<!--status-end-->"
 %}
@@ -213,7 +213,7 @@
 **Definition:** Information about related entities, including analysis made on the sample, and other research output such as publications providing relevant information about the sample. This includes any literature from which information about the sample was extracted.  
 
 {%
-    include-markdown "metadata_blocks.md"
+    include-markdown "../includes/metadata_blocks.md"
     start="<!--relation-start-->"
     end="<!--relation-end-->"
 %}

@@ -136,7 +136,7 @@
 **Definition:** Information about related entities, including the object(s) belonging to the assemblage, and other research output such as publications providing relevant information about the assemblage. This includes any literature from which information about the assemblage was extracted.  
 
 {%
-  include-markdown "metadata_blocks.md"
+  include-markdown "../includes/metadata_blocks.md"
   start="<!--relation-start-->"
   end="<!--relation-end-->"
 %}

@@ -1,4 +1,7 @@
 ## TerraLID ID
+
+HTML
+
 **ID and name**: SI0 terralid_site_id  
 **Provided by:** TerraLID system  
 **Obligation:** mandatory  
@@ -221,13 +224,13 @@
 **Definition:** The time period represented by the site.  
 
 {%
-  include-markdown "metadata_blocks.md"
+  include-markdown "../includes/metadata_blocks.md"
   start="<!--dating-start-->"
   end="<!--dating-end-->"
 %}
 
 {%
-  include-markdown "metadata_blocks.md"
+  include-markdown "../includes/metadata_blocks.md"
   heading-offset=2
   start="<!--relation-start-->"
   end="<!--relation-end-->"
@@ -285,7 +288,7 @@
 **Definition:** Information about related entities, including assemblages belonging to the site, and other research output such as publications providing relevant information about the site. This includes any literature from which information about the site was extracted.  
 
 {%
-  include-markdown "metadata_blocks.md"
+  include-markdown "../includes/metadata_blocks.md"
   start="<!--relation-start-->"
   end="<!--relation-end-->"
 %}
