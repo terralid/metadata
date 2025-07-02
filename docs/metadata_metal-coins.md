@@ -8,8 +8,7 @@ Coin-specific metadata extent the [metal-specific metadata](metadata_metal.md) a
 **Obligation:** recommended  
 **Occurrences:** 0–1  
 **Definition:** A published or recognized reference list of numismatic object types, such as a catalogue or corpus.  
-**Allowed values and other constraints:** ,   
-**Example:** OCRE  
+**Allowed values and other constraints:** controlled vocabulary  
 
 ## Type series ID
 **ID and name**: OM.C2 material_coin_type_series_id (`nmo:hasTypeSeriesItem`)  
@@ -17,8 +16,8 @@ Coin-specific metadata extent the [metal-specific metadata](metadata_metal.md) a
 **Obligation:** recommended  
 **Occurrences:** 0–1  
 **Definition:** Identifies the position of a numismatic object within a published or recognized reference list of types, such as a catalogue or corpus.  
-**Allowed values and other constraints:** ,   
-**Example:** http://numismatics.org/ocre/id/ric.1(2).aug.2A  
+**Allowed values and other constraints:** valid identifier according to reference work listed in [`OM.C1 Type Series`](metadata_metal-coins.md#1-type-series).   
+**Example:** ric.1(2).aug.2A  
 
 ## Deposition type 
 **ID and name**: OM.C3 material_coin_deposition_type (`nmo:DepositionType`)  
@@ -26,8 +25,7 @@ Coin-specific metadata extent the [metal-specific metadata](metadata_metal.md) a
 **Obligation:** recommended  
 **Occurrences:** 0–1  
 **Definition:** The circumstances under which an object or group of objects came to be deposited and part of the archaeological record, for example as a hoard, votive deposit or chance loss.  
-**Allowed values and other constraints:** ,   
-**Example:** votive  
+**Allowed values and other constraints:** controlled vocabulary  
 
 ## Authority 
 **ID and name**: OM.C4 material_coin_authority (`nmo:hasAuthority`)  
@@ -35,8 +33,7 @@ Coin-specific metadata extent the [metal-specific metadata](metadata_metal.md) a
 **Obligation:** recommended  
 **Occurrences:** 0–1  
 **Definition:** Identifies the authority in whose name (explicitly or implicitly) a numismatic object was issued.  
-**Allowed values and other constraints:** ,   
-**Example:** Augustus  
+**Allowed values and other constraints:** controlled vocabulary   
 
 ## Mint 
 **ID and name**: OM.C5 material_coin_mint (`nmo:hasMint`)  
@@ -44,8 +41,7 @@ Coin-specific metadata extent the [metal-specific metadata](metadata_metal.md) a
 **Obligation:** recommended  
 **Occurrences:** 0–1  
 **Definition:** Identifies the place of manufacture or issue of a numismatic object.  
-**Allowed values and other constraints:** ,   
-**Example:** Rome  
+**Allowed values and other constraints:** controlled vocabulary   
 
 ## Denomination 
 **ID and name**: OM.C6 material_coin_denomination (`nmo:hasDenomination`)  
@@ -53,8 +49,7 @@ Coin-specific metadata extent the [metal-specific metadata](metadata_metal.md) a
 **Obligation:** recommended  
 **Occurrences:** 0–1  
 **Definition:** Describes the monetary value assigned to an object within a denominational system.  
-**Allowed values and other constraints:** ,   
-**Example:** Denarius  
+**Allowed values and other constraints:** controlled vocabulary   
 
 ## Date 
 **ID and name**: OM.C7 material_coin_date (`nmo:hasDate`)  
@@ -71,7 +66,7 @@ Coin-specific metadata extent the [metal-specific metadata](metadata_metal.md) a
 **Obligation:** recommended  
 **Occurrences:** 0–1  
 **Definition:** The date of the earliest numismatic object of a given context, e.g. a hoard or layer.  
-**Allowed values and other constraints:** ,   
+**Allowed values and other constraints:** integer   
 **Example:** -25  
 
 #### Closing date 
@@ -80,7 +75,7 @@ Coin-specific metadata extent the [metal-specific metadata](metadata_metal.md) a
 **Obligation:** recommended  
 **Occurrences:** 0–1  
 **Definition:** The date of the latest numismatic object of a given context, e.g. a hoard or layer.  
-**Allowed values and other constraints:** ,   
+**Allowed values and other constraints:** integer   
 **Example:** -23  
 
 ## Manufacture 
@@ -89,8 +84,7 @@ Coin-specific metadata extent the [metal-specific metadata](metadata_metal.md) a
 **Obligation:** recommended  
 **Occurrences:** 0–1  
 **Definition:** Describes the method of manufacture of a numismatic object.  
-**Allowed values and other constraints:** ,   
-**Example:** struck  
+**Allowed values and other constraints:** controlled vocabulary  
 
 ## Pecularity of Production 
 **ID and name**: OM.C9 material_coin_pecularity_production (`nmo:PecularityOfProduction`)  
@@ -98,5 +92,5 @@ Coin-specific metadata extent the [metal-specific metadata](metadata_metal.md) a
 **Obligation:** recommended  
 **Occurrences:** 0–1  
 **Definition:** Describes a notable, characteristic or unusual physical feature of an individual numismatic object which distinguishes it from other examples of the same group, or of a group of numismatic objects that marks it out from other groups, and which is related to the process of production of a numismatic object.  
-**Allowed values and other constraints:** ,   
+**Allowed values and other constraints:** controlled vocabulary   
 **Example:** double-struck  
