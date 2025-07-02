@@ -10,7 +10,7 @@
         <meta name="author" content="TerraLID Core Team">
       
       
-        <link rel="canonical" href="http://localhost:8000/v0.1/metadata_metal-coins/">
+        <link rel="canonical" href="https://terralid.github.io/metadata/v0.1/metadata_metal-coins/">
       
       
         <link rel="prev" href="../metadata_metal/">
@@ -998,48 +998,43 @@
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> A published or recognized reference list of numismatic object types, such as a catalogue or corpus.<br />
-<strong>Allowed values and other constraints:</strong> , <br />
-<strong>Example:</strong> OCRE  </p>
+<strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h2 id="2-type-series-id">2. Type series ID</h2>
 <p><strong>ID and name</strong>: OM.C2 material_coin_type_series_id (<code>nmo:hasTypeSeriesItem</code>)<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> Identifies the position of a numismatic object within a published or recognized reference list of types, such as a catalogue or corpus.<br />
-<strong>Allowed values and other constraints:</strong> , <br />
-<strong>Example:</strong> http://numismatics.org/ocre/id/ric.1(2).aug.2A  </p>
+<strong>Allowed values and other constraints:</strong> valid identifier according to reference work listed in <a href="./#1-type-series"><code>OM.C1 Type Series</code></a>. <br />
+<strong>Example:</strong> ric.1(2).aug.2A  </p>
 <h2 id="3-deposition-type">3. Deposition type</h2>
 <p><strong>ID and name</strong>: OM.C3 material_coin_deposition_type (<code>nmo:DepositionType</code>)<br />
 <strong>Provided by:</strong> Nomisma API, data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> The circumstances under which an object or group of objects came to be deposited and part of the archaeological record, for example as a hoard, votive deposit or chance loss.<br />
-<strong>Allowed values and other constraints:</strong> , <br />
-<strong>Example:</strong> votive  </p>
+<strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h2 id="4-authority">4. Authority</h2>
 <p><strong>ID and name</strong>: OM.C4 material_coin_authority (<code>nmo:hasAuthority</code>)<br />
 <strong>Provided by:</strong> Nomisma API, data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> Identifies the authority in whose name (explicitly or implicitly) a numismatic object was issued.<br />
-<strong>Allowed values and other constraints:</strong> , <br />
-<strong>Example:</strong> Augustus  </p>
+<strong>Allowed values and other constraints:</strong> controlled vocabulary   </p>
 <h2 id="5-mint">5. Mint</h2>
 <p><strong>ID and name</strong>: OM.C5 material_coin_mint (<code>nmo:hasMint</code>)<br />
 <strong>Provided by:</strong> Nomisma API, data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> Identifies the place of manufacture or issue of a numismatic object.<br />
-<strong>Allowed values and other constraints:</strong> , <br />
-<strong>Example:</strong> Rome  </p>
+<strong>Allowed values and other constraints:</strong> controlled vocabulary   </p>
 <h2 id="6-denomination">6. Denomination</h2>
 <p><strong>ID and name</strong>: OM.C6 material_coin_denomination (<code>nmo:hasDenomination</code>)<br />
 <strong>Provided by:</strong> Nomisma API, data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> Describes the monetary value assigned to an object within a denominational system.<br />
-<strong>Allowed values and other constraints:</strong> , <br />
-<strong>Example:</strong> Denarius  </p>
+<strong>Allowed values and other constraints:</strong> controlled vocabulary   </p>
 <h2 id="7-date">7. Date</h2>
 <p><strong>ID and name</strong>: OM.C7 material_coin_date (<code>nmo:hasDate</code>)<br />
 <strong>Provided by:</strong> Nomisma API, data provider<br />
@@ -1053,7 +1048,7 @@
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> The date of the earliest numismatic object of a given context, e.g. a hoard or layer.<br />
-<strong>Allowed values and other constraints:</strong> , <br />
+<strong>Allowed values and other constraints:</strong> integer <br />
 <strong>Example:</strong> -25  </p>
 <h4 id="72-closing-date">7.2 Closing date</h4>
 <p><strong>ID and name</strong>: OM.C7.2 material_coin_date_to (<code>nmo:hasNumismaticClosingDate</code>)<br />
@@ -1061,7 +1056,7 @@
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> The date of the latest numismatic object of a given context, e.g. a hoard or layer.<br />
-<strong>Allowed values and other constraints:</strong> , <br />
+<strong>Allowed values and other constraints:</strong> integer <br />
 <strong>Example:</strong> -23  </p>
 <h2 id="8-manufacture">8. Manufacture</h2>
 <p><strong>ID and name</strong>: OM.C8 material_coin_manufacture (<code>nmo:hasManufacture</code>)<br />
@@ -1069,15 +1064,14 @@
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> Describes the method of manufacture of a numismatic object.<br />
-<strong>Allowed values and other constraints:</strong> , <br />
-<strong>Example:</strong> struck  </p>
+<strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h2 id="9-pecularity-of-production">9. Pecularity of Production</h2>
 <p><strong>ID and name</strong>: OM.C9 material_coin_pecularity_production (<code>nmo:PecularityOfProduction</code>)<br />
 <strong>Provided by:</strong> Nomisma API, data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> Describes a notable, characteristic or unusual physical feature of an individual numismatic object which distinguishes it from other examples of the same group, or of a group of numismatic objects that marks it out from other groups, and which is related to the process of production of a numismatic object.<br />
-<strong>Allowed values and other constraints:</strong> , <br />
+<strong>Allowed values and other constraints:</strong> controlled vocabulary <br />
 <strong>Example:</strong> double-struck  </p>
 
 
