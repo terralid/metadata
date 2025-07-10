@@ -58,3 +58,15 @@ jobs:
         run: |
           cd docs
           mike deploy --push --config-file ../mkdocs.yml --update-aliases ${{ env.VERSION }} latest
+
+      - name: Setup SSH and Auto-Deploy
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -H d-ws164.server.est1816.de >> ~/.ssh/known_hosts
+          ssh -i ~/.ssh/deploy_key gh-terralid-deployer@d-ws164.server.est1816.de ""
+
+      - name: Cleanup
+        if: always()
+        run: rm -f ~/.ssh/deploy_key
