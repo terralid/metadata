@@ -1,7 +1,7 @@
 <!-- Table: Objects -->
 
 ## TerraLID ID
-**ID and name**: O0 terralid_object_id  
+**ID and name:** O0 terralid_object_id  
 **Provided by:** TerraLID system  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -10,7 +10,7 @@
 **Example:** t.b.d.  
 
 ## Collectors
-**ID and name**: O1 object_collectors  
+**ID and name:** O1 object_collectors  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -23,7 +23,7 @@
 %}
 
 ## Contributors
-**ID and name**: O2 object_contributors  
+**ID and name:** O2 object_contributors  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
@@ -36,7 +36,7 @@
 %}
 
 ## Object title
-**ID and name**: O3 object_title  
+**ID and name:** O3 object_title  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -45,7 +45,7 @@
 **Example:** Coin 231 of hoard from the northwest palace in Atlantis  
 
 ## Object description
-**ID and name**: O4 object_description  
+**ID and name:** O4 object_description  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -54,7 +54,7 @@
 **Example:** Galena-rich sediment from washing pit.  
 
 ## Object identifiers
-**ID and name**: O5 object_identifiers  
+**ID and name:** O5 object_identifiers  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -63,7 +63,7 @@
 *with the four subproperties:*  
 
 ### Value of persistent identifier
-**ID and name**: O5.1 object_pid_value  
+**ID and name:** O5.1 object_pid_value  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
@@ -72,7 +72,7 @@
 **Example:** 10.60510/ABCD123EF4567  
 
 ### Type of persistent identifier
-**ID and name**: O5.2 object_pid_type  
+**ID and name:** O5.2 object_pid_type  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -80,7 +80,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ### Value of other identifier
-**ID and name**: O5.3 object_id_value  
+**ID and name:** O5.3 object_id_value  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -89,7 +89,7 @@
 **Example:** AG-01  
 
 ### Type of other identifier
-**ID and name**: O5.4 object_id_type  
+**ID and name:** O5.4 object_id_type  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -98,7 +98,7 @@
 **Example:** catalogue in the final excavation report  
 
 ## Date of collection
-**ID and name**: O6 object_collection_date  
+**ID and name:** O6 object_collection_date  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -107,7 +107,7 @@
 **Example:** 1990-06-08  
 
 ## Collection method
-**ID and name**: O7 object_collection_method  
+**ID and name:** O7 object_collection_method  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -115,7 +115,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ## Object housing
-**ID and name**: O8 object_housing  
+**ID and name:** O8 object_housing  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 1–n  
@@ -124,7 +124,7 @@
 *with the two subproperties:*  
 
 ### Housing material
-**ID and name**: O8.1 object_housing_material  
+**ID and name:** O8.1 object_housing_material  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
@@ -132,7 +132,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ### Stage of Storage
-**ID and name**: O8.2 object_housing_stage  
+**ID and name:** O8.2 object_housing_stage  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -140,7 +140,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ## Object photo
-**ID and name**: O9 object_photo  
+**ID and name:** O9 object_photo  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
@@ -149,7 +149,7 @@
 **Example:** t.b.d.  
 
 ## Object weight
-**ID and name**: O10 object_weight  
+**ID and name:** O10 object_weight  
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–1  
@@ -158,7 +158,7 @@
 *with the three subproperties:*  
 
 ### Value
-**ID and name**: O10.1 object_weight_value  
+**ID and name:** O10.1 object_weight_value  
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–1  
@@ -167,7 +167,7 @@
 **Example:** 120.3  
 
 ### Unit
-**ID and name**: O10.2 object_weight_unit  
+**ID and name:** O10.2 object_weight_unit  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -175,7 +175,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ### Weight condition
-**ID and name**: O10.3 object_weight_condition  
+**ID and name:** O10.3 object_weight_condition  
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–1  
@@ -184,7 +184,7 @@
 **Example:** dry sandy material adhering to object  
 
 ## Object dimensions
-**ID and name**: O11 object_dimension  
+**ID and name:** O11 object_dimension  
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–1  
@@ -193,7 +193,7 @@
 *with the four subproperties:*  
 
 ### Height
-**ID and name**: O11.1 object_dimension_height  
+**ID and name:** O11.1 object_dimension_height  
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–1  
@@ -202,7 +202,7 @@
 **Example:** 3.52  
 
 ### Length
-**ID and name**: O11.2 object_dimension_length  
+**ID and name:** O11.2 object_dimension_length  
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–1  
@@ -211,7 +211,7 @@
 **Example:** 10.30  
 
 ### Width
-**ID and name**: O11.3 object_dimension_width  
+**ID and name:** O11.3 object_dimension_width  
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–1  
@@ -220,7 +220,7 @@
 **Example:** 2.42  
 
 ### Unit of Dimensions
-**ID and name**: O11.4 object_dimension_unit  
+**ID and name:** O11.4 object_dimension_unit  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -228,7 +228,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ## Material
-**ID and name**: O12 object_material  
+**ID and name:** O12 object_material  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -236,7 +236,7 @@
 **Allowed values and other constraints:** controlled vocabulary. This property determines which material-specific metadata will be additionally recorded. 
 
 ## Bulk Pb concentration
-**ID and name**: O13 object_bulk_chemistry_pb  
+**ID and name:** O13 object_bulk_chemistry_pb  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -249,7 +249,7 @@
 %}
 
 ## Dating of object
-**ID and name**: O14 object_date  
+**ID and name:** O14 object_date  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -269,7 +269,7 @@
 %}
 
 ## Keywords
-**ID and name**: O15 object_keywords  
+**ID and name:** O15 object_keywords  
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–n  
@@ -278,7 +278,7 @@
 **Example:** t.b.d.  
 
 ## Object contamination
-**ID and name**: O16 object_contamination  
+**ID and name:** O16 object_contamination  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -287,7 +287,7 @@
 **Example:** Galvanic restauration of the surface in 1967  
 
 ## Status of object
-**ID and name**: O17 object_status  
+**ID and name:** O17 object_status  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -300,7 +300,7 @@
 %}
 
 ## Authenticity of object
-**ID and name**: O18.1 object_authenticity  
+**ID and name:** O18.1 object_authenticity  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -309,7 +309,7 @@
 *with the two subproperties:*  
 
 ### Authenticity type
-**ID and name**: O18.1 object_authenticity_type  
+**ID and name:** O18.1 object_authenticity_type  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 1  
@@ -317,7 +317,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ### Reasoning
-**ID and name**: O18.2 object_authenticity_description  
+**ID and name:** O18.2 object_authenticity_description  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -326,11 +326,10 @@
 **Example:** The zinc content in the brass is higher than can be achieved with Roman technology. 
 
 ## Relations
-**ID and name**: O19 object_relation  
+**ID and name:** O19 object_relation  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
-**Definition:** Information about related entities or other research outputs such as publications providing relevant information about the object.  
 **Definition:** Information about related entities, including samples belonging to the object, and other research output such as publications providing relevant information about the object. This includes any literature from which information about the object was extracted.  
 
 {%

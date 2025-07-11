@@ -1,7 +1,7 @@
 # Metals
 
 ## Metal chemistry
-**ID and name**: OM1 material_metal_chemistry  
+**ID and name:** OM1 material_metal_chemistry  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -10,7 +10,7 @@
 *with the two subproperties:*  
 
 ### Chemical composition
-**ID and name**: OM1.1 material_metal_chemistry  
+**ID and name:** OM1.1 material_metal_chemistry  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -23,7 +23,7 @@
 %}
 
 ### Major elements
-**ID and name**: OM1.2 material_metal_chemistry_major  
+**ID and name:** OM1.2 material_metal_chemistry_major  
 **Provided by:** TerraLID system  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -31,7 +31,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ## Metal corrosion
-**ID and name**: OM2 material_metal_corrosion  
+**ID and name:** OM2 material_metal_corrosion  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -40,7 +40,7 @@
 *with the two subproperties:*  
 
 ## Extent
-**ID and name**: OM2.1 material_metal_corrosion_extent  
+**ID and name:** OM2.1 material_metal_corrosion_extent  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -48,7 +48,7 @@
 **Allowed values and other constraints:** controlled vocabulary
 
 ## Details
-**ID and name**: OM2.2 material_metal_corrosion_reason  
+**ID and name:** OM2.2 material_metal_corrosion_reason  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -57,7 +57,7 @@
 **Example:** thick green crust with sediment  
 
 ## Provenance indicators
-**ID and name**: OM3 material_metal_provenance  
+**ID and name:** OM3 material_metal_provenance  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  

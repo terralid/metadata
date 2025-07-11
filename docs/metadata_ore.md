@@ -1,7 +1,7 @@
 # Ore
 
 ## Ore mineralogy
-**ID and name**: OO1 material_ore_mineral  
+**ID and name:** OO1 material_ore_mineral  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -10,7 +10,7 @@
 *with the two subproperties:*  
 
 ### Minerals
-**ID and name**: OO1.1 material_ore_mineral_name  
+**ID and name:** OO1.1 material_ore_mineral_name  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -18,7 +18,7 @@
 **Allowed values and other constraints:** controlled vocabulary ([IMA list of minerals](https://rruff.info/ima/))  
 
 ### Mineral–hosting ore part
-**ID and name**: OO1.2 material_ore_mineral_part  
+**ID and name:** OO1.2 material_ore_mineral_part  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -26,7 +26,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ## Commodity
-**ID and name**: OO2 material_ore_commodity  
+**ID and name:** OO2 material_ore_commodity  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
@@ -35,7 +35,7 @@
 *with the two subproperties:*  
 
 ### Targeted metals
-**ID and name**: OO2.1 material_ore_commodity_metal  
+**ID and name:** OO2.1 material_ore_commodity_metal  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
@@ -43,7 +43,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ### Period of extraction
-**ID and name**: OO2.2 material_ore_commonity_period  
+**ID and name:** OO2.2 material_ore_commonity_period  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
@@ -63,7 +63,7 @@
 %}
 
 ## Mineralisation
-**ID and name**: OO3 material_ore_mineralisation  
+**ID and name:** OO3 material_ore_mineralisation  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -72,7 +72,7 @@
 *with the two subproperties:*  
 
 ### Mineralisation type
-**ID and name**: OO3.1 material_ore_mineralisation_type  
+**ID and name:** OO3.1 material_ore_mineralisation_type  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
@@ -80,7 +80,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ### Mineralisation phase
-**ID and name**: OO3.2 material_ore_mineralisation_phase  
+**ID and name:** OO3.2 material_ore_mineralisation_phase  
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–1  
@@ -89,7 +89,7 @@
 **Example:** 2  
 
 ## Ore chemistry
-**ID and name**: OO4 material_ore_chemistry  
+**ID and name:** OO4 material_ore_chemistry  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -98,7 +98,7 @@
 *with the two subproperties:*  
 
 ### Chemical composition
-**ID and name**: OO4.1 material_ore_chemistry_element  
+**ID and name:** OO4.1 material_ore_chemistry_element  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -111,7 +111,7 @@
 %}
 
 ### Abundance category
-**ID and name**: OO4.2 material_ore_chemistry_category  
+**ID and name:** OO4.2 material_ore_chemistry_category  
 **Provided by:** TerraLID system  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -119,7 +119,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ## Alteration
-**ID and name**: OO5 material_ore_alteration  
+**ID and name:** OO5 material_ore_alteration  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 1  
@@ -127,7 +127,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ## Deposit type
-**ID and name**: OO6 material_ore_deposit  
+**ID and name:** OO6 material_ore_deposit  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -135,7 +135,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ## Ore district
-**ID and name**: OO7 material_ore_district  
+**ID and name:** OO7 material_ore_district  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -144,7 +144,7 @@
 **Example:** Mitterberg; Laurion; African Copper Belt  
 
 ## Access to targeted metal
-**ID and name**: OO8 material_ore_accessibility  
+**ID and name:** OO8 material_ore_accessibility  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -153,7 +153,7 @@
 *with the two subproperties:*  
 
 ### Accessibility
-**ID and name**: OO8.1 material_ore_accessibility  
+**ID and name:** OO8.1 material_ore_accessibility  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -162,7 +162,7 @@
 **Example:** yes  
 
 ### Details
-**ID and name**: OO8.2 material_ore_accessibility_detail  
+**ID and name:** OO8.2 material_ore_accessibility_detail  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  

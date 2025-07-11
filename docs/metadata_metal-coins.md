@@ -3,7 +3,7 @@
 Coin-specific metadata extent the [metal-specific metadata](metadata_metal.md) and are a subset of the [Nomisma](https://nomisma.org/) [ontology](https://nomisma.org/ontology) and intended to be filled in the records of the coin in a numismatic data infrastructure using this ontology based on the type series and the coin's type series ID. The equivalent in the Nomisma ontology is given by the prefix `nmo`. Descriptions are taken from the [Nomisma ontology](https://nomisma.org/ontology). 
 
 ## Type series
-**ID and name**: OM.C1 material_coin_type_series (`nmo:TypeSeries`)  
+**ID and name:** OM.C1 material_coin_type_series (`nmo:TypeSeries`)  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -11,7 +11,7 @@ Coin-specific metadata extent the [metal-specific metadata](metadata_metal.md) a
 **Allowed values and other constraints:** controlled vocabulary  
 
 ## Type series ID
-**ID and name**: OM.C2 material_coin_type_series_id (`nmo:hasTypeSeriesItem`)  
+**ID and name:** OM.C2 material_coin_type_series_id (`nmo:hasTypeSeriesItem`)  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -20,7 +20,7 @@ Coin-specific metadata extent the [metal-specific metadata](metadata_metal.md) a
 **Example:** ric.1(2).aug.2A  
 
 ## Deposition type 
-**ID and name**: OM.C3 material_coin_deposition_type (`nmo:DepositionType`)  
+**ID and name:** OM.C3 material_coin_deposition_type (`nmo:DepositionType`)  
 **Provided by:** Nomisma API, data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -28,7 +28,7 @@ Coin-specific metadata extent the [metal-specific metadata](metadata_metal.md) a
 **Allowed values and other constraints:** controlled vocabulary  
 
 ## Authority 
-**ID and name**: OM.C4 material_coin_authority (`nmo:hasAuthority`)  
+**ID and name:** OM.C4 material_coin_authority (`nmo:hasAuthority`)  
 **Provided by:** Nomisma API, data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -36,7 +36,7 @@ Coin-specific metadata extent the [metal-specific metadata](metadata_metal.md) a
 **Allowed values and other constraints:** controlled vocabulary   
 
 ## Mint 
-**ID and name**: OM.C5 material_coin_mint (`nmo:hasMint`)  
+**ID and name:** OM.C5 material_coin_mint (`nmo:hasMint`)  
 **Provided by:** Nomisma API, data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -44,7 +44,7 @@ Coin-specific metadata extent the [metal-specific metadata](metadata_metal.md) a
 **Allowed values and other constraints:** controlled vocabulary   
 
 ## Denomination 
-**ID and name**: OM.C6 material_coin_denomination (`nmo:hasDenomination`)  
+**ID and name:** OM.C6 material_coin_denomination (`nmo:hasDenomination`)  
 **Provided by:** Nomisma API, data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -52,7 +52,7 @@ Coin-specific metadata extent the [metal-specific metadata](metadata_metal.md) a
 **Allowed values and other constraints:** controlled vocabulary   
 
 ## Date 
-**ID and name**: OM.C7 material_coin_date (`nmo:hasDate`)  
+**ID and name:** OM.C7 material_coin_date (`nmo:hasDate`)  
 **Provided by:** Nomisma API, data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -61,7 +61,7 @@ Coin-specific metadata extent the [metal-specific metadata](metadata_metal.md) a
 *with the two subproperties:*  
 
 #### Opening date 
-**ID and name**: OM.C7.1 material_coin_date_from (`nmo:hasNumismaticOpeningDate`)  
+**ID and name:** OM.C7.1 material_coin_date_from (`nmo:hasNumismaticOpeningDate`)  
 **Provided by:** Nomisma API, data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -70,7 +70,7 @@ Coin-specific metadata extent the [metal-specific metadata](metadata_metal.md) a
 **Example:** -25  
 
 #### Closing date 
-**ID and name**: OM.C7.2 material_coin_date_to (`nmo:hasNumismaticClosingDate`)  
+**ID and name:** OM.C7.2 material_coin_date_to (`nmo:hasNumismaticClosingDate`)  
 **Provided by:** Nomisma API, data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -79,7 +79,7 @@ Coin-specific metadata extent the [metal-specific metadata](metadata_metal.md) a
 **Example:** -23  
 
 ## Manufacture 
-**ID and name**: OM.C8 material_coin_manufacture (`nmo:hasManufacture`)  
+**ID and name:** OM.C8 material_coin_manufacture (`nmo:hasManufacture`)  
 **Provided by:** Nomisma API, data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -87,7 +87,7 @@ Coin-specific metadata extent the [metal-specific metadata](metadata_metal.md) a
 **Allowed values and other constraints:** controlled vocabulary  
 
 ## Pecularity of Production 
-**ID and name**: OM.C9 material_coin_pecularity_production (`nmo:PecularityOfProduction`)  
+**ID and name:** OM.C9 material_coin_pecularity_production (`nmo:PecularityOfProduction`)  
 **Provided by:** Nomisma API, data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  

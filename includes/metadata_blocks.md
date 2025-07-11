@@ -1,7 +1,7 @@
 <!-- Table: other reusable blocks -->
 
 ### Person
-**ID and name**: B1 person  
+**ID and name:** B1 person  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -12,7 +12,7 @@
 *with the nine subproperties:*  
 
 #### Role
-**ID and name**: B1.1 person_role  
+**ID and name:** B1.1 person_role  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -21,7 +21,7 @@
 **Example:** Author  
 
 #### First names
-**ID and name**: B1.2 person_name_first  
+**ID and name:** B1.2 person_name_first  
 **Provided by:** data provider, API (ORCID ID)  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -30,7 +30,7 @@
 **Example:** Jane  
 
 #### Last Name
-**ID and name**: B1.3 Person_name_last  
+**ID and name:** B1.3 Person_name_last  
 **Provided by:** data provider, API (ORCID ID)  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -39,7 +39,7 @@
 **Example:** Doe  
 
 #### ORCID ID
-**ID and name**: B1.4 Person_ORCID  
+**ID and name:** B1.4 Person_ORCID  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -48,7 +48,7 @@
 **Example:** 0000–0001–2345–678X  
 
 #### Affiliation name
-**ID and name**: B1.5 person_affiliation_name  
+**ID and name:** B1.5 person_affiliation_name  
 **Provided by:** data provider, API (ORCID ID, ROR ID)  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -57,7 +57,7 @@
 **Example:** Institute of Time Travels  
 
 #### ROR ID
-**ID and name**: B1.6 person_affiliation_ror  
+**ID and name:** B1.6 person_affiliation_ror  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
@@ -66,7 +66,7 @@
 **Example:** 09af7gtg53  
 
 #### Address
-**ID and name**: B1.7 person_affiliation_address  
+**ID and name:** B1.7 person_affiliation_address  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
@@ -75,7 +75,7 @@
 **Example:** Teleporter Avenue 123, Ankh–Morpok, Unites Stated of Humanities  
 
 #### Mail address
-**ID and name**: B1.8 person_mail  
+**ID and name:** B1.8 person_mail  
 **Provided by:** data provider, API (ORCID ID)  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
@@ -84,7 +84,7 @@
 **Example:** jane.doe@timetravels.int  
 
 #### Website
-**ID and name**: B1.9 person_url  
+**ID and name:** B1.9 person_url  
 **Provided by:** data provider, API (ORCID ID)  
 **Obligation:** optional  
 **Occurrences:** 0–1  
@@ -95,7 +95,7 @@
 <!--person-end-->
 
 ### Status
-**ID and name**: B2 status  
+**ID and name:** B2 status  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -106,7 +106,7 @@
 *with the two subproperties:*  
 
 #### Institution
-**ID and name**: B2.1 status_institution  
+**ID and name:** B2.1 status_institution  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -115,7 +115,7 @@
 *with the five subproperties:*  
 
 ##### Name
-**ID and name**: B2.1.1 status_institution_name  
+**ID and name:** B2.1.1 status_institution_name  
 **Provided by:** data provider, API (ROR ID)  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -124,7 +124,7 @@
 **Example:** Institute of Time Travels  
 
 ##### ROR
-**ID and name**: B2.1.2 status_institution_ror  
+**ID and name:** B2.1.2 status_institution_ror  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -133,7 +133,7 @@
 **Example:** 09af7gtg53  
 
 ##### Address
-**ID and name**: B2.1.3 status_institution_address  
+**ID and name:** B2.1.3 status_institution_address  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -142,7 +142,7 @@
 **Example:** Teleporter Avenue 123, Ankh–Morpok, Unites States of Humanities  
 
 ##### Storage location
-**ID and name**: B2.1.4 status_institution_location  
+**ID and name:** B2.1.4 status_institution_location  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -151,7 +151,7 @@
 **Example:** Archive 9, shelf 3, box 1  
 
 ##### Contact
-**ID and name**: B2.1.5 status_institution_contact  
+**ID and name:** B2.1.5 status_institution_contact  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -160,7 +160,7 @@
 **Example:** t.b.d.  
 
 #### Accessibility
-**ID and name**: B2.2 status_accessibility  
+**ID and name:** B2.2 status_accessibility  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -170,7 +170,7 @@
 <!--status-end-->
 
 ### Dating
-**ID and name**: B3 date  
+**ID and name:** B3 date  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -181,7 +181,7 @@
 *with the eight subproperties:*  
 
 #### Persistent identifier
-**ID and name**: B3.1 date_pid  
+**ID and name:** B3.1 date_pid  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
@@ -189,7 +189,7 @@
 *with the two subproperties:*  
 
 ##### Value
-**ID and name**: B3.1.1 date_pid_value  
+**ID and name:** B3.1.1 date_pid_value  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -198,7 +198,7 @@
 **Example:** 99152/p0qhb66vvth  
 
 ##### Type
-**ID and name**: 3.1.2 date_pid_type  
+**ID and name:** B3.1.2 date_pid_type  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -206,7 +206,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 #### Date type
-**ID and name**: B3.2 date_type  
+**ID and name:** B3.2 date_type  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -215,7 +215,7 @@
 **Example:** archaeological  
 
 #### Absolute Date
-**ID and name**: B3.3 date_absolute  
+**ID and name:** B3.3 date_absolute  
 **Provided by:** data provider, API  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -224,7 +224,7 @@
 *with the four subproperties:*  
 
 ##### Start
-**ID and name**: B3.3.1 date_absolute_start  
+**ID and name:** B3.3.1 date_absolute_start  
 **Provided by:** data provider, API  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -233,7 +233,7 @@
 **Example:** -15  
 
 ##### End
-**ID and name**: B3.3.2 date_absolute_end  
+**ID and name:** B3.3.2 date_absolute_end  
 **Provided by:** data provider, API  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -242,7 +242,7 @@
 **Example:** 15  
 
 ##### Dating method
-**ID and name**: B3.3.3 date_absolute_method  
+**ID and name:** B3.3.3 date_absolute_method  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -250,7 +250,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ##### Unit of date
-**ID and name**: B3.3.4 date_absolute_unit  
+**ID and name:** B3.3.4 date_absolute_unit  
 **Provided by:** TerraLID system  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -259,7 +259,7 @@
 **Example:** a  
 
 #### Relative Date
-**ID and name**: B3.4 date_relative  
+**ID and name:** B3.4 date_relative  
 **Provided by:** data provider, API  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -268,7 +268,7 @@
 *with the two subproperties:*  
 
 ##### Chronological unit
-**ID and name**: B3.4.1 date_relative_period  
+**ID and name:** B3.4.1 date_relative_period  
 **Provided by:** data provider, API  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -277,7 +277,7 @@
 **Example:** Ha B2; Emsium  
 
 ##### Dating method
-**ID and name**: B3.4.2 date_relative_method  
+**ID and name:** B3.4.2 date_relative_method  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -285,7 +285,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 #### Cultural unit
-**ID and name**: B3.5 date_archaeo_cultural  
+**ID and name:** B3.5 date_archaeo_cultural  
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–n  
@@ -294,7 +294,7 @@
 **Example:** Roman  
 
 #### Orogenesis
-**ID and name**: B3.6 date_geol_orogensis  
+**ID and name:** B3.6 date_geol_orogensis  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -302,7 +302,7 @@
 **Allowed values and other constraints:** controlled vocabulary, only available if `B3.2 Date type` = "geological".  
 
 #### Definition of chronological unit
-**ID and name**: B3.7 date_relative_reference  
+**ID and name:** B3.7 date_relative_reference  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
@@ -313,7 +313,7 @@
 <!--dating-end-->
 
 ### Chemical composition
-**ID and name**: B4 chemistry  
+**ID and name:** B4 chemistry  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -324,7 +324,7 @@
 *with the eight subproperties:*  
 
 #### Analytical method
-**ID and name**: B4.1 chemistry_method  
+**ID and name:** B4.1 chemistry_method  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -332,7 +332,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 #### Analysed compound
-**ID and name**: B4.2 chemistry_compound  
+**ID and name:** B4.2 chemistry_compound  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -340,7 +340,7 @@
 **Allowed values and other constraints:** controlled vocabulary, not available if a mass spectrometric-method is recorded in `B4.1 Analytical method`.  
 
 #### Analysed isotope
-**ID and name**: B4.3 chemistry_icp_isotope  
+**ID and name:** B4.3 chemistry_icp_isotope  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -348,7 +348,7 @@
 **Allowed values and other constraints:** controlled vocabulary, only available if a mass spectrometric-method is recorded in `B4.1 Analytical method`.
 
 #### Value
-**ID and name**: B4.4 chemistry_value  
+**ID and name:** B4.4 chemistry_value  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -357,7 +357,7 @@
 **Example:** 15.3  
 
 #### Unit
-**ID and name**: B4.5 chemistry_unit  
+**ID and name:** B4.5 chemistry_unit  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -365,7 +365,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 #### Uncertainty type
-**ID and name**: B4.6 chemistry_uncertainty_type  
+**ID and name:** B4.6 chemistry_uncertainty_type  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
@@ -373,7 +373,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 #### Confidence level
-**ID and name**: B4.7 chemistry_uncertainty_sigma  
+**ID and name:** B4.7 chemistry_uncertainty_sigma  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
@@ -382,18 +382,18 @@
 **Example:** 2  
 
 #### Uncertainty value
-**ID and name**: B4.8 chemistry_uncertainty_value  
+**ID and name:** B4.8 chemistry_uncertainty_value  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
 **Definition:** Value of the absolute analytical uncertainty.  
-**Allowed values and other constraints:** numeric, is decimal number double precision  
+**Allowed values and other constraints:** decimal number  
 **Example:** 0.3  
 
 <!--chemistry-end-->
 
 ### Relation
-**ID and name**: B5 relation  
+**ID and name:** B5 relation  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -404,7 +404,7 @@
 *with the five subproperties:*  
 
 #### Persistent Identifier
-**ID and name**: B5.1 relation_pid  
+**ID and name:** B5.1 relation_pid  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
@@ -413,7 +413,7 @@
 *with the two subproperties:*  
 
 ##### Value
-**ID and name**: B5.1.1 relation_pid_value  
+**ID and name:** B5.1.1 relation_pid_value  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
@@ -422,7 +422,7 @@
 **Example:** 10.60510/ICDP5054ESYI201  
 
 ##### Type
-**ID and name**: B5.1.2 relation_pid_type  
+**ID and name:** B5.1.2 relation_pid_type  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 0–n  
@@ -430,7 +430,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 #### Full reference
-**ID and name**: B5.2 relation_text  
+**ID and name:** B5.2 relation_text  
 **Provided by:** data provider, API (DOI)  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -439,7 +439,7 @@
 **Example:** Palinkaš, L. A., 1985, Lead isotope patterns in galenas from some selected ore deposits in Croatia and NW Bosnia, Geološki Vjesnik, 38, 175–89.    
 
 #### Kind of relation
-**ID and name**: B5.3 relation_kind  
+**ID and name:** B5.3 relation_kind  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -447,7 +447,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 #### Type of resource
-**ID and name**: B5.4 relation_resource  
+**ID and name:** B5.4 relation_resource  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -455,7 +455,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 #### Additional details
-**ID and name**: B5.5 relation_detail  
+**ID and name:** B5.5 relation_detail  
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–n  
@@ -466,7 +466,7 @@
 <!--relation-end-->
 
 #### Lead isotope ratio
-**ID and name**: B6 lia_ratio  
+**ID and name:** B6 lia_ratio  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
@@ -477,7 +477,7 @@
 *with the seven subproperties:*  
 
 #### Name
-**ID and name**: B6.1 lia_ratio_name  
+**ID and name:** B6.1 lia_ratio_name  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -486,7 +486,7 @@
 **Example:** 206Pb/204Pb  
 
 #### Value
-**ID and name**: B6.2 lia_ratio_value  
+**ID and name:** B6.2 lia_ratio_value  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -495,7 +495,7 @@
 **Example:** 18.59123  
 
 #### Uncertainty
-**ID and name**: B6.3 lia_ratio_uncertainty_type  
+**ID and name:** B6.3 lia_ratio_uncertainty_type  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -503,7 +503,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 #### Confidence level
-**ID and name**: B6.4 lia_ratio_uncertainty_sigma  
+**ID and name:** B6.4 lia_ratio_uncertainty_sigma  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -512,7 +512,7 @@
 **Example:** 2  
 
 #### Absolute uncertainty
-**ID and name**: B6.5 lia_ratio_uncertainty_value_absolute  
+**ID and name:** B6.5 lia_ratio_uncertainty_value_absolute  
 **Provided by:** data provider, TerraLID system  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -521,7 +521,7 @@
 **Example:** 0.00008  
 
 #### Relative uncertainty
-**ID and name**: B6.6 lia_ratio_uncertainty_value_relative  
+**ID and name:** B6.6 lia_ratio_uncertainty_value_relative  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -530,7 +530,7 @@
 **Example:** 0.1  
 
 #### Source 
-**ID and name**: B6.7 lia_ratio_source  
+**ID and name:** B6.7 lia_ratio_source  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -541,7 +541,7 @@
 <!--lia-end-->
 
 ### Age models
-**ID and name**: B7 lia_model  
+**ID and name:** B7 lia_model  
 **Provided by:** TerraLID system  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -552,7 +552,7 @@
 *with the nine subproperties:*  
 
 #### Age model name
-**ID and name**: B7.1 lia_model_name  
+**ID and name:** B7.1 lia_model_name  
 **Provided by:** TerraLID system  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -561,7 +561,7 @@
 **Example:** SK75  
 
 #### Model age
-**ID and name**: B7.2 lia_Tmod  
+**ID and name:** B7.2 lia_Tmod  
 **Provided by:** TerraLID system  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -570,7 +570,7 @@
 **Example:** 250.54  
 
 #### Uncertainty of model age
-**ID and name**: B7.3 lia_Tmod_uncertainty  
+**ID and name:** B7.3 lia_Tmod_uncertainty  
 **Provided by:** TerraLID system  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -579,7 +579,7 @@
 **Example:** t.b.d.  
 
 #### Mu
-**ID and name**: B7.4 lia_mu  
+**ID and name:** B7.4 lia_mu  
 **Provided by:** TerraLID system  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -588,7 +588,7 @@
 **Example:** 9.86  
 
 #### Uncertainty of mu
-**ID and name**: B7.5 lia_mu_uncertainty  
+**ID and name:** B7.5 lia_mu_uncertainty  
 **Provided by:** TerraLID system  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -597,7 +597,7 @@
 **Example:** t.b.d.  
 
 #### Kappa
-**ID and name**: B7.6 lia_kappa  
+**ID and name:** B7.6 lia_kappa  
 **Provided by:** TerraLID system  
 **Obligation:** repcommended  
 **Occurrences:** 0–1  
@@ -606,7 +606,7 @@
 **Example:** 3.92  
 
 #### Uncertainty of kappa
-**ID and name**: B7.7 lia_kappa_uncertainty  
+**ID and name:** B7.7 lia_kappa_uncertainty  
 **Provided by:** TerraLID system  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -615,7 +615,7 @@
 **Example:** t.b.d.  
 
 #### Omega
-**ID and name**: B7.8 lia_omega  
+**ID and name:** B7.8 lia_omega  
 **Provided by:** TerraLID system  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -624,7 +624,7 @@
 **Example:** t.b.d.  
 
 #### Uncertainty of omega
-**ID and name**: B7.9 lia_omega_uncertainty  
+**ID and name:** B7.9 lia_omega_uncertainty  
 **Provided by:** TerraLID system  
 **Obligation:** recommended  
 **Occurrences:** 0–1  

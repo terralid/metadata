@@ -1,7 +1,7 @@
 # Pigments
 
 ## Pigment name
-**ID and name**: OP1 material_pigment_name  
+**ID and name:** OP1 material_pigment_name  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -9,7 +9,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ## Pigment form
-**ID and name**: OP2 material_pigment_archaeological_context  
+**ID and name:** OP2 material_pigment_archaeological_context  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -18,7 +18,7 @@
 **Example:** pellets; as part of a fresco  
 
 ## Pigment type
-**ID and name**: OP3 material_pigment_type  
+**ID and name:** OP3 material_pigment_type  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -27,7 +27,7 @@
 *with the two subproperties:*  
 
 ### Type
-**ID and name**: OP3.1 material_pigment_type_chemistry  
+**ID and name:** OP3.1 material_pigment_type_chemistry  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -35,7 +35,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ### Occurrence 
-**ID and name**: OP3.2 material_pigment_type_production  
+**ID and name:** OP3.2 material_pigment_type_production  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -43,7 +43,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ## Pigment composition
-**ID and name**: OP4 material_pigment_composition  
+**ID and name:** OP4 material_pigment_composition  
 **Provided by:** data provider 
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -52,7 +52,7 @@
 *with the three subproperties:*  
 
 ### Chemical composition
-**ID and name**: OP4.1 material_pigment_composition_chemistry  
+**ID and name:** OP4.1 material_pigment_composition_chemistry  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
@@ -65,7 +65,7 @@
 %}
 
 ### Organic compounds
-**ID and name**: OP4.2 material_pigment_composition_compound  
+**ID and name:** OP4.2 material_pigment_composition_compound  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
@@ -73,7 +73,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ### Mineralogical composition
-**ID and name**: OP4.3 material_pigment_composition_mineralogy  
+**ID and name:** OP4.3 material_pigment_composition_mineralogy  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
@@ -81,7 +81,7 @@
 **Allowed values and other constraints:** controlled vocabulary ([IMA list of minerals](https://rruff.info/ima/))  
 
 ## Pigment production
-**ID and name**: OP5 material_pigment_processing  
+**ID and name:** OP5 material_pigment_processing  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -90,7 +90,7 @@
 *with the two subproperties:*  
 
 ### Production context 
-**ID and name**: OP5.1 material_pigment_production_context  
+**ID and name:** OP5.1 material_pigment_production_context  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -98,7 +98,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ### Treatment
-**ID and name**: OP5.2 material_pigment_production_treatment  
+**ID and name:** OP5.2 material_pigment_production_treatment  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
@@ -106,7 +106,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ## Colour
-**ID and name**: OP6 material_pigment_colour  
+**ID and name:** OP6 material_pigment_colour  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -115,7 +115,7 @@
 *with the two subproperties:*  
 
 ### Name
-**ID and name**: OP6.1 material_pigment_colour_name  
+**ID and name:** OP6.1 material_pigment_colour_name  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -124,7 +124,7 @@
 **Example:** blue; 5P 5/10; L*56 a*26 b*3  
 
 ### Colour system
-**ID and name**: OP6.2 material_pigment_colour_system  
+**ID and name:** OP6.2 material_pigment_colour_system  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -132,7 +132,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ## Pigment alteration
-**ID and name**: OP7 material_pigment_alteration  
+**ID and name:** OP7 material_pigment_alteration  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -141,7 +141,7 @@
 *with the two subproperties:*  
 
 ### Alteration type
-**ID and name**: OP7.1 material_pigment_alteration_type  
+**ID and name:** OP7.1 material_pigment_alteration_type  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
@@ -149,7 +149,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ### Details
-**ID and name**: OP7.2 material_pigment_alteration_description  
+**ID and name:** OP7.2 material_pigment_alteration_description  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
@@ -158,7 +158,7 @@
 **Example:** t.b.d. 
 
 ## Pigment recycling
-**ID and name**: OP8 material_pigment_recycling  
+**ID and name:** OP8 material_pigment_recycling  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -167,7 +167,7 @@
 *with the two subproperties:*  
 
 ### Indicators
-**ID and name**: OP8.1 material_pigment_recycling_indicator  
+**ID and name:** OP8.1 material_pigment_recycling_indicator  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -175,7 +175,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ### Reasoning
-**ID and name**: OP8.2 material_pigment_recycling_reason  
+**ID and name:** OP8.2 material_pigment_recycling_reason  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -184,7 +184,7 @@
 **Example:** presence of Sn in trace element analysis  
 
 ## Lead source
-**ID and name**: OP9 material_pigment_lead_source  
+**ID and name:** OP9 material_pigment_lead_source  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -192,7 +192,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ## Provenance indicators
-**ID and name**: OP10 material_pigment_raw_material_provenance  
+**ID and name:** OP10 material_pigment_raw_material_provenance  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -201,7 +201,7 @@
 **Example:** t.b.d. 
 
 ## Sr isotopes
-**ID and name**: OP11 material_pigment_isotopes_Sr  
+**ID and name:** OP11 material_pigment_isotopes_Sr  
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–n  
@@ -210,7 +210,7 @@
 *with the two subproperties:*  
 
 ### Value
-**ID and name**: OP11.1 material_pigment_isotopes_Sr_value  
+**ID and name:** OP11.1 material_pigment_isotopes_Sr_value  
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–1  
@@ -219,7 +219,7 @@
 **Example:** 0.7856  
 
 ### Analytical precision
-**ID and name**: OP11.2 material_pigment_isotopes_Sr_2SD  
+**ID and name:** OP11.2 material_pigment_isotopes_Sr_2SD  
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–1  
@@ -228,7 +228,7 @@
 **Example:** 0.0002 
 
 ## Nd isotopes
-**ID and name**: OP12 material_pigment_isotopes_Nd  
+**ID and name:** OP12 material_pigment_isotopes_Nd  
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–n  
@@ -237,7 +237,7 @@
 *with the two subproperties:*  
 
 ### Value
-**ID and name**: OP12.1 material_pigment_isotopes_Nd_value  
+**ID and name:** OP12.1 material_pigment_isotopes_Nd_value  
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–1  
@@ -246,7 +246,7 @@
 **Example:** t.b.d. 
 
 ### Analytical precision
-**ID and name**: OP12.2 material_pigment_isotopes_Nd_2SD  
+**ID and name:** OP12.2 material_pigment_isotopes_Nd_2SD  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -255,7 +255,7 @@
 **Example:** t.b.d. 
 
 ## Hf isotopes
-**ID and name**: OP13 material_pigment_isotopes_Hf  
+**ID and name:** OP13 material_pigment_isotopes_Hf  
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–n  
@@ -264,7 +264,7 @@
 *with the two subproperties:*  
 
 ### Value
-**ID and name**: OP13.1 material_pigment_isotopes_Hf_value  
+**ID and name:** OP13.1 material_pigment_isotopes_Hf_value  
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–1  
@@ -273,7 +273,7 @@
 **Example:** t.b.d. 
 
 ### Analytical precision
-**ID and name**: OP13.2 material_pigment_isotopes_Hf_2SD  
+**ID and name:** OP13.2 material_pigment_isotopes_Hf_2SD  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  

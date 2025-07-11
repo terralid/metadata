@@ -1,7 +1,7 @@
 <!-- Table: Analyses -->
 
 ## TerraLID ID
-**ID and name**: A0 terralid_analysis_id  
+**ID and name:** A0 terralid_analysis_id  
 **Provided by:** TerraLID system  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -10,7 +10,7 @@
 **Example:** t.b.d. 
 
 ## Laboratory ID
-**ID and name**: A1 analysis_lab_id  
+**ID and name:** A1 analysis_lab_id  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
@@ -19,7 +19,7 @@
 **Example:**  
 
 ## Analysis type
-**ID and name**: A2 analysis_lia_type  
+**ID and name:** A2 analysis_lia_type  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -27,7 +27,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ## Preparation protocol
-**ID and name**: A3 analysis_lia_preparation  
+**ID and name:** A3 analysis_lia_preparation  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -36,7 +36,7 @@
 *with the two subproperties:*  
 
 ### Description
-**ID and name**: A3.1 analysis_lia_preparation_description  
+**ID and name:** A3.1 analysis_lia_preparation_description  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -45,7 +45,7 @@
 **Example:** Dissolution with aqua regia at 80°C and evaporation to dryness, followed by dissolution in 2% HNO~3~. 
 
 ### Publication
-**ID and name**: A3.2 analysis_lia_preparation_publication  
+**ID and name:** A3.2 analysis_lia_preparation_publication  
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–n  
@@ -58,7 +58,7 @@
 %}
 
 ## Analysed material
-**ID and name**: A4 analysis_lia_material  
+**ID and name:** A4 analysis_lia_material  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -67,7 +67,7 @@
 **Example:** only malachite analysed 
 
 ## Separation protocol
-**ID and name**: A5 analysis_lia_separation  
+**ID and name:** A5 analysis_lia_separation  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -76,7 +76,7 @@
 *with the two subproperties:*  
 
 ### Description
-**ID and name**: A5.1 analysis_lia_separation_description  
+**ID and name:** A5.1 analysis_lia_separation_description  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -85,7 +85,7 @@
 **Example:** t.b.d.  
 
 ### Publication
-**ID and name**: A5.2 analysis_lia_separation_publication  
+**ID and name:** A5.2 analysis_lia_separation_publication  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
@@ -98,7 +98,7 @@
 %}
 
 ## Measurement device 
-**ID and name**: A6 analysis_lia_instrument  
+**ID and name:** A6 analysis_lia_instrument  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -107,7 +107,7 @@
 *with the three subproperties:*  
 
 ### Instrument type
-**ID and name**: A6.1 analysis_lia_instrument_type  
+**ID and name:** A6.1 analysis_lia_instrument_type  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -115,7 +115,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ### Instrument model
-**ID and name**: A6.2 analysis_lia_instrument_model  
+**ID and name:** A6.2 analysis_lia_instrument_model  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -123,16 +123,16 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ### Persistent identifier (PIDinst)
-**ID and name**: A6.3 analysis_lia_instrument_pid  
+**ID and name:** A6.3 analysis_lia_instrument_pid  
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–1  
 **Definition:** The full URL of the instrument's [PIDinst](https://docs.pidinst.org/en/latest/index.html).  
-**Allowed values and other constraints:** is valid a PIDinst  
+**Allowed values and other constraints:** is valid PIDinst  
 **Example:** http://hdl.handle.net/21.11157/cd5777a9-07c4-4e80-a770-9f294f09894d  
 
 ## Analyte Pb concentration
-**ID and name**: A7 analysis_lia_pb_concentration  
+**ID and name:** A7 analysis_lia_pb_concentration  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
@@ -145,7 +145,7 @@
 %}
 
 ## Mean total intensity of analyte
-**ID and name**: A8 analysis_lia_pb_intensity  
+**ID and name:** A8 analysis_lia_pb_intensity  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -154,7 +154,7 @@
 *with the two subproperties:*  
 
 ### Value
-**ID and name**: A8.1 analysis_lia_pb_intensity_value  
+**ID and name:** A8.1 analysis_lia_pb_intensity_value  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -163,36 +163,36 @@
 **Example:** 40.5  
 
 ### Unit
-**ID and name**: A8.2 analysis_lia_pb_intensity_unit  
+**ID and name:** A8.2 analysis_lia_pb_intensity_unit  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** The SI unit in which the mean total intensity is given. Mandatory if [`A8.1 Value`](metadata_analyses.md#81-value) is provided.  
 **Allowed values and other constraints:** controlled vocabulary  
 
-## Reference material
-**ID and name**: A9 analysis_lia_standard  
+## Reference materials
+**ID and name:** A9 analysis_lia_standard-pb  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n 
-**Definition:** Information about the reference material(s) used during the analysis for quality control and/or correction of instrumental fractionation.  
+**Definition:** Information about the reference material(s) for lead isotopes used during the analysis for quality control and/or correction of instrumental fractionation.  
 
 *with the three subproperties:*  
 
-### Name
-**ID and name**: A9.1 analysis_lia_standard_name  
+### Name of lead isotope reference material
+**ID and name:** A9.1 analysis_lia_standard-pb_name  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
-**Definition:** The name of the reference material.  
+**Definition:** The name of the reference material for lead isotopes.  
 **Allowed values and other constraints:** controlled vocabulary  
 
-### Publication
-**ID and name**: A9.2 analysis_lia_standard_publication  
+### Publication of lead isotope reference material
+**ID and name:** A9.2 analysis_lia_standard-pb_publication  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
-**Definition:** Publication of the reference material's lead isotope ratios used for mass bias correction.  
+**Definition:** Publication reporting the values of the reference material's lead isotope ratios used for mass bias correction. These are not necessarily the values originally published for the reference material.  
 
 {%
   include-markdown "../includes/metadata_blocks.md"
@@ -200,8 +200,8 @@
   end="<!--relation-end-->"
 %}
 
-### Measured values
-**ID and name**: A9.3 analysis_lia_standard_measured  
+### Measured values of lead isotope reference material
+**ID and name:** A9.3 analysis_lia_standard-pb_measured  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
@@ -213,8 +213,43 @@
   end="<!--lia-end-->"
 %}
 
+### Name of thallium isotope reference material
+**ID and name:** A9.4 analysis_lia_standard-tl_name  
+**Provided by:** data provider  
+**Obligation:** recommended  
+**Occurrences:** 0–1  
+**Definition:** The name of the thallium reference material used during the analysis for quality control and/or correction of instrumental fractionation.  
+**Allowed values and other constraints:** controlled vocabulary  
+
+### Measured ^205^Tl/^203^Tl ratio of thallium isotope reference material
+**ID and name:** A9.5 analysis_lia_standard-tl_measured  
+**Provided by:** data provider  
+**Obligation:** recommended  
+**Occurrences:** 0–1  
+**Definition:** The measured ^205^Tl/^203^Tl ratio of the reference material.  
+**Allowed values and other constraints:** decimal number  
+**Example:** 2.38714  
+
+### Concentration of the thallum isotope reference material
+**ID and name:** A9.6 analysis_lia_standard-tl_concentration  
+**Provided by:** data provider  
+**Obligation:** optional  
+**Occurrences:** 0–1  
+**Definition:** The concentration of the thallium reference material added to the sample in ppb (e.g. ng/g, µg/l).  
+**Allowed values and other constraints:** number  
+**Example:** 100  
+
+
+## Mass bias correction model
+**ID and name:** A10 analysis_lia_correction  
+**Provided by:** data provider  
+**Obligation:** recommended  
+**Occurrences:** 0–1  
+**Definition:** The model used for mass bias correction of the lead isotope data.  
+**Allowed values and other constraints:** controlled vocabulary  
+
 ## Laboratory
-**ID and name**: A10 analysis_lia_laboratory  
+**ID and name:** A11 analysis_lia_laboratory  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -227,7 +262,7 @@
 %}  
 
 ## Date of analysis
-**ID and name**: A11 analysis_lia_date  
+**ID and name:** A12 analysis_lia_date  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -236,7 +271,7 @@
 **Example:** 2024-02-24  
 
 ## Description
-**ID and name**: A12 analysis_lia_description  
+**ID and name:** A13 analysis_lia_description  
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–1  
@@ -245,7 +280,7 @@
 **Example:** t.b.d.  
 
 ## Lead isotope ratios
-**ID and name**: A13 analysis_lia_ratio  
+**ID and name:** A14 analysis_lia_ratio  
 **Provided by:** data provider, TerraLID system  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -258,7 +293,7 @@
 %}
 
 ## Age model parameters
-**ID and name**: A14 analysis_lia_age_model  
+**ID and name:** A15 analysis_lia_age_model  
 **Provided by:** TerraLID system  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
@@ -271,7 +306,7 @@
 %}
 
 ## Relations
-**ID and name**: A15 analysis_lia_relation  
+**ID and name:** A16 analysis_lia_relation  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** –n  

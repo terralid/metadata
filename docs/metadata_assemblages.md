@@ -1,5 +1,5 @@
 ## TerraLID ID
-**ID and name**: AS0 terralid_assemblage_id  
+**ID and name:** AS0 terralid_assemblage_id  
 **Provided by:** TerraLID system  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -8,7 +8,7 @@
 **Example:** t.b.d.  
 
 ## Assemblage type
-**ID and name**: AS1 assemblage_type  
+**ID and name:** AS1 assemblage_type  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -16,7 +16,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ## Investigation type
-**ID and name**: AS2 assemblage_investigation  
+**ID and name:** AS2 assemblage_investigation  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -24,7 +24,7 @@
 **Allowed values and other constraints:** controlled vocabulary
 
 ## Invstigation unit
-**ID and name**: AS3 assemblage_investigation_unit  
+**ID and name:** AS3 assemblage_investigation_unit  
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–n  
@@ -33,7 +33,7 @@
 *with the two subproperties:*  
 
 ### Type
-**ID and name**: AS3.1 assemblage_investigation_unit_type  
+**ID and name:** AS3.1 assemblage_investigation_unit_type  
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–n  
@@ -41,7 +41,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ### Identifier
-**ID and name**: AS3.2 assemblage_investigation_unit_value  
+**ID and name:** AS3.2 assemblage_investigation_unit_value  
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–n  
@@ -50,7 +50,7 @@
 **Example:** 13; A1-B2  
 
 ## Stratigraphy
-**ID and name**: AS4 assemblage_stratigraphy  
+**ID and name:** AS4 assemblage_stratigraphy  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -59,7 +59,7 @@
 *with the four subproperties:*  
 
 ### Context
-**ID and name**: AS4.1 assemblage_stratigraphy_context  
+**ID and name:** AS4.1 assemblage_stratigraphy_context  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -67,7 +67,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ### Unit
-**ID and name**: AS4.2 assemblage_stratigraphy_unit  
+**ID and name:** AS4.2 assemblage_stratigraphy_unit  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -76,7 +76,7 @@
 **Example:** host rock, pit 13  
 
 ### Site diagram
-**ID and name**: AS4.3 assemblage_site_diagram  
+**ID and name:** AS4.3 assemblage_site_diagram  
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–1  
@@ -85,7 +85,7 @@
 **Example:** t.b.d.  
 
 ### Description
-**ID and name**: AS4.4 assemblage_stratigraphy_description  
+**ID and name:** AS4.4 assemblage_stratigraphy_description  
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–1  
@@ -94,7 +94,7 @@
 **Example:** Traces of extensive rodent activity indicates mixing with material from overlying stratigraphic units.  
 
 ## Assemblage depth
-**ID and name**: AS5 assemblage_depth  
+**ID and name:** AS5 assemblage_depth  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -103,7 +103,7 @@
 *with the three subproperties:*  
 
 ### Reference point
-**ID and name**: AS5.1 assemblage_depth_reference  
+**ID and name:** AS5.1 assemblage_depth_reference  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 0–1  
@@ -112,16 +112,16 @@
 **Example:** Top of infilling  
 
 ### Value
-**ID and name**: AS5.2 assemblage_depth_value  
+**ID and name:** AS5.2 assemblage_depth_value  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 0–1  
-**Definition:** The depth value of the assemblage measures from the reference point.  
+**Definition:** The depth value of the assemblage measured from the reference point.  
 **Allowed values and other constraints:** decimal number  
 **Example:** 5.6  
 
 ### Unit
-**ID and name**: AS5.3 assemblage_depth_unit  
+**ID and name:** AS5.3 assemblage_depth_unit  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -129,7 +129,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ## Relations
-**ID and name**: AS6 assemblage_relation  
+**ID and name:** AS6 assemblage_relation  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  

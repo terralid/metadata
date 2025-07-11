@@ -1,7 +1,7 @@
 # Glass
 
 ## Production context
-**ID and name**: OG1 material_glass_production_context  
+**ID and name:** OG1 material_glass_production_context  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -9,7 +9,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ## Recycling
-**ID and name**: OG2 material_glass_recycling  
+**ID and name:** OG2 material_glass_recycling  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -18,7 +18,7 @@
 *with the two subproperties:*  
 
 ### Indication for recycling
-**ID and name**: OG2.1 material_glass_recycling_indicator  
+**ID and name:** OG2.1 material_glass_recycling_indicator  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -26,7 +26,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ### Indicators
-**ID and name**: OG2.2 material_glass_recycling_reason  
+**ID and name:** OG2.2 material_glass_recycling_reason  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -35,7 +35,7 @@
 **Example:** mixture of different glass pastes  
 
 ## Chemical composition
-**ID and name**: OG3 material_glass_chemistry  
+**ID and name:** OG3 material_glass_chemistry  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1-n  
@@ -48,7 +48,7 @@
 %}
 
 ## Glass group
-**ID and name**: OG4 material_glass_group  
+**ID and name:** OG4 material_glass_group  
 **Provided by:** TerraLID system  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -56,7 +56,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ## Glass colour
-**ID and name**: OG5 material_glass_colour  
+**ID and name:** OG5 material_glass_colour  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -64,7 +64,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ## Colourant
-**ID and name**: OG6 material_glass_colourant  
+**ID and name:** OG6 material_glass_colourant  
 **Provided by:** TerraLID system  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -73,7 +73,7 @@
 **Example:** Cu  
 
 ## Decolourant
-**ID and name**: OG7 material_glass_decolourant  
+**ID and name:** OG7 material_glass_decolourant  
 **Provided by:** TerraLID system  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -81,7 +81,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ## Lead source
-**ID and name**: OG8 material_glass_lead_source  
+**ID and name:** OG8 material_glass_lead_source  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -89,7 +89,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ## Sr isotopes
-**ID and name**: OG9 material_glass_isotopes_Sr  
+**ID and name:** OG9 material_glass_isotopes_Sr  
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–n  
@@ -98,7 +98,7 @@
 *with the two subproperties:*  
 
 ### Value
-**ID and name**: OG9.1 material_glass_isotopes_Sr_value  
+**ID and name:** OG9.1 material_glass_isotopes_Sr_value  
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–1  
@@ -107,7 +107,7 @@
 **Example:** 0.7856  
 
 ### Analytical precision
-**ID and name**: OG9.2 material_glass_isotopes_Sr_2SD  
+**ID and name:** OG9.2 material_glass_isotopes_Sr_2SD  
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–1  
@@ -116,7 +116,7 @@
 **Example:** 0.0002 
 
 ## Nd isotopes
-**ID and name**: OG10 material_glass_isotopes_Nd  
+**ID and name:** OG10 material_glass_isotopes_Nd  
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–n  
@@ -125,7 +125,7 @@
 *with the two subproperties:*  
 
 ### Value
-**ID and name**: OG10.1 material_glass_isotopes_Nd_value  
+**ID and name:** OG10.1 material_glass_isotopes_Nd_value  
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–1  
@@ -134,7 +134,7 @@
 **Example:** t.b.d. 
 
 ### Analytical precision
-**ID and name**: OG10.2 material_glass_isotopes_Nd_2SD  
+**ID and name:** OG10.2 material_glass_isotopes_Nd_2SD  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -143,7 +143,7 @@
 **Example:** t.b.d. 
 
 ## Hf isotopes
-**ID and name**: OG11 material_glass_isotopes_Hf  
+**ID and name:** OG11 material_glass_isotopes_Hf  
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–n  
@@ -152,7 +152,7 @@
 *with the two subproperties:*  
 
 ### Value
-**ID and name**: OG11.1 material_glass_isotopes_Hf_value  
+**ID and name:** OG11.1 material_glass_isotopes_Hf_value  
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–1  
@@ -161,7 +161,7 @@
 **Example:** t.b.d. 
 
 ### Analytica precision
-**ID and name**: OG11.2 material_glass_isotopes_Hf_2SD  
+**ID and name:** OG11.2 material_glass_isotopes_Hf_2SD  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -170,7 +170,7 @@
 **Example:** t.b.d. 
 
 ## O isotopes
-**ID and name**: OG12 material_glass_isotopes_O  
+**ID and name:** OG12 material_glass_isotopes_O  
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–n  
@@ -179,7 +179,7 @@
 *with the two subproperties:*  
 
 ### Value
-**ID and name**: OG12.1 material_glass_isotopes_O_value  
+**ID and name:** OG12.1 material_glass_isotopes_O_value  
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–1  
@@ -188,7 +188,7 @@
 **Example:** t.b.d. 
 
 ### Analytical precision
-**ID and name**: OG12.2 material_glass_isotopes_O_SD  
+**ID and name:** OG12.2 material_glass_isotopes_O_SD  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -197,7 +197,7 @@
 **Example:** t.b.d. 
 
 ## Glass corrosion
-**ID and name**: OG13 material_glass_corrosion  
+**ID and name:** OG13 material_glass_corrosion  
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–n  
@@ -206,7 +206,7 @@
 *with the two subproperties:*  
 
 ### Extent
-**ID and name**: OG13.1 material_glass_corrosion_extent  
+**ID and name:** OG13.1 material_glass_corrosion_extent  
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 1  
@@ -214,7 +214,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ### Details
-**ID and name**: OG13.2 material_glass_corrosion_reason  
+**ID and name:** OG13.2 material_glass_corrosion_reason  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  

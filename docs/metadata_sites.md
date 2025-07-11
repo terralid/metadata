@@ -1,6 +1,6 @@
 ## TerraLID ID
 
-**ID and name**: SI0 terralid_site_id  
+**ID and name:** SI0 terralid_site_id  
 **Provided by:** TerraLID system  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -9,7 +9,7 @@
 **Example:** t.b.d.  
 
 ## Site name
-**ID and name**: SI1 site_name  
+**ID and name:** SI1 site_name  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -18,7 +18,7 @@
 **Example:** Agrileza  
 
 ## Project name
-**ID and name**: SI2 project_name  
+**ID and name:** SI2 project_name  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -27,7 +27,7 @@
 **Example:** The Dreamland University Archaeometallurgy project.  
 
 ## Project context
-**ID and name**: SI3 project_context  
+**ID and name:** SI3 project_context  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -36,7 +36,7 @@
 **Example:** Excavation of an ore washing site.  
 
 ## Site identifier
-**ID and name**: SI4 site_id  
+**ID and name:** SI4 site_id  
 **Provided by:** Data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
@@ -45,7 +45,7 @@
 *with the two subproperties:*
 
 ### Value 
-**ID and name**: SI4.1 site_id_value  
+**ID and name:** SI4.1 site_id_value  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
@@ -54,7 +54,7 @@
 **Example:** Q129256661  
 
 ### Type
-**ID and name**: SI4.2 site_id_type  
+**ID and name:** SI4.2 site_id_type  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -62,7 +62,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ## Geolocation
-**ID and name**: SI5 site_geolocation  
+**ID and name:** SI5 site_geolocation  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -71,7 +71,7 @@
 *Subproperties of Geolocation are:*  
 
 ### Point
-**ID and name**: SI5.1 site_geolocation_point  
+**ID and name:** SI5.1 site_geolocation_point  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -80,7 +80,7 @@
 *with the two subproperties:*  
 
 #### Longitude
-**ID and name**: SI5.1.1 site_geolocation_point_longitude  
+**ID and name:** SI5.1.1 site_geolocation_point_longitude  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -89,7 +89,7 @@
 **Example:** 7.21685  
 
 #### Latitude
-**ID and name**: SI5.1.2 site_geolocation_point_latitude  
+**ID and name:** SI5.1.2 site_geolocation_point_latitude  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -98,7 +98,7 @@
 **Example:** 51.48867  
 
 ### Boundary box
-**ID and name**: SI5.2 site_geolocation_box  
+**ID and name:** SI5.2 site_geolocation_box  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -107,7 +107,7 @@
 *with the four subproperties:*  
 
 #### Western boundary
-**ID and name**: SI5.2.1 site_geolocation_box_west  
+**ID and name:** SI5.2.1 site_geolocation_box_west  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -116,7 +116,7 @@
 **Example:** 21.02  
 
 #### Eastern boundary
-**ID and name**: SI5.2.2 site_geolocation_box_east  
+**ID and name:** SI5.2.2 site_geolocation_box_east  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -125,7 +125,7 @@
 **Example:** 21.05  
 
 #### Southern boundary
-**ID and name**: SI5.2.3 site_geolocation_box_south  
+**ID and name:** SI5.2.3 site_geolocation_box_south  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -134,7 +134,7 @@
 **Example:** 40.23  
 
 #### Northern boundary
-**ID and name**: SI5.2.4 site_geolocation_box_north  
+**ID and name:** SI5.2.4 site_geolocation_box_north  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -143,7 +143,7 @@
 **Example:** 40.53  
 
 ### Description
-**ID and name**: SI5.3 site_geolocation_description  
+**ID and name:** SI5.3 site_geolocation_description  
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–1  
@@ -152,7 +152,7 @@
 **Example:** Entire valley given to obfuscate exact location of site as protection against illicit excavations; Area of Saudi-Arabia recorded as location because more precise information not available.  
 
 ### Polygon
-**ID and name**: SI5.4 site_geolocation_polygon  
+**ID and name:** SI5.4 site_geolocation_polygon  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -161,7 +161,7 @@
 *with the subproperty:*  
 
 #### Polygon point data
-**ID and name**: SI5.4.1 site_geolocation_polygon_point  
+**ID and name:** SI5.4.1 site_geolocation_polygon_point  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -170,7 +170,7 @@
 *with the two subproperties*  
 
 ##### Longitude
-**ID and name**: SI5.4.1.1 site_geolocation_polygon_point_longitude  
+**ID and name:** SI5.4.1.1 site_geolocation_polygon_point_longitude  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -179,7 +179,7 @@
 **Example:** 7.21685  
 
 ##### Latitude
-**ID and name**: SI5.4.1.2 site_geolocation_polygon_point_latitude  
+**ID and name:** SI5.4.1.2 site_geolocation_polygon_point_latitude  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -188,7 +188,7 @@
 **Example:** 51.48867  
 
 ## Registry
-**ID and name**: SI6 site_registry  
+**ID and name:** SI6 site_registry  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -197,7 +197,7 @@
 *with the two subproperties:*
 
 ### Registry ID
-**ID and name**: SI6.1 site_registry_id  
+**ID and name:** SI6.1 site_registry_id  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -206,7 +206,7 @@
 **Example:** t.b.d.  
 
 ### Registry name
-**ID and name**: SI6.2 site_registry_name  
+**ID and name:** SI6.2 site_registry_name  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -215,7 +215,7 @@
 **Example:** t.b.d.  
 
 ## Dating
-**ID and name**: SI7 site_date  
+**ID and name:** SI7 site_date  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -235,7 +235,7 @@
 %}
 
 ## Site type
-**ID and name**: SI8 site_type  
+**ID and name:** SI8 site_type  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -243,7 +243,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ## Keywords
-**ID and name**: SI9 site_keywords  
+**ID and name:** SI9 site_keywords  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
@@ -252,7 +252,7 @@
 **Example:** ore beneficiation, Laurion  
 
 ## Project dates
-**ID and name**: SI10 project_date  
+**ID and name:** SI10 project_date  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -261,7 +261,7 @@
 *with the two subproperties:*  
 
 ### Start date
-**ID and name**: SI10.1 project_date_start  
+**ID and name:** SI10.1 project_date_start  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -270,7 +270,7 @@
 **Example:** 1980-01-15  
 
 ### End date
-**ID and name**: SI10.2 project_date_end  
+**ID and name:** SI10.2 project_date_end  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
@@ -279,7 +279,7 @@
 **Example:** 2000-04-20  
 
 ## Relations
-**ID and name**: SI11 site_relation  
+**ID and name:** SI11 site_relation  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
