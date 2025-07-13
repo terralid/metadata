@@ -22,7 +22,7 @@
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
-**Definition:** The name of project.  
+**Definition:** The name of the project.  
 **Allowed values and other constraints:** free text. Must be provided if [`SI1 Site name`](metadata_sites.md#1-site-name) has value "unknown".  
 **Example:** The Dreamland University Archaeometallurgy project.  
 
@@ -111,7 +111,7 @@
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
-**Definition:** The western longitudinal dimension of box.  
+**Definition:** The western longitudinal dimension of the box.  
 **Allowed values and other constraints:** decimal number, between -180 and 180  
 **Example:** 21.02  
 
@@ -120,7 +120,7 @@
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
-**Definition:** The eastern longitudinal dimension of box.  
+**Definition:** The eastern longitudinal dimension of the box.  
 **Allowed values and other constraints:** decimal number, between -180 and 180  
 **Example:** 21.05  
 
@@ -129,7 +129,7 @@
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
-**Definition:** The southern latitudinal dimension of box.  
+**Definition:** The southern latitudinal dimension of the box.  
 **Allowed values and other constraints:** decimal number, between -90 and 90  
 **Example:** 40.23  
 
@@ -138,7 +138,7 @@
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
-**Definition:** The northern latitudinal dimension of box.  
+**Definition:** The northern latitudinal dimension of the box.  
 **Allowed values and other constraints:** decimal number, between -90 and 90  
 **Example:** 40.53  
 
@@ -147,7 +147,7 @@
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–1  
-**Definition:** Further information about the site such as a description. If the site's exact location cannot be given, this must include information a reasoning why and information about the level of precision.  
+**Definition:** Further information about the site such as a description. If the site's exact location cannot be given, this must include a reasoning why and information about the level of precision.  
 **Allowed values and other constraints:** free text  
 **Example:** Entire valley given to obfuscate exact location of site as protection against illicit excavations; Area of Saudi-Arabia recorded as location because more precise information not available.  
 

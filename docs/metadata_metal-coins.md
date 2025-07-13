@@ -60,7 +60,7 @@ Coin-specific metadata extent the [metal-specific metadata](metadata_metal.md) a
 
 *with the two subproperties:*  
 
-#### Opening date 
+### Opening date 
 **ID and name:** OM.C7.1 material_coin_date_from (`nmo:hasNumismaticOpeningDate`)  
 **Provided by:** Nomisma API, data provider  
 **Obligation:** recommended  
@@ -69,7 +69,7 @@ Coin-specific metadata extent the [metal-specific metadata](metadata_metal.md) a
 **Allowed values and other constraints:** integer   
 **Example:** -25  
 
-#### Closing date 
+### Closing date 
 **ID and name:** OM.C7.2 material_coin_date_to (`nmo:hasNumismaticClosingDate`)  
 **Provided by:** Nomisma API, data provider  
 **Obligation:** recommended  
@@ -86,8 +86,8 @@ Coin-specific metadata extent the [metal-specific metadata](metadata_metal.md) a
 **Definition:** Describes the method of manufacture of a numismatic object.  
 **Allowed values and other constraints:** controlled vocabulary  
 
-## Pecularity of Production 
-**ID and name:** OM.C9 material_coin_pecularity_production (`nmo:PecularityOfProduction`)  
+## Peculiarity of Production 
+**ID and name:** OM.C9 material_coin_peculiarity_production (`nmo:PecularityOfProduction`)  
 **Provided by:** Nomisma API, data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  

@@ -44,7 +44,7 @@
 
 ## Pigment composition
 **ID and name:** OP4 material_pigment_composition  
-**Provided by:** data provider 
+**Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** The chemical and/or mineralogical composition of the pigment. At least one of its subproperties must be provided.  

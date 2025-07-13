@@ -23,7 +23,7 @@
 **Definition:** The type of investigation leading to the discovery of the assemblage.  
 **Allowed values and other constraints:** controlled vocabulary
 
-## Invstigation unit
+## Investigation unit
 **ID and name:** AS3 assemblage_investigation_unit  
 **Provided by:** data provider  
 **Obligation:** optional  
@@ -91,7 +91,7 @@
 **Occurrences:** 0–1  
 **Definition:** Additional information about the stratigraphic context not covered elsewhere.  
 **Allowed values and other constraints:** free text  
-**Example:** Traces of extensive rodent activity indicates mixing with material from overlying stratigraphic units.  
+**Example:** Traces of extensive rodent activity indicate mixing with material from overlying stratigraphic units.  
 
 ## Assemblage depth
 **ID and name:** AS5 assemblage_depth  

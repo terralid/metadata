@@ -174,7 +174,7 @@
 **ID and name:** A9 analysis_lia_standard-pb  
 **Provided by:** data provider  
 **Obligation:** mandatory  
-**Occurrences:** 1–n 
+**Occurrences:** 1–n  
 **Definition:** Information about the reference material(s) for lead isotopes used during the analysis for quality control and/or correction of instrumental fractionation.  
 
 *with the three subproperties:*  
@@ -230,7 +230,7 @@
 **Allowed values and other constraints:** decimal number  
 **Example:** 2.38714  
 
-### Concentration of the thallum isotope reference material
+### Concentration of the thallium isotope reference material
 **ID and name:** A9.6 analysis_lia_standard-tl_concentration  
 **Provided by:** data provider  
 **Obligation:** optional  

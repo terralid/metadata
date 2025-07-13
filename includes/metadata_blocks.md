@@ -72,7 +72,7 @@
 **Occurrences:** 0–n  
 **Definition:** The address of the person's affiliation.  
 **Allowed values and other constraints:** free text  
-**Example:** Teleporter Avenue 123, Ankh–Morpok, Unites Stated of Humanities  
+**Example:** Teleporter Avenue 123, Ankh–Morpok, United States of Humanities  
 
 #### Mail address
 **ID and name:** B1.8 person_mail  
@@ -139,7 +139,7 @@
 **Occurrences:** 0–1  
 **Definition:** Address of the institution.   
 **Allowed values and other constraints:** free text  
-**Example:** Teleporter Avenue 123, Ankh–Morpok, Unites States of Humanities  
+**Example:** Teleporter Avenue 123, Ankh–Morpok, United States of Humanities  
 
 ##### Storage location
 **ID and name:** B2.1.4 status_institution_location  
@@ -194,7 +194,7 @@
 **Obligation:** recommended  
 **Occurrences:** 0–1  
 **Definition:** The value of the persistent identifier.   
-**Allowed values and other constraints:** The periods's persistent identifier in one or more of the data infrastructures listed in `B3.1.2 Type`.  
+**Allowed values and other constraints:** The period's persistent identifier in one or more of the data infrastructures listed in `B3.1.2 Type`.  
 **Example:** 99152/p0qhb66vvth  
 
 ##### Type
@@ -272,7 +272,7 @@
 **Provided by:** data provider, API  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
-**Definition:** The relative date expressed as chronological unit.   
+**Definition:** The relative date expressed as a chronological unit.   
 **Allowed values and other constraints:** free text  
 **Example:** Ha B2; Emsium  
 
@@ -298,7 +298,7 @@
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
-**Definition:** The relative date expressed as orogenic event.  
+**Definition:** The relative date expressed as anorogenic event.  
 **Allowed values and other constraints:** controlled vocabulary, only available if `B3.2 Date type` = "geological".  
 
 #### Definition of chronological unit
@@ -599,7 +599,7 @@
 #### Kappa
 **ID and name:** B7.6 lia_kappa  
 **Provided by:** TerraLID system  
-**Obligation:** repcommended  
+**Obligation:** recommended  
 **Occurrences:** 0–1  
 **Definition:** Value of kappa (κ).   
 **Allowed values and other constraints:** decimal number  

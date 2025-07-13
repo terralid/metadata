@@ -51,14 +51,14 @@
 **Occurrences:** 0–1  
 **Definition:** (Detailed) description of the object. Should include information about the object and its collection not captured in other properties. For example, the primary reason for object collection or selection in terms of analytics.  
 **Allowed values and other constraints:** free text  
-**Example:** Galena-rich sediment from washing pit.  
+**Example:** Galena-rich sediment from the washing pit.  
 
 ## Object identifiers
 **ID and name:** O5 object_identifiers  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
-**Definition:** Identifiers associated to the object.  
+**Definition:** Identifiers associated with the object.  
 
 *with the four subproperties:*  
 
@@ -136,7 +136,7 @@
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
-**Definition:** The stage of the objects life cycle when the object was stored in the material recorded in [`O8.1 Housing material`](metadata_objects.md#82-stage-of-storage). Mandatory if [`O8.1 Housing material`](metadata_objects.md#82-stage-of-storage) is provided.  
+**Definition:** The stage of the object's life cycle when the object was stored in the material recorded in [`O8.1 Housing material`](metadata_objects.md#82-stage-of-storage). Mandatory if [`O8.1 Housing material`](metadata_objects.md#82-stage-of-storage) is provided.  
 **Allowed values and other constraints:** controlled vocabulary  
 
 ## Object photo
@@ -284,7 +284,7 @@
 **Occurrences:** 0–1  
 **Definition:** Information about potential contamination or treatment of the object that might impact the relevance of retrieved information (e.g. by post-depositional processes or conservation treatment).  
 **Allowed values and other constraints:** free text  
-**Example:** Galvanic restauration of the surface in 1967  
+**Example:** Galvanic restoration of the surface in 1967  
 
 ## Status of object
 **ID and name:** O17 object_status  
