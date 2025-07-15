@@ -16,7 +16,7 @@
 **Occurrences:** 0–n  
 **Definition:** The ID(s) of the analysis in a laboratory and/or another database.  
 **Allowed values and other constraints:** free text  
-**Example:**  
+**Example:**  2024-TR01  
 
 ## Analysis type
 **ID and name:** A2 analysis_lia_type  
@@ -299,11 +299,88 @@
 **Occurrences:** 0–n  
 **Definition:** Age model parameters calculated from the mass-bias corrected lead isotope ratios.  
 
-{%
-  include-markdown "../includes/metadata_blocks.md"
-  start="<!--agemodel-start-->"
-  end="<!--agemodel-end-->"
-%}
+*with the nine subproperties:*  
+
+### Age model name
+**ID and name:** A15.1 analysis_lia_age_model_name  
+**Provided by:** TerraLID system  
+**Obligation:** mandatory  
+**Occurrences:** 1  
+**Definition:** The age model used for calculating the parameters  
+**Allowed values and other constraints:** SK75, CR75, AJ84, representing the age models defined by [Stacey & Kramers (1975)](https://dx.doi.org/10.1016/0012-821X(75)90088-6), [Cumming & Richards (1975)](https://dx.doi.org/10.1016/0012-821X(75)90223-X), and [Albarède & Juteau (1984)](https://dx.doi.org/10.1016/0016-7037(84)90364-8), respectively.  
+**Example:** SK75  
+
+### Model age
+**ID and name:** A15.2 analysis_lia_age_model_Tmod  
+**Provided by:** TerraLID system  
+**Obligation:** recommended  
+**Occurrences:** 0–1  
+**Definition:** Value of the model age in million years (Ma).   
+**Allowed values and other constraints:** decimal number  
+**Example:** 250.54  
+
+### Uncertainty of model age
+**ID and name:** A15.3 analysis_lia_age_model_Tmod_uncertainty  
+**Provided by:** TerraLID system  
+**Obligation:** recommended  
+**Occurrences:** 0–1  
+**Definition:** Uncertainty of the model age.  
+**Allowed values and other constraints:** decimal number  
+**Example:** t.b.d.  
+
+### Mu
+**ID and name:** A15.4 analysis_lia_age_model_mu  
+**Provided by:** TerraLID system  
+**Obligation:** recommended  
+**Occurrences:** 0–1  
+**Definition:** Value of mu (µ).   
+**Allowed values and other constraints:** decimal number  
+**Example:** 9.86  
+
+### Uncertainty of mu
+**ID and name:** A15.5 analysis_lia_age_model_mu_uncertainty  
+**Provided by:** TerraLID system  
+**Obligation:** recommended  
+**Occurrences:** 0–1  
+**Definition:** Uncertainty of mu.  
+**Allowed values and other constraints:** decimal number  
+**Example:** t.b.d.  
+
+### Kappa
+**ID and name:** A15.6 analysis_lia_age_model_kappa  
+**Provided by:** TerraLID system  
+**Obligation:** recommended  
+**Occurrences:** 0–1  
+**Definition:** Value of kappa (κ).   
+**Allowed values and other constraints:** decimal number  
+**Example:** 3.92  
+
+### Uncertainty of kappa
+**ID and name:** A15.7 analysis_lia_age_model_kappa_uncertainty  
+**Provided by:** TerraLID system  
+**Obligation:** recommended  
+**Occurrences:** 0–1  
+**Definition:** Uncertainty of kappa.  
+**Allowed values and other constraints:** decimal number  
+**Example:** t.b.d.  
+
+### Omega
+**ID and name:** A15.8 analysis_lia_age_model_omega  
+**Provided by:** TerraLID system  
+**Obligation:** recommended  
+**Occurrences:** 0–1  
+**Definition:** Value of omega (ω).   
+**Allowed values and other constraints:** decimal number  
+**Example:** t.b.d.  
+
+### Uncertainty of omega
+**ID and name:** A15.9 analysis_lia_age_model_omega_uncertainty  
+**Provided by:** TerraLID system  
+**Obligation:** recommended  
+**Occurrences:** 0–1  
+**Definition:** Uncertainty of omega.  
+**Allowed values and other constraints:** decimal number  
+**Example:** t.b.d. 
 
 ## Relations
 **ID and name:** A16 analysis_lia_relation  

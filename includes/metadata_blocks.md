@@ -465,7 +465,7 @@
 
 <!--relation-end-->
 
-#### Lead isotope ratio
+### Lead isotope ratio
 **ID and name:** B6 lia_ratio  
 **Provided by:** data provider  
 **Obligation:** recommended  
@@ -539,98 +539,3 @@
 **Example:** original  
 
 <!--lia-end-->
-
-### Age models
-**ID and name:** B7 lia_model  
-**Provided by:** TerraLID system  
-**Obligation:** recommended  
-**Occurrences:** 0–1  
-**Definition:** Information about lead isotope age model.   
-
-<!--agemodel-start-->
-
-*with the nine subproperties:*  
-
-#### Age model name
-**ID and name:** B7.1 lia_model_name  
-**Provided by:** TerraLID system  
-**Obligation:** mandatory  
-**Occurrences:** 1  
-**Definition:** The age model used for calculating the parameters  
-**Allowed values and other constraints:** SK75, CR75, AJ84, representing the age models defined by [Stacey & Kramers (1975)](https://dx.doi.org/10.1016/0012-821X(75)90088-6), [Cumming & Richards (1975)](https://dx.doi.org/10.1016/0012-821X(75)90223-X), and [Albarède & Juteau (1984)](https://dx.doi.org/10.1016/0016-7037(84)90364-8), respectively.  
-**Example:** SK75  
-
-#### Model age
-**ID and name:** B7.2 lia_Tmod  
-**Provided by:** TerraLID system  
-**Obligation:** recommended  
-**Occurrences:** 0–1  
-**Definition:** Value of the model age in million years (Ma).   
-**Allowed values and other constraints:** decimal number  
-**Example:** 250.54  
-
-#### Uncertainty of model age
-**ID and name:** B7.3 lia_Tmod_uncertainty  
-**Provided by:** TerraLID system  
-**Obligation:** recommended  
-**Occurrences:** 0–1  
-**Definition:** Uncertainty of the model age.  
-**Allowed values and other constraints:** decimal number  
-**Example:** t.b.d.  
-
-#### Mu
-**ID and name:** B7.4 lia_mu  
-**Provided by:** TerraLID system  
-**Obligation:** recommended  
-**Occurrences:** 0–1  
-**Definition:** Value of mu (µ).   
-**Allowed values and other constraints:** decimal number  
-**Example:** 9.86  
-
-#### Uncertainty of mu
-**ID and name:** B7.5 lia_mu_uncertainty  
-**Provided by:** TerraLID system  
-**Obligation:** recommended  
-**Occurrences:** 0–1  
-**Definition:** Uncertainty of mu.  
-**Allowed values and other constraints:** decimal number  
-**Example:** t.b.d.  
-
-#### Kappa
-**ID and name:** B7.6 lia_kappa  
-**Provided by:** TerraLID system  
-**Obligation:** recommended  
-**Occurrences:** 0–1  
-**Definition:** Value of kappa (κ).   
-**Allowed values and other constraints:** decimal number  
-**Example:** 3.92  
-
-#### Uncertainty of kappa
-**ID and name:** B7.7 lia_kappa_uncertainty  
-**Provided by:** TerraLID system  
-**Obligation:** recommended  
-**Occurrences:** 0–1  
-**Definition:** Uncertainty of kappa.  
-**Allowed values and other constraints:** decimal number  
-**Example:** t.b.d.  
-
-#### Omega
-**ID and name:** B7.8 lia_omega  
-**Provided by:** TerraLID system  
-**Obligation:** recommended  
-**Occurrences:** 0–1  
-**Definition:** Value of omega (ω).   
-**Allowed values and other constraints:** decimal number  
-**Example:** t.b.d.  
-
-#### Uncertainty of omega
-**ID and name:** B7.9 lia_omega_uncertainty  
-**Provided by:** TerraLID system  
-**Obligation:** recommended  
-**Occurrences:** 0–1  
-**Definition:** Uncertainty of omega.  
-**Allowed values and other constraints:** decimal number  
-**Example:** t.b.d.  
-
-<!--agemodel-end-->
-
