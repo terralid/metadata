@@ -51,6 +51,23 @@
     
     
     
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+     _paq.push(['trackPageView']);
+     _paq.push(['enableLinkTracking']);
+     (function() {
+       var u="https://stats.thga.de/";
+       _paq.push(['setTrackerUrl', u+'matomo.php']);
+       _paq.push(['setSiteId', '17']);
+       var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+       g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+     })();
+  </script>
+  <!-- End Matomo Code -->
+  
+
   </head>
   
   
@@ -738,17 +755,17 @@
 
 
 
-<h1 id="terralid-metadata-profile-for-lead-isotope-data-in-archaeology">TerraLID metadata profile for lead isotope data in archaeology</h1>
+<h1 id="terralid-metadata-profile-for-lead-isotope-data-in-archaeology">TerraLID metadata profile for Lead Isotope Data in Archaeology</h1>
 <!---
 !!! info "Recommended citation"
 
-    TerraLID Team (2025), TerraLID Metadata profile. Version 0.1. https://metadata.terralid.org
+    TerraLID Team (2025), TerraLID Metadata profile. v0.1. https://metadata.terralid.org
 -->
 
 <div class="admonition warning">
 <p class="admonition-title">Community feedback process ongoing</p>
 <p>This initial version of the TerraLID metadata profile is under discussion by the community until <strong>October 15, 2025</strong>. It will be revised according to the received feedback before publication, resulting in changes of the version presented here. </p>
-<p>Comment and discuss the draft asynchronously in our <a href="">collaborative document</a> and/or join our drop-in calls to discuss with the TerraLID team: </p>
+<p>Comment and discuss the draft asynchronously in our <a href="https://docs.google.com/document/d/1_Fixjrs8GvNSleWrBjAwYok4b28-Bf52ZzggZAykSTk/edit?usp=sharing">collaborative document</a> and/or join our drop-in calls to discuss with the TerraLID team: </p>
 <ul>
 <li><a href="https://www.timeanddate.com/worldclock/converter.html?iso=20250731T080000&amp;p1=1440">Thursday, 31 July, 2025, 8:00 UTC</a></li>
 <li><a href="https://www.timeanddate.com/worldclock/converter.html?iso=20250731T140000&amp;p1=1440">Thursday, 31 July, 2025, 14:00 UTC</a></li>
@@ -764,30 +781,32 @@
 </div>
 <p>Contributors to the TerraLID metadata profile in alphabetical order: </p>
 <ul>
-<li>Andrea Acevedo Mejía <a href="https://orcid.org/0009-0002-7441-1737"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a>, Austrian Archeological Institute <a href="https://ror.org/02gqw3a90"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
-<li>María Florencia Becerra <a href="https://orcid.org/0000-0001-6302-7452"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a>, Universidad Nacional de La Plata <a href="https://ror.org/01tjs6929"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
+<li>Andrea Acevedo Mejía <a href="https://orcid.org/0009-0002-7441-1737"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a> , Austrian Archeological Institute <a href="https://ror.org/02gqw3a90"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
+<li>María Florencia Becerra <a href="https://orcid.org/0000-0001-6302-7452"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a> , Universidad Nacional de La Plata <a href="https://ror.org/01tjs6929"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
 <li>Meghna Desai, The Cyprus Institute <a href="https://ror.org/01q8k8p90"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
-<li>Laure Dussubieux <a href="https://orcid.org/0000-0002-9334-8131"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a>, Field Museum of Natural History <a href="https://ror.org/00mh9zx15"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
-<li>Thomas R. Fenn <a href="https://orcid.org/0000-0001-8560-6797"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a>, University of Oklahoma <a href="https://ror.org/02aqsxs83"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
-<li>Sonia García de Madinabeitia <a href="https://orcid.org/0000-0002-3648-6490"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a>, University of the Basque Country <a href="https://ror.org/000xsnr85"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
+<li>Laure Dussubieux <a href="https://orcid.org/0000-0002-9334-8131"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a> , Field Museum of Natural History <a href="https://ror.org/00mh9zx15"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
+<li>Thomas R. Fenn <a href="https://orcid.org/0000-0001-8560-6797"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a> , University of Oklahoma <a href="https://ror.org/02aqsxs83"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
+<li>Sonia García de Madinabeitia <a href="https://orcid.org/0000-0002-3648-6490"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a> , University of the Basque Country <a href="https://ror.org/000xsnr85"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
 <li>Annette Hornschuch, Deutsches Bergbau-Museum Bochum <a href="https://ror.org/03k7cjr94"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
-<li>Yiu-Kang (Gary) Hsu <a href="https://orcid.org/0000-0002-2439-4863"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a>, Deutsches Bergbau-Museum Bochum <a href="https://ror.org/03k7cjr94"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
-<li>Sabine Klein <a href="https://orcid.org/0000-0002-3939-4428"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a>, Deutsches Bergbau-Museum Bochum <a href="https://ror.org/03k7cjr94"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
+<li>Yiu-Kang (Gary) Hsu <a href="https://orcid.org/0000-0002-2439-4863"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a> , Deutsches Bergbau-Museum Bochum <a href="https://ror.org/03k7cjr94"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
+<li>Sabine Klein <a href="https://orcid.org/0000-0002-3939-4428"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a> , Deutsches Bergbau-Museum Bochum <a href="https://ror.org/03k7cjr94"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
 <li>Malte Kottmann, Technische Hochschule Georg Agricola <a href="https://ror.org/033jd5r25"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
-<li>Maxime L'Héritier <a href="https://orcid.org/0000-0003-3428-2977"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a>, Université Paris 8 <a href="https://ror.org/04wez5e68"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
-<li>Siran Liu <a href="https://orcid.org/0000-0001-9250-4561"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a>, University of Science and Technology Beijing <a href="https://ror.org/02egmk993"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
-<li>Nima Nezafati <a href="https://orcid.org/0000-0002-5806-343X"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a>, Leibniz-Forschungsmuseum für  Georessourcen/Deutsches Bergbau-Museum Bochum <a href="https://ror.org/03k7cjr94"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
-<li>T. O. Pryce <a href="https://orcid.org/0000-0002-7290-141X"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a>, Institut de Recherche sur les ArchéoMATériaux of the Centre National de la Recherche Scientifique <a href="https://ror.org/01cw28e72"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
-<li>Frederik Rademakers <a href="https://orcid.org/0000-0002-6036-1612"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a>, British Museum <a href="https://ror.org/00pbh0a34"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
-<li>Virginie Renson <a href="https://orcid.org/0000-0002-5701-0985"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a>, University of Missouri <a href="https://ror.org/02ymw8z06"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
-<li>Alexandra Rodler-Rørbo <a href="https://orcid.org/0000-0002-4087-7160"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a>, Austrian Archeological Institute <a href="https://ror.org/02gqw3a90"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
-<li>Thomas Rose <a href="https://orcid.org/0000-0002-8186-3566"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a>, Deutsches Bergbau-Museum Bochum <a href="https://ror.org/03k7cjr94"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
-<li>Jay Stephens <a href="https://orcid.org/0000-0003-1299-3946"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a>, University of Missouri <a href="https://ror.org/02ymw8z06"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
-<li>Alicia Van Ham-Meert <a href="https://orcid.org/0000-0001-6796-3141"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a>, Université Libre de Bruxelles <a href="https://ror.org/01r9htc13"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
-<li>Katrin J. Westner <a href="https://orcid.org/0000-0001-5529-1165"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a>, Deutsches Bergbau-Museum Bochum <a href="https://ror.org/03k7cjr94"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
+<li>Maxime L'Héritier <a href="https://orcid.org/0000-0003-3428-2977"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a> , Université Paris 8 <a href="https://ror.org/04wez5e68"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
+<li>Siran Liu <a href="https://orcid.org/0000-0001-9250-4561"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a> , University of Science and Technology Beijing <a href="https://ror.org/02egmk993"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
+<li>Regine Müller <a href="https://orcid.org/0009-0007-5815-4116"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a> , SPAU GmbH</li>
+<li>Nima Nezafati <a href="https://orcid.org/0000-0002-5806-343X"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a> , Leibniz-Forschungsmuseum für  Georessourcen/Deutsches Bergbau-Museum Bochum <a href="https://ror.org/03k7cjr94"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
+<li>T. O. Pryce <a href="https://orcid.org/0000-0002-7290-141X"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a> , Institut de Recherche sur les ArchéoMATériaux of the Centre National de la Recherche Scientifique <a href="https://ror.org/01cw28e72"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
+<li>Frederik Rademakers <a href="https://orcid.org/0000-0002-6036-1612"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a> , British Museum <a href="https://ror.org/00pbh0a34"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
+<li>Virginie Renson <a href="https://orcid.org/0000-0002-5701-0985"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a> , University of Missouri <a href="https://ror.org/02ymw8z06"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
+<li>Alexandra Rodler-Rørbo <a href="https://orcid.org/0000-0002-4087-7160"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a> , Austrian Archeological Institute <a href="https://ror.org/02gqw3a90"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
+<li>Thomas Rose <a href="https://orcid.org/0000-0002-8186-3566"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a> , Deutsches Bergbau-Museum Bochum <a href="https://ror.org/03k7cjr94"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
+<li>Jay Stephens <a href="https://orcid.org/0000-0003-1299-3946"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a> , University of Missouri <a href="https://ror.org/02ymw8z06"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
+<li>Alicia Van Ham-Meert <a href="https://orcid.org/0000-0001-6796-3141"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a> , Université Libre de Bruxelles <a href="https://ror.org/01r9htc13"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
+<li>Céline Tomczyk <a href="https://orcid.org/0000-0001-6181-5914"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a> , Institut de Recherche sur les ArchéoMATériaux of the Centre National de la Recherche Scientifique <a href="https://ror.org/01cw28e72"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
+<li>Katrin J. Westner <a href="https://orcid.org/0000-0001-5529-1165"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a> , Deutsches Bergbau-Museum Bochum <a href="https://ror.org/03k7cjr94"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
 <li>Helge Wiethoff, Technische Hochschule Georg Agricola <a href="https://ror.org/033jd5r25"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
-<li>David Wigg-Wolf <a href="https://orcid.org/0000-0002-8604-544X"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a>, Deutsches Archäologisches Institut, Römisch-Germanische Kommission <a href="https://ror.org/01fqayw81"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
-<li>Grzegorz Żabiński <a href="https://orcid.org/0000-0003-3091-1035"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a>, Jan Długosz University in Częstochowa <a href="https://ror.org/0566yhn94"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
+<li>David Wigg-Wolf <a href="https://orcid.org/0000-0002-8604-544X"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a> , Deutsches Archäologisches Institut, Römisch-Germanische Kommission <a href="https://ror.org/01fqayw81"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
+<li>Grzegorz Żabiński <a href="https://orcid.org/0000-0003-3091-1035"><img alt="" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" /></a> , Jan Długosz University in Częstochowa <a href="https://ror.org/0566yhn94"><img alt="" src="https://raw.githubusercontent.com/ror-community/ror-logos/refs/heads/main/ror-icon-bw-16.png" /></a></li>
 </ul>
 <p>The TerraLID Team gratefully acknowledges the valuable contributions of many other colleagues to the TerraLID metadata profile in discussions and various other formats. </p>
 

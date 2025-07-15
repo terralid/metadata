@@ -53,6 +53,23 @@
     
     
     
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+     _paq.push(['trackPageView']);
+     _paq.push(['enableLinkTracking']);
+     (function() {
+       var u="https://stats.thga.de/";
+       _paq.push(['setTrackerUrl', u+'matomo.php']);
+       _paq.push(['setSiteId', '17']);
+       var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+       g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+     })();
+  </script>
+  <!-- End Matomo Code -->
+  
+
   </head>
   
   
@@ -1622,14 +1639,14 @@
 
 <h1 id="pigments">Pigments</h1>
 <h2 id="1-pigment-name">1. Pigment name</h2>
-<p><strong>ID and name</strong>: OP1 material_pigment_name<br />
+<p><strong>ID and name:</strong> OP1 material_pigment_name<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> Name(s) of the pigment.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h2 id="2-pigment-form">2. Pigment form</h2>
-<p><strong>ID and name</strong>: OP2 material_pigment_archaeological_context<br />
+<p><strong>ID and name:</strong> OP2 material_pigment_archaeological_context<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
@@ -1637,35 +1654,35 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> pellets; as part of a fresco  </p>
 <h2 id="3-pigment-type">3. Pigment type</h2>
-<p><strong>ID and name</strong>: OP3 material_pigment_type<br />
+<p><strong>ID and name:</strong> OP3 material_pigment_type<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> Information about the pigment type.  </p>
 <p><em>with the two subproperties:</em>  </p>
 <h3 id="31-type">3.1 Type</h3>
-<p><strong>ID and name</strong>: OP3.1 material_pigment_type_chemistry<br />
+<p><strong>ID and name:</strong> OP3.1 material_pigment_type_chemistry<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
 <strong>Definition:</strong> Is it an organic or inorganic pigment?<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h3 id="32-occurrence">3.2 Occurrence</h3>
-<p><strong>ID and name</strong>: OP3.2 material_pigment_type_production<br />
+<p><strong>ID and name:</strong> OP3.2 material_pigment_type_production<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> Is it a natural or synthetic pigment?<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h2 id="4-pigment-composition">4. Pigment composition</h2>
-<p><strong>ID and name</strong>: OP4 material_pigment_composition<br />
-<strong>Provided by:</strong> data provider 
+<p><strong>ID and name:</strong> OP4 material_pigment_composition<br />
+<strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
 <strong>Definition:</strong> The chemical and/or mineralogical composition of the pigment. At least one of its subproperties must be provided.  </p>
 <p><em>with the three subproperties:</em>  </p>
 <h3 id="41-chemical-composition">4.1 Chemical composition</h3>
-<p><strong>ID and name</strong>: OP4.1 material_pigment_composition_chemistry<br />
+<p><strong>ID and name:</strong> OP4.1 material_pigment_composition_chemistry<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
@@ -1674,28 +1691,28 @@
 
 <p><em>with the eight subproperties:</em>  </p>
 <h4 id="411-analytical-method">4.1.1 Analytical method</h4>
-<p><strong>ID and name</strong>: B4.1 chemistry_method<br />
+<p><strong>ID and name:</strong> B4.1 chemistry_method<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
 <strong>Definition:</strong> The method used to determine the chemical composition. <br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h4 id="412-analysed-compound">4.1.2 Analysed compound</h4>
-<p><strong>ID and name</strong>: B4.2 chemistry_compound<br />
+<p><strong>ID and name:</strong> B4.2 chemistry_compound<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> The analysed chemical compound (chemical element or oxide). <br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary, not available if a mass spectrometric-method is recorded in <code>B4.1 Analytical method</code>.  </p>
 <h4 id="413-analysed-isotope">4.1.3 Analysed isotope</h4>
-<p><strong>ID and name</strong>: B4.3 chemistry_icp_isotope<br />
+<p><strong>ID and name:</strong> B4.3 chemistry_icp_isotope<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> The isotope used for quantification of a chemical element. <br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary, only available if a mass spectrometric-method is recorded in <code>B4.1 Analytical method</code>.</p>
 <h4 id="414-value">4.1.4 Value</h4>
-<p><strong>ID and name</strong>: B4.4 chemistry_value<br />
+<p><strong>ID and name:</strong> B4.4 chemistry_value<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
@@ -1703,21 +1720,21 @@
 <strong>Allowed values and other constraints:</strong> decimal number<br />
 <strong>Example:</strong> 15.3  </p>
 <h4 id="415-unit">4.1.5 Unit</h4>
-<p><strong>ID and name</strong>: B4.5 chemistry_unit<br />
+<p><strong>ID and name:</strong> B4.5 chemistry_unit<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> The unit in which the concentration of the analysed chemical compound is given. <br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h4 id="416-uncertainty-type">4.1.6 Uncertainty type</h4>
-<p><strong>ID and name</strong>: B4.6 chemistry_uncertainty_type<br />
+<p><strong>ID and name:</strong> B4.6 chemistry_uncertainty_type<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> The type of analytical uncertainty.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h4 id="417-confidence-level">4.1.7 Confidence level</h4>
-<p><strong>ID and name</strong>: B4.7 chemistry_uncertainty_sigma<br />
+<p><strong>ID and name:</strong> B4.7 chemistry_uncertainty_sigma<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
@@ -1725,59 +1742,59 @@
 <strong>Allowed values and other constraints:</strong> 1, 2, 3<br />
 <strong>Example:</strong> 2  </p>
 <h4 id="418-uncertainty-value">4.1.8 Uncertainty value</h4>
-<p><strong>ID and name</strong>: B4.8 chemistry_uncertainty_value<br />
+<p><strong>ID and name:</strong> B4.8 chemistry_uncertainty_value<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> Value of the absolute analytical uncertainty.<br />
-<strong>Allowed values and other constraints:</strong> numeric, is decimal number double precision<br />
+<strong>Allowed values and other constraints:</strong> decimal number<br />
 <strong>Example:</strong> 0.3  </p>
 <!-- END INCLUDE -->
 
 <h3 id="42-organic-compounds">4.2 Organic compounds</h3>
-<p><strong>ID and name</strong>: OP4.2 material_pigment_composition_compound<br />
+<p><strong>ID and name:</strong> OP4.2 material_pigment_composition_compound<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> The (main) organic compounds in the pigment.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h3 id="43-mineralogical-composition">4.3 Mineralogical composition</h3>
-<p><strong>ID and name</strong>: OP4.3 material_pigment_composition_mineralogy<br />
+<p><strong>ID and name:</strong> OP4.3 material_pigment_composition_mineralogy<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> If it is mineral pigment, which minerals are present?<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary (<a href="https://rruff.info/ima/">IMA list of minerals</a>)  </p>
 <h2 id="5-pigment-production">5. Pigment production</h2>
-<p><strong>ID and name</strong>: OP5 material_pigment_processing<br />
+<p><strong>ID and name:</strong> OP5 material_pigment_processing<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
 <strong>Definition:</strong> Information about the production context and processing steps of the pigment.  </p>
 <p><em>with the two subproperties:</em>  </p>
 <h3 id="51-production-context">5.1 Production context</h3>
-<p><strong>ID and name</strong>: OP5.1 material_pigment_production_context<br />
+<p><strong>ID and name:</strong> OP5.1 material_pigment_production_context<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
 <strong>Definition:</strong> The production context the object is related to.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h3 id="52-treatment">5.2 Treatment</h3>
-<p><strong>ID and name</strong>: OP5.2 material_pigment_production_treatment<br />
+<p><strong>ID and name:</strong> OP5.2 material_pigment_production_treatment<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> Which treatments were done to the raw material(s) to produce the pigment?<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h2 id="6-colour">6. Colour</h2>
-<p><strong>ID and name</strong>: OP6 material_pigment_colour<br />
+<p><strong>ID and name:</strong> OP6 material_pigment_colour<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> The colour of the pigment.  </p>
 <p><em>with the two subproperties:</em>  </p>
 <h3 id="61-name">6.1 Name</h3>
-<p><strong>ID and name</strong>: OP6.1 material_pigment_colour_name<br />
+<p><strong>ID and name:</strong> OP6.1 material_pigment_colour_name<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
@@ -1785,28 +1802,28 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> blue; 5P 5/10; L<em>56 a</em>26 b*3  </p>
 <h3 id="62-colour-system">6.2 Colour system</h3>
-<p><strong>ID and name</strong>: OP6.2 material_pigment_colour_system<br />
+<p><strong>ID and name:</strong> OP6.2 material_pigment_colour_system<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> The colour system used to determine the colour. <br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h2 id="7-pigment-alteration">7. Pigment alteration</h2>
-<p><strong>ID and name</strong>: OP7 material_pigment_alteration<br />
+<p><strong>ID and name:</strong> OP7 material_pigment_alteration<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> Information about the alteration of the pigment.  </p>
 <p><em>with the two subproperties:</em>  </p>
 <h3 id="71-alteration-type">7.1 Alteration type</h3>
-<p><strong>ID and name</strong>: OP7.1 material_pigment_alteration_type<br />
+<p><strong>ID and name:</strong> OP7.1 material_pigment_alteration_type<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> The type of the observed alteration process.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h3 id="72-details">7.2 Details</h3>
-<p><strong>ID and name</strong>: OP7.2 material_pigment_alteration_description<br />
+<p><strong>ID and name:</strong> OP7.2 material_pigment_alteration_description<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
@@ -1814,21 +1831,21 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> t.b.d. </p>
 <h2 id="8-pigment-recycling">8. Pigment recycling</h2>
-<p><strong>ID and name</strong>: OP8 material_pigment_recycling<br />
+<p><strong>ID and name:</strong> OP8 material_pigment_recycling<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
 <strong>Definition:</strong> Information about whether the pigment was recycled or reused.  </p>
 <p><em>with the two subproperties:</em>  </p>
 <h3 id="81-indicators">8.1 Indicators</h3>
-<p><strong>ID and name</strong>: OP8.1 material_pigment_recycling_indicator<br />
+<p><strong>ID and name:</strong> OP8.1 material_pigment_recycling_indicator<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
 <strong>Definition:</strong> Does the pigment show indicators for recycling or reuse?<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h3 id="82-reasoning">8.2 Reasoning</h3>
-<p><strong>ID and name</strong>: OP8.2 material_pigment_recycling_reason<br />
+<p><strong>ID and name:</strong> OP8.2 material_pigment_recycling_reason<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -1836,14 +1853,14 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> presence of Sn in trace element analysis  </p>
 <h2 id="9-lead-source">9. Lead source</h2>
-<p><strong>ID and name</strong>: OP9 material_pigment_lead_source<br />
+<p><strong>ID and name:</strong> OP9 material_pigment_lead_source<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> The source of lead in the pigment<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h2 id="10-provenance-indicators">10. Provenance indicators</h2>
-<p><strong>ID and name</strong>: OP10 material_pigment_raw_material_provenance<br />
+<p><strong>ID and name:</strong> OP10 material_pigment_raw_material_provenance<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -1851,14 +1868,14 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> t.b.d. </p>
 <h2 id="11-sr-isotopes">11. Sr isotopes</h2>
-<p><strong>ID and name</strong>: OP11 material_pigment_isotopes_Sr<br />
+<p><strong>ID and name:</strong> OP11 material_pigment_isotopes_Sr<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> The <sup>87</sup>Sr/<sup>86</sup>Sr ratio of the pigment.  </p>
 <p><em>with the two subproperties:</em>  </p>
 <h3 id="111-value">11.1 Value</h3>
-<p><strong>ID and name</strong>: OP11.1 material_pigment_isotopes_Sr_value<br />
+<p><strong>ID and name:</strong> OP11.1 material_pigment_isotopes_Sr_value<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -1866,7 +1883,7 @@
 <strong>Allowed values and other constraints:</strong> decimal number<br />
 <strong>Example:</strong> 0.7856  </p>
 <h3 id="112-analytical-precision">11.2 Analytical precision</h3>
-<p><strong>ID and name</strong>: OP11.2 material_pigment_isotopes_Sr_2SD<br />
+<p><strong>ID and name:</strong> OP11.2 material_pigment_isotopes_Sr_2SD<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -1874,14 +1891,14 @@
 <strong>Allowed values and other constraints:</strong> decimal number<br />
 <strong>Example:</strong> 0.0002 </p>
 <h2 id="12-nd-isotopes">12. Nd isotopes</h2>
-<p><strong>ID and name</strong>: OP12 material_pigment_isotopes_Nd<br />
+<p><strong>ID and name:</strong> OP12 material_pigment_isotopes_Nd<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> The &epsilon;Nd value of the pigment.  </p>
 <p><em>with the two subproperties:</em>  </p>
 <h3 id="121-value">12.1 Value</h3>
-<p><strong>ID and name</strong>: OP12.1 material_pigment_isotopes_Nd_value<br />
+<p><strong>ID and name:</strong> OP12.1 material_pigment_isotopes_Nd_value<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -1889,7 +1906,7 @@
 <strong>Allowed values and other constraints:</strong> decimal number<br />
 <strong>Example:</strong> t.b.d. </p>
 <h3 id="122-analytical-precision">12.2 Analytical precision</h3>
-<p><strong>ID and name</strong>: OP12.2 material_pigment_isotopes_Nd_2SD<br />
+<p><strong>ID and name:</strong> OP12.2 material_pigment_isotopes_Nd_2SD<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -1897,14 +1914,14 @@
 <strong>Allowed values and other constraints:</strong> decimal number<br />
 <strong>Example:</strong> t.b.d. </p>
 <h2 id="13-hf-isotopes">13. Hf isotopes</h2>
-<p><strong>ID and name</strong>: OP13 material_pigment_isotopes_Hf<br />
+<p><strong>ID and name:</strong> OP13 material_pigment_isotopes_Hf<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> The &epsilon;Hf value of the pigment.  </p>
 <p><em>with the two subproperties:</em>  </p>
 <h3 id="131-value">13.1 Value</h3>
-<p><strong>ID and name</strong>: OP13.1 material_pigment_isotopes_Hf_value<br />
+<p><strong>ID and name:</strong> OP13.1 material_pigment_isotopes_Hf_value<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -1912,7 +1929,7 @@
 <strong>Allowed values and other constraints:</strong> decimal number<br />
 <strong>Example:</strong> t.b.d. </p>
 <h3 id="132-analytical-precision">13.2 Analytical precision</h3>
-<p><strong>ID and name</strong>: OP13.2 material_pigment_isotopes_Hf_2SD<br />
+<p><strong>ID and name:</strong> OP13.2 material_pigment_isotopes_Hf_2SD<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />

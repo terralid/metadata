@@ -53,6 +53,23 @@
     
     
     
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+     _paq.push(['trackPageView']);
+     _paq.push(['enableLinkTracking']);
+     (function() {
+       var u="https://stats.thga.de/";
+       _paq.push(['setTrackerUrl', u+'matomo.php']);
+       _paq.push(['setSiteId', '17']);
+       var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+       g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+     })();
+  </script>
+  <!-- End Matomo Code -->
+  
+
   </head>
   
   
@@ -422,13 +439,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-invstigation-unit" class="md-nav__link">
+  <a href="#3-investigation-unit" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Invstigation unit
+      3. Investigation unit
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="3. Invstigation unit">
+    <nav class="md-nav" aria-label="3. Investigation unit">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1023,13 +1040,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-invstigation-unit" class="md-nav__link">
+  <a href="#3-investigation-unit" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Invstigation unit
+      3. Investigation unit
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="3. Invstigation unit">
+    <nav class="md-nav" aria-label="3. Investigation unit">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1251,7 +1268,7 @@
   <h1>Assemblages</h1>
 
 <h2 id="terralid-id">TerraLID ID</h2>
-<p><strong>ID and name</strong>: AS0 terralid_assemblage_id<br />
+<p><strong>ID and name:</strong> AS0 terralid_assemblage_id<br />
 <strong>Provided by:</strong> TerraLID system<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
@@ -1259,35 +1276,35 @@
 <strong>Allowed values and other constraints:</strong> t.b.d.<br />
 <strong>Example:</strong> t.b.d.  </p>
 <h2 id="1-assemblage-type">1. Assemblage type</h2>
-<p><strong>ID and name</strong>: AS1 assemblage_type<br />
+<p><strong>ID and name:</strong> AS1 assemblage_type<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> The type of assemblage. This can be either a finds complex in an archaeological site (e.g. hoard, workshop, mining gallery) or a geological feature (e.g. gossan, alteration zone, fault zone).<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h2 id="2-investigation-type">2. Investigation type</h2>
-<p><strong>ID and name</strong>: AS2 assemblage_investigation<br />
+<p><strong>ID and name:</strong> AS2 assemblage_investigation<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> The type of investigation leading to the discovery of the assemblage.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary</p>
-<h2 id="3-invstigation-unit">3. Invstigation unit</h2>
-<p><strong>ID and name</strong>: AS3 assemblage_investigation_unit<br />
+<h2 id="3-investigation-unit">3. Investigation unit</h2>
+<p><strong>ID and name:</strong> AS3 assemblage_investigation_unit<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> The unit according to the recording system of the investigation in which the assemblage was found.  </p>
 <p><em>with the two subproperties:</em>  </p>
 <h3 id="31-type">3.1 Type</h3>
-<p><strong>ID and name</strong>: AS3.1 assemblage_investigation_unit_type<br />
+<p><strong>ID and name:</strong> AS3.1 assemblage_investigation_unit_type<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> The type of the unit.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h3 id="32-identifier">3.2 Identifier</h3>
-<p><strong>ID and name</strong>: AS3.2 assemblage_investigation_unit_value<br />
+<p><strong>ID and name:</strong> AS3.2 assemblage_investigation_unit_value<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–n<br />
@@ -1295,21 +1312,21 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> 13; A1-B2  </p>
 <h2 id="4-stratigraphy">4. Stratigraphy</h2>
-<p><strong>ID and name</strong>: AS4 assemblage_stratigraphy<br />
+<p><strong>ID and name:</strong> AS4 assemblage_stratigraphy<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> Information about the stratigraphic position of the assemblage within the locality.  </p>
 <p><em>with the four subproperties:</em>  </p>
 <h3 id="41-context">4.1 Context</h3>
-<p><strong>ID and name</strong>: AS4.1 assemblage_stratigraphy_context<br />
+<p><strong>ID and name:</strong> AS4.1 assemblage_stratigraphy_context<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> The type of stratigraphic context.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h3 id="42-unit">4.2 Unit</h3>
-<p><strong>ID and name</strong>: AS4.2 assemblage_stratigraphy_unit<br />
+<p><strong>ID and name:</strong> AS4.2 assemblage_stratigraphy_unit<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -1317,7 +1334,7 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> host rock, pit 13  </p>
 <h3 id="43-site-diagram">4.3 Site diagram</h3>
-<p><strong>ID and name</strong>: AS4.3 assemblage_site_diagram<br />
+<p><strong>ID and name:</strong> AS4.3 assemblage_site_diagram<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -1325,22 +1342,22 @@
 <strong>Allowed values and other constraints:</strong> file path<br />
 <strong>Example:</strong> t.b.d.  </p>
 <h3 id="44-description">4.4 Description</h3>
-<p><strong>ID and name</strong>: AS4.4 assemblage_stratigraphy_description<br />
+<p><strong>ID and name:</strong> AS4.4 assemblage_stratigraphy_description<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> Additional information about the stratigraphic context not covered elsewhere.<br />
 <strong>Allowed values and other constraints:</strong> free text<br />
-<strong>Example:</strong> Traces of extensive rodent activity indicates mixing with material from overlying stratigraphic units.  </p>
+<strong>Example:</strong> Traces of extensive rodent activity indicate mixing with material from overlying stratigraphic units.  </p>
 <h2 id="5-assemblage-depth">5. Assemblage depth</h2>
-<p><strong>ID and name</strong>: AS5 assemblage_depth<br />
+<p><strong>ID and name:</strong> AS5 assemblage_depth<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> The relative depth of the assemblage.  </p>
 <p><em>with the three subproperties:</em>  </p>
 <h3 id="51-reference-point">5.1 Reference point</h3>
-<p><strong>ID and name</strong>: AS5.1 assemblage_depth_reference<br />
+<p><strong>ID and name:</strong> AS5.1 assemblage_depth_reference<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -1348,22 +1365,22 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> Top of infilling  </p>
 <h3 id="52-value">5.2 Value</h3>
-<p><strong>ID and name</strong>: AS5.2 assemblage_depth_value<br />
+<p><strong>ID and name:</strong> AS5.2 assemblage_depth_value<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 0–1<br />
-<strong>Definition:</strong> The depth value of the assemblage measures from the reference point.<br />
+<strong>Definition:</strong> The depth value of the assemblage measured from the reference point.<br />
 <strong>Allowed values and other constraints:</strong> decimal number<br />
 <strong>Example:</strong> 5.6  </p>
 <h3 id="53-unit">5.3 Unit</h3>
-<p><strong>ID and name</strong>: AS5.3 assemblage_depth_unit<br />
+<p><strong>ID and name:</strong> AS5.3 assemblage_depth_unit<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
 <strong>Definition:</strong> SI unit of the depth value of the assemblage. Mandatory if depth is provided.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h2 id="6-relations">6. Relations</h2>
-<p><strong>ID and name</strong>: AS6 assemblage_relation<br />
+<p><strong>ID and name:</strong> AS6 assemblage_relation<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
@@ -1372,14 +1389,14 @@
 
 <p><em>with the five subproperties:</em>  </p>
 <h4 id="61-persistent-identifier">6.1 Persistent Identifier</h4>
-<p><strong>ID and name</strong>: B5.1 relation_pid<br />
+<p><strong>ID and name:</strong> B5.1 relation_pid<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> The persistent identifier or TerraLID ID associated with a resource or related research output. If referring to another entity in the TerraLID database, the TerraLID identifier must be used.   </p>
 <p><em>with the two subproperties:</em>  </p>
 <h5 id="611-value">6.1.1 Value</h5>
-<p><strong>ID and name</strong>: B5.1.1 relation_pid_value<br />
+<p><strong>ID and name:</strong> B5.1.1 relation_pid_value<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
@@ -1387,14 +1404,14 @@
 <strong>Allowed values and other constraints:</strong> valid persistent identifier according to the options listed in <code>B5.1.2 Type</code>.<br />
 <strong>Example:</strong> 10.60510/ICDP5054ESYI201  </p>
 <h5 id="612-type">6.1.2 Type</h5>
-<p><strong>ID and name</strong>: B5.1.2 relation_pid_type<br />
+<p><strong>ID and name:</strong> B5.1.2 relation_pid_type<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> The type of the identifier.  Mandatory if <code>B5.1.1 Value</code> is provided.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h4 id="62-full-reference">6.2 Full reference</h4>
-<p><strong>ID and name</strong>: B5.2 relation_text<br />
+<p><strong>ID and name:</strong> B5.2 relation_text<br />
 <strong>Provided by:</strong> data provider, API (DOI)<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -1402,21 +1419,21 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> Palinkaš, L. A., 1985, Lead isotope patterns in galenas from some selected ore deposits in Croatia and NW Bosnia, Geološki Vjesnik, 38, 175–89.    </p>
 <h4 id="63-kind-of-relation">6.3 Kind of relation</h4>
-<p><strong>ID and name</strong>: B5.3 relation_kind<br />
+<p><strong>ID and name:</strong> B5.3 relation_kind<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> Relationship between item and the research output. <br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h4 id="64-type-of-resource">6.4 Type of resource</h4>
-<p><strong>ID and name</strong>: B5.4 relation_resource<br />
+<p><strong>ID and name:</strong> B5.4 relation_resource<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> Type of resource or research output. <br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h4 id="65-additional-details">6.5 Additional details</h4>
-<p><strong>ID and name</strong>: B5.5 relation_detail<br />
+<p><strong>ID and name:</strong> B5.5 relation_detail<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–n<br />

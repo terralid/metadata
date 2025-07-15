@@ -53,6 +53,23 @@
     
     
     
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+     _paq.push(['trackPageView']);
+     _paq.push(['enableLinkTracking']);
+     (function() {
+       var u="https://stats.thga.de/";
+       _paq.push(['setTrackerUrl', u+'matomo.php']);
+       _paq.push(['setSiteId', '17']);
+       var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+       g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+     })();
+  </script>
+  <!-- End Matomo Code -->
+  
+
   </head>
   
   
@@ -2037,7 +2054,7 @@
   <h1>Sites</h1>
 
 <h2 id="terralid-id">TerraLID ID</h2>
-<p><strong>ID and name</strong>: SI0 terralid_site_id<br />
+<p><strong>ID and name:</strong> SI0 terralid_site_id<br />
 <strong>Provided by:</strong> TerraLID system<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
@@ -2045,7 +2062,7 @@
 <strong>Allowed values and other constraints:</strong> t.b.d.<br />
 <strong>Example:</strong> t.b.d.  </p>
 <h2 id="1-site-name">1. Site name</h2>
-<p><strong>ID and name</strong>: SI1 site_name<br />
+<p><strong>ID and name:</strong> SI1 site_name<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
@@ -2053,15 +2070,15 @@
 <strong>Allowed values and other constraints:</strong> free text. If the site is unknown, value is "unknown" and <a href="./#2-project-name"><code>SI2 Project name</code></a> must be provided.<br />
 <strong>Example:</strong> Agrileza  </p>
 <h2 id="2-project-name">2. Project name</h2>
-<p><strong>ID and name</strong>: SI2 project_name<br />
+<p><strong>ID and name:</strong> SI2 project_name<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
-<strong>Definition:</strong> The name of project.<br />
+<strong>Definition:</strong> The name of the project.<br />
 <strong>Allowed values and other constraints:</strong> free text. Must be provided if <a href="./#1-site-name"><code>SI1 Site name</code></a> has value "unknown".<br />
 <strong>Example:</strong> The Dreamland University Archaeometallurgy project.  </p>
 <h2 id="3-project-context">3. Project context</h2>
-<p><strong>ID and name</strong>: SI3 project_context<br />
+<p><strong>ID and name:</strong> SI3 project_context<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -2069,14 +2086,14 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> Excavation of an ore washing site.  </p>
 <h2 id="4-site-identifier">4. Site identifier</h2>
-<p><strong>ID and name</strong>: SI4 site_id<br />
+<p><strong>ID and name:</strong> SI4 site_id<br />
 <strong>Provided by:</strong> Data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> The site's persistent identifier in one or more of the data infrastructures listed in <a href="./#42-type"><code>SI4.2 Type</code></a>.  </p>
 <p><em>with the two subproperties:</em></p>
 <h3 id="41-value">4.1 Value</h3>
-<p><strong>ID and name</strong>: SI4.1 site_id_value<br />
+<p><strong>ID and name:</strong> SI4.1 site_id_value<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
@@ -2084,28 +2101,28 @@
 <strong>Allowed values and other constraints:</strong> valid persistent identifier according to the associated data infrastructure in <a href="./#42-type"><code>SI4.2 Type</code></a>.<br />
 <strong>Example:</strong> Q129256661  </p>
 <h3 id="42-type">4.2 Type</h3>
-<p><strong>ID and name</strong>: SI4.2 site_id_type<br />
+<p><strong>ID and name:</strong> SI4.2 site_id_type<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> The name of the data infrastructure. Mandatory if <a href="./#41-value"><code>SI4.1 Value</code></a> is provided.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h2 id="5-geolocation">5. Geolocation</h2>
-<p><strong>ID and name</strong>: SI5 site_geolocation<br />
+<p><strong>ID and name:</strong> SI5 site_geolocation<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
 <strong>Definition:</strong> Information about the (approximate) location of the object or site it was found. All coordinates must be given in the WGS 84 coordinate system and as decimal numbers. If the exact site location is unknown or must not be revealed, a polygon or boundary box must be used to delineate an area of sufficient precision around the site location.  </p>
 <p><em>Subproperties of Geolocation are:</em>  </p>
 <h3 id="51-point">5.1 Point</h3>
-<p><strong>ID and name</strong>: SI5.1 site_geolocation_point<br />
+<p><strong>ID and name:</strong> SI5.1 site_geolocation_point<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> A point location in space.  </p>
 <p><em>with the two subproperties:</em>  </p>
 <h4 id="511-longitude">5.1.1 Longitude</h4>
-<p><strong>ID and name</strong>: SI5.1.1 site_geolocation_point_longitude<br />
+<p><strong>ID and name:</strong> SI5.1.1 site_geolocation_point_longitude<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
@@ -2113,7 +2130,7 @@
 <strong>Allowed values and other constraints:</strong> decimal number, between -180 and 180<br />
 <strong>Example:</strong> 7.21685  </p>
 <h4 id="512-latitude">5.1.2 Latitude</h4>
-<p><strong>ID and name</strong>: SI5.1.2 site_geolocation_point_latitude<br />
+<p><strong>ID and name:</strong> SI5.1.2 site_geolocation_point_latitude<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
@@ -2121,68 +2138,68 @@
 <strong>Allowed values and other constraints:</strong> decimal number, between -90 and 90<br />
 <strong>Example:</strong> 51.48867  </p>
 <h3 id="52-boundary-box">5.2 Boundary box</h3>
-<p><strong>ID and name</strong>: SI5.2 site_geolocation_box<br />
+<p><strong>ID and name:</strong> SI5.2 site_geolocation_box<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> The spatial limits of a box.  </p>
 <p><em>with the four subproperties:</em>  </p>
 <h4 id="521-western-boundary">5.2.1 Western boundary</h4>
-<p><strong>ID and name</strong>: SI5.2.1 site_geolocation_box_west<br />
+<p><strong>ID and name:</strong> SI5.2.1 site_geolocation_box_west<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
-<strong>Definition:</strong> The western longitudinal dimension of box.<br />
+<strong>Definition:</strong> The western longitudinal dimension of the box.<br />
 <strong>Allowed values and other constraints:</strong> decimal number, between -180 and 180<br />
 <strong>Example:</strong> 21.02  </p>
 <h4 id="522-eastern-boundary">5.2.2 Eastern boundary</h4>
-<p><strong>ID and name</strong>: SI5.2.2 site_geolocation_box_east<br />
+<p><strong>ID and name:</strong> SI5.2.2 site_geolocation_box_east<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
-<strong>Definition:</strong> The eastern longitudinal dimension of box.<br />
+<strong>Definition:</strong> The eastern longitudinal dimension of the box.<br />
 <strong>Allowed values and other constraints:</strong> decimal number, between -180 and 180<br />
 <strong>Example:</strong> 21.05  </p>
 <h4 id="523-southern-boundary">5.2.3 Southern boundary</h4>
-<p><strong>ID and name</strong>: SI5.2.3 site_geolocation_box_south<br />
+<p><strong>ID and name:</strong> SI5.2.3 site_geolocation_box_south<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
-<strong>Definition:</strong> The southern latitudinal dimension of box.<br />
+<strong>Definition:</strong> The southern latitudinal dimension of the box.<br />
 <strong>Allowed values and other constraints:</strong> decimal number, between -90 and 90<br />
 <strong>Example:</strong> 40.23  </p>
 <h4 id="524-northern-boundary">5.2.4 Northern boundary</h4>
-<p><strong>ID and name</strong>: SI5.2.4 site_geolocation_box_north<br />
+<p><strong>ID and name:</strong> SI5.2.4 site_geolocation_box_north<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
-<strong>Definition:</strong> The northern latitudinal dimension of box.<br />
+<strong>Definition:</strong> The northern latitudinal dimension of the box.<br />
 <strong>Allowed values and other constraints:</strong> decimal number, between -90 and 90<br />
 <strong>Example:</strong> 40.53  </p>
 <h3 id="53-description">5.3 Description</h3>
-<p><strong>ID and name</strong>: SI5.3 site_geolocation_description<br />
+<p><strong>ID and name:</strong> SI5.3 site_geolocation_description<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–1<br />
-<strong>Definition:</strong> Further information about the site such as a description. If the site's exact location cannot be given, this must include information a reasoning why and information about the level of precision.<br />
+<strong>Definition:</strong> Further information about the site such as a description. If the site's exact location cannot be given, this must include a reasoning why and information about the level of precision.<br />
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> Entire valley given to obfuscate exact location of site as protection against illicit excavations; Area of Saudi-Arabia recorded as location because more precise information not available.  </p>
 <h3 id="54-polygon">5.4 Polygon</h3>
-<p><strong>ID and name</strong>: SI5.4 site_geolocation_polygon<br />
+<p><strong>ID and name:</strong> SI5.4 site_geolocation_polygon<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> A drawn polygon area, defined by a set of points and lines connecting the points in a closed chain. At least four points must be recorded. The last point must be identical with the first point to close the polygon.  </p>
 <p><em>with the subproperty:</em>  </p>
 <h4 id="541-polygon-point-data">5.4.1 Polygon point data</h4>
-<p><strong>ID and name</strong>: SI5.4.1 site_geolocation_polygon_point<br />
+<p><strong>ID and name:</strong> SI5.4.1 site_geolocation_polygon_point<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> A point marking an edge of the polygon.  </p>
 <p><em>with the two subproperties</em>  </p>
 <h5 id="5411-longitude">5.4.1.1 Longitude</h5>
-<p><strong>ID and name</strong>: SI5.4.1.1 site_geolocation_polygon_point_longitude<br />
+<p><strong>ID and name:</strong> SI5.4.1.1 site_geolocation_polygon_point_longitude<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
@@ -2190,7 +2207,7 @@
 <strong>Allowed values and other constraints:</strong> decimal number, between -180 and 180<br />
 <strong>Example:</strong> 7.21685  </p>
 <h5 id="5412-latitude">5.4.1.2 Latitude</h5>
-<p><strong>ID and name</strong>: SI5.4.1.2 site_geolocation_polygon_point_latitude<br />
+<p><strong>ID and name:</strong> SI5.4.1.2 site_geolocation_polygon_point_latitude<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
@@ -2198,14 +2215,14 @@
 <strong>Allowed values and other constraints:</strong> decimal number, between -90 and 90<br />
 <strong>Example:</strong> 51.48867  </p>
 <h2 id="6-registry">6. Registry</h2>
-<p><strong>ID and name</strong>: SI6 site_registry<br />
+<p><strong>ID and name:</strong> SI6 site_registry<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> The entry of the site in the registry of the local authority (e.g., heritage authority, geological survey).  </p>
 <p><em>with the two subproperties:</em></p>
 <h3 id="61-registry-id">6.1 Registry ID</h3>
-<p><strong>ID and name</strong>: SI6.1 site_registry_id<br />
+<p><strong>ID and name:</strong> SI6.1 site_registry_id<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -2213,7 +2230,7 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> t.b.d.  </p>
 <h3 id="62-registry-name">6.2 Registry name</h3>
-<p><strong>ID and name</strong>: SI6.2 site_registry_name<br />
+<p><strong>ID and name:</strong> SI6.2 site_registry_name<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
@@ -2221,7 +2238,7 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> t.b.d.  </p>
 <h2 id="7-dating">7. Dating</h2>
-<p><strong>ID and name</strong>: SI7 site_date<br />
+<p><strong>ID and name:</strong> SI7 site_date<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -2230,28 +2247,28 @@
 
 <p><em>with the eight subproperties:</em>  </p>
 <h4 id="71-persistent-identifier">7.1 Persistent identifier</h4>
-<p><strong>ID and name</strong>: B3.1 date_pid<br />
+<p><strong>ID and name:</strong> B3.1 date_pid<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n  </p>
 <p><em>with the two subproperties:</em>  </p>
 <h5 id="711-value">7.1.1 Value</h5>
-<p><strong>ID and name</strong>: B3.1.1 date_pid_value<br />
+<p><strong>ID and name:</strong> B3.1.1 date_pid_value<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> The value of the persistent identifier. <br />
-<strong>Allowed values and other constraints:</strong> The periods's persistent identifier in one or more of the data infrastructures listed in <code>B3.1.2 Type</code>.<br />
+<strong>Allowed values and other constraints:</strong> The period's persistent identifier in one or more of the data infrastructures listed in <code>B3.1.2 Type</code>.<br />
 <strong>Example:</strong> 99152/p0qhb66vvth  </p>
 <h5 id="712-type">7.1.2 Type</h5>
-<p><strong>ID and name</strong>: 3.1.2 date_pid_type<br />
+<p><strong>ID and name:</strong> B3.1.2 date_pid_type<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
 <strong>Definition:</strong> The name of the data infrastructure. Mandatory if <code>B3.1.1 Value</code> is provided.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h4 id="72-date-type">7.2 Date type</h4>
-<p><strong>ID and name</strong>: B3.2 date_type<br />
+<p><strong>ID and name:</strong> B3.2 date_type<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
@@ -2259,14 +2276,14 @@
 <strong>Allowed values and other constraints:</strong> geological, archaeological<br />
 <strong>Example:</strong> archaeological  </p>
 <h4 id="73-absolute-date">7.3 Absolute Date</h4>
-<p><strong>ID and name</strong>: B3.3 date_absolute<br />
+<p><strong>ID and name:</strong> B3.3 date_absolute<br />
 <strong>Provided by:</strong> data provider, API<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> The absolute date of a point in time or period.   </p>
 <p><em>with the four subproperties:</em>  </p>
 <h5 id="731-start">7.3.1 Start</h5>
-<p><strong>ID and name</strong>: B3.3.1 date_absolute_start<br />
+<p><strong>ID and name:</strong> B3.3.1 date_absolute_start<br />
 <strong>Provided by:</strong> data provider, API<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -2274,7 +2291,7 @@
 <strong>Allowed values and other constraints:</strong> integer<br />
 <strong>Example:</strong> -15  </p>
 <h5 id="732-end">7.3.2 End</h5>
-<p><strong>ID and name</strong>: B3.3.2 date_absolute_end<br />
+<p><strong>ID and name:</strong> B3.3.2 date_absolute_end<br />
 <strong>Provided by:</strong> data provider, API<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -2282,14 +2299,14 @@
 <strong>Allowed values and other constraints:</strong> integer<br />
 <strong>Example:</strong> 15  </p>
 <h5 id="733-dating-method">7.3.3 Dating method</h5>
-<p><strong>ID and name</strong>: B3.3.3 date_absolute_method<br />
+<p><strong>ID and name:</strong> B3.3.3 date_absolute_method<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> The method used to determine the absolute date. Mandatory if <code>B3.3.1 Start</code> is provided.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h5 id="734-unit-of-date">7.3.4 Unit of date</h5>
-<p><strong>ID and name</strong>: B3.3.4 date_absolute_unit<br />
+<p><strong>ID and name:</strong> B3.3.4 date_absolute_unit<br />
 <strong>Provided by:</strong> TerraLID system<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
@@ -2297,29 +2314,29 @@
 <strong>Allowed values and other constraints:</strong> a, Ma<br />
 <strong>Example:</strong> a  </p>
 <h4 id="74-relative-date">7.4 Relative Date</h4>
-<p><strong>ID and name</strong>: B3.4 date_relative<br />
+<p><strong>ID and name:</strong> B3.4 date_relative<br />
 <strong>Provided by:</strong> data provider, API<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> The relative date of a point in time or period.   </p>
 <p><em>with the two subproperties:</em>  </p>
 <h5 id="741-chronological-unit">7.4.1 Chronological unit</h5>
-<p><strong>ID and name</strong>: B3.4.1 date_relative_period<br />
+<p><strong>ID and name:</strong> B3.4.1 date_relative_period<br />
 <strong>Provided by:</strong> data provider, API<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
-<strong>Definition:</strong> The relative date expressed as chronological unit. <br />
+<strong>Definition:</strong> The relative date expressed as a chronological unit. <br />
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> Ha B2; Emsium  </p>
 <h5 id="742-dating-method">7.4.2 Dating method</h5>
-<p><strong>ID and name</strong>: B3.4.2 date_relative_method<br />
+<p><strong>ID and name:</strong> B3.4.2 date_relative_method<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> The method used to determine the relative date. Mandatory if <code>B3.4.1 Chronological unit</code> is provided.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h4 id="75-cultural-unit">7.5 Cultural unit</h4>
-<p><strong>ID and name</strong>: B3.5 date_archaeo_cultural<br />
+<p><strong>ID and name:</strong> B3.5 date_archaeo_cultural<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–n<br />
@@ -2327,14 +2344,14 @@
 <strong>Allowed values and other constraints:</strong> free text, only available if <code>B3.2 Date type</code> = "archaeological".<br />
 <strong>Example:</strong> Roman  </p>
 <h4 id="76-orogenesis">7.6 Orogenesis</h4>
-<p><strong>ID and name</strong>: B3.6 date_geol_orogensis<br />
+<p><strong>ID and name:</strong> B3.6 date_geol_orogensis<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
-<strong>Definition:</strong> The relative date expressed as orogenic event.<br />
+<strong>Definition:</strong> The relative date expressed as anorogenic event.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary, only available if <code>B3.2 Date type</code> = "geological".  </p>
 <h4 id="77-definition-of-chronological-unit">7.7 Definition of chronological unit</h4>
-<p><strong>ID and name</strong>: B3.7 date_relative_reference<br />
+<p><strong>ID and name:</strong> B3.7 date_relative_reference<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
@@ -2347,14 +2364,14 @@
 
 <p><em>with the five subproperties:</em>  </p>
 <h6 id="771-persistent-identifier">7.7.1 Persistent Identifier</h6>
-<p><strong>ID and name</strong>: B5.1 relation_pid<br />
+<p><strong>ID and name:</strong> B5.1 relation_pid<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> The persistent identifier or TerraLID ID associated with a resource or related research output. If referring to another entity in the TerraLID database, the TerraLID identifier must be used.   </p>
 <p><em>with the two subproperties:</em>  </p>
 <h6 id="7711-value"># 7.7.1.1 Value</h6>
-<p><strong>ID and name</strong>: B5.1.1 relation_pid_value<br />
+<p><strong>ID and name:</strong> B5.1.1 relation_pid_value<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
@@ -2362,14 +2379,14 @@
 <strong>Allowed values and other constraints:</strong> valid persistent identifier according to the options listed in <code>B5.1.2 Type</code>.<br />
 <strong>Example:</strong> 10.60510/ICDP5054ESYI201  </p>
 <h6 id="7712-type"># 7.7.1.2 Type</h6>
-<p><strong>ID and name</strong>: B5.1.2 relation_pid_type<br />
+<p><strong>ID and name:</strong> B5.1.2 relation_pid_type<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> The type of the identifier.  Mandatory if <code>B5.1.1 Value</code> is provided.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h6 id="772-full-reference">7.7.2 Full reference</h6>
-<p><strong>ID and name</strong>: B5.2 relation_text<br />
+<p><strong>ID and name:</strong> B5.2 relation_text<br />
 <strong>Provided by:</strong> data provider, API (DOI)<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -2377,21 +2394,21 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> Palinkaš, L. A., 1985, Lead isotope patterns in galenas from some selected ore deposits in Croatia and NW Bosnia, Geološki Vjesnik, 38, 175–89.    </p>
 <h6 id="773-kind-of-relation">7.7.3 Kind of relation</h6>
-<p><strong>ID and name</strong>: B5.3 relation_kind<br />
+<p><strong>ID and name:</strong> B5.3 relation_kind<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> Relationship between item and the research output. <br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h6 id="774-type-of-resource">7.7.4 Type of resource</h6>
-<p><strong>ID and name</strong>: B5.4 relation_resource<br />
+<p><strong>ID and name:</strong> B5.4 relation_resource<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> Type of resource or research output. <br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h6 id="775-additional-details">7.7.5 Additional details</h6>
-<p><strong>ID and name</strong>: B5.5 relation_detail<br />
+<p><strong>ID and name:</strong> B5.5 relation_detail<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–n<br />
@@ -2401,14 +2418,14 @@
 <!-- END INCLUDE -->
 
 <h2 id="8-site-type">8. Site type</h2>
-<p><strong>ID and name</strong>: SI8 site_type<br />
+<p><strong>ID and name:</strong> SI8 site_type<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> The type of the site, geological or how it was used by humans.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h2 id="9-keywords">9. Keywords</h2>
-<p><strong>ID and name</strong>: SI9 site_keywords<br />
+<p><strong>ID and name:</strong> SI9 site_keywords<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -2416,14 +2433,14 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> ore beneficiation, Laurion  </p>
 <h2 id="10-project-dates">10. Project dates</h2>
-<p><strong>ID and name</strong>: SI10 project_date<br />
+<p><strong>ID and name:</strong> SI10 project_date<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
 <strong>Definition:</strong> The date of the investigation or project in which the site was/is studied.</p>
 <p><em>with the two subproperties:</em>  </p>
 <h3 id="101-start-date">10.1 Start date</h3>
-<p><strong>ID and name</strong>: SI10.1 project_date_start<br />
+<p><strong>ID and name:</strong> SI10.1 project_date_start<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
@@ -2431,7 +2448,7 @@
 <strong>Allowed values and other constraints:</strong> date formatted as YYYY-MM-DD<br />
 <strong>Example:</strong> 1980-01-15  </p>
 <h3 id="102-end-date">10.2 End date</h3>
-<p><strong>ID and name</strong>: SI10.2 project_date_end<br />
+<p><strong>ID and name:</strong> SI10.2 project_date_end<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
@@ -2439,7 +2456,7 @@
 <strong>Allowed values and other constraints:</strong> date formatted as YYYY-MM-DD<br />
 <strong>Example:</strong> 2000-04-20  </p>
 <h2 id="11-relations">11. Relations</h2>
-<p><strong>ID and name</strong>: SI11 site_relation<br />
+<p><strong>ID and name:</strong> SI11 site_relation<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
@@ -2448,14 +2465,14 @@
 
 <p><em>with the five subproperties:</em>  </p>
 <h4 id="111-persistent-identifier">11.1 Persistent Identifier</h4>
-<p><strong>ID and name</strong>: B5.1 relation_pid<br />
+<p><strong>ID and name:</strong> B5.1 relation_pid<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> The persistent identifier or TerraLID ID associated with a resource or related research output. If referring to another entity in the TerraLID database, the TerraLID identifier must be used.   </p>
 <p><em>with the two subproperties:</em>  </p>
 <h5 id="1111-value">11.1.1 Value</h5>
-<p><strong>ID and name</strong>: B5.1.1 relation_pid_value<br />
+<p><strong>ID and name:</strong> B5.1.1 relation_pid_value<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
@@ -2463,14 +2480,14 @@
 <strong>Allowed values and other constraints:</strong> valid persistent identifier according to the options listed in <code>B5.1.2 Type</code>.<br />
 <strong>Example:</strong> 10.60510/ICDP5054ESYI201  </p>
 <h5 id="1112-type">11.1.2 Type</h5>
-<p><strong>ID and name</strong>: B5.1.2 relation_pid_type<br />
+<p><strong>ID and name:</strong> B5.1.2 relation_pid_type<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> The type of the identifier.  Mandatory if <code>B5.1.1 Value</code> is provided.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h4 id="112-full-reference">11.2 Full reference</h4>
-<p><strong>ID and name</strong>: B5.2 relation_text<br />
+<p><strong>ID and name:</strong> B5.2 relation_text<br />
 <strong>Provided by:</strong> data provider, API (DOI)<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -2478,21 +2495,21 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> Palinkaš, L. A., 1985, Lead isotope patterns in galenas from some selected ore deposits in Croatia and NW Bosnia, Geološki Vjesnik, 38, 175–89.    </p>
 <h4 id="113-kind-of-relation">11.3 Kind of relation</h4>
-<p><strong>ID and name</strong>: B5.3 relation_kind<br />
+<p><strong>ID and name:</strong> B5.3 relation_kind<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> Relationship between item and the research output. <br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h4 id="114-type-of-resource">11.4 Type of resource</h4>
-<p><strong>ID and name</strong>: B5.4 relation_resource<br />
+<p><strong>ID and name:</strong> B5.4 relation_resource<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> Type of resource or research output. <br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h4 id="115-additional-details">11.5 Additional details</h4>
-<p><strong>ID and name</strong>: B5.5 relation_detail<br />
+<p><strong>ID and name:</strong> B5.5 relation_detail<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–n<br />

@@ -53,6 +53,23 @@
     
     
     
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+     _paq.push(['trackPageView']);
+     _paq.push(['enableLinkTracking']);
+     (function() {
+       var u="https://stats.thga.de/";
+       _paq.push(['setTrackerUrl', u+'matomo.php']);
+       _paq.push(['setSiteId', '17']);
+       var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+       g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+     })();
+  </script>
+  <!-- End Matomo Code -->
+  
+
   </head>
   
   
@@ -1460,28 +1477,28 @@
 
 <h1 id="glass">Glass</h1>
 <h2 id="1-production-context">1. Production context</h2>
-<p><strong>ID and name</strong>: OG1 material_glass_production_context<br />
+<p><strong>ID and name:</strong> OG1 material_glass_production_context<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
 <strong>Definition:</strong> The production context the object is related to.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h2 id="2-recycling">2. Recycling</h2>
-<p><strong>ID and name</strong>: OG2 material_glass_recycling<br />
+<p><strong>ID and name:</strong> OG2 material_glass_recycling<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> Information about whether the glass was recycled.  </p>
 <p><em>with the two subproperties:</em>  </p>
 <h3 id="21-indication-for-recycling">2.1 Indication for recycling</h3>
-<p><strong>ID and name</strong>: OG2.1 material_glass_recycling_indicator<br />
+<p><strong>ID and name:</strong> OG2.1 material_glass_recycling_indicator<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> Does the glass show indicators for recycling?<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h3 id="22-indicators">2.2 Indicators</h3>
-<p><strong>ID and name</strong>: OG2.2 material_glass_recycling_reason<br />
+<p><strong>ID and name:</strong> OG2.2 material_glass_recycling_reason<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
@@ -1489,7 +1506,7 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> mixture of different glass pastes  </p>
 <h2 id="3-chemical-composition">3. Chemical composition</h2>
-<p><strong>ID and name</strong>: OG3 material_glass_chemistry<br />
+<p><strong>ID and name:</strong> OG3 material_glass_chemistry<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1-n<br />
@@ -1498,28 +1515,28 @@
 
 <p><em>with the eight subproperties:</em>  </p>
 <h4 id="31-analytical-method">3.1 Analytical method</h4>
-<p><strong>ID and name</strong>: B4.1 chemistry_method<br />
+<p><strong>ID and name:</strong> B4.1 chemistry_method<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
 <strong>Definition:</strong> The method used to determine the chemical composition. <br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h4 id="32-analysed-compound">3.2 Analysed compound</h4>
-<p><strong>ID and name</strong>: B4.2 chemistry_compound<br />
+<p><strong>ID and name:</strong> B4.2 chemistry_compound<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> The analysed chemical compound (chemical element or oxide). <br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary, not available if a mass spectrometric-method is recorded in <code>B4.1 Analytical method</code>.  </p>
 <h4 id="33-analysed-isotope">3.3 Analysed isotope</h4>
-<p><strong>ID and name</strong>: B4.3 chemistry_icp_isotope<br />
+<p><strong>ID and name:</strong> B4.3 chemistry_icp_isotope<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> The isotope used for quantification of a chemical element. <br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary, only available if a mass spectrometric-method is recorded in <code>B4.1 Analytical method</code>.</p>
 <h4 id="34-value">3.4 Value</h4>
-<p><strong>ID and name</strong>: B4.4 chemistry_value<br />
+<p><strong>ID and name:</strong> B4.4 chemistry_value<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
@@ -1527,21 +1544,21 @@
 <strong>Allowed values and other constraints:</strong> decimal number<br />
 <strong>Example:</strong> 15.3  </p>
 <h4 id="35-unit">3.5 Unit</h4>
-<p><strong>ID and name</strong>: B4.5 chemistry_unit<br />
+<p><strong>ID and name:</strong> B4.5 chemistry_unit<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> The unit in which the concentration of the analysed chemical compound is given. <br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h4 id="36-uncertainty-type">3.6 Uncertainty type</h4>
-<p><strong>ID and name</strong>: B4.6 chemistry_uncertainty_type<br />
+<p><strong>ID and name:</strong> B4.6 chemistry_uncertainty_type<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> The type of analytical uncertainty.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h4 id="37-confidence-level">3.7 Confidence level</h4>
-<p><strong>ID and name</strong>: B4.7 chemistry_uncertainty_sigma<br />
+<p><strong>ID and name:</strong> B4.7 chemistry_uncertainty_sigma<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
@@ -1549,31 +1566,31 @@
 <strong>Allowed values and other constraints:</strong> 1, 2, 3<br />
 <strong>Example:</strong> 2  </p>
 <h4 id="38-uncertainty-value">3.8 Uncertainty value</h4>
-<p><strong>ID and name</strong>: B4.8 chemistry_uncertainty_value<br />
+<p><strong>ID and name:</strong> B4.8 chemistry_uncertainty_value<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> Value of the absolute analytical uncertainty.<br />
-<strong>Allowed values and other constraints:</strong> numeric, is decimal number double precision<br />
+<strong>Allowed values and other constraints:</strong> decimal number<br />
 <strong>Example:</strong> 0.3  </p>
 <!-- END INCLUDE -->
 
 <h2 id="4-glass-group">4. Glass group</h2>
-<p><strong>ID and name</strong>: OG4 material_glass_group<br />
+<p><strong>ID and name:</strong> OG4 material_glass_group<br />
 <strong>Provided by:</strong> TerraLID system<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> The glass material group of the sample, inferred from the chemical composition.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h2 id="5-glass-colour">5. Glass colour</h2>
-<p><strong>ID and name</strong>: OG5 material_glass_colour<br />
+<p><strong>ID and name:</strong> OG5 material_glass_colour<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> The colour of the glass.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h2 id="6-colourant">6. Colourant</h2>
-<p><strong>ID and name</strong>: OG6 material_glass_colourant<br />
+<p><strong>ID and name:</strong> OG6 material_glass_colourant<br />
 <strong>Provided by:</strong> TerraLID system<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -1581,28 +1598,28 @@
 <strong>Allowed values and other constraints:</strong> controlled vocabulary<br />
 <strong>Example:</strong> Cu  </p>
 <h2 id="7-decolourant">7. Decolourant</h2>
-<p><strong>ID and name</strong>: OG7 material_glass_decolourant<br />
+<p><strong>ID and name:</strong> OG7 material_glass_decolourant<br />
 <strong>Provided by:</strong> TerraLID system<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> The compound responsible for decolouring the glass, inferred from the chemical composition.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h2 id="8-lead-source">8. Lead source</h2>
-<p><strong>ID and name</strong>: OG8 material_glass_lead_source<br />
+<p><strong>ID and name:</strong> OG8 material_glass_lead_source<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> The constituent that is the source of lead in the glass.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h2 id="9-sr-isotopes">9. Sr isotopes</h2>
-<p><strong>ID and name</strong>: OG9 material_glass_isotopes_Sr<br />
+<p><strong>ID and name:</strong> OG9 material_glass_isotopes_Sr<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> The <sup>87</sup>Sr/<sup>86</sup>Sr ratio of the glass.  </p>
 <p><em>with the two subproperties:</em>  </p>
 <h3 id="91-value">9.1 Value</h3>
-<p><strong>ID and name</strong>: OG9.1 material_glass_isotopes_Sr_value<br />
+<p><strong>ID and name:</strong> OG9.1 material_glass_isotopes_Sr_value<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -1610,7 +1627,7 @@
 <strong>Allowed values and other constraints:</strong> decimal number<br />
 <strong>Example:</strong> 0.7856  </p>
 <h3 id="92-analytical-precision">9.2 Analytical precision</h3>
-<p><strong>ID and name</strong>: OG9.2 material_glass_isotopes_Sr_2SD<br />
+<p><strong>ID and name:</strong> OG9.2 material_glass_isotopes_Sr_2SD<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -1618,14 +1635,14 @@
 <strong>Allowed values and other constraints:</strong> decimal number<br />
 <strong>Example:</strong> 0.0002 </p>
 <h2 id="10-nd-isotopes">10. Nd isotopes</h2>
-<p><strong>ID and name</strong>: OG10 material_glass_isotopes_Nd<br />
+<p><strong>ID and name:</strong> OG10 material_glass_isotopes_Nd<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> The &epsilon;Nd value of the glass.  </p>
 <p><em>with the two subproperties:</em>  </p>
 <h3 id="101-value">10.1 Value</h3>
-<p><strong>ID and name</strong>: OG10.1 material_glass_isotopes_Nd_value<br />
+<p><strong>ID and name:</strong> OG10.1 material_glass_isotopes_Nd_value<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -1633,7 +1650,7 @@
 <strong>Allowed values and other constraints:</strong> decimal number<br />
 <strong>Example:</strong> t.b.d. </p>
 <h3 id="102-analytical-precision">10.2 Analytical precision</h3>
-<p><strong>ID and name</strong>: OG10.2 material_glass_isotopes_Nd_2SD<br />
+<p><strong>ID and name:</strong> OG10.2 material_glass_isotopes_Nd_2SD<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -1641,14 +1658,14 @@
 <strong>Allowed values and other constraints:</strong> decimal number<br />
 <strong>Example:</strong> t.b.d. </p>
 <h2 id="11-hf-isotopes">11. Hf isotopes</h2>
-<p><strong>ID and name</strong>: OG11 material_glass_isotopes_Hf<br />
+<p><strong>ID and name:</strong> OG11 material_glass_isotopes_Hf<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> The &epsilon;Hf value of the glass.  </p>
 <p><em>with the two subproperties:</em>  </p>
 <h3 id="111-value">11.1 Value</h3>
-<p><strong>ID and name</strong>: OG11.1 material_glass_isotopes_Hf_value<br />
+<p><strong>ID and name:</strong> OG11.1 material_glass_isotopes_Hf_value<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -1656,7 +1673,7 @@
 <strong>Allowed values and other constraints:</strong> decimal number<br />
 <strong>Example:</strong> t.b.d. </p>
 <h3 id="112-analytica-precision">11.2 Analytica precision</h3>
-<p><strong>ID and name</strong>: OG11.2 material_glass_isotopes_Hf_2SD<br />
+<p><strong>ID and name:</strong> OG11.2 material_glass_isotopes_Hf_2SD<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -1664,14 +1681,14 @@
 <strong>Allowed values and other constraints:</strong> decimal number<br />
 <strong>Example:</strong> t.b.d. </p>
 <h2 id="12-o-isotopes">12. O isotopes</h2>
-<p><strong>ID and name</strong>: OG12 material_glass_isotopes_O<br />
+<p><strong>ID and name:</strong> OG12 material_glass_isotopes_O<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> The &delta;<sup>18</sup>O value of the glass.  </p>
 <p><em>with the two subproperties:</em>  </p>
 <h3 id="121-value">12.1 Value</h3>
-<p><strong>ID and name</strong>: OG12.1 material_glass_isotopes_O_value<br />
+<p><strong>ID and name:</strong> OG12.1 material_glass_isotopes_O_value<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -1679,7 +1696,7 @@
 <strong>Allowed values and other constraints:</strong> decimal number<br />
 <strong>Example:</strong> t.b.d. </p>
 <h3 id="122-analytical-precision">12.2 Analytical precision</h3>
-<p><strong>ID and name</strong>: OG12.2 material_glass_isotopes_O_SD<br />
+<p><strong>ID and name:</strong> OG12.2 material_glass_isotopes_O_SD<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -1687,21 +1704,21 @@
 <strong>Allowed values and other constraints:</strong> decimal number<br />
 <strong>Example:</strong> t.b.d. </p>
 <h2 id="13-glass-corrosion">13. Glass corrosion</h2>
-<p><strong>ID and name</strong>: OG13 material_glass_corrosion<br />
+<p><strong>ID and name:</strong> OG13 material_glass_corrosion<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> Information about the corrosion of the glass and its extent.  </p>
 <p><em>with the two subproperties:</em>  </p>
 <h3 id="131-extent">13.1 Extent</h3>
-<p><strong>ID and name</strong>: OG13.1 material_glass_corrosion_extent<br />
+<p><strong>ID and name:</strong> OG13.1 material_glass_corrosion_extent<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 1<br />
 <strong>Definition:</strong> The extent of corrosion affecting the glass.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h3 id="132-details">13.2 Details</h3>
-<p><strong>ID and name</strong>: OG13.2 material_glass_corrosion_reason<br />
+<p><strong>ID and name:</strong> OG13.2 material_glass_corrosion_reason<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />

@@ -53,6 +53,23 @@
     
     
     
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+     _paq.push(['trackPageView']);
+     _paq.push(['enableLinkTracking']);
+     (function() {
+       var u="https://stats.thga.de/";
+       _paq.push(['setTrackerUrl', u+'matomo.php']);
+       _paq.push(['setSiteId', '17']);
+       var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+       g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+     })();
+  </script>
+  <!-- End Matomo Code -->
+  
+
   </head>
   
   
@@ -736,9 +753,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#9-pecularity-of-production" class="md-nav__link">
+  <a href="#9-peculiarity-of-production" class="md-nav__link">
     <span class="md-ellipsis">
-      9. Pecularity of Production
+      9. Peculiarity of Production
     </span>
   </a>
   
@@ -966,9 +983,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#9-pecularity-of-production" class="md-nav__link">
+  <a href="#9-peculiarity-of-production" class="md-nav__link">
     <span class="md-ellipsis">
-      9. Pecularity of Production
+      9. Peculiarity of Production
     </span>
   </a>
   
@@ -993,14 +1010,14 @@
 <h1 id="coins">Coins</h1>
 <p>Coin-specific metadata extent the <a href="../metadata_metal/">metal-specific metadata</a> and are a subset of the <a href="https://nomisma.org/">Nomisma</a> <a href="https://nomisma.org/ontology">ontology</a> and intended to be filled in the records of the coin in a numismatic data infrastructure using this ontology based on the type series and the coin's type series ID. The equivalent in the Nomisma ontology is given by the prefix <code>nmo</code>. Descriptions are taken from the <a href="https://nomisma.org/ontology">Nomisma ontology</a>. </p>
 <h2 id="1-type-series">1. Type series</h2>
-<p><strong>ID and name</strong>: OM.C1 material_coin_type_series (<code>nmo:TypeSeries</code>)<br />
+<p><strong>ID and name:</strong> OM.C1 material_coin_type_series (<code>nmo:TypeSeries</code>)<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> A published or recognized reference list of numismatic object types, such as a catalogue or corpus.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h2 id="2-type-series-id">2. Type series ID</h2>
-<p><strong>ID and name</strong>: OM.C2 material_coin_type_series_id (<code>nmo:hasTypeSeriesItem</code>)<br />
+<p><strong>ID and name:</strong> OM.C2 material_coin_type_series_id (<code>nmo:hasTypeSeriesItem</code>)<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -1008,50 +1025,50 @@
 <strong>Allowed values and other constraints:</strong> valid identifier according to reference work listed in <a href="./#1-type-series"><code>OM.C1 Type Series</code></a>. <br />
 <strong>Example:</strong> ric.1(2).aug.2A  </p>
 <h2 id="3-deposition-type">3. Deposition type</h2>
-<p><strong>ID and name</strong>: OM.C3 material_coin_deposition_type (<code>nmo:DepositionType</code>)<br />
+<p><strong>ID and name:</strong> OM.C3 material_coin_deposition_type (<code>nmo:DepositionType</code>)<br />
 <strong>Provided by:</strong> Nomisma API, data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> The circumstances under which an object or group of objects came to be deposited and part of the archaeological record, for example as a hoard, votive deposit or chance loss.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h2 id="4-authority">4. Authority</h2>
-<p><strong>ID and name</strong>: OM.C4 material_coin_authority (<code>nmo:hasAuthority</code>)<br />
+<p><strong>ID and name:</strong> OM.C4 material_coin_authority (<code>nmo:hasAuthority</code>)<br />
 <strong>Provided by:</strong> Nomisma API, data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> Identifies the authority in whose name (explicitly or implicitly) a numismatic object was issued.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary   </p>
 <h2 id="5-mint">5. Mint</h2>
-<p><strong>ID and name</strong>: OM.C5 material_coin_mint (<code>nmo:hasMint</code>)<br />
+<p><strong>ID and name:</strong> OM.C5 material_coin_mint (<code>nmo:hasMint</code>)<br />
 <strong>Provided by:</strong> Nomisma API, data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> Identifies the place of manufacture or issue of a numismatic object.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary   </p>
 <h2 id="6-denomination">6. Denomination</h2>
-<p><strong>ID and name</strong>: OM.C6 material_coin_denomination (<code>nmo:hasDenomination</code>)<br />
+<p><strong>ID and name:</strong> OM.C6 material_coin_denomination (<code>nmo:hasDenomination</code>)<br />
 <strong>Provided by:</strong> Nomisma API, data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> Describes the monetary value assigned to an object within a denominational system.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary   </p>
 <h2 id="7-date">7. Date</h2>
-<p><strong>ID and name</strong>: OM.C7 material_coin_date (<code>nmo:hasDate</code>)<br />
+<p><strong>ID and name:</strong> OM.C7 material_coin_date (<code>nmo:hasDate</code>)<br />
 <strong>Provided by:</strong> Nomisma API, data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> Describes date (range) assigned in a numismatic context.  </p>
 <p><em>with the two subproperties:</em>  </p>
-<h4 id="71-opening-date">7.1 Opening date</h4>
-<p><strong>ID and name</strong>: OM.C7.1 material_coin_date_from (<code>nmo:hasNumismaticOpeningDate</code>)<br />
+<h3 id="71-opening-date">7.1 Opening date</h3>
+<p><strong>ID and name:</strong> OM.C7.1 material_coin_date_from (<code>nmo:hasNumismaticOpeningDate</code>)<br />
 <strong>Provided by:</strong> Nomisma API, data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> The date of the earliest numismatic object of a given context, e.g. a hoard or layer.<br />
 <strong>Allowed values and other constraints:</strong> integer <br />
 <strong>Example:</strong> -25  </p>
-<h4 id="72-closing-date">7.2 Closing date</h4>
-<p><strong>ID and name</strong>: OM.C7.2 material_coin_date_to (<code>nmo:hasNumismaticClosingDate</code>)<br />
+<h3 id="72-closing-date">7.2 Closing date</h3>
+<p><strong>ID and name:</strong> OM.C7.2 material_coin_date_to (<code>nmo:hasNumismaticClosingDate</code>)<br />
 <strong>Provided by:</strong> Nomisma API, data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -1059,14 +1076,14 @@
 <strong>Allowed values and other constraints:</strong> integer <br />
 <strong>Example:</strong> -23  </p>
 <h2 id="8-manufacture">8. Manufacture</h2>
-<p><strong>ID and name</strong>: OM.C8 material_coin_manufacture (<code>nmo:hasManufacture</code>)<br />
+<p><strong>ID and name:</strong> OM.C8 material_coin_manufacture (<code>nmo:hasManufacture</code>)<br />
 <strong>Provided by:</strong> Nomisma API, data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> Describes the method of manufacture of a numismatic object.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
-<h2 id="9-pecularity-of-production">9. Pecularity of Production</h2>
-<p><strong>ID and name</strong>: OM.C9 material_coin_pecularity_production (<code>nmo:PecularityOfProduction</code>)<br />
+<h2 id="9-peculiarity-of-production">9. Peculiarity of Production</h2>
+<p><strong>ID and name:</strong> OM.C9 material_coin_peculiarity_production (<code>nmo:PecularityOfProduction</code>)<br />
 <strong>Provided by:</strong> Nomisma API, data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />

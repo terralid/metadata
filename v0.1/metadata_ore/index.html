@@ -53,6 +53,23 @@
     
     
     
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+     _paq.push(['trackPageView']);
+     _paq.push(['enableLinkTracking']);
+     (function() {
+       var u="https://stats.thga.de/";
+       _paq.push(['setTrackerUrl', u+'matomo.php']);
+       _paq.push(['setSiteId', '17']);
+       var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+       g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+     })();
+  </script>
+  <!-- End Matomo Code -->
+  
+
   </head>
   
   
@@ -1778,42 +1795,42 @@
 
 <h1 id="ore">Ore</h1>
 <h2 id="1-ore-mineralogy">1. Ore mineralogy</h2>
-<p><strong>ID and name</strong>: OO1 material_ore_mineral<br />
+<p><strong>ID and name:</strong> OO1 material_ore_mineral<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> The mineralogical composition of the ore.  </p>
 <p><em>with the two subproperties:</em>  </p>
 <h3 id="11-minerals">1.1 Minerals</h3>
-<p><strong>ID and name</strong>: OO1.1 material_ore_mineral_name<br />
+<p><strong>ID and name:</strong> OO1.1 material_ore_mineral_name<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> The minerals included in the specimen.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary (<a href="https://rruff.info/ima/">IMA list of minerals</a>)  </p>
 <h3 id="12-mineralhosting-ore-part">1.2 Mineral–hosting ore part</h3>
-<p><strong>ID and name</strong>: OO1.2 material_ore_mineral_part<br />
+<p><strong>ID and name:</strong> OO1.2 material_ore_mineral_part<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> The part of the ore to which the mineral belongs to.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h2 id="2-commodity">2. Commodity</h2>
-<p><strong>ID and name</strong>: OO2 material_ore_commodity<br />
+<p><strong>ID and name:</strong> OO2 material_ore_commodity<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> Information about the targeted metal(s) by mining activities through time.  </p>
 <p><em>with the two subproperties:</em>  </p>
 <h3 id="21-targeted-metals">2.1 Targeted metals</h3>
-<p><strong>ID and name</strong>: OO2.1 material_ore_commodity_metal<br />
+<p><strong>ID and name:</strong> OO2.1 material_ore_commodity_metal<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> The target metal(s) of the mining activities.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h3 id="22-period-of-extraction">2.2 Period of extraction</h3>
-<p><strong>ID and name</strong>: OO2.2 material_ore_commonity_period<br />
+<p><strong>ID and name:</strong> OO2.2 material_ore_commonity_period<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
@@ -1822,28 +1839,28 @@
 
 <p><em>with the eight subproperties:</em>  </p>
 <h4 id="221-persistent-identifier">2.2.1 Persistent identifier</h4>
-<p><strong>ID and name</strong>: B3.1 date_pid<br />
+<p><strong>ID and name:</strong> B3.1 date_pid<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n  </p>
 <p><em>with the two subproperties:</em>  </p>
 <h5 id="2211-value">2.2.1.1 Value</h5>
-<p><strong>ID and name</strong>: B3.1.1 date_pid_value<br />
+<p><strong>ID and name:</strong> B3.1.1 date_pid_value<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> The value of the persistent identifier. <br />
-<strong>Allowed values and other constraints:</strong> The periods's persistent identifier in one or more of the data infrastructures listed in <code>B3.1.2 Type</code>.<br />
+<strong>Allowed values and other constraints:</strong> The period's persistent identifier in one or more of the data infrastructures listed in <code>B3.1.2 Type</code>.<br />
 <strong>Example:</strong> 99152/p0qhb66vvth  </p>
 <h5 id="2212-type">2.2.1.2 Type</h5>
-<p><strong>ID and name</strong>: 3.1.2 date_pid_type<br />
+<p><strong>ID and name:</strong> B3.1.2 date_pid_type<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
 <strong>Definition:</strong> The name of the data infrastructure. Mandatory if <code>B3.1.1 Value</code> is provided.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h4 id="222-date-type">2.2.2 Date type</h4>
-<p><strong>ID and name</strong>: B3.2 date_type<br />
+<p><strong>ID and name:</strong> B3.2 date_type<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
@@ -1851,14 +1868,14 @@
 <strong>Allowed values and other constraints:</strong> geological, archaeological<br />
 <strong>Example:</strong> archaeological  </p>
 <h4 id="223-absolute-date">2.2.3 Absolute Date</h4>
-<p><strong>ID and name</strong>: B3.3 date_absolute<br />
+<p><strong>ID and name:</strong> B3.3 date_absolute<br />
 <strong>Provided by:</strong> data provider, API<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> The absolute date of a point in time or period.   </p>
 <p><em>with the four subproperties:</em>  </p>
 <h5 id="2231-start">2.2.3.1 Start</h5>
-<p><strong>ID and name</strong>: B3.3.1 date_absolute_start<br />
+<p><strong>ID and name:</strong> B3.3.1 date_absolute_start<br />
 <strong>Provided by:</strong> data provider, API<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -1866,7 +1883,7 @@
 <strong>Allowed values and other constraints:</strong> integer<br />
 <strong>Example:</strong> -15  </p>
 <h5 id="2232-end">2.2.3.2 End</h5>
-<p><strong>ID and name</strong>: B3.3.2 date_absolute_end<br />
+<p><strong>ID and name:</strong> B3.3.2 date_absolute_end<br />
 <strong>Provided by:</strong> data provider, API<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -1874,14 +1891,14 @@
 <strong>Allowed values and other constraints:</strong> integer<br />
 <strong>Example:</strong> 15  </p>
 <h5 id="2233-dating-method">2.2.3.3 Dating method</h5>
-<p><strong>ID and name</strong>: B3.3.3 date_absolute_method<br />
+<p><strong>ID and name:</strong> B3.3.3 date_absolute_method<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> The method used to determine the absolute date. Mandatory if <code>B3.3.1 Start</code> is provided.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h5 id="2234-unit-of-date">2.2.3.4 Unit of date</h5>
-<p><strong>ID and name</strong>: B3.3.4 date_absolute_unit<br />
+<p><strong>ID and name:</strong> B3.3.4 date_absolute_unit<br />
 <strong>Provided by:</strong> TerraLID system<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
@@ -1889,29 +1906,29 @@
 <strong>Allowed values and other constraints:</strong> a, Ma<br />
 <strong>Example:</strong> a  </p>
 <h4 id="224-relative-date">2.2.4 Relative Date</h4>
-<p><strong>ID and name</strong>: B3.4 date_relative<br />
+<p><strong>ID and name:</strong> B3.4 date_relative<br />
 <strong>Provided by:</strong> data provider, API<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> The relative date of a point in time or period.   </p>
 <p><em>with the two subproperties:</em>  </p>
 <h5 id="2241-chronological-unit">2.2.4.1 Chronological unit</h5>
-<p><strong>ID and name</strong>: B3.4.1 date_relative_period<br />
+<p><strong>ID and name:</strong> B3.4.1 date_relative_period<br />
 <strong>Provided by:</strong> data provider, API<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
-<strong>Definition:</strong> The relative date expressed as chronological unit. <br />
+<strong>Definition:</strong> The relative date expressed as a chronological unit. <br />
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> Ha B2; Emsium  </p>
 <h5 id="2242-dating-method">2.2.4.2 Dating method</h5>
-<p><strong>ID and name</strong>: B3.4.2 date_relative_method<br />
+<p><strong>ID and name:</strong> B3.4.2 date_relative_method<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> The method used to determine the relative date. Mandatory if <code>B3.4.1 Chronological unit</code> is provided.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h4 id="225-cultural-unit">2.2.5 Cultural unit</h4>
-<p><strong>ID and name</strong>: B3.5 date_archaeo_cultural<br />
+<p><strong>ID and name:</strong> B3.5 date_archaeo_cultural<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–n<br />
@@ -1919,14 +1936,14 @@
 <strong>Allowed values and other constraints:</strong> free text, only available if <code>B3.2 Date type</code> = "archaeological".<br />
 <strong>Example:</strong> Roman  </p>
 <h4 id="226-orogenesis">2.2.6 Orogenesis</h4>
-<p><strong>ID and name</strong>: B3.6 date_geol_orogensis<br />
+<p><strong>ID and name:</strong> B3.6 date_geol_orogensis<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
-<strong>Definition:</strong> The relative date expressed as orogenic event.<br />
+<strong>Definition:</strong> The relative date expressed as anorogenic event.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary, only available if <code>B3.2 Date type</code> = "geological".  </p>
 <h4 id="227-definition-of-chronological-unit">2.2.7 Definition of chronological unit</h4>
-<p><strong>ID and name</strong>: B3.7 date_relative_reference<br />
+<p><strong>ID and name:</strong> B3.7 date_relative_reference<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
@@ -1939,14 +1956,14 @@
 
 <p><em>with the five subproperties:</em>  </p>
 <h6 id="2271-persistent-identifier">2.2.7.1 Persistent Identifier</h6>
-<p><strong>ID and name</strong>: B5.1 relation_pid<br />
+<p><strong>ID and name:</strong> B5.1 relation_pid<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> The persistent identifier or TerraLID ID associated with a resource or related research output. If referring to another entity in the TerraLID database, the TerraLID identifier must be used.   </p>
 <p><em>with the two subproperties:</em>  </p>
 <h6 id="22711-value"># 2.2.7.1.1 Value</h6>
-<p><strong>ID and name</strong>: B5.1.1 relation_pid_value<br />
+<p><strong>ID and name:</strong> B5.1.1 relation_pid_value<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
@@ -1954,14 +1971,14 @@
 <strong>Allowed values and other constraints:</strong> valid persistent identifier according to the options listed in <code>B5.1.2 Type</code>.<br />
 <strong>Example:</strong> 10.60510/ICDP5054ESYI201  </p>
 <h6 id="22712-type"># 2.2.7.1.2 Type</h6>
-<p><strong>ID and name</strong>: B5.1.2 relation_pid_type<br />
+<p><strong>ID and name:</strong> B5.1.2 relation_pid_type<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> The type of the identifier.  Mandatory if <code>B5.1.1 Value</code> is provided.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h6 id="2272-full-reference">2.2.7.2 Full reference</h6>
-<p><strong>ID and name</strong>: B5.2 relation_text<br />
+<p><strong>ID and name:</strong> B5.2 relation_text<br />
 <strong>Provided by:</strong> data provider, API (DOI)<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -1969,21 +1986,21 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> Palinkaš, L. A., 1985, Lead isotope patterns in galenas from some selected ore deposits in Croatia and NW Bosnia, Geološki Vjesnik, 38, 175–89.    </p>
 <h6 id="2273-kind-of-relation">2.2.7.3 Kind of relation</h6>
-<p><strong>ID and name</strong>: B5.3 relation_kind<br />
+<p><strong>ID and name:</strong> B5.3 relation_kind<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> Relationship between item and the research output. <br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h6 id="2274-type-of-resource">2.2.7.4 Type of resource</h6>
-<p><strong>ID and name</strong>: B5.4 relation_resource<br />
+<p><strong>ID and name:</strong> B5.4 relation_resource<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> Type of resource or research output. <br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h6 id="2275-additional-details">2.2.7.5 Additional details</h6>
-<p><strong>ID and name</strong>: B5.5 relation_detail<br />
+<p><strong>ID and name:</strong> B5.5 relation_detail<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–n<br />
@@ -1993,21 +2010,21 @@
 <!-- END INCLUDE -->
 
 <h2 id="3-mineralisation">3. Mineralisation</h2>
-<p><strong>ID and name</strong>: OO3 material_ore_mineralisation<br />
+<p><strong>ID and name:</strong> OO3 material_ore_mineralisation<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> Information about the mineralisation of the ore.  </p>
 <p><em>with the two subproperties:</em>  </p>
 <h3 id="31-mineralisation-type">3.1 Mineralisation type</h3>
-<p><strong>ID and name</strong>: OO3.1 material_ore_mineralisation_type<br />
+<p><strong>ID and name:</strong> OO3.1 material_ore_mineralisation_type<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> The type of fabric to which the mineral belongs to.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h3 id="32-mineralisation-phase">3.2 Mineralisation phase</h3>
-<p><strong>ID and name</strong>: OO3.2 material_ore_mineralisation_phase<br />
+<p><strong>ID and name:</strong> OO3.2 material_ore_mineralisation_phase<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -2015,14 +2032,14 @@
 <strong>Allowed values and other constraints:</strong> integer<br />
 <strong>Example:</strong> 2  </p>
 <h2 id="4-ore-chemistry">4. Ore chemistry</h2>
-<p><strong>ID and name</strong>: OO4 material_ore_chemistry<br />
+<p><strong>ID and name:</strong> OO4 material_ore_chemistry<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> Information about the chemical composition of the ore.  </p>
 <p><em>with the two subproperties:</em>  </p>
 <h3 id="41-chemical-composition">4.1 Chemical composition</h3>
-<p><strong>ID and name</strong>: OO4.1 material_ore_chemistry_element<br />
+<p><strong>ID and name:</strong> OO4.1 material_ore_chemistry_element<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
@@ -2031,28 +2048,28 @@
 
 <p><em>with the eight subproperties:</em>  </p>
 <h4 id="411-analytical-method">4.1.1 Analytical method</h4>
-<p><strong>ID and name</strong>: B4.1 chemistry_method<br />
+<p><strong>ID and name:</strong> B4.1 chemistry_method<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
 <strong>Definition:</strong> The method used to determine the chemical composition. <br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h4 id="412-analysed-compound">4.1.2 Analysed compound</h4>
-<p><strong>ID and name</strong>: B4.2 chemistry_compound<br />
+<p><strong>ID and name:</strong> B4.2 chemistry_compound<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> The analysed chemical compound (chemical element or oxide). <br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary, not available if a mass spectrometric-method is recorded in <code>B4.1 Analytical method</code>.  </p>
 <h4 id="413-analysed-isotope">4.1.3 Analysed isotope</h4>
-<p><strong>ID and name</strong>: B4.3 chemistry_icp_isotope<br />
+<p><strong>ID and name:</strong> B4.3 chemistry_icp_isotope<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> The isotope used for quantification of a chemical element. <br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary, only available if a mass spectrometric-method is recorded in <code>B4.1 Analytical method</code>.</p>
 <h4 id="414-value">4.1.4 Value</h4>
-<p><strong>ID and name</strong>: B4.4 chemistry_value<br />
+<p><strong>ID and name:</strong> B4.4 chemistry_value<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
@@ -2060,21 +2077,21 @@
 <strong>Allowed values and other constraints:</strong> decimal number<br />
 <strong>Example:</strong> 15.3  </p>
 <h4 id="415-unit">4.1.5 Unit</h4>
-<p><strong>ID and name</strong>: B4.5 chemistry_unit<br />
+<p><strong>ID and name:</strong> B4.5 chemistry_unit<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> The unit in which the concentration of the analysed chemical compound is given. <br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h4 id="416-uncertainty-type">4.1.6 Uncertainty type</h4>
-<p><strong>ID and name</strong>: B4.6 chemistry_uncertainty_type<br />
+<p><strong>ID and name:</strong> B4.6 chemistry_uncertainty_type<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> The type of analytical uncertainty.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h4 id="417-confidence-level">4.1.7 Confidence level</h4>
-<p><strong>ID and name</strong>: B4.7 chemistry_uncertainty_sigma<br />
+<p><strong>ID and name:</strong> B4.7 chemistry_uncertainty_sigma<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
@@ -2082,38 +2099,38 @@
 <strong>Allowed values and other constraints:</strong> 1, 2, 3<br />
 <strong>Example:</strong> 2  </p>
 <h4 id="418-uncertainty-value">4.1.8 Uncertainty value</h4>
-<p><strong>ID and name</strong>: B4.8 chemistry_uncertainty_value<br />
+<p><strong>ID and name:</strong> B4.8 chemistry_uncertainty_value<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> Value of the absolute analytical uncertainty.<br />
-<strong>Allowed values and other constraints:</strong> numeric, is decimal number double precision<br />
+<strong>Allowed values and other constraints:</strong> decimal number<br />
 <strong>Example:</strong> 0.3  </p>
 <!-- END INCLUDE -->
 
 <h3 id="42-abundance-category">4.2 Abundance category</h3>
-<p><strong>ID and name</strong>: OO4.2 material_ore_chemistry_category<br />
+<p><strong>ID and name:</strong> OO4.2 material_ore_chemistry_category<br />
 <strong>Provided by:</strong> TerraLID system<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> The abundance category of each element inferred from the chemical composition.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h2 id="5-alteration">5. Alteration</h2>
-<p><strong>ID and name</strong>: OO5 material_ore_alteration<br />
+<p><strong>ID and name:</strong> OO5 material_ore_alteration<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 1<br />
 <strong>Definition:</strong> The extent of alteration.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h2 id="6-deposit-type">6. Deposit type</h2>
-<p><strong>ID and name</strong>: OO6 material_ore_deposit<br />
+<p><strong>ID and name:</strong> OO6 material_ore_deposit<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> The type of the ore deposit.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h2 id="7-ore-district">7. Ore district</h2>
-<p><strong>ID and name</strong>: OO7 material_ore_district<br />
+<p><strong>ID and name:</strong> OO7 material_ore_district<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
@@ -2121,14 +2138,14 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> Mitterberg; Laurion; African Copper Belt  </p>
 <h2 id="8-access-to-targeted-metal">8. Access to targeted metal</h2>
-<p><strong>ID and name</strong>: OO8 material_ore_accessibility<br />
+<p><strong>ID and name:</strong> OO8 material_ore_accessibility<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> Information about whether the ore was accessible with pre–industrial mining and/or smelting technology?  </p>
 <p><em>with the two subproperties:</em>  </p>
 <h3 id="81-accessibility">8.1 Accessibility</h3>
-<p><strong>ID and name</strong>: OO8.1 material_ore_accessibility<br />
+<p><strong>ID and name:</strong> OO8.1 material_ore_accessibility<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -2136,7 +2153,7 @@
 <strong>Allowed values and other constraints:</strong> yes, no<br />
 <strong>Example:</strong> yes  </p>
 <h3 id="82-details">8.2 Details</h3>
-<p><strong>ID and name</strong>: OO8.2 material_ore_accessibility_detail<br />
+<p><strong>ID and name:</strong> OO8.2 material_ore_accessibility_detail<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />

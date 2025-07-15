@@ -53,6 +53,23 @@
     
     
     
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+     _paq.push(['trackPageView']);
+     _paq.push(['enableLinkTracking']);
+     (function() {
+       var u="https://stats.thga.de/";
+       _paq.push(['setTrackerUrl', u+'matomo.php']);
+       _paq.push(['setSiteId', '17']);
+       var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+       g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+     })();
+  </script>
+  <!-- End Matomo Code -->
+  
+
   </head>
   
   
@@ -1859,7 +1876,7 @@
 <!-- Table: Samples -->
 
 <h2 id="terralid-id">TerraLID ID</h2>
-<p><strong>ID and name</strong>: S0 terralid_sample_id<br />
+<p><strong>ID and name:</strong> S0 terralid_sample_id<br />
 <strong>Provided by:</strong> TerraLID system<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
@@ -1867,14 +1884,14 @@
 <strong>Allowed values and other constraints:</strong> t.b.d. <br />
 <strong>Example:</strong> t.b.d.   </p>
 <h2 id="1-sample-identifiers">1. Sample identifiers</h2>
-<p><strong>ID and name</strong>: S1 sample_identifiers<br />
+<p><strong>ID and name:</strong> S1 sample_identifiers<br />
 <strong>Provided by:</strong> data provider <br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> Identifiers assigned to the sample.   </p>
 <p><em>with the three subproperties:</em>  </p>
 <h3 id="11-laboratory-id">1.1 Laboratory ID</h3>
-<p><strong>ID and name</strong>: S1.1 sample_id_lab<br />
+<p><strong>ID and name:</strong> S1.1 sample_id_lab<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
@@ -1882,7 +1899,7 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> 2024/02  </p>
 <h3 id="12-value-of-persistent-identifier">1.2 Value of persistent Identifier</h3>
-<p><strong>ID and name</strong>: S1.2 sample_pid_value<br />
+<p><strong>ID and name:</strong> S1.2 sample_pid_value<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
@@ -1890,14 +1907,14 @@
 <strong>Allowed values and other constraints:</strong> valid persistent identifier according to <a href="./#13-type-of-persistent-identifier"><code>S1.3 Type of persistent identifier</code></a><br />
 <strong>Example:</strong> 10.60510/ICDP5054ESYI201  </p>
 <h3 id="13-type-of-persistent-identifier">1.3 Type of persistent identifier</h3>
-<p><strong>ID and name</strong>: S1.3 sample_pid_type<br />
+<p><strong>ID and name:</strong> S1.3 sample_pid_type<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> The type of a persistent identifier that was assigned to the sample. Mandatory if <a href="./#12-value-of-persistent-identifier"><code>S1.2 Value of persistent identifier</code></a> is provided.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h2 id="2-objective-of-sampling">2. Objective of sampling</h2>
-<p><strong>ID and name</strong>: S2 sample_objective<br />
+<p><strong>ID and name:</strong> S2 sample_objective<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -1905,21 +1922,21 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> provenance analysis  </p>
 <h2 id="3-sampled-material">3. Sampled material</h2>
-<p><strong>ID and name</strong>: S3 sample_material<br />
+<p><strong>ID and name:</strong> S3 sample_material<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> The material that was sampled. This may often be the material recorded at <a href="../metadata_objects/#12-material"><code>O12 Material</code></a> but can also be different, especially when a heterogeneous material is sampled.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h2 id="4-sampling-location">4. Sampling location</h2>
-<p><strong>ID and name</strong>: S4 sample_location<br />
+<p><strong>ID and name:</strong> S4 sample_location<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> Information about where on the object the sample was taken.   </p>
 <p><em>with the two subproperties:</em>  </p>
 <h3 id="41-description-of-sampling-location">4.1 Description of sampling location</h3>
-<p><strong>ID and name</strong>: S4.1 sample_location_description<br />
+<p><strong>ID and name:</strong> S4.1 sample_location_description<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -1927,7 +1944,7 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> side of the coin  </p>
 <h3 id="42-photo-of-sampling-location">4.2 Photo of sampling location</h3>
-<p><strong>ID and name</strong>: S4.2 sample_location_photo<br />
+<p><strong>ID and name:</strong> S4.2 sample_location_photo<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–1 <br />
@@ -1935,21 +1952,21 @@
 <strong>Allowed values and other constraints:</strong> file path<br />
 <strong>Example:</strong> t.b.d.  </p>
 <h2 id="5-sample-type">5. Sample type</h2>
-<p><strong>ID and name</strong>: S5 sample_type<br />
+<p><strong>ID and name:</strong> S5 sample_type<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
 <strong>Definition:</strong> The type of the sampled material. <br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h2 id="6-sample-weight">6. Sample weight</h2>
-<p><strong>ID and name</strong>: S6 sample_weight<br />
+<p><strong>ID and name:</strong> S6 sample_weight<br />
 <strong>Provided by:</strong> data provider <br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> The weight of the sample before analysis.  </p>
 <p><em>with the two subproperties:</em>  </p>
 <h3 id="61-value">6.1 Value</h3>
-<p><strong>ID and name</strong>: S6.1 sample_weight_value<br />
+<p><strong>ID and name:</strong> S6.1 sample_weight_value<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -1957,28 +1974,28 @@
 <strong>Allowed values and other constraints:</strong> decimal number<br />
 <strong>Example:</strong> 3.25  </p>
 <h3 id="62-unit">6.2 Unit</h3>
-<p><strong>ID and name</strong>: S6.2 sample_weight_unit<br />
+<p><strong>ID and name:</strong> S6.2 sample_weight_unit<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1 <br />
-<strong>Definition:</strong> SI init in which the weight is given. Mandatory if <a href="./#61-value"><code>S6.1 Value</code></a> is provided.<br />
+<strong>Definition:</strong> SI unit in which the weight is given. Mandatory if <a href="./#61-value"><code>S6.1 Value</code></a> is provided.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h2 id="7-sampling-method">7. Sampling method</h2>
-<p><strong>ID and name</strong>: S7 sample_method<br />
+<p><strong>ID and name:</strong> S7 sample_method<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> The method used to take the sample. <br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h2 id="8-sample-condition">8. Sample condition</h2>
-<p><strong>ID and name</strong>: S8 sample_condition<br />
+<p><strong>ID and name:</strong> S8 sample_condition<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
 <strong>Definition:</strong> The state of the sample after analysis.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h2 id="9-sampling-date">9. Sampling date</h2>
-<p><strong>ID and name</strong>: S9 sample_date<br />
+<p><strong>ID and name:</strong> S9 sample_date<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -1986,7 +2003,7 @@
 <strong>Allowed values and other constraints:</strong> date formatted as YYYY-MM-DD<br />
 <strong>Example:</strong> 2024-02-24  </p>
 <h2 id="10-sampling-laboratory">10. Sampling laboratory</h2>
-<p><strong>ID and name</strong>: S10 sample_laboratory<br />
+<p><strong>ID and name:</strong> S10 sample_laboratory<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -1994,7 +2011,7 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> Geochemistry laboratory of the University of Dreamland  </p>
 <h2 id="11-sample-description">11. Sample description</h2>
-<p><strong>ID and name</strong>: S11 sample_description<br />
+<p><strong>ID and name:</strong> S11 sample_description<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -2002,7 +2019,7 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> Sample was drilled with diamond-sputtered steel drill.   </p>
 <h2 id="12-bulk-pb-concentration">12. Bulk Pb concentration</h2>
-<p><strong>ID and name</strong>: S12 sample_chemistry_pb<br />
+<p><strong>ID and name:</strong> S12 sample_chemistry_pb<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -2011,28 +2028,28 @@
 
 <p><em>with the eight subproperties:</em>  </p>
 <h4 id="121-analytical-method">12.1 Analytical method</h4>
-<p><strong>ID and name</strong>: B4.1 chemistry_method<br />
+<p><strong>ID and name:</strong> B4.1 chemistry_method<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
 <strong>Definition:</strong> The method used to determine the chemical composition. <br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h4 id="122-analysed-compound">12.2 Analysed compound</h4>
-<p><strong>ID and name</strong>: B4.2 chemistry_compound<br />
+<p><strong>ID and name:</strong> B4.2 chemistry_compound<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> The analysed chemical compound (chemical element or oxide). <br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary, not available if a mass spectrometric-method is recorded in <code>B4.1 Analytical method</code>.  </p>
 <h4 id="123-analysed-isotope">12.3 Analysed isotope</h4>
-<p><strong>ID and name</strong>: B4.3 chemistry_icp_isotope<br />
+<p><strong>ID and name:</strong> B4.3 chemistry_icp_isotope<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> The isotope used for quantification of a chemical element. <br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary, only available if a mass spectrometric-method is recorded in <code>B4.1 Analytical method</code>.</p>
 <h4 id="124-value">12.4 Value</h4>
-<p><strong>ID and name</strong>: B4.4 chemistry_value<br />
+<p><strong>ID and name:</strong> B4.4 chemistry_value<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
@@ -2040,21 +2057,21 @@
 <strong>Allowed values and other constraints:</strong> decimal number<br />
 <strong>Example:</strong> 15.3  </p>
 <h4 id="125-unit">12.5 Unit</h4>
-<p><strong>ID and name</strong>: B4.5 chemistry_unit<br />
+<p><strong>ID and name:</strong> B4.5 chemistry_unit<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> The unit in which the concentration of the analysed chemical compound is given. <br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h4 id="126-uncertainty-type">12.6 Uncertainty type</h4>
-<p><strong>ID and name</strong>: B4.6 chemistry_uncertainty_type<br />
+<p><strong>ID and name:</strong> B4.6 chemistry_uncertainty_type<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> The type of analytical uncertainty.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h4 id="127-confidence-level">12.7 Confidence level</h4>
-<p><strong>ID and name</strong>: B4.7 chemistry_uncertainty_sigma<br />
+<p><strong>ID and name:</strong> B4.7 chemistry_uncertainty_sigma<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
@@ -2062,17 +2079,17 @@
 <strong>Allowed values and other constraints:</strong> 1, 2, 3<br />
 <strong>Example:</strong> 2  </p>
 <h4 id="128-uncertainty-value">12.8 Uncertainty value</h4>
-<p><strong>ID and name</strong>: B4.8 chemistry_uncertainty_value<br />
+<p><strong>ID and name:</strong> B4.8 chemistry_uncertainty_value<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> Value of the absolute analytical uncertainty.<br />
-<strong>Allowed values and other constraints:</strong> numeric, is decimal number double precision<br />
+<strong>Allowed values and other constraints:</strong> decimal number<br />
 <strong>Example:</strong> 0.3  </p>
 <!-- END INCLUDE -->
 
 <h2 id="13-sampling-person">13. Sampling person</h2>
-<p><strong>ID and name</strong>: S13 sample_creator<br />
+<p><strong>ID and name:</strong> S13 sample_creator<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
@@ -2081,7 +2098,7 @@
 
 <p><em>with the nine subproperties:</em>  </p>
 <h4 id="131-role">13.1 Role</h4>
-<p><strong>ID and name</strong>: B1.1 person_role<br />
+<p><strong>ID and name:</strong> B1.1 person_role<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
@@ -2089,7 +2106,7 @@
 <strong>Allowed values and other constraints:</strong> controlled vocabulary<br />
 <strong>Example:</strong> Author  </p>
 <h4 id="132-first-names">13.2 First names</h4>
-<p><strong>ID and name</strong>: B1.2 person_name_first<br />
+<p><strong>ID and name:</strong> B1.2 person_name_first<br />
 <strong>Provided by:</strong> data provider, API (ORCID ID)<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -2097,7 +2114,7 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> Jane  </p>
 <h4 id="133-last-name">13.3 Last Name</h4>
-<p><strong>ID and name</strong>: B1.3 Person_name_last<br />
+<p><strong>ID and name:</strong> B1.3 Person_name_last<br />
 <strong>Provided by:</strong> data provider, API (ORCID ID)<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -2105,7 +2122,7 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> Doe  </p>
 <h4 id="134-orcid-id">13.4 ORCID ID</h4>
-<p><strong>ID and name</strong>: B1.4 Person_ORCID<br />
+<p><strong>ID and name:</strong> B1.4 Person_ORCID<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -2113,7 +2130,7 @@
 <strong>Allowed values and other constraints:</strong> is valid ORCID ID<br />
 <strong>Example:</strong> 0000–0001–2345–678X  </p>
 <h4 id="135-affiliation-name">13.5 Affiliation name</h4>
-<p><strong>ID and name</strong>: B1.5 person_affiliation_name<br />
+<p><strong>ID and name:</strong> B1.5 person_affiliation_name<br />
 <strong>Provided by:</strong> data provider, API (ORCID ID, ROR ID)<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
@@ -2121,7 +2138,7 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> Institute of Time Travels  </p>
 <h4 id="136-ror-id">13.6 ROR ID</h4>
-<p><strong>ID and name</strong>: B1.6 person_affiliation_ror<br />
+<p><strong>ID and name:</strong> B1.6 person_affiliation_ror<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
@@ -2129,15 +2146,15 @@
 <strong>Allowed values and other constraints:</strong> is valid ROR ID<br />
 <strong>Example:</strong> 09af7gtg53  </p>
 <h4 id="137-address">13.7 Address</h4>
-<p><strong>ID and name</strong>: B1.7 person_affiliation_address<br />
+<p><strong>ID and name:</strong> B1.7 person_affiliation_address<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> The address of the person's affiliation.<br />
 <strong>Allowed values and other constraints:</strong> free text<br />
-<strong>Example:</strong> Teleporter Avenue 123, Ankh–Morpok, Unites Stated of Humanities  </p>
+<strong>Example:</strong> Teleporter Avenue 123, Ankh–Morpok, United States of Humanities  </p>
 <h4 id="138-mail-address">13.8 Mail address</h4>
-<p><strong>ID and name</strong>: B1.8 person_mail<br />
+<p><strong>ID and name:</strong> B1.8 person_mail<br />
 <strong>Provided by:</strong> data provider, API (ORCID ID)<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
@@ -2145,7 +2162,7 @@
 <strong>Allowed values and other constraints:</strong> is valid mail address<br />
 <strong>Example:</strong> jane.doe@timetravels.int  </p>
 <h4 id="139-website">13.9 Website</h4>
-<p><strong>ID and name</strong>: B1.9 person_url<br />
+<p><strong>ID and name:</strong> B1.9 person_url<br />
 <strong>Provided by:</strong> data provider, API (ORCID ID)<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -2155,7 +2172,7 @@
 <!-- END INCLUDE -->
 
 <h2 id="14-sample-status">14. Sample status</h2>
-<p><strong>ID and name</strong>: S14 sample_status<br />
+<p><strong>ID and name:</strong> S14 sample_status<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
@@ -2164,14 +2181,14 @@
 
 <p><em>with the two subproperties:</em>  </p>
 <h4 id="141-institution">14.1 Institution</h4>
-<p><strong>ID and name</strong>: B2.1 status_institution<br />
+<p><strong>ID and name:</strong> B2.1 status_institution<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> The institution at which the material is located.   </p>
 <p><em>with the five subproperties:</em>  </p>
 <h5 id="1411-name">14.1.1 Name</h5>
-<p><strong>ID and name</strong>: B2.1.1 status_institution_name<br />
+<p><strong>ID and name:</strong> B2.1.1 status_institution_name<br />
 <strong>Provided by:</strong> data provider, API (ROR ID)<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
@@ -2179,7 +2196,7 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> Institute of Time Travels  </p>
 <h5 id="1412-ror">14.1.2 ROR</h5>
-<p><strong>ID and name</strong>: B2.1.2 status_institution_ror<br />
+<p><strong>ID and name:</strong> B2.1.2 status_institution_ror<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -2187,15 +2204,15 @@
 <strong>Allowed values and other constraints:</strong> is valid ROR ID<br />
 <strong>Example:</strong> 09af7gtg53  </p>
 <h5 id="1413-address">14.1.3 Address</h5>
-<p><strong>ID and name</strong>: B2.1.3 status_institution_address<br />
+<p><strong>ID and name:</strong> B2.1.3 status_institution_address<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> Address of the institution. <br />
 <strong>Allowed values and other constraints:</strong> free text<br />
-<strong>Example:</strong> Teleporter Avenue 123, Ankh–Morpok, Unites States of Humanities  </p>
+<strong>Example:</strong> Teleporter Avenue 123, Ankh–Morpok, United States of Humanities  </p>
 <h5 id="1414-storage-location">14.1.4 Storage location</h5>
-<p><strong>ID and name</strong>: B2.1.4 status_institution_location<br />
+<p><strong>ID and name:</strong> B2.1.4 status_institution_location<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -2203,7 +2220,7 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> Archive 9, shelf 3, box 1  </p>
 <h5 id="1415-contact">14.1.5 Contact</h5>
-<p><strong>ID and name</strong>: B2.1.5 status_institution_contact<br />
+<p><strong>ID and name:</strong> B2.1.5 status_institution_contact<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
@@ -2211,7 +2228,7 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> t.b.d.  </p>
 <h4 id="142-accessibility">14.2 Accessibility</h4>
-<p><strong>ID and name</strong>: B2.2 status_accessibility<br />
+<p><strong>ID and name:</strong> B2.2 status_accessibility<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -2220,24 +2237,23 @@
 <!-- END INCLUDE -->
 
 <h2 id="15-relations">15. Relations</h2>
-<p><strong>ID and name</strong>: S15 sample_relation<br />
+<p><strong>ID and name:</strong> S15 sample_relation<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
-<strong>Definition:</strong> Information about related entities or other research outputs such as publications providing relevant information about the sample.<br />
 <strong>Definition:</strong> Information about related entities, including analysis made on the sample, and other research output such as publications providing relevant information about the sample. This includes any literature from which information about the sample was extracted.  </p>
 <!-- BEGIN INCLUDE ../includes/metadata_blocks.md '&lt;!--relation-start--&gt;' '&lt;!--relation-end--&gt;' -->
 
 <p><em>with the five subproperties:</em>  </p>
 <h4 id="151-persistent-identifier">15.1 Persistent Identifier</h4>
-<p><strong>ID and name</strong>: B5.1 relation_pid<br />
+<p><strong>ID and name:</strong> B5.1 relation_pid<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> The persistent identifier or TerraLID ID associated with a resource or related research output. If referring to another entity in the TerraLID database, the TerraLID identifier must be used.   </p>
 <p><em>with the two subproperties:</em>  </p>
 <h5 id="1511-value">15.1.1 Value</h5>
-<p><strong>ID and name</strong>: B5.1.1 relation_pid_value<br />
+<p><strong>ID and name:</strong> B5.1.1 relation_pid_value<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
@@ -2245,14 +2261,14 @@
 <strong>Allowed values and other constraints:</strong> valid persistent identifier according to the options listed in <code>B5.1.2 Type</code>.<br />
 <strong>Example:</strong> 10.60510/ICDP5054ESYI201  </p>
 <h5 id="1512-type">15.1.2 Type</h5>
-<p><strong>ID and name</strong>: B5.1.2 relation_pid_type<br />
+<p><strong>ID and name:</strong> B5.1.2 relation_pid_type<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> The type of the identifier.  Mandatory if <code>B5.1.1 Value</code> is provided.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h4 id="152-full-reference">15.2 Full reference</h4>
-<p><strong>ID and name</strong>: B5.2 relation_text<br />
+<p><strong>ID and name:</strong> B5.2 relation_text<br />
 <strong>Provided by:</strong> data provider, API (DOI)<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -2260,21 +2276,21 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> Palinkaš, L. A., 1985, Lead isotope patterns in galenas from some selected ore deposits in Croatia and NW Bosnia, Geološki Vjesnik, 38, 175–89.    </p>
 <h4 id="153-kind-of-relation">15.3 Kind of relation</h4>
-<p><strong>ID and name</strong>: B5.3 relation_kind<br />
+<p><strong>ID and name:</strong> B5.3 relation_kind<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> Relationship between item and the research output. <br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h4 id="154-type-of-resource">15.4 Type of resource</h4>
-<p><strong>ID and name</strong>: B5.4 relation_resource<br />
+<p><strong>ID and name:</strong> B5.4 relation_resource<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> Type of resource or research output. <br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h4 id="155-additional-details">15.5 Additional details</h4>
-<p><strong>ID and name</strong>: B5.5 relation_detail<br />
+<p><strong>ID and name:</strong> B5.5 relation_detail<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–n<br />

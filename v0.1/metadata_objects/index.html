@@ -53,6 +53,23 @@
     
     
     
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+     _paq.push(['trackPageView']);
+     _paq.push(['enableLinkTracking']);
+     (function() {
+       var u="https://stats.thga.de/";
+       _paq.push(['setTrackerUrl', u+'matomo.php']);
+       _paq.push(['setSiteId', '17']);
+       var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+       g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+     })();
+  </script>
+  <!-- End Matomo Code -->
+  
+
   </head>
   
   
@@ -2729,7 +2746,7 @@
 <!-- Table: Objects -->
 
 <h2 id="terralid-id">TerraLID ID</h2>
-<p><strong>ID and name</strong>: O0 terralid_object_id<br />
+<p><strong>ID and name:</strong> O0 terralid_object_id<br />
 <strong>Provided by:</strong> TerraLID system<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
@@ -2737,7 +2754,7 @@
 <strong>Allowed values and other constraints:</strong> t.b.d.<br />
 <strong>Example:</strong> t.b.d.  </p>
 <h2 id="1-collectors">1. Collectors</h2>
-<p><strong>ID and name</strong>: O1 object_collectors<br />
+<p><strong>ID and name:</strong> O1 object_collectors<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
@@ -2746,7 +2763,7 @@
 
 <p><em>with the nine subproperties:</em>  </p>
 <h4 id="11-role">1.1 Role</h4>
-<p><strong>ID and name</strong>: B1.1 person_role<br />
+<p><strong>ID and name:</strong> B1.1 person_role<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
@@ -2754,7 +2771,7 @@
 <strong>Allowed values and other constraints:</strong> controlled vocabulary<br />
 <strong>Example:</strong> Author  </p>
 <h4 id="12-first-names">1.2 First names</h4>
-<p><strong>ID and name</strong>: B1.2 person_name_first<br />
+<p><strong>ID and name:</strong> B1.2 person_name_first<br />
 <strong>Provided by:</strong> data provider, API (ORCID ID)<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -2762,7 +2779,7 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> Jane  </p>
 <h4 id="13-last-name">1.3 Last Name</h4>
-<p><strong>ID and name</strong>: B1.3 Person_name_last<br />
+<p><strong>ID and name:</strong> B1.3 Person_name_last<br />
 <strong>Provided by:</strong> data provider, API (ORCID ID)<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -2770,7 +2787,7 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> Doe  </p>
 <h4 id="14-orcid-id">1.4 ORCID ID</h4>
-<p><strong>ID and name</strong>: B1.4 Person_ORCID<br />
+<p><strong>ID and name:</strong> B1.4 Person_ORCID<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -2778,7 +2795,7 @@
 <strong>Allowed values and other constraints:</strong> is valid ORCID ID<br />
 <strong>Example:</strong> 0000–0001–2345–678X  </p>
 <h4 id="15-affiliation-name">1.5 Affiliation name</h4>
-<p><strong>ID and name</strong>: B1.5 person_affiliation_name<br />
+<p><strong>ID and name:</strong> B1.5 person_affiliation_name<br />
 <strong>Provided by:</strong> data provider, API (ORCID ID, ROR ID)<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
@@ -2786,7 +2803,7 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> Institute of Time Travels  </p>
 <h4 id="16-ror-id">1.6 ROR ID</h4>
-<p><strong>ID and name</strong>: B1.6 person_affiliation_ror<br />
+<p><strong>ID and name:</strong> B1.6 person_affiliation_ror<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
@@ -2794,15 +2811,15 @@
 <strong>Allowed values and other constraints:</strong> is valid ROR ID<br />
 <strong>Example:</strong> 09af7gtg53  </p>
 <h4 id="17-address">1.7 Address</h4>
-<p><strong>ID and name</strong>: B1.7 person_affiliation_address<br />
+<p><strong>ID and name:</strong> B1.7 person_affiliation_address<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> The address of the person's affiliation.<br />
 <strong>Allowed values and other constraints:</strong> free text<br />
-<strong>Example:</strong> Teleporter Avenue 123, Ankh–Morpok, Unites Stated of Humanities  </p>
+<strong>Example:</strong> Teleporter Avenue 123, Ankh–Morpok, United States of Humanities  </p>
 <h4 id="18-mail-address">1.8 Mail address</h4>
-<p><strong>ID and name</strong>: B1.8 person_mail<br />
+<p><strong>ID and name:</strong> B1.8 person_mail<br />
 <strong>Provided by:</strong> data provider, API (ORCID ID)<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
@@ -2810,7 +2827,7 @@
 <strong>Allowed values and other constraints:</strong> is valid mail address<br />
 <strong>Example:</strong> jane.doe@timetravels.int  </p>
 <h4 id="19-website">1.9 Website</h4>
-<p><strong>ID and name</strong>: B1.9 person_url<br />
+<p><strong>ID and name:</strong> B1.9 person_url<br />
 <strong>Provided by:</strong> data provider, API (ORCID ID)<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -2820,7 +2837,7 @@
 <!-- END INCLUDE -->
 
 <h2 id="2-contributors">2. Contributors</h2>
-<p><strong>ID and name</strong>: O2 object_contributors<br />
+<p><strong>ID and name:</strong> O2 object_contributors<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
@@ -2829,7 +2846,7 @@
 
 <p><em>with the nine subproperties:</em>  </p>
 <h4 id="21-role">2.1 Role</h4>
-<p><strong>ID and name</strong>: B1.1 person_role<br />
+<p><strong>ID and name:</strong> B1.1 person_role<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
@@ -2837,7 +2854,7 @@
 <strong>Allowed values and other constraints:</strong> controlled vocabulary<br />
 <strong>Example:</strong> Author  </p>
 <h4 id="22-first-names">2.2 First names</h4>
-<p><strong>ID and name</strong>: B1.2 person_name_first<br />
+<p><strong>ID and name:</strong> B1.2 person_name_first<br />
 <strong>Provided by:</strong> data provider, API (ORCID ID)<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -2845,7 +2862,7 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> Jane  </p>
 <h4 id="23-last-name">2.3 Last Name</h4>
-<p><strong>ID and name</strong>: B1.3 Person_name_last<br />
+<p><strong>ID and name:</strong> B1.3 Person_name_last<br />
 <strong>Provided by:</strong> data provider, API (ORCID ID)<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -2853,7 +2870,7 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> Doe  </p>
 <h4 id="24-orcid-id">2.4 ORCID ID</h4>
-<p><strong>ID and name</strong>: B1.4 Person_ORCID<br />
+<p><strong>ID and name:</strong> B1.4 Person_ORCID<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -2861,7 +2878,7 @@
 <strong>Allowed values and other constraints:</strong> is valid ORCID ID<br />
 <strong>Example:</strong> 0000–0001–2345–678X  </p>
 <h4 id="25-affiliation-name">2.5 Affiliation name</h4>
-<p><strong>ID and name</strong>: B1.5 person_affiliation_name<br />
+<p><strong>ID and name:</strong> B1.5 person_affiliation_name<br />
 <strong>Provided by:</strong> data provider, API (ORCID ID, ROR ID)<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
@@ -2869,7 +2886,7 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> Institute of Time Travels  </p>
 <h4 id="26-ror-id">2.6 ROR ID</h4>
-<p><strong>ID and name</strong>: B1.6 person_affiliation_ror<br />
+<p><strong>ID and name:</strong> B1.6 person_affiliation_ror<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
@@ -2877,15 +2894,15 @@
 <strong>Allowed values and other constraints:</strong> is valid ROR ID<br />
 <strong>Example:</strong> 09af7gtg53  </p>
 <h4 id="27-address">2.7 Address</h4>
-<p><strong>ID and name</strong>: B1.7 person_affiliation_address<br />
+<p><strong>ID and name:</strong> B1.7 person_affiliation_address<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> The address of the person's affiliation.<br />
 <strong>Allowed values and other constraints:</strong> free text<br />
-<strong>Example:</strong> Teleporter Avenue 123, Ankh–Morpok, Unites Stated of Humanities  </p>
+<strong>Example:</strong> Teleporter Avenue 123, Ankh–Morpok, United States of Humanities  </p>
 <h4 id="28-mail-address">2.8 Mail address</h4>
-<p><strong>ID and name</strong>: B1.8 person_mail<br />
+<p><strong>ID and name:</strong> B1.8 person_mail<br />
 <strong>Provided by:</strong> data provider, API (ORCID ID)<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
@@ -2893,7 +2910,7 @@
 <strong>Allowed values and other constraints:</strong> is valid mail address<br />
 <strong>Example:</strong> jane.doe@timetravels.int  </p>
 <h4 id="29-website">2.9 Website</h4>
-<p><strong>ID and name</strong>: B1.9 person_url<br />
+<p><strong>ID and name:</strong> B1.9 person_url<br />
 <strong>Provided by:</strong> data provider, API (ORCID ID)<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -2903,7 +2920,7 @@
 <!-- END INCLUDE -->
 
 <h2 id="3-object-title">3. Object title</h2>
-<p><strong>ID and name</strong>: O3 object_title<br />
+<p><strong>ID and name:</strong> O3 object_title<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
@@ -2911,22 +2928,22 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> Coin 231 of hoard from the northwest palace in Atlantis  </p>
 <h2 id="4-object-description">4. Object description</h2>
-<p><strong>ID and name</strong>: O4 object_description<br />
+<p><strong>ID and name:</strong> O4 object_description<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> (Detailed) description of the object. Should include information about the object and its collection not captured in other properties. For example, the primary reason for object collection or selection in terms of analytics.<br />
 <strong>Allowed values and other constraints:</strong> free text<br />
-<strong>Example:</strong> Galena-rich sediment from washing pit.  </p>
+<strong>Example:</strong> Galena-rich sediment from the washing pit.  </p>
 <h2 id="5-object-identifiers">5. Object identifiers</h2>
-<p><strong>ID and name</strong>: O5 object_identifiers<br />
+<p><strong>ID and name:</strong> O5 object_identifiers<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
-<strong>Definition:</strong> Identifiers associated to the object.  </p>
+<strong>Definition:</strong> Identifiers associated with the object.  </p>
 <p><em>with the four subproperties:</em>  </p>
 <h3 id="51-value-of-persistent-identifier">5.1 Value of persistent identifier</h3>
-<p><strong>ID and name</strong>: O5.1 object_pid_value<br />
+<p><strong>ID and name:</strong> O5.1 object_pid_value<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
@@ -2934,14 +2951,14 @@
 <strong>Allowed values and other constraints:</strong> valid persistent identifier according to <a href="./#52-type-of-persistent-identifier"><code>O5.2 Type of persistent identifier</code></a><br />
 <strong>Example:</strong> 10.60510/ABCD123EF4567  </p>
 <h3 id="52-type-of-persistent-identifier">5.2 Type of persistent identifier</h3>
-<p><strong>ID and name</strong>: O5.2 object_pid_type<br />
+<p><strong>ID and name:</strong> O5.2 object_pid_type<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> The type of a persistent identifier that was assigned to the object. Mandatory if <a href="./#51-value-of-persistent-identifier"><code>O5.1 Value of persistent identifier</code></a> is provided.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h3 id="53-value-of-other-identifier">5.3 Value of other identifier</h3>
-<p><strong>ID and name</strong>: O5.3 object_id_value<br />
+<p><strong>ID and name:</strong> O5.3 object_id_value<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
@@ -2949,7 +2966,7 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> AG-01  </p>
 <h3 id="54-type-of-other-identifier">5.4 Type of other identifier</h3>
-<p><strong>ID and name</strong>: O5.4 object_id_type<br />
+<p><strong>ID and name:</strong> O5.4 object_id_type<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
@@ -2957,7 +2974,7 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> catalogue in the final excavation report  </p>
 <h2 id="6-date-of-collection">6. Date of collection</h2>
-<p><strong>ID and name</strong>: O6 object_collection_date<br />
+<p><strong>ID and name:</strong> O6 object_collection_date<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
@@ -2965,35 +2982,35 @@
 <strong>Allowed values and other constraints:</strong> date formatted as YYYY-MM-DD<br />
 <strong>Example:</strong> 1990-06-08  </p>
 <h2 id="7-collection-method">7. Collection method</h2>
-<p><strong>ID and name</strong>: O7 object_collection_method<br />
+<p><strong>ID and name:</strong> O7 object_collection_method<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> How the object was collected or obtained.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h2 id="8-object-housing">8. Object housing</h2>
-<p><strong>ID and name</strong>: O8 object_housing<br />
+<p><strong>ID and name:</strong> O8 object_housing<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> The material in which the object is currently stored or was stored at any time after its collection. At least the current state should be recorded.  </p>
 <p><em>with the two subproperties:</em>  </p>
 <h3 id="81-housing-material">8.1 Housing material</h3>
-<p><strong>ID and name</strong>: O8.1 object_housing_material<br />
+<p><strong>ID and name:</strong> O8.1 object_housing_material<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> The material the object was or is stored in at the stage in its life cycle recorded in <a href="./#82-stage-of-storage"><code>O8.2 Stage of Storage</code></a>.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h3 id="82-stage-of-storage">8.2 Stage of Storage</h3>
-<p><strong>ID and name</strong>: O8.2 object_housing_stage<br />
+<p><strong>ID and name:</strong> O8.2 object_housing_stage<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
-<strong>Definition:</strong> The stage of the objects life cycle when the object was stored in the material recorded in <a href="./#82-stage-of-storage"><code>O8.1 Housing material</code></a>. Mandatory if <a href="./#82-stage-of-storage"><code>O8.1 Housing material</code></a> is provided.<br />
+<strong>Definition:</strong> The stage of the object's life cycle when the object was stored in the material recorded in <a href="./#82-stage-of-storage"><code>O8.1 Housing material</code></a>. Mandatory if <a href="./#82-stage-of-storage"><code>O8.1 Housing material</code></a> is provided.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h2 id="9-object-photo">9. Object photo</h2>
-<p><strong>ID and name</strong>: O9 object_photo<br />
+<p><strong>ID and name:</strong> O9 object_photo<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
@@ -3001,14 +3018,14 @@
 <strong>Allowed values and other constraints:</strong> file path<br />
 <strong>Example:</strong> t.b.d.  </p>
 <h2 id="10-object-weight">10. Object weight</h2>
-<p><strong>ID and name</strong>: O10 object_weight<br />
+<p><strong>ID and name:</strong> O10 object_weight<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> The weight of the object at the point of collection, before analysis.  </p>
 <p><em>with the three subproperties:</em>  </p>
 <h3 id="101-value">10.1 Value</h3>
-<p><strong>ID and name</strong>: O10.1 object_weight_value<br />
+<p><strong>ID and name:</strong> O10.1 object_weight_value<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -3016,14 +3033,14 @@
 <strong>Allowed values and other constraints:</strong> decimal number<br />
 <strong>Example:</strong> 120.3  </p>
 <h3 id="102-unit">10.2 Unit</h3>
-<p><strong>ID and name</strong>: O10.2 object_weight_unit<br />
+<p><strong>ID and name:</strong> O10.2 object_weight_unit<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
 <strong>Definition:</strong> SI unit in which the weight is given. Mandatory if <a href="./#101-value"><code>O10.1 Value</code></a> is provided.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h3 id="103-weight-condition">10.3 Weight condition</h3>
-<p><strong>ID and name</strong>: O10.3 object_weight_condition<br />
+<p><strong>ID and name:</strong> O10.3 object_weight_condition<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -3031,14 +3048,14 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> dry sandy material adhering to object  </p>
 <h2 id="11-object-dimensions">11. Object dimensions</h2>
-<p><strong>ID and name</strong>: O11 object_dimension<br />
+<p><strong>ID and name:</strong> O11 object_dimension<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> The dimensions of the object.  </p>
 <p><em>with the four subproperties:</em>  </p>
 <h3 id="111-height">11.1 Height</h3>
-<p><strong>ID and name</strong>: O11.1 object_dimension_height<br />
+<p><strong>ID and name:</strong> O11.1 object_dimension_height<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -3046,7 +3063,7 @@
 <strong>Allowed values and other constraints:</strong> decimal number<br />
 <strong>Example:</strong> 3.52  </p>
 <h3 id="112-length">11.2 Length</h3>
-<p><strong>ID and name</strong>: O11.2 object_dimension_length<br />
+<p><strong>ID and name:</strong> O11.2 object_dimension_length<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -3054,7 +3071,7 @@
 <strong>Allowed values and other constraints:</strong> decimal number<br />
 <strong>Example:</strong> 10.30  </p>
 <h3 id="113-width">11.3 Width</h3>
-<p><strong>ID and name</strong>: O11.3 object_dimension_width<br />
+<p><strong>ID and name:</strong> O11.3 object_dimension_width<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -3062,21 +3079,21 @@
 <strong>Allowed values and other constraints:</strong> decimal number<br />
 <strong>Example:</strong> 2.42  </p>
 <h3 id="114-unit-of-dimensions">11.4 Unit of Dimensions</h3>
-<p><strong>ID and name</strong>: O11.4 object_dimension_unit<br />
+<p><strong>ID and name:</strong> O11.4 object_dimension_unit<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
 <strong>Definition:</strong> Unit in which the dimensions of the object are provided. Mandatory if any of <a href="./#111-height"><code>O11.1 Height</code></a>, <a href="./#112-length"><code>O11.2 Length</code></a>, and <a href="./#113-width"><code>O11.3 Width</code></a> is provided.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h2 id="12-material">12. Material</h2>
-<p><strong>ID and name</strong>: O12 object_material<br />
+<p><strong>ID and name:</strong> O12 object_material<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
 <strong>Definition:</strong> The material the object is made of.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary. This property determines which material-specific metadata will be additionally recorded. </p>
 <h2 id="13-bulk-pb-concentration">13. Bulk Pb concentration</h2>
-<p><strong>ID and name</strong>: O13 object_bulk_chemistry_pb<br />
+<p><strong>ID and name:</strong> O13 object_bulk_chemistry_pb<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -3085,28 +3102,28 @@
 
 <p><em>with the eight subproperties:</em>  </p>
 <h4 id="131-analytical-method">13.1 Analytical method</h4>
-<p><strong>ID and name</strong>: B4.1 chemistry_method<br />
+<p><strong>ID and name:</strong> B4.1 chemistry_method<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
 <strong>Definition:</strong> The method used to determine the chemical composition. <br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h4 id="132-analysed-compound">13.2 Analysed compound</h4>
-<p><strong>ID and name</strong>: B4.2 chemistry_compound<br />
+<p><strong>ID and name:</strong> B4.2 chemistry_compound<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> The analysed chemical compound (chemical element or oxide). <br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary, not available if a mass spectrometric-method is recorded in <code>B4.1 Analytical method</code>.  </p>
 <h4 id="133-analysed-isotope">13.3 Analysed isotope</h4>
-<p><strong>ID and name</strong>: B4.3 chemistry_icp_isotope<br />
+<p><strong>ID and name:</strong> B4.3 chemistry_icp_isotope<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> The isotope used for quantification of a chemical element. <br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary, only available if a mass spectrometric-method is recorded in <code>B4.1 Analytical method</code>.</p>
 <h4 id="134-value">13.4 Value</h4>
-<p><strong>ID and name</strong>: B4.4 chemistry_value<br />
+<p><strong>ID and name:</strong> B4.4 chemistry_value<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
@@ -3114,21 +3131,21 @@
 <strong>Allowed values and other constraints:</strong> decimal number<br />
 <strong>Example:</strong> 15.3  </p>
 <h4 id="135-unit">13.5 Unit</h4>
-<p><strong>ID and name</strong>: B4.5 chemistry_unit<br />
+<p><strong>ID and name:</strong> B4.5 chemistry_unit<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> The unit in which the concentration of the analysed chemical compound is given. <br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h4 id="136-uncertainty-type">13.6 Uncertainty type</h4>
-<p><strong>ID and name</strong>: B4.6 chemistry_uncertainty_type<br />
+<p><strong>ID and name:</strong> B4.6 chemistry_uncertainty_type<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> The type of analytical uncertainty.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h4 id="137-confidence-level">13.7 Confidence level</h4>
-<p><strong>ID and name</strong>: B4.7 chemistry_uncertainty_sigma<br />
+<p><strong>ID and name:</strong> B4.7 chemistry_uncertainty_sigma<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
@@ -3136,17 +3153,17 @@
 <strong>Allowed values and other constraints:</strong> 1, 2, 3<br />
 <strong>Example:</strong> 2  </p>
 <h4 id="138-uncertainty-value">13.8 Uncertainty value</h4>
-<p><strong>ID and name</strong>: B4.8 chemistry_uncertainty_value<br />
+<p><strong>ID and name:</strong> B4.8 chemistry_uncertainty_value<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> Value of the absolute analytical uncertainty.<br />
-<strong>Allowed values and other constraints:</strong> numeric, is decimal number double precision<br />
+<strong>Allowed values and other constraints:</strong> decimal number<br />
 <strong>Example:</strong> 0.3  </p>
 <!-- END INCLUDE -->
 
 <h2 id="14-dating-of-object">14. Dating of object</h2>
-<p><strong>ID and name</strong>: O14 object_date<br />
+<p><strong>ID and name:</strong> O14 object_date<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
@@ -3155,28 +3172,28 @@
 
 <p><em>with the eight subproperties:</em>  </p>
 <h4 id="141-persistent-identifier">14.1 Persistent identifier</h4>
-<p><strong>ID and name</strong>: B3.1 date_pid<br />
+<p><strong>ID and name:</strong> B3.1 date_pid<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n  </p>
 <p><em>with the two subproperties:</em>  </p>
 <h5 id="1411-value">14.1.1 Value</h5>
-<p><strong>ID and name</strong>: B3.1.1 date_pid_value<br />
+<p><strong>ID and name:</strong> B3.1.1 date_pid_value<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> The value of the persistent identifier. <br />
-<strong>Allowed values and other constraints:</strong> The periods's persistent identifier in one or more of the data infrastructures listed in <code>B3.1.2 Type</code>.<br />
+<strong>Allowed values and other constraints:</strong> The period's persistent identifier in one or more of the data infrastructures listed in <code>B3.1.2 Type</code>.<br />
 <strong>Example:</strong> 99152/p0qhb66vvth  </p>
 <h5 id="1412-type">14.1.2 Type</h5>
-<p><strong>ID and name</strong>: 3.1.2 date_pid_type<br />
+<p><strong>ID and name:</strong> B3.1.2 date_pid_type<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
 <strong>Definition:</strong> The name of the data infrastructure. Mandatory if <code>B3.1.1 Value</code> is provided.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h4 id="142-date-type">14.2 Date type</h4>
-<p><strong>ID and name</strong>: B3.2 date_type<br />
+<p><strong>ID and name:</strong> B3.2 date_type<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
@@ -3184,14 +3201,14 @@
 <strong>Allowed values and other constraints:</strong> geological, archaeological<br />
 <strong>Example:</strong> archaeological  </p>
 <h4 id="143-absolute-date">14.3 Absolute Date</h4>
-<p><strong>ID and name</strong>: B3.3 date_absolute<br />
+<p><strong>ID and name:</strong> B3.3 date_absolute<br />
 <strong>Provided by:</strong> data provider, API<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> The absolute date of a point in time or period.   </p>
 <p><em>with the four subproperties:</em>  </p>
 <h5 id="1431-start">14.3.1 Start</h5>
-<p><strong>ID and name</strong>: B3.3.1 date_absolute_start<br />
+<p><strong>ID and name:</strong> B3.3.1 date_absolute_start<br />
 <strong>Provided by:</strong> data provider, API<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -3199,7 +3216,7 @@
 <strong>Allowed values and other constraints:</strong> integer<br />
 <strong>Example:</strong> -15  </p>
 <h5 id="1432-end">14.3.2 End</h5>
-<p><strong>ID and name</strong>: B3.3.2 date_absolute_end<br />
+<p><strong>ID and name:</strong> B3.3.2 date_absolute_end<br />
 <strong>Provided by:</strong> data provider, API<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -3207,14 +3224,14 @@
 <strong>Allowed values and other constraints:</strong> integer<br />
 <strong>Example:</strong> 15  </p>
 <h5 id="1433-dating-method">14.3.3 Dating method</h5>
-<p><strong>ID and name</strong>: B3.3.3 date_absolute_method<br />
+<p><strong>ID and name:</strong> B3.3.3 date_absolute_method<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> The method used to determine the absolute date. Mandatory if <code>B3.3.1 Start</code> is provided.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h5 id="1434-unit-of-date">14.3.4 Unit of date</h5>
-<p><strong>ID and name</strong>: B3.3.4 date_absolute_unit<br />
+<p><strong>ID and name:</strong> B3.3.4 date_absolute_unit<br />
 <strong>Provided by:</strong> TerraLID system<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
@@ -3222,29 +3239,29 @@
 <strong>Allowed values and other constraints:</strong> a, Ma<br />
 <strong>Example:</strong> a  </p>
 <h4 id="144-relative-date">14.4 Relative Date</h4>
-<p><strong>ID and name</strong>: B3.4 date_relative<br />
+<p><strong>ID and name:</strong> B3.4 date_relative<br />
 <strong>Provided by:</strong> data provider, API<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> The relative date of a point in time or period.   </p>
 <p><em>with the two subproperties:</em>  </p>
 <h5 id="1441-chronological-unit">14.4.1 Chronological unit</h5>
-<p><strong>ID and name</strong>: B3.4.1 date_relative_period<br />
+<p><strong>ID and name:</strong> B3.4.1 date_relative_period<br />
 <strong>Provided by:</strong> data provider, API<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
-<strong>Definition:</strong> The relative date expressed as chronological unit. <br />
+<strong>Definition:</strong> The relative date expressed as a chronological unit. <br />
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> Ha B2; Emsium  </p>
 <h5 id="1442-dating-method">14.4.2 Dating method</h5>
-<p><strong>ID and name</strong>: B3.4.2 date_relative_method<br />
+<p><strong>ID and name:</strong> B3.4.2 date_relative_method<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> The method used to determine the relative date. Mandatory if <code>B3.4.1 Chronological unit</code> is provided.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h4 id="145-cultural-unit">14.5 Cultural unit</h4>
-<p><strong>ID and name</strong>: B3.5 date_archaeo_cultural<br />
+<p><strong>ID and name:</strong> B3.5 date_archaeo_cultural<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–n<br />
@@ -3252,14 +3269,14 @@
 <strong>Allowed values and other constraints:</strong> free text, only available if <code>B3.2 Date type</code> = "archaeological".<br />
 <strong>Example:</strong> Roman  </p>
 <h4 id="146-orogenesis">14.6 Orogenesis</h4>
-<p><strong>ID and name</strong>: B3.6 date_geol_orogensis<br />
+<p><strong>ID and name:</strong> B3.6 date_geol_orogensis<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
-<strong>Definition:</strong> The relative date expressed as orogenic event.<br />
+<strong>Definition:</strong> The relative date expressed as anorogenic event.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary, only available if <code>B3.2 Date type</code> = "geological".  </p>
 <h4 id="147-definition-of-chronological-unit">14.7 Definition of chronological unit</h4>
-<p><strong>ID and name</strong>: B3.7 date_relative_reference<br />
+<p><strong>ID and name:</strong> B3.7 date_relative_reference<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
@@ -3272,14 +3289,14 @@
 
 <p><em>with the five subproperties:</em>  </p>
 <h6 id="1471-persistent-identifier">14.7.1 Persistent Identifier</h6>
-<p><strong>ID and name</strong>: B5.1 relation_pid<br />
+<p><strong>ID and name:</strong> B5.1 relation_pid<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> The persistent identifier or TerraLID ID associated with a resource or related research output. If referring to another entity in the TerraLID database, the TerraLID identifier must be used.   </p>
 <p><em>with the two subproperties:</em>  </p>
 <h6 id="14711-value"># 14.7.1.1 Value</h6>
-<p><strong>ID and name</strong>: B5.1.1 relation_pid_value<br />
+<p><strong>ID and name:</strong> B5.1.1 relation_pid_value<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
@@ -3287,14 +3304,14 @@
 <strong>Allowed values and other constraints:</strong> valid persistent identifier according to the options listed in <code>B5.1.2 Type</code>.<br />
 <strong>Example:</strong> 10.60510/ICDP5054ESYI201  </p>
 <h6 id="14712-type"># 14.7.1.2 Type</h6>
-<p><strong>ID and name</strong>: B5.1.2 relation_pid_type<br />
+<p><strong>ID and name:</strong> B5.1.2 relation_pid_type<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> The type of the identifier.  Mandatory if <code>B5.1.1 Value</code> is provided.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h6 id="1472-full-reference">14.7.2 Full reference</h6>
-<p><strong>ID and name</strong>: B5.2 relation_text<br />
+<p><strong>ID and name:</strong> B5.2 relation_text<br />
 <strong>Provided by:</strong> data provider, API (DOI)<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -3302,21 +3319,21 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> Palinkaš, L. A., 1985, Lead isotope patterns in galenas from some selected ore deposits in Croatia and NW Bosnia, Geološki Vjesnik, 38, 175–89.    </p>
 <h6 id="1473-kind-of-relation">14.7.3 Kind of relation</h6>
-<p><strong>ID and name</strong>: B5.3 relation_kind<br />
+<p><strong>ID and name:</strong> B5.3 relation_kind<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> Relationship between item and the research output. <br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h6 id="1474-type-of-resource">14.7.4 Type of resource</h6>
-<p><strong>ID and name</strong>: B5.4 relation_resource<br />
+<p><strong>ID and name:</strong> B5.4 relation_resource<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> Type of resource or research output. <br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h6 id="1475-additional-details">14.7.5 Additional details</h6>
-<p><strong>ID and name</strong>: B5.5 relation_detail<br />
+<p><strong>ID and name:</strong> B5.5 relation_detail<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–n<br />
@@ -3326,7 +3343,7 @@
 <!-- END INCLUDE -->
 
 <h2 id="15-keywords">15. Keywords</h2>
-<p><strong>ID and name</strong>: O15 object_keywords<br />
+<p><strong>ID and name:</strong> O15 object_keywords<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–n<br />
@@ -3334,15 +3351,15 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> t.b.d.  </p>
 <h2 id="16-object-contamination">16. Object contamination</h2>
-<p><strong>ID and name</strong>: O16 object_contamination<br />
+<p><strong>ID and name:</strong> O16 object_contamination<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> Information about potential contamination or treatment of the object that might impact the relevance of retrieved information (e.g. by post-depositional processes or conservation treatment).<br />
 <strong>Allowed values and other constraints:</strong> free text<br />
-<strong>Example:</strong> Galvanic restauration of the surface in 1967  </p>
+<strong>Example:</strong> Galvanic restoration of the surface in 1967  </p>
 <h2 id="17-status-of-object">17. Status of object</h2>
-<p><strong>ID and name</strong>: O17 object_status<br />
+<p><strong>ID and name:</strong> O17 object_status<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -3351,14 +3368,14 @@
 
 <p><em>with the two subproperties:</em>  </p>
 <h4 id="171-institution">17.1 Institution</h4>
-<p><strong>ID and name</strong>: B2.1 status_institution<br />
+<p><strong>ID and name:</strong> B2.1 status_institution<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> The institution at which the material is located.   </p>
 <p><em>with the five subproperties:</em>  </p>
 <h5 id="1711-name">17.1.1 Name</h5>
-<p><strong>ID and name</strong>: B2.1.1 status_institution_name<br />
+<p><strong>ID and name:</strong> B2.1.1 status_institution_name<br />
 <strong>Provided by:</strong> data provider, API (ROR ID)<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1<br />
@@ -3366,7 +3383,7 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> Institute of Time Travels  </p>
 <h5 id="1712-ror">17.1.2 ROR</h5>
-<p><strong>ID and name</strong>: B2.1.2 status_institution_ror<br />
+<p><strong>ID and name:</strong> B2.1.2 status_institution_ror<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -3374,15 +3391,15 @@
 <strong>Allowed values and other constraints:</strong> is valid ROR ID<br />
 <strong>Example:</strong> 09af7gtg53  </p>
 <h5 id="1713-address">17.1.3 Address</h5>
-<p><strong>ID and name</strong>: B2.1.3 status_institution_address<br />
+<p><strong>ID and name:</strong> B2.1.3 status_institution_address<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> Address of the institution. <br />
 <strong>Allowed values and other constraints:</strong> free text<br />
-<strong>Example:</strong> Teleporter Avenue 123, Ankh–Morpok, Unites States of Humanities  </p>
+<strong>Example:</strong> Teleporter Avenue 123, Ankh–Morpok, United States of Humanities  </p>
 <h5 id="1714-storage-location">17.1.4 Storage location</h5>
-<p><strong>ID and name</strong>: B2.1.4 status_institution_location<br />
+<p><strong>ID and name:</strong> B2.1.4 status_institution_location<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -3390,7 +3407,7 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> Archive 9, shelf 3, box 1  </p>
 <h5 id="1715-contact">17.1.5 Contact</h5>
-<p><strong>ID and name</strong>: B2.1.5 status_institution_contact<br />
+<p><strong>ID and name:</strong> B2.1.5 status_institution_contact<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
@@ -3398,7 +3415,7 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> t.b.d.  </p>
 <h4 id="172-accessibility">17.2 Accessibility</h4>
-<p><strong>ID and name</strong>: B2.2 status_accessibility<br />
+<p><strong>ID and name:</strong> B2.2 status_accessibility<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -3407,21 +3424,21 @@
 <!-- END INCLUDE -->
 
 <h2 id="18-authenticity-of-object">18. Authenticity of object</h2>
-<p><strong>ID and name</strong>: O18.1 object_authenticity<br />
+<p><strong>ID and name:</strong> O18.1 object_authenticity<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
 <strong>Definition:</strong> The contemporary legal status of an object: whether it is a genuine archaeological object, contemporary imitation, or a modern imitation. For example, authentic numismatic objects were created by an authority that had the rights to do so, while contemporary imitations were not.  </p>
 <p><em>with the two subproperties:</em>  </p>
 <h3 id="181-authenticity-type">18.1 Authenticity type</h3>
-<p><strong>ID and name</strong>: O18.1 object_authenticity_type<br />
+<p><strong>ID and name:</strong> O18.1 object_authenticity_type<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 1<br />
 <strong>Definition:</strong> The object's type of authenticity.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h3 id="182-reasoning">18.2 Reasoning</h3>
-<p><strong>ID and name</strong>: O18.2 object_authenticity_description<br />
+<p><strong>ID and name:</strong> O18.2 object_authenticity_description<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -3429,24 +3446,23 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> The zinc content in the brass is higher than can be achieved with Roman technology. </p>
 <h2 id="19-relations">19. Relations</h2>
-<p><strong>ID and name</strong>: O19 object_relation<br />
+<p><strong>ID and name:</strong> O19 object_relation<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
-<strong>Definition:</strong> Information about related entities or other research outputs such as publications providing relevant information about the object.<br />
 <strong>Definition:</strong> Information about related entities, including samples belonging to the object, and other research output such as publications providing relevant information about the object. This includes any literature from which information about the object was extracted.  </p>
 <!-- BEGIN INCLUDE ../includes/metadata_blocks.md '&lt;!--relation-start--&gt;' '&lt;!--relation-end--&gt;' -->
 
 <p><em>with the five subproperties:</em>  </p>
 <h4 id="191-persistent-identifier">19.1 Persistent Identifier</h4>
-<p><strong>ID and name</strong>: B5.1 relation_pid<br />
+<p><strong>ID and name:</strong> B5.1 relation_pid<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> The persistent identifier or TerraLID ID associated with a resource or related research output. If referring to another entity in the TerraLID database, the TerraLID identifier must be used.   </p>
 <p><em>with the two subproperties:</em>  </p>
 <h5 id="1911-value">19.1.1 Value</h5>
-<p><strong>ID and name</strong>: B5.1.1 relation_pid_value<br />
+<p><strong>ID and name:</strong> B5.1.1 relation_pid_value<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–n<br />
@@ -3454,14 +3470,14 @@
 <strong>Allowed values and other constraints:</strong> valid persistent identifier according to the options listed in <code>B5.1.2 Type</code>.<br />
 <strong>Example:</strong> 10.60510/ICDP5054ESYI201  </p>
 <h5 id="1912-type">19.1.2 Type</h5>
-<p><strong>ID and name</strong>: B5.1.2 relation_pid_type<br />
+<p><strong>ID and name:</strong> B5.1.2 relation_pid_type<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 0–n<br />
 <strong>Definition:</strong> The type of the identifier.  Mandatory if <code>B5.1.1 Value</code> is provided.<br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h4 id="192-full-reference">19.2 Full reference</h4>
-<p><strong>ID and name</strong>: B5.2 relation_text<br />
+<p><strong>ID and name:</strong> B5.2 relation_text<br />
 <strong>Provided by:</strong> data provider, API (DOI)<br />
 <strong>Obligation:</strong> recommended<br />
 <strong>Occurrences:</strong> 0–1<br />
@@ -3469,21 +3485,21 @@
 <strong>Allowed values and other constraints:</strong> free text<br />
 <strong>Example:</strong> Palinkaš, L. A., 1985, Lead isotope patterns in galenas from some selected ore deposits in Croatia and NW Bosnia, Geološki Vjesnik, 38, 175–89.    </p>
 <h4 id="193-kind-of-relation">19.3 Kind of relation</h4>
-<p><strong>ID and name</strong>: B5.3 relation_kind<br />
+<p><strong>ID and name:</strong> B5.3 relation_kind<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> Relationship between item and the research output. <br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h4 id="194-type-of-resource">19.4 Type of resource</h4>
-<p><strong>ID and name</strong>: B5.4 relation_resource<br />
+<p><strong>ID and name:</strong> B5.4 relation_resource<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> mandatory<br />
 <strong>Occurrences:</strong> 1–n<br />
 <strong>Definition:</strong> Type of resource or research output. <br />
 <strong>Allowed values and other constraints:</strong> controlled vocabulary  </p>
 <h4 id="195-additional-details">19.5 Additional details</h4>
-<p><strong>ID and name</strong>: B5.5 relation_detail<br />
+<p><strong>ID and name:</strong> B5.5 relation_detail<br />
 <strong>Provided by:</strong> data provider<br />
 <strong>Obligation:</strong> optional<br />
 <strong>Occurrences:</strong> 0–n<br />
