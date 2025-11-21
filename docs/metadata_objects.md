@@ -58,38 +58,47 @@
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
-**Definition:** Identifiers associated with the object.  
+**Definition:** Identifiers associated with the object. At least one identifier must be provided.  
 
-*with the four subproperties:*  
+*with the three subproperties:*  
 
-### Value of persistent identifier
-**ID and name:** O5.1 object_pid_value  
-**Provided by:** data provider  
-**Obligation:** recommended  
-**Occurrences:** 0–n  
-**Definition:** The persistent identifier assigned to the object.  
-**Allowed values and other constraints:** valid persistent identifier according to [`O5.2 Type of persistent identifier`](metadata_objects.md#52-type-of-persistent-identifier)  
-**Example:** 10.60510/ABCD123EF4567  
+### Persistent Identifier
+**ID and name**: O5.1 object_pid
+**Provided by**: data provider
+**Obligation**: recommended
+**Occurrences**: 0–n
+**Definition**: Persistent identifier(s) assigned to the object.
 
-### Type of persistent identifier
-**ID and name:** O5.2 object_pid_type  
+*with the two subproperties:* 
+
+#### Value of persistent identifier
+**ID and name:** O5.1.1 object_pid_value  
 **Provided by:** data provider  
 **Obligation:** mandatory  
-**Occurrences:** 1–n  
-**Definition:** The type of a persistent identifier that was assigned to the object. Mandatory if [`O5.1 Value of persistent identifier`](metadata_objects.md#51-value-of-persistent-identifier) is provided.  
+**Occurrences:** 1  
+**Definition:** The persistent identifier assigned to the object.  
+**Allowed values and other constraints:** Valid persistent identifier according to [`O5.1.2 Type of persistent identifier`](metadata_objects.md#512-type-of-persistent-identifier)  
+**Example:** 10.60510/ABCD123EF4567  
+
+#### Type of persistent identifier
+**ID and name:** O5.1.2 object_pid_type  
+**Provided by:** data provider  
+**Obligation:** mandatory  
+**Occurrences:** 1  
+**Definition:** The type of a persistent identifier that was assigned to the object.  
 **Allowed values and other constraints:** controlled vocabulary  
 
 ### Value of other identifier
-**ID and name:** O5.3 object_id_value  
+**ID and name:** O5.2 object_id_value  
 **Provided by:** data provider  
-**Obligation:** mandatory  
-**Occurrences:** 1–n  
+**Obligation:** recommended  
+**Occurrences:** 0–n  
 **Definition:** Identifier by which the object is identified in a catalogue, database or comparable records (e.g., of the excavation catalogue or records of a laboratory).  
 **Allowed values and other constraints:** free text  
 **Example:** AG-01  
 
 ### Type of other identifier
-**ID and name:** O5.4 object_id_type  
+**ID and name:** O5.3 object_id_type  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -100,8 +109,8 @@
 ## Date of collection
 **ID and name:** O6 object_collection_date  
 **Provided by:** data provider  
-**Obligation:** mandatory  
-**Occurrences:** 1  
+**Obligation:** recommended  
+**Occurrences:** 0–1  
 **Definition:** Collection date of the object.  
 **Allowed values and other constraints:** date formatted as YYYY-MM-DD  
 **Example:** 1990-06-08  
@@ -126,8 +135,8 @@
 ### Housing material
 **ID and name:** O8.1 object_housing_material  
 **Provided by:** data provider  
-**Obligation:** recommended  
-**Occurrences:** 0–n  
+**Obligation:** mandatory  
+**Occurrences:** 1  
 **Definition:** The material the object was or is stored in at the stage in its life cycle recorded in [`O8.2 Stage of Storage`](metadata_objects.md#82-stage-of-storage).  
 **Allowed values and other constraints:** controlled vocabulary  
 
@@ -135,8 +144,8 @@
 **ID and name:** O8.2 object_housing_stage  
 **Provided by:** data provider  
 **Obligation:** mandatory  
-**Occurrences:** 1–n  
-**Definition:** The stage of the object's life cycle when the object was stored in the material recorded in [`O8.1 Housing material`](metadata_objects.md#82-stage-of-storage). Mandatory if [`O8.1 Housing material`](metadata_objects.md#82-stage-of-storage) is provided.  
+**Occurrences:** 1  
+**Definition:** The stage of the object's life cycle when the object was stored in the material recorded in [`O8.1 Housing material`](metadata_objects.md#82-stage-of-storage).  
 **Allowed values and other constraints:** controlled vocabulary  
 
 ## Object photo
@@ -160,8 +169,8 @@
 ### Value
 **ID and name:** O10.1 object_weight_value  
 **Provided by:** data provider  
-**Obligation:** optional  
-**Occurrences:** 0–1  
+**Obligation:** mandatory  
+**Occurrences:** 1  
 **Definition:** The value of the weight.  
 **Allowed values and other constraints:** decimal number  
 **Example:** 120.3  
@@ -171,15 +180,15 @@
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
-**Definition:** SI unit in which the weight is given. Mandatory if [`O10.1 Value`](metadata_objects.md#101-value) is provided.  
+**Definition:** SI unit in which the weight is given.  
 **Allowed values and other constraints:** controlled vocabulary  
 
 ### Weight condition
 **ID and name:** O10.3 object_weight_condition  
 **Provided by:** data provider  
-**Obligation:** optional  
+**Obligation:** recommended  
 **Occurrences:** 0–1  
-**Definition:** Additional information about state of object at the time the weight was measured.  
+**Definition:** Additional information about state of object at the time the weight was measured to give a better idea how representative the measured weight is.  
 **Allowed values and other constraints:** free text  
 **Example:** dry sandy material adhering to object  
 
@@ -195,7 +204,7 @@
 ### Height
 **ID and name:** O11.1 object_dimension_height  
 **Provided by:** data provider  
-**Obligation:** optional  
+**Obligation:** recommended  
 **Occurrences:** 0–1  
 **Definition:** The height of the object.  
 **Allowed values and other constraints:** decimal number  
@@ -204,7 +213,7 @@
 ### Length
 **ID and name:** O11.2 object_dimension_length  
 **Provided by:** data provider  
-**Obligation:** optional  
+**Obligation:** recommended  
 **Occurrences:** 0–1  
 **Definition:** The length of the object.  
 **Allowed values and other constraints:** decimal number  
@@ -213,7 +222,7 @@
 ### Width
 **ID and name:** O11.3 object_dimension_width  
 **Provided by:** data provider  
-**Obligation:** optional  
+**Obligation:** recommended  
 **Occurrences:** 0–1  
 **Definition:** The width of the object.  
 **Allowed values and other constraints:** decimal number  
@@ -224,7 +233,7 @@
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
-**Definition:** Unit in which the dimensions of the object are provided. Mandatory if any of [`O11.1 Height`](metadata_objects.md#111-height), [`O11.2 Length`](metadata_objects.md#112-length), and [`O11.3 Width`](metadata_objects.md#113-width) is provided.  
+**Definition:** Unit in which the dimension(s) of the object are provided.  
 **Allowed values and other constraints:** controlled vocabulary  
 
 ## Material
@@ -302,7 +311,7 @@
 ## Authenticity of object
 **ID and name:** O18.1 object_authenticity  
 **Provided by:** data provider  
-**Obligation:** recommended  
+**Obligation:** mandatory  
 **Occurrences:** 0–1  
 **Definition:** The contemporary legal status of an object: whether it is a genuine archaeological object, contemporary imitation, or a modern imitation. For example, authentic numismatic objects were created by an authority that had the rights to do so, while contemporary imitations were not.  
 

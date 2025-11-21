@@ -47,7 +47,7 @@
 ### Publication
 **ID and name:** A3.2 analysis_lia_preparation_publication  
 **Provided by:** data provider  
-**Obligation:** optional  
+**Obligation:** recommended  
 **Occurrences:** 0–n  
 **Definition:** If the preparation protocol was already published, the publication of the protocol.  
 
@@ -156,8 +156,8 @@
 ### Value
 **ID and name:** A8.1 analysis_lia_pb_intensity_value  
 **Provided by:** data provider  
-**Obligation:** recommended  
-**Occurrences:** 0–1  
+**Obligation:** mandatory  
+**Occurrences:** 1  
 **Definition:** The value of the mean total intensity.  
 **Allowed values and other constraints:** decimal number  
 **Example:** 40.5  
@@ -167,7 +167,7 @@
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
-**Definition:** The SI unit in which the mean total intensity is given. Mandatory if [`A8.1 Value`](metadata_analyses.md#81-value) is provided.  
+**Definition:** The SI unit in which the mean total intensity is given.  
 **Allowed values and other constraints:** controlled vocabulary  
 
 ## Reference materials
@@ -177,7 +177,7 @@
 **Occurrences:** 1–n  
 **Definition:** Information about the reference material(s) for lead isotopes used during the analysis for quality control and/or correction of instrumental fractionation.  
 
-*with the three subproperties:*  
+*with the six subproperties:*  
 
 ### Name of lead isotope reference material
 **ID and name:** A9.1 analysis_lia_standard-pb_name  
@@ -244,8 +244,8 @@
 **ID and name:** A10 analysis_lia_correction  
 **Provided by:** data provider  
 **Obligation:** recommended  
-**Occurrences:** 0–1  
-**Definition:** The model used for mass bias correction of the lead isotope data.  
+**Occurrences:** 0–n  
+**Definition:** The model(s) used for mass bias correction of the lead isotope data.  
 **Allowed values and other constraints:** controlled vocabulary  
 
 ## Laboratory

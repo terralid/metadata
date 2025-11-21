@@ -1,6 +1,6 @@
 # Coins
 
-Coin-specific metadata extent the [metal-specific metadata](metadata_metal.md) and are a subset of the [Nomisma](https://nomisma.org/) [ontology](https://nomisma.org/ontology) and intended to be filled in the records of the coin in a numismatic data infrastructure using this ontology based on the type series and the coin's type series ID. The equivalent in the Nomisma ontology is given by the prefix `nmo`. Descriptions are taken from the [Nomisma ontology](https://nomisma.org/ontology). 
+Coin-specific metadata extent the [metal-specific metadata](metadata_metal.md) and are a subset of the [Nomisma](https://nomisma.org/) [ontology](https://nomisma.org/ontology) and intended to be filled in the records of the coin in a numismatic data infrastructure using this ontology based on the type series and the coin's type series ID. The equivalent in the Nomisma ontology is given by the prefix `nmo`. Descriptions are taken from the [Nomisma ontology](https://nomisma.org/ontology) and the [controlled vocabulary of Nomisma](https://nomisma.org/browse) will be used for the respective properties. 
 
 ## Type series
 **ID and name:** OM.C1 material_coin_type_series (`nmo:TypeSeries`)  
@@ -8,7 +8,7 @@ Coin-specific metadata extent the [metal-specific metadata](metadata_metal.md) a
 **Obligation:** recommended  
 **Occurrences:** 0–1  
 **Definition:** A published or recognized reference list of numismatic object types, such as a catalogue or corpus.  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** [controlled vocabulary](https://nomisma.org/browse?q=type%3A%22nmo%3ATypeSeries%22)  
 
 ## Type series ID
 **ID and name:** OM.C2 material_coin_type_series_id (`nmo:hasTypeSeriesItem`)  
@@ -25,7 +25,7 @@ Coin-specific metadata extent the [metal-specific metadata](metadata_metal.md) a
 **Obligation:** recommended  
 **Occurrences:** 0–1  
 **Definition:** The circumstances under which an object or group of objects came to be deposited and part of the archaeological record, for example as a hoard, votive deposit or chance loss.  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** [controlled vocabulary](https://nomisma.org/browse?q=type%3A%22nmo%3ADepositionType%22)  
 
 ## Authority 
 **ID and name:** OM.C4 material_coin_authority (`nmo:hasAuthority`)  
@@ -33,7 +33,7 @@ Coin-specific metadata extent the [metal-specific metadata](metadata_metal.md) a
 **Obligation:** recommended  
 **Occurrences:** 0–1  
 **Definition:** Identifies the authority in whose name (explicitly or implicitly) a numismatic object was issued.  
-**Allowed values and other constraints:** controlled vocabulary   
+**Allowed values and other constraints:** [controlled vocabulary (Organisation)](https://nomisma.org/browse?q=type%3A%22foaf%3AOrganization%22+AND+role_facet%3A%22Authority%7Chttp%3A%2F%2Fnomisma.org%2Fid%2Fauthority%22), [controlled vocabulary (Person)](https://nomisma.org/browse?q=type%3A%22foaf%3APerson%22+AND+role_facet%3A%22Authority%7Chttp%3A%2F%2Fnomisma.org%2Fid%2Fauthority%22)  
 
 ## Mint 
 **ID and name:** OM.C5 material_coin_mint (`nmo:hasMint`)  
@@ -41,7 +41,7 @@ Coin-specific metadata extent the [metal-specific metadata](metadata_metal.md) a
 **Obligation:** recommended  
 **Occurrences:** 0–1  
 **Definition:** Identifies the place of manufacture or issue of a numismatic object.  
-**Allowed values and other constraints:** controlled vocabulary   
+**Allowed values and other constraints:** [controlled vocabulary](https://nomisma.org/browse?q=type%3A%22nmo%3AMint%22)  
 
 ## Denomination 
 **ID and name:** OM.C6 material_coin_denomination (`nmo:hasDenomination`)  
@@ -49,7 +49,7 @@ Coin-specific metadata extent the [metal-specific metadata](metadata_metal.md) a
 **Obligation:** recommended  
 **Occurrences:** 0–1  
 **Definition:** Describes the monetary value assigned to an object within a denominational system.  
-**Allowed values and other constraints:** controlled vocabulary   
+**Allowed values and other constraints:** [controlled vocabulary](https://nomisma.org/browse?q=type%3A%22nmo%3ADenomination%22)   
 
 ## Date 
 **ID and name:** OM.C7 material_coin_date (`nmo:hasDate`)  
@@ -84,7 +84,7 @@ Coin-specific metadata extent the [metal-specific metadata](metadata_metal.md) a
 **Obligation:** recommended  
 **Occurrences:** 0–1  
 **Definition:** Describes the method of manufacture of a numismatic object.  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** [controlled vocabulary](https://nomisma.org/browse?q=type%3A%22nmo%3AManufacture%22)  
 
 ## Peculiarity of Production 
 **ID and name:** OM.C9 material_coin_peculiarity_production (`nmo:PecularityOfProduction`)  
@@ -92,5 +92,5 @@ Coin-specific metadata extent the [metal-specific metadata](metadata_metal.md) a
 **Obligation:** recommended  
 **Occurrences:** 0–1  
 **Definition:** Describes a notable, characteristic or unusual physical feature of an individual numismatic object which distinguishes it from other examples of the same group, or of a group of numismatic objects that marks it out from other groups, and which is related to the process of production of a numismatic object.  
-**Allowed values and other constraints:** controlled vocabulary   
+**Allowed values and other constraints:** [controlled vocabulary](https://nomisma.org/browse?q=type%3A%22nmo%3APeculiarityOfProduction%22)   
 **Example:** double-struck  

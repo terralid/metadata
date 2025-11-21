@@ -30,22 +30,39 @@
 **Example:** Jane  
 
 #### Last Name
-**ID and name:** B1.3 Person_name_last  
+**ID and name:** B1.3 person_name_last  
 **Provided by:** data provider, API (ORCID ID)  
-**Obligation:** recommended  
-**Occurrences:** 0–1  
+**Obligation:** mandatory  
+**Occurrences:** 1  
 **Definition:** The last name of the person.  
 **Allowed values and other constraints:** free text  
 **Example:** Doe  
 
-#### ORCID ID
-**ID and name:** B1.4 Person_ORCID  
+#### Persistent Identifier
+**ID and name:** B1.4 person_pid  
 **Provided by:** data provider  
 **Obligation:** recommended  
-**Occurrences:** 0–1  
-**Definition:** The [ORCID ID](https://orcid.org/) of the person.  
-**Allowed values and other constraints:** is valid ORCID ID  
+**Occurrences:** 0–n  
+**Definition:** Persistent identifier(s) assigned to the person.  
+
+*with the two subproperties:*  
+
+##### Value of persistent Identifier
+**ID and name:** B1.4.1 person_pid_value  
+**Provided by:** data provider  
+**Obligation:** mandatory  
+**Occurrences:** 1  
+**Definition:** A persistent identifier assigned to the analysed material.  
+**Allowed values and other constraints:** Valid persistent identifier according to S1.3 Type of persistent identifier  
 **Example:** 0000–0001–2345–678X  
+
+##### Type of persistent identifier
+**ID and name:** B1.4.2 person_pid_type  
+**Provided by:** data provider  
+**Obligation:** mandatory  
+**Occurrences:** 1  
+**Definition:** The type of the persistent identifier.  
+**Allowed values and other constraints:** controlled vocabulary  
 
 #### Affiliation name
 **ID and name:** B1.5 person_affiliation_name  
@@ -191,8 +208,8 @@
 ##### Value
 **ID and name:** B3.1.1 date_pid_value  
 **Provided by:** data provider  
-**Obligation:** recommended  
-**Occurrences:** 0–1  
+**Obligation:** mandatory  
+**Occurrences:** 1  
 **Definition:** The value of the persistent identifier.   
 **Allowed values and other constraints:** The period's persistent identifier in one or more of the data infrastructures listed in `B3.1.2 Type`.  
 **Example:** 99152/p0qhb66vvth  
@@ -202,7 +219,7 @@
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
-**Definition:** The name of the data infrastructure. Mandatory if `B3.1.1 Value` is provided.  
+**Definition:** The name of the data infrastructure.  
 **Allowed values and other constraints:** controlled vocabulary  
 
 #### Date type
@@ -219,15 +236,15 @@
 **Provided by:** data provider, API  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
-**Definition:** The absolute date of a point in time or period.   
+**Definition:** The absolute date of a point in time or period in years before or after common era. Values in BCE are reported as negative values. If the absolute date is given with an uncertainty such as 450 +/- 50 BC, start and end date mark the lower and upper limit of the date range, i.e. -500 and -400.   
 
 *with the four subproperties:*  
 
 ##### Start
 **ID and name:** B3.3.1 date_absolute_start  
 **Provided by:** data provider, API  
-**Obligation:** recommended  
-**Occurrences:** 0–1  
+**Obligation:** mandatory  
+**Occurrences:** 1  
 **Definition:** The oldest possible date of the period.   
 **Allowed values and other constraints:** integer  
 **Example:** -15  
@@ -246,7 +263,7 @@
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
-**Definition:** The method used to determine the absolute date. Mandatory if `B3.3.1 Start` is provided.  
+**Definition:** The method used to determine the absolute date.  
 **Allowed values and other constraints:** controlled vocabulary  
 
 ##### Unit of date
@@ -254,7 +271,7 @@
 **Provided by:** TerraLID system  
 **Obligation:** mandatory  
 **Occurrences:** 1  
-**Definition:** The unit of the date. Mandatory if `B3.3.1 Start` is provided.   
+**Definition:** The unit of the date.   
 **Allowed values and other constraints:** a, Ma  
 **Example:** a  
 
@@ -270,18 +287,17 @@
 ##### Chronological unit
 **ID and name:** B3.4.1 date_relative_period  
 **Provided by:** data provider, API  
-**Obligation:** recommended  
-**Occurrences:** 0–1  
+**Obligation:** mandatory  
+**Occurrences:** 1  
 **Definition:** The relative date expressed as a chronological unit.   
-**Allowed values and other constraints:** free text  
-**Example:** Ha B2; Emsium  
+**Allowed values and other constraints:** controlled vocabulary  
 
 ##### Dating method
 **ID and name:** B3.4.2 date_relative_method  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
-**Definition:** The method used to determine the relative date. Mandatory if `B3.4.1 Chronological unit` is provided.  
+**Definition:** The method used to determine the relative date.  
 **Allowed values and other constraints:** controlled vocabulary  
 
 #### Cultural unit
@@ -306,7 +322,7 @@
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
-**Definition:** The reference where the relative date or period name is defined.   
+**Definition:** The reference defining the relative date or period.  
 
 <!-- insert here container for relation by hand in the respective document --> 
 
@@ -342,8 +358,8 @@
 #### Analysed isotope
 **ID and name:** B4.3 chemistry_icp_isotope  
 **Provided by:** data provider  
-**Obligation:** mandatory  
-**Occurrences:** 1–n  
+**Obligation:** recommended  
+**Occurrences:** 0–n  
 **Definition:** The isotope used for quantification of a chemical element.   
 **Allowed values and other constraints:** controlled vocabulary, only available if a mass spectrometric-method is recorded in `B4.1 Analytical method`.
 
@@ -415,8 +431,8 @@
 ##### Value
 **ID and name:** B5.1.1 relation_pid_value  
 **Provided by:** data provider  
-**Obligation:** recommended  
-**Occurrences:** 0–n  
+**Obligation:** mandatory  
+**Occurrences:** 1  
 **Definition:** Value of the persistent identifier or TerraLID ID.   
 **Allowed values and other constraints:** valid persistent identifier according to the options listed in `B5.1.2 Type`.  
 **Example:** 10.60510/ICDP5054ESYI201  
@@ -425,8 +441,8 @@
 **ID and name:** B5.1.2 relation_pid_type  
 **Provided by:** data provider  
 **Obligation:** mandatory  
-**Occurrences:** 0–n  
-**Definition:** The type of the identifier.  Mandatory if `B5.1.1 Value` is provided.  
+**Occurrences:** 1  
+**Definition:** The type of the identifier.  
 **Allowed values and other constraints:** controlled vocabulary  
 
 #### Full reference
@@ -497,8 +513,8 @@
 #### Uncertainty
 **ID and name:** B6.3 lia_ratio_uncertainty_type  
 **Provided by:** data provider  
-**Obligation:** mandatory  
-**Occurrences:** 1  
+**Obligation:** recommended  
+**Occurrences:** 0–1  
 **Definition:** Type of analytical uncertainty for the lead isotope ratio.  
 **Allowed values and other constraints:** controlled vocabulary  
 
@@ -531,9 +547,9 @@
 
 #### Source 
 **ID and name:** B6.7 lia_ratio_source  
-**Provided by:** data provider  
-**Obligation:** recommended  
-**Occurrences:** 0–1  
+**Provided by:** TerraLID system  
+**Obligation:** mandatory  
+**Occurrences:** 1  
 **Definition:** Whether the date was reported in the publication or calculated by the TerraLID system from other published values.  
 **Allowed values and other constraints:** original, calculated  
 **Example:** original  

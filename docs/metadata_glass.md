@@ -20,8 +20,8 @@
 ### Indication for recycling
 **ID and name:** OG2.1 material_glass_recycling_indicator  
 **Provided by:** data provider  
-**Obligation:** recommended  
-**Occurrences:** 0–1  
+**Obligation:** mandatory  
+**Occurrences:** 1  
 **Definition:** Does the glass show indicators for recycling?  
 **Allowed values and other constraints:** controlled vocabulary  
 
@@ -100,8 +100,8 @@
 ### Value
 **ID and name:** OG9.1 material_glass_isotopes_Sr_value  
 **Provided by:** data provider  
-**Obligation:** optional  
-**Occurrences:** 0–1  
+**Obligation:** mandatory  
+**Occurrences:** 1  
 **Definition:** Value of the ^87^Sr/^86^Sr ratio.  
 **Allowed values and other constraints:** decimal number  
 **Example:** 0.7856  
@@ -109,7 +109,7 @@
 ### Analytical precision
 **ID and name:** OG9.2 material_glass_isotopes_Sr_2SD  
 **Provided by:** data provider  
-**Obligation:** optional  
+**Obligation:** recommended  
 **Occurrences:** 0–1  
 **Definition:** Absolute analytical uncertainty of the ^87^Sr/^86^Sr ratio in double standard deviation (2SD).  
 **Allowed values and other constraints:** decimal number  
@@ -127,8 +127,8 @@
 ### Value
 **ID and name:** OG10.1 material_glass_isotopes_Nd_value  
 **Provided by:** data provider  
-**Obligation:** optional  
-**Occurrences:** 0–1  
+**Obligation:** mandatory  
+**Occurrences:** 1  
 **Definition:** Value of &epsilon;Nd.  
 **Allowed values and other constraints:** decimal number  
 **Example:** t.b.d. 
@@ -154,13 +154,13 @@
 ### Value
 **ID and name:** OG11.1 material_glass_isotopes_Hf_value  
 **Provided by:** data provider  
-**Obligation:** optional  
-**Occurrences:** 0–1  
+**Obligation:** mandatory  
+**Occurrences:** 1  
 **Definition:** Value of &epsilon;Hf.  
 **Allowed values and other constraints:** decimal number  
 **Example:** t.b.d. 
 
-### Analytica precision
+### Analytical precision
 **ID and name:** OG11.2 material_glass_isotopes_Hf_2SD  
 **Provided by:** data provider  
 **Obligation:** recommended  
@@ -181,8 +181,8 @@
 ### Value
 **ID and name:** OG12.1 material_glass_isotopes_O_value  
 **Provided by:** data provider  
-**Obligation:** optional  
-**Occurrences:** 0–1  
+**Obligation:** mandatory  
+**Occurrences:** 1  
 **Definition:** Value of &delta;^18^O.  
 **Allowed values and other constraints:** decimal number  
 **Example:** t.b.d. 
@@ -208,7 +208,7 @@
 ### Extent
 **ID and name:** OG13.1 material_glass_corrosion_extent  
 **Provided by:** data provider  
-**Obligation:** optional  
+**Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** The extent of corrosion affecting the glass.  
 **Allowed values and other constraints:** controlled vocabulary  

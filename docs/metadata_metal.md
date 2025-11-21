@@ -39,7 +39,7 @@
 
 *with the two subproperties:*  
 
-## Extent
+### Extent
 **ID and name:** OM2.1 material_metal_corrosion_extent  
 **Provided by:** data provider  
 **Obligation:** mandatory  
@@ -47,7 +47,7 @@
 **Definition:** The extent of corrosion affecting the metal.  
 **Allowed values and other constraints:** controlled vocabulary
 
-## Details
+### Details
 **ID and name:** OM2.2 material_metal_corrosion_reason  
 **Provided by:** data provider  
 **Obligation:** recommended  

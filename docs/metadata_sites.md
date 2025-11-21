@@ -36,7 +36,7 @@
 **Example:** Excavation of an ore washing site.  
 
 ## Site identifier
-**ID and name:** SI4 site_id  
+**ID and name:** SI4 site_pid  
 **Provided by:** Data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
@@ -45,20 +45,20 @@
 *with the two subproperties:*
 
 ### Value 
-**ID and name:** SI4.1 site_id_value  
+**ID and name:** SI4.1 site_pid_value  
 **Provided by:** data provider  
-**Obligation:** recommended  
-**Occurrences:** 0–n  
+**Obligation:** mandatory  
+**Occurrences:** 1  
 **Definition:** The value of the persistent identifier.  
 **Allowed values and other constraints:** valid persistent identifier according to the associated data infrastructure in [`SI4.2 Type`](metadata_sites.md#42-type).  
 **Example:** Q129256661  
 
 ### Type
-**ID and name:** SI4.2 site_id_type  
+**ID and name:** SI4.2 site_pid_type  
 **Provided by:** data provider  
 **Obligation:** mandatory  
-**Occurrences:** 1–n  
-**Definition:** The name of the data infrastructure. Mandatory if [`SI4.1 Value`](metadata_sites.md#41-value) is provided.  
+**Occurrences:** 1  
+**Definition:** The name of the data infrastructure.   
 **Allowed values and other constraints:** controlled vocabulary  
 
 ## Geolocation
@@ -190,8 +190,8 @@
 ## Registry
 **ID and name:** SI6 site_registry  
 **Provided by:** data provider  
-**Obligation:** recommended  
-**Occurrences:** 0–1  
+**Obligation:** mandatory  
+**Occurrences:** 1  
 **Definition:** The entry of the site in the registry of the local authority (e.g., heritage authority, geological survey).  
 
 *with the two subproperties:*
@@ -210,7 +210,7 @@
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
-**Definition:** The name of the registry of the local authority.  Mandatory if [`SI6.1 Registry ID`](metadata_sites.md#61-registry-id) is provided.  
+**Definition:** The name of the registry of the local authority.  
 **Allowed values and other constraints:** free text  
 **Example:** t.b.d.  
 

@@ -27,21 +27,30 @@
 **Allowed values and other constraints:** free text  
 **Example:** 2024/02  
 
-### Value of persistent Identifier
-**ID and name:** S1.2 sample_pid_value  
+### Persistent Identifier
+**ID and name:** S1.2 sample_pid  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
-**Definition:** The persistent identifier assigned to the analysed material.  
+**Definition:** Persistent identifier(s) assigned to the analysed material.  
+
+*with the two subproperties:*  
+
+#### Value of persistent Identifier
+**ID and name:** S1.2.1 sample_pid_value  
+**Provided by:** data provider  
+**Obligation:** mandatory  
+**Occurrences:** 1  
+**Definition:** A persistent identifier assigned to the analysed material.  
 **Allowed values and other constraints:** valid persistent identifier according to [`S1.3 Type of persistent identifier`](metadata_samples.md#13-type-of-persistent-identifier)  
 **Example:** 10.60510/ICDP5054ESYI201  
 
-### Type of persistent identifier
-**ID and name:** S1.3 sample_pid_type  
+#### Type of persistent identifier
+**ID and name:** S1.2.2 sample_pid_type  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
-**Definition:** The type of a persistent identifier that was assigned to the sample. Mandatory if [`S1.2 Value of persistent identifier`](metadata_samples.md#12-value-of-persistent-identifier) is provided.  
+**Definition:** The type of a persistent identifier that was assigned to the sample.  
 **Allowed values and other constraints:** controlled vocabulary  
 
 ## Objective of sampling
@@ -73,11 +82,11 @@
 ### Description of sampling location
 **ID and name:** S4.1 sample_location_description  
 **Provided by:** data provider  
-**Obligation:** recommended  
-**Occurrences:** 0–1  
+**Obligation:** mandatory  
+**Occurrences:** 1  
 **Definition:** Description of location the sample was taken from.  
 **Allowed values and other constraints:** free text  
-**Example:** side of the coin  
+**Example:** edge of the coin  
 
 ### Photo of sampling location
 **ID and name:** S4.2 sample_location_photo  
@@ -108,8 +117,8 @@
 ### Value
 **ID and name:** S6.1 sample_weight_value  
 **Provided by:** data provider  
-**Obligation:** optional  
-**Occurrences:** 0–1  
+**Obligation:** mandatory  
+**Occurrences:** 1  
 **Definition:** The value of the weight.   
 **Allowed values and other constraints:** decimal number  
 **Example:** 3.25  
@@ -119,7 +128,7 @@
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1   
-**Definition:** SI unit in which the weight is given. Mandatory if [`S6.1 Value`](metadata_samples.md#61-value) is provided.  
+**Definition:** SI unit in which the weight is given.  
 **Allowed values and other constraints:** controlled vocabulary  
 
 ## Sampling method
@@ -194,8 +203,8 @@
 ## Sample status
 **ID and name:** S14 sample_status  
 **Provided by:** data provider  
-**Obligation:** mandatory  
-**Occurrences:** 1  
+**Obligation:** recommended  
+**Occurrences:** 0–1  
 **Definition:** Information about the current status of the sample and how to access it.   
 
 {%

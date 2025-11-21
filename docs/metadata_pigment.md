@@ -3,8 +3,8 @@
 ## Pigment name
 **ID and name:** OP1 material_pigment_name  
 **Provided by:** data provider  
-**Obligation:** mandatory  
-**Occurrences:** 1–n  
+**Obligation:** recommended  
+**Occurrences:** 0–n  
 **Definition:** Name(s) of the pigment.  
 **Allowed values and other constraints:** controlled vocabulary  
 
@@ -73,12 +73,29 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 ### Mineralogical composition
-**ID and name:** OP4.3 material_pigment_composition_mineralogy  
+**ID and name:** OP4.3 material_pigment_composition_mineral  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
 **Definition:** If it is mineral pigment, which minerals are present?  
-**Allowed values and other constraints:** controlled vocabulary ([IMA list of minerals](https://rruff.info/ima/))  
+
+*with the two subproperties:*  
+
+#### Mineral name
+**ID and name:** OP4.3.1 material_pigment_composition_mineral_name  
+**Provided by:** data provider  
+**Obligation:** mandatory  
+**Occurrences:** 1  
+**Definition:** Name of the mineral approved by the International Mineralogical Association (IMA).  
+**Allowed values and other constraints:** controlled vocabulary ([IMA list of minerals](https://rruff.info/ima/)), retrieved from the Mindat API  
+
+#### Mineral ID
+**ID and name:** OP4.3.2 material_pigment_composition_mineral_id  
+**Provided by:** Mindat API  
+**Obligation:** mandatory  
+**Occurrences:** 1  
+**Definition:** The Mindat ID of the mineral.  
+**Allowed values and other constraints:** Value in the `id` field of a Mindat mineral record.  
 
 ## Pigment production
 **ID and name:** OP5 material_pigment_processing  
@@ -126,8 +143,8 @@
 ### Colour system
 **ID and name:** OP6.2 material_pigment_colour_system  
 **Provided by:** data provider  
-**Obligation:** recommended  
-**Occurrences:** 0–1  
+**Obligation:** mandatory  
+**Occurrences:** 1  
 **Definition:** The colour system used to determine the colour.   
 **Allowed values and other constraints:** controlled vocabulary  
 
@@ -188,7 +205,7 @@
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
-**Definition:** The source of lead in the pigment  
+**Definition:** The source of lead in the pigment.  
 **Allowed values and other constraints:** controlled vocabulary  
 
 ## Provenance indicators
@@ -212,8 +229,8 @@
 ### Value
 **ID and name:** OP11.1 material_pigment_isotopes_Sr_value  
 **Provided by:** data provider  
-**Obligation:** optional  
-**Occurrences:** 0–1  
+**Obligation:** mandatory  
+**Occurrences:** 1  
 **Definition:** Value of the ^87^Sr/^86^Sr ratio.  
 **Allowed values and other constraints:** decimal number  
 **Example:** 0.7856  
@@ -221,7 +238,7 @@
 ### Analytical precision
 **ID and name:** OP11.2 material_pigment_isotopes_Sr_2SD  
 **Provided by:** data provider  
-**Obligation:** optional  
+**Obligation:** recommended  
 **Occurrences:** 0–1  
 **Definition:** Absolute analytical uncertainty of the ^87^Sr/^86^Sr ratio in double standard deviation (2SD).  
 **Allowed values and other constraints:** decimal number  
@@ -239,8 +256,8 @@
 ### Value
 **ID and name:** OP12.1 material_pigment_isotopes_Nd_value  
 **Provided by:** data provider  
-**Obligation:** optional  
-**Occurrences:** 0–1  
+**Obligation:** mandatory  
+**Occurrences:** 1  
 **Definition:** Value of &epsilon;Nd.  
 **Allowed values and other constraints:** decimal number  
 **Example:** t.b.d. 
@@ -266,8 +283,8 @@
 ### Value
 **ID and name:** OP13.1 material_pigment_isotopes_Hf_value  
 **Provided by:** data provider  
-**Obligation:** optional  
-**Occurrences:** 0–1  
+**Obligation:** mandatory  
+**Occurrences:** 1  
 **Definition:** Value of &epsilon;Hf.  
 **Allowed values and other constraints:** decimal number  
 **Example:** t.b.d. 

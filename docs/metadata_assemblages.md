@@ -35,16 +35,16 @@
 ### Type
 **ID and name:** AS3.1 assemblage_investigation_unit_type  
 **Provided by:** data provider  
-**Obligation:** optional  
-**Occurrences:** 0–n  
+**Obligation:** mandatory  
+**Occurrences:** 1  
 **Definition:** The type of the unit.  
 **Allowed values and other constraints:** controlled vocabulary  
 
 ### Identifier
 **ID and name:** AS3.2 assemblage_investigation_unit_value  
 **Provided by:** data provider  
-**Obligation:** optional  
-**Occurrences:** 0–n  
+**Obligation:** mandatory  
+**Occurrences:** 1  
 **Definition:** The identifier of the unit.  
 **Allowed values and other constraints:** free text  
 **Example:** 13; A1-B2  
@@ -58,31 +58,31 @@
 
 *with the four subproperties:*  
 
-### Context
-**ID and name:** AS4.1 assemblage_stratigraphy_context  
-**Provided by:** data provider  
-**Obligation:** recommended  
-**Occurrences:** 0–1  
-**Definition:** The type of stratigraphic context.  
-**Allowed values and other constraints:** controlled vocabulary  
-
 ### Unit
-**ID and name:** AS4.2 assemblage_stratigraphy_unit  
+**ID and name:** AS4.1 assemblage_stratigraphy_unit  
 **Provided by:** data provider  
-**Obligation:** recommended  
-**Occurrences:** 0–1  
+**Obligation:** mandatory  
+**Occurrences:** 1  
 **Definition:** The locality or project-specific identifier of the stratigraphic unit from which the assemblage was collected.  
 **Allowed values and other constraints:** free text  
 **Example:** host rock, pit 13  
 
 ### Site diagram
-**ID and name:** AS4.3 assemblage_site_diagram  
+**ID and name:** AS4.2 assemblage_stratigraphy_diagram  
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–1  
 **Definition:** Image or drawing of site that makes exact location of assemblage clear.  
 **Allowed values and other constraints:** file path  
 **Example:** t.b.d.  
+
+### Context
+**ID and name:** AS4.3 assemblage_stratigraphy_context  
+**Provided by:** data provider  
+**Obligation:** mandatory  
+**Occurrences:** 1  
+**Definition:** Information about whether the material was disturbed during deposition or in a later event.   
+**Allowed values and other constraints:** controlled vocabulary  
 
 ### Description
 **ID and name:** AS4.4 assemblage_stratigraphy_description  
@@ -115,7 +115,7 @@
 **ID and name:** AS5.2 assemblage_depth_value  
 **Provided by:** data provider  
 **Obligation:** mandatory  
-**Occurrences:** 0–1  
+**Occurrences:** 1  
 **Definition:** The depth value of the assemblage measured from the reference point.  
 **Allowed values and other constraints:** decimal number  
 **Example:** 5.6  
@@ -125,7 +125,7 @@
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
-**Definition:** SI unit of the depth value of the assemblage. Mandatory if depth is provided.  
+**Definition:** SI unit of the depth value of the assemblage.   
 **Allowed values and other constraints:** controlled vocabulary  
 
 ## Relations

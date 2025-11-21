@@ -1,21 +1,38 @@
 # Ore
 
 ## Ore mineralogy
-**ID and name:** OO1 material_ore_mineral  
+**ID and name:** OO1 material_ore_mineralogy  
 **Provided by:** data provider  
-**Obligation:** mandatory  
-**Occurrences:** 1–n  
+**Obligation:** recommended  
+**Occurrences:** 0–n  
 **Definition:** The mineralogical composition of the ore.  
 
 *with the two subproperties:*  
 
 ### Minerals
-**ID and name:** OO1.1 material_ore_mineral_name  
+**ID and name:** OO1.1 material_ore_mineralogy_mineral  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
 **Definition:** The minerals included in the specimen.  
-**Allowed values and other constraints:** controlled vocabulary ([IMA list of minerals](https://rruff.info/ima/))  
+
+*with the two subproperties:*  
+
+#### Mineral name
+**ID and name:** OO1.1.1 material_ore_mineralogy_mineral_name  
+**Provided by:** data provider  
+**Obligation:** mandatory  
+**Occurrences:** 1  
+**Definition:** Name of the mineral approved by the International Mineralogical Association (IMA).  
+**Allowed values and other constraints:** controlled vocabulary ([IMA list of minerals](https://rruff.info/ima/)), retrieved from the Mindat API  
+
+#### Mineral ID 
+**ID and name:** OO1.1.2 material_ore_mineralogy_mineral_id  
+**Provided by:** Mindat API  
+**Obligation:** mandatory  
+**Occurrences:** 1  
+**Definition:** The Mindat ID of the mineral.  
+**Allowed values and other constraints:** Value in the `id` field of a Mindat mineral record.  
 
 ### Mineral–hosting ore part
 **ID and name:** OO1.2 material_ore_mineral_part  
@@ -37,13 +54,13 @@
 ### Targeted metals
 **ID and name:** OO2.1 material_ore_commodity_metal  
 **Provided by:** data provider  
-**Obligation:** recommended  
-**Occurrences:** 0–n  
+**Obligation:** mandatory  
+**Occurrences:** 1–n  
 **Definition:** The target metal(s) of the mining activities.  
 **Allowed values and other constraints:** controlled vocabulary  
 
 ### Period of extraction
-**ID and name:** OO2.2 material_ore_commonity_period  
+**ID and name:** OO2.2 material_ore_commodity_period  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
@@ -91,8 +108,8 @@
 ## Ore chemistry
 **ID and name:** OO4 material_ore_chemistry  
 **Provided by:** data provider  
-**Obligation:** mandatory  
-**Occurrences:** 1–n  
+**Obligation:** recommended  
+**Occurrences:** 0–n  
 **Definition:** Information about the chemical composition of the ore.  
 
 *with the two subproperties:*  

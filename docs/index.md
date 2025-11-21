@@ -1,28 +1,8 @@
 # TerraLID metadata profile for Lead Isotope Data in Archaeology
 
-<!---
 !!! info "Recommended citation"
 
     TerraLID Team (2025), TerraLID Metadata profile. v0.1. https://metadata.terralid.org
--->
-
-!!! warning "Community feedback process ongoing"
-
-    This initial version of the TerraLID metadata profile is under discussion by the community until **October 15, 2025**. It will be revised according to the received feedback before publication, resulting in changes of the version presented here. 
-
-    Comment and discuss the draft asynchronously in our [collaborative document](https://docs.google.com/document/d/1_Fixjrs8GvNSleWrBjAwYok4b28-Bf52ZzggZAykSTk/edit?usp=sharing) and/or join our drop-in calls to discuss with the TerraLID team: 
-    
-    * [Thursday, 31 July, 2025, 8:00 UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20250731T080000&p1=1440)
-    * [Thursday, 31 July, 2025, 14:00 UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20250731T140000&p1=1440)
-    * [Friday, 1 August, 2025, 12:00 UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20250801T120000&p1=1440)
-    * [Tuesday, 9 September, 2025, 12:00 UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20250909T120000&p1=1440)
-    * [Wednesday, 10 September, 2025, 8:00 UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20250910T080000&p1=1440)
-    * [Wednesday, 10 September, 2025, 14:00 UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20250910T140000&p1=1440)
-    * [Thursday, 9 October, 2025, 12:00 UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20251009T120000&p1=1440)
-    * [Friday, 10 October, 2025, 8:00 UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20251010T080000&p1=1440)
-    * [Friday, 10 October, 2025, 14:00 UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20251010T140000&p1=1440)
-
-    Link for all drop-in calls: [https://thga-de.zoom-x.de/j/68929416892?pwd=0ga5a4WopyTAchMApFQqdika1wRNVw.1](https://thga-de.zoom-x.de/j/68929416892?pwd=0ga5a4WopyTAchMApFQqdika1wRNVw.1)
 
 Contributors to the TerraLID metadata profile in alphabetical order: 
 
