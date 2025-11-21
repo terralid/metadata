@@ -50,6 +50,7 @@ nav:
       - Metal: 
         - General: metadata_metal.md
         - Coins: metadata_metal-coins.md
+        - Sling bullets: metadata_sling-bullets.md
       - Pigments: metadata_pigment.md
       - By-products: metadata_by-products.md  
   - Mappings: mappings.md
