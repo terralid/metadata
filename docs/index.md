@@ -1,5 +1,9 @@
 # TerraLID metadata profile for Lead Isotope Data in Archaeology
 
+!!! tip "Download PDF Version"
+
+    [:material-file-pdf-box: Download complete documentation as PDF](pdf/TerraLID_Metadata_Profile.pdf){ .md-button .md-button--primary }
+
 !!! info "Recommended citation"
 
     TerraLID Team (2025), TerraLID Metadata profile. v0.1. https://metadata.terralid.org

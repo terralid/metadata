@@ -31,22 +31,43 @@ jobs:
         run: |
           pip install -r requirements.txt
       
+      - name: Install Playwright for PDF generation
+        run: |
+          playwright install --with-deps chromium
+      
       - name: build MkDocs
         run: |
-          mkdocs build -f ./mkdocs.yml
+          mkdocs build -f ./mkdocs.yml --clean
+      
+      - name: Save versioned PDF to repository
+        run: |
+          TAG="${GITHUB_REF#refs/tags/}"
+          mkdir -p exports/pdf
+          
+          if [ -f "site/pdf/TerraLID_Metadata_Profile.pdf" ]; then
+            cp "site/pdf/TerraLID_Metadata_Profile.pdf" "exports/pdf/TerraLID_Metadata_Profile_${TAG}.pdf"
+            
+            git config --global user.name "github-actions[bot]"
+            git config --global user.email "github-actions[bot]@users.noreply.github.com"
+            git add exports/pdf/
+            git commit -m "Add PDF export for version ${TAG}" || true
+            git push origin HEAD:main || true
+          fi
 
       - name: Determine Version
         run: |
-          cd docs/  # Ensure we are in the correct directory
           TAG="${GITHUB_REF#refs/tags/}"
 
           if [[ "$TAG" == "latest" ]]; then
+            cd docs/
             VERSION=$(mike list --config-file ../mkdocs.yml | grep '\[latest\]' | awk '{print $1}')
+            cd ..
           else
             VERSION="$TAG"
           fi
           
           echo "VERSION=${VERSION}" >> $GITHUB_ENV
+          echo "Mike will deploy version: ${VERSION}"
       
       - name: conigure git
         run: |

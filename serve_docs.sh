@@ -6,4 +6,6 @@ source env/bin/activate
 pip install --upgrade pip
 pip install mkdocs-material mike
 pip install -r requirements.txt
+playwright install chrome --with-deps
+mkdocs build --clean
 mkdocs serve -a 0.0.0.0:8000

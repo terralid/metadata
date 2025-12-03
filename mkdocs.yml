@@ -76,6 +76,16 @@ plugins:
       comments: true
   - add-number: # see https://github.com/ignorantshr/mkdocs-add-number-plugin for reference
       order: 2
+  - exporter:
+      formats:
+        pdf:
+          enabled: true
+          aggregator:
+            enabled: true
+            output: pdf/TerraLID_Metadata_Profile.pdf
+          stylesheets:
+            - docs/stylesheets/pdf-export.scss
+          concurrency: 8
 
 markdown_extensions:
   - attr_list
