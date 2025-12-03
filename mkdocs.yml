@@ -14,6 +14,7 @@ theme:
   favicon: assets/favicon.png
   icon: 
     repo: fontawesome/brands/github
+  custom_dir: overrides
   palette:
 #    - scheme: slate
 #      toggle:
@@ -49,7 +50,8 @@ nav:
       - Metal: 
         - General: metadata_metal.md
         - Coins: metadata_metal-coins.md
-      - Pigments: metadata_pigment.md  
+      - Pigments: metadata_pigment.md
+      - By-products: metadata_by-products.md  
   - Mappings: mappings.md
   - History: changelog.md
 
