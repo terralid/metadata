@@ -83,7 +83,9 @@ plugins:
           aggregator:
             enabled: true
             output: pdf/TerraLID_Metadata_Profile.pdf
-      concurrency: 4
+          stylesheets:
+            - docs/stylesheets/pdf-export.scss
+          concurrency: 8
 
 markdown_extensions:
   - attr_list
