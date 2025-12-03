@@ -1,2 +1,4 @@
 mkdocs-include-markdown-plugin
 mkdocs-add-number-plugin
+mkdocs-exporter
+playwright
