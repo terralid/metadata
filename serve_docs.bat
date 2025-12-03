@@ -3,7 +3,7 @@ python3 -m venv env
 call env\Scripts\activate
 python -m pip install --upgrade pip
 pip install mkdocs-material mike
-playwright install chrome --with-deps
 pip install -r requirements.txt
+playwright install chrome --with-deps
 mkdocs build --clean
 mkdocs serve -a 0.0.0.0:8000
