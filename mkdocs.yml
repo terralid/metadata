@@ -14,7 +14,6 @@ theme:
   favicon: assets/favicon.png
   icon: 
     repo: fontawesome/brands/github
-  custom_dir: overrides
   palette:
 #    - scheme: slate
 #      toggle:
@@ -50,8 +49,7 @@ nav:
       - Metal: 
         - General: metadata_metal.md
         - Coins: metadata_metal-coins.md
-      - Pigments: metadata_pigment.md
-      - By-products: metadata_by-products.md  
+      - Pigments: metadata_pigment.md  
   - Mappings: mappings.md
   - History: changelog.md
 
@@ -76,6 +74,14 @@ plugins:
       comments: true
   - add-number: # see https://github.com/ignorantshr/mkdocs-add-number-plugin for reference
       order: 2
+  - exporter:
+      formats:
+        pdf:
+          enabled: true
+          aggregator:
+            enabled: true
+            output: pdf/TerraLID_Metadata_Profile.pdf
+      concurrency: 4
 
 markdown_extensions:
   - attr_list
