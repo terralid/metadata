@@ -37,7 +37,7 @@ jobs:
       
       - name: build MkDocs
         run: |
-          mkdocs build -f ./mkdocs.yml
+          mkdocs build -f ./mkdocs.yml --clean
       
       - name: Save versioned PDF to repository
         run: |
