@@ -20,6 +20,7 @@ preferred-citation:
   version: 0.2
   abstract: |
     This needs to be filled...
+  doi: 10.5281/zenodo.1234567
   repository-code: 'https://github.com/terralid/metadata'
   url: 'https://metadata.terralid.org/'
   license: CC-BY-4.0
