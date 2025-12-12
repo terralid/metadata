@@ -6,17 +6,36 @@ title: TerraLID Metadata Profile
 version: v0.2
 date-released: '2025-12-31'
 
+preferred-citation:
+  type: manual
+  year: 2025
+  date-released: '2025-12-31'
+  title: TerraLID Metadata Profile
+  authors:
+  - name: TerraLID Team
+    email: terralid@bergbaumuseum.de
+  contact:
+  - name: TerraLID Team
+    email: terralid@bergbaumuseum.de
+  version: 0.2
+  abstract: |
+    This needs to be filled...
+  repository-code: 'https://github.com/terralid/metadata'
+  url: 'https://metadata.terralid.org/'
+  license: CC-BY-4.0
+
+doi: 10.5281/zenodo.1234567
+
 message: |
   If you use this software, please cite it using the
   metadata from this file.
 abstract: |
   This needs to be filled
 
-doi: 10.5281/zenodo.1234567
 type: dataset
 contact:
-  - name: Thomas Rose
-    email: thomas.rose@bergbaumuseum.de
+- name: TerraLID Team
+  email: terralid@bergbaumuseum.de
 authors:
   - family-names: Acevedo Mejía
     given-names: Andrea
