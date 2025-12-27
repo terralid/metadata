@@ -4,7 +4,7 @@
 
 !!! info "Recommended citation"
 
-    TerraLID Team (2025). TerraLID Metadata Profile (Version 0.3). <https://doi.org/10.5281/zenodo.18069848>
+    TerraLID Team (2025). TerraLID Metadata Profile (0.3). Zenodo. <https://doi.org/10.5281/zenodo.18069847>
 
 !!! tip "Download"
 
