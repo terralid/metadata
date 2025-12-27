@@ -1,8 +1,8 @@
 # TerraLID
 
-Hosting repository for the metadata documentation of the TerraLID project
+Hosting repository for the TerraLID metadata profile. 
 
-## use pipeline
+## Use pipeline
 
 To deploy a new version to GH-Pages first push your new documentation to this repository:
 ```bash
