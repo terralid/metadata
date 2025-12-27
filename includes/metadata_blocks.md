@@ -53,7 +53,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** A persistent identifier assigned to the analysed material.  
-**Allowed values and other constraints:** Valid persistent identifier according to S1.3 Type of persistent identifier  
+**Allowed values and other constraints:** Valid persistent identifier according to B1.4.2 Type of persistent identifier  
 **Example:** 0000–0001–2345–678X  
 
 ##### Type of persistent identifier

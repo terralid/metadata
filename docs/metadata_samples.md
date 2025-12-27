@@ -42,7 +42,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** A persistent identifier assigned to the analysed material.  
-**Allowed values and other constraints:** valid persistent identifier according to [`S1.3 Type of persistent identifier`](metadata_samples.md#13-type-of-persistent-identifier)  
+**Allowed values and other constraints:** valid persistent identifier according to [`S1.2.2 Type of persistent identifier`](metadata_samples.md#122-type-of-persistent-identifier)  
 **Example:** 10.60510/ICDP5054ESYI201  
 
 #### Type of persistent identifier

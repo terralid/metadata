@@ -63,11 +63,11 @@
 *with the three subproperties:*  
 
 ### Persistent Identifier
-**ID and name**: O5.1 object_pid
-**Provided by**: data provider
-**Obligation**: recommended
-**Occurrences**: 0–n
-**Definition**: Persistent identifier(s) assigned to the object.
+**ID and name**: O5.1 object_pid  
+**Provided by**: data provider  
+**Obligation**: recommended  
+**Occurrences**: 0–n  
+**Definition**: Persistent identifier(s) assigned to the object.  
 
 *with the two subproperties:* 
 
@@ -102,7 +102,7 @@
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
-**Definition:** The name of the catalogue, database or comparable records  to which the ID refers. Mandatory if [`O5.3 Value of other identifier`](metadata_objects.md#53-value-of-other-identifier) is provided.  
+**Definition:** The name of the catalogue, database or comparable records  to which the ID refers. Mandatory if [`O5.2 Value of other identifier`](metadata_objects.md#52-value-of-other-identifier) is provided.  
 **Allowed values and other constraints:** free text  
 **Example:** catalogue in the final excavation report  
 
