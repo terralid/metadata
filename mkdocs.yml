@@ -76,6 +76,8 @@ plugins:
       comments: true
   - add-number: # see https://github.com/ignorantshr/mkdocs-add-number-plugin for reference
       order: 2
+      excludes: 
+        - changelog.md
   - exporter:
       formats:
         pdf:
