@@ -104,7 +104,7 @@
 **Occurrences:** 1  
 **Definition:** Information about the production context and processing steps of the pigment.  
 
-*with the two subproperties:*  
+*with the three subproperties:*  
 
 ### Production context 
 **ID and name:** OP5.1 material_pigment_production_context  
@@ -121,6 +121,15 @@
 **Occurrences:** 0–n  
 **Definition:** Which treatments were done to the raw material(s) to produce the pigment?  
 **Allowed values and other constraints:** controlled vocabulary  
+
+### Details
+**ID and name:** OP5.3 material_pigment_production_details  
+**Provided by:** data provider  
+**Obligation:** optional  
+**Occurrences:** 0–1  
+**Definition:** Additional information about the production context.  
+**Allowed values and other constraints:** free text  
+**Example:** t.b.d.  
 
 ## Colour
 **ID and name:** OP6 material_pigment_colour  
