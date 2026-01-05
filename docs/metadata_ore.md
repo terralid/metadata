@@ -93,7 +93,7 @@
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
-**Definition:** The type of fabric to which the mineral belongs to.  
+**Definition:** The texture of the ore mineral.  
 **Allowed values and other constraints:** controlled vocabulary  
 
 ### Mineralisation phase

@@ -1,6 +1,7 @@
 ## Version 0.3
 
 * Addition of `OP5.3 material_pigment_production_details`
+* Refined definition of some metadata
 * Addition of automatic pdf export of the metadata profile and download button on start page
 * Addition of citation information
 * Correct formatting and broken links
