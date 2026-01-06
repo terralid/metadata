@@ -314,7 +314,7 @@
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
-**Definition:** The relative date expressed as anorogenic event.  
+**Definition:** The relative date expressed as an orogenic event.  
 **Allowed values and other constraints:** controlled vocabulary, only available if `B3.2 Date type` = "geological".  
 
 #### Definition of chronological unit
