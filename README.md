@@ -1,3 +1,6 @@
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18069848.svg)](https://doi.org/10.5281/zenodo.18069848)
+
 # TerraLID
 
 Hosting repository for the TerraLID metadata profile. 
