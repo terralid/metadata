@@ -16,7 +16,7 @@
 **Occurrences:** 1–n  
 **Definition:** Identifiers assigned to the sample.   
 
-*with the three subproperties:*  
+*with the two subproperties:*  
 
 ### Laboratory ID
 **ID and name:** S1.1 sample_id_lab  
