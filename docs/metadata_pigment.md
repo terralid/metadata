@@ -70,7 +70,8 @@
 **Obligation:** recommended  
 **Occurrences:** 0–n  
 **Definition:** The (main) organic compounds in the pigment.  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** free text
+**Example:** Lycopene  
 
 ### Mineralogical composition
 **ID and name:** OP4.3 material_pigment_composition_mineral  
