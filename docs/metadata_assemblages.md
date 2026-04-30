@@ -38,7 +38,8 @@
 **Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** The type of the unit.  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** free text  
+**Example:** Trench  
 
 ### Identifier
 **ID and name:** AS3.2 assemblage_investigation_unit_value  

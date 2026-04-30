@@ -309,7 +309,7 @@
 %}
 
 ## Authenticity of object
-**ID and name:** O18.1 object_authenticity  
+**ID and name:** O18 object_authenticity  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 0–1  
