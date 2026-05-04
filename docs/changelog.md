@@ -1,3 +1,10 @@
+## Version 0.35
+
+* Change field type of `AS 3.1 assemblage_investigation_unit_type` to free text
+* Change scope of `OP4.2 material_pigment_composition_compound` to all chemical formulas (or names) and its field type to free text
+* Addition of new `OP4.3 material_pigment_composition_chromophore`
+* Renumber `OP4.3 material_pigment_composition_mineral` to `OP4.4 material_pigment_composition_mineral` including its subproperties
+
 ## Version 0.3
 
 * Addition of `OP5.3 material_pigment_production_details`

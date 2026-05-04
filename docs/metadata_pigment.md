@@ -64,26 +64,35 @@
   end="<!--chemistry-end-->"
 %}
 
-### Organic compounds
+### Chemical compound
 **ID and name:** OP4.2 material_pigment_composition_compound  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
-**Definition:** The (main) organic compounds in the pigment.  
-**Allowed values and other constraints:** free text
-**Example:** Lycopene  
+**Definition:** The (chemical) formula or name of the main compounds in the pigment. If it is a mineral pigment, record the name in [`OP4.4.1 Mineral name`](metadata_pigment.md#441-mineral-name)  
+**Allowed values and other constraints:** free text  
+**Example:** Dracorubin, Mg2Co(AsO4)2  
 
-### Mineralogical composition
-**ID and name:** OP4.3 material_pigment_composition_mineral  
+### Chromophore
+**ID and name:** OP4.3 material_pigment_composition_chromophore  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
-**Definition:** If it is mineral pigment, which minerals are present?  
+**Definition:** The part of the pigment's compound creating its colour.  
+**Allowed values and other constraints:** free text  
+**Example:** Organic-based, Co-based  
+
+### Mineralogical composition
+**ID and name:** OP4.4 material_pigment_composition_mineral  
+**Provided by:** data provider  
+**Obligation:** recommended  
+**Occurrences:** 0–n  
+**Definition:** If it is a mineral pigment, which minerals are present?  
 
 *with the two subproperties:*  
 
 #### Mineral name
-**ID and name:** OP4.3.1 material_pigment_composition_mineral_name  
+**ID and name:** OP4.4.1 material_pigment_composition_mineral_name  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -91,7 +100,7 @@
 **Allowed values and other constraints:** controlled vocabulary ([IMA list of minerals](https://rruff.info/ima/)), retrieved from the Mindat API  
 
 #### Mineral ID
-**ID and name:** OP4.3.2 material_pigment_composition_mineral_id  
+**ID and name:** OP4.4.2 material_pigment_composition_mineral_id  
 **Provided by:** Mindat API  
 **Obligation:** mandatory  
 **Occurrences:** 1  
