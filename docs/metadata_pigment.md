@@ -49,7 +49,7 @@
 **Occurrences:** 1  
 **Definition:** The chemical and/or mineralogical composition of the pigment. At least one of its subproperties must be provided.  
 
-*with the three subproperties:*  
+*with the four subproperties:*  
 
 ### Chemical composition
 **ID and name:** OP4.1 material_pigment_composition_chemistry  
