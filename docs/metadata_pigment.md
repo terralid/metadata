@@ -69,7 +69,7 @@
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
-**Definition:** The (chemical) formula or name of the main compounds in the pigment. If it is a mineral pigment, record the name in [`OP4.4.1 Mineral name`](metadata_pigment.md#441-mineral-name)  
+**Definition:** The (chemical) formula or name of the main compounds in the pigment. If it is a mineral pigment, record the name in [`OP4.4.1 Mineral name`](metadata_pigment.md#441-mineral-name).  
 **Allowed values and other constraints:** free text  
 **Example:** Dracorubin, Mg2Co(AsO4)2  
 
