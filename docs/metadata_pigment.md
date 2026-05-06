@@ -24,7 +24,7 @@
 **Occurrences:** 1–n  
 **Definition:** Information about the pigment type.  
 
-*with the two subproperties:*  
+*with the three subproperties:*  
 
 ### Type
 **ID and name:** OP3.1 material_pigment_type_chemistry  
@@ -42,6 +42,15 @@
 **Definition:** Is it a natural or synthetic pigment?  
 **Allowed values and other constraints:** controlled vocabulary  
 
+### Chromophore
+**ID and name:** OP3.3 material_pigment_composition_chromophore  
+**Provided by:** data provider  
+**Obligation:** recommended  
+**Occurrences:** 0–n  
+**Definition:** The part of the pigment's compound creating its colour.  
+**Allowed values and other constraints:** free text  
+**Example:** Organic-based, Co-based  
+
 ## Pigment composition
 **ID and name:** OP4 material_pigment_composition  
 **Provided by:** data provider  
@@ -49,7 +58,7 @@
 **Occurrences:** 1  
 **Definition:** The chemical and/or mineralogical composition of the pigment. At least one of its subproperties must be provided.  
 
-*with the four subproperties:*  
+*with the three subproperties:*  
 
 ### Chemical composition
 **ID and name:** OP4.1 material_pigment_composition_chemistry  
@@ -73,17 +82,8 @@
 **Allowed values and other constraints:** free text  
 **Example:** Dracorubin, Mg2Co(AsO4)2  
 
-### Chromophore
-**ID and name:** OP4.3 material_pigment_composition_chromophore  
-**Provided by:** data provider  
-**Obligation:** recommended  
-**Occurrences:** 0–n  
-**Definition:** The part of the pigment's compound creating its colour.  
-**Allowed values and other constraints:** free text  
-**Example:** Organic-based, Co-based  
-
 ### Mineralogical composition
-**ID and name:** OP4.4 material_pigment_composition_mineral  
+**ID and name:** OP4.3 material_pigment_composition_mineral  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
@@ -92,7 +92,7 @@
 *with the two subproperties:*  
 
 #### Mineral name
-**ID and name:** OP4.4.1 material_pigment_composition_mineral_name  
+**ID and name:** OP4.3.1 material_pigment_composition_mineral_name  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
@@ -100,7 +100,7 @@
 **Allowed values and other constraints:** controlled vocabulary ([IMA list of minerals](https://rruff.info/ima/)), retrieved from the Mindat API  
 
 #### Mineral ID
-**ID and name:** OP4.4.2 material_pigment_composition_mineral_id  
+**ID and name:** OP4.3.2 material_pigment_composition_mineral_id  
 **Provided by:** Mindat API  
 **Obligation:** mandatory  
 **Occurrences:** 1  
