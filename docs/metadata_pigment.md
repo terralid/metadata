@@ -24,7 +24,7 @@
 **Occurrences:** 1–n  
 **Definition:** Information about the pigment type.  
 
-*with the two subproperties:*  
+*with the three subproperties:*  
 
 ### Type
 **ID and name:** OP3.1 material_pigment_type_chemistry  
@@ -41,6 +41,15 @@
 **Occurrences:** 0–1  
 **Definition:** Is it a natural or synthetic pigment?  
 **Allowed values and other constraints:** controlled vocabulary  
+
+### Chromophore
+**ID and name:** OP3.3 material_pigment_composition_chromophore  
+**Provided by:** data provider  
+**Obligation:** recommended  
+**Occurrences:** 0–n  
+**Definition:** The part of the pigment's compound creating its colour.  
+**Allowed values and other constraints:** free text  
+**Example:** Organic-based, Co-based  
 
 ## Pigment composition
 **ID and name:** OP4 material_pigment_composition  
@@ -64,21 +73,21 @@
   end="<!--chemistry-end-->"
 %}
 
-### Organic compounds
+### Chemical compound
 **ID and name:** OP4.2 material_pigment_composition_compound  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
-**Definition:** The (main) organic compounds in the pigment.  
-**Allowed values and other constraints:** free text
-**Example:** Lycopene  
+**Definition:** The (chemical) formula or name of the main compounds in the pigment. If it is a mineral pigment, record the name in [`OP4.4.1 Mineral name`](metadata_pigment.md#441-mineral-name).  
+**Allowed values and other constraints:** free text  
+**Example:** Dracorubin, Mg2Co(AsO4)2  
 
 ### Mineralogical composition
 **ID and name:** OP4.3 material_pigment_composition_mineral  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
-**Definition:** If it is mineral pigment, which minerals are present?  
+**Definition:** If it is a mineral pigment, which minerals are present?  
 
 *with the two subproperties:*  
 
