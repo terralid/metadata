@@ -352,19 +352,11 @@
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
-**Definition:** The analysed chemical compound (chemical element or oxide).   
-**Allowed values and other constraints:** controlled vocabulary, not available if a mass spectrometric-method is recorded in `B4.1 Analytical method`.  
-
-#### Analysed isotope
-**ID and name:** B4.3 chemistry_icp_isotope  
-**Provided by:** data provider  
-**Obligation:** recommended  
-**Occurrences:** 0–n  
-**Definition:** The isotope used for quantification of a chemical element.   
-**Allowed values and other constraints:** controlled vocabulary, only available if a mass spectrometric-method is recorded in `B4.1 Analytical method`.
+**Definition:** The analysed chemical compound (chemical element, oxide, isotope).   
+**Allowed values and other constraints:** controlled vocabulary, the actual measured compound must be reported if available (e.g., the isotope for mass spectrometric values rather than the element).  
 
 #### Value
-**ID and name:** B4.4 chemistry_value  
+**ID and name:** B4.3 chemistry_value  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -373,7 +365,7 @@
 **Example:** 15.3  
 
 #### Unit
-**ID and name:** B4.5 chemistry_unit  
+**ID and name:** B4.4 chemistry_unit  
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
@@ -381,7 +373,7 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 #### Uncertainty type
-**ID and name:** B4.6 chemistry_uncertainty_type  
+**ID and name:** B4.5 chemistry_uncertainty_type  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
@@ -389,22 +381,31 @@
 **Allowed values and other constraints:** controlled vocabulary  
 
 #### Confidence level
-**ID and name:** B4.7 chemistry_uncertainty_sigma  
+**ID and name:** B4.6 chemistry_uncertainty_sigma  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
-**Definition:** Sigma value of the reported absolute analytical uncertainty.  
+**Definition:** Multiple of standard deviation (sigma) of the reported absolute analytical uncertainty.  
 **Allowed values and other constraints:** 1, 2, 3  
 **Example:** 2  
 
 #### Uncertainty value
-**ID and name:** B4.8 chemistry_uncertainty_value  
+**ID and name:** B4.7 chemistry_uncertainty_value  
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
 **Definition:** Value of the absolute analytical uncertainty.  
 **Allowed values and other constraints:** decimal number  
 **Example:** 0.3  
+
+#### Qualitative value
+**ID and name:** B4.8 chemistry_relative_value  
+**Provided by:** data provider  
+**Obligation:** recommended  
+**Occurrences:** 0–n  
+**Definition:** Value of qualitative results and other non-numeric values such as the reporting of detection or quantification limits rather than values.  
+**Allowed values and other constraints:** free text  
+**Example:** +++, tr, <0.4, bdl = 0.5 wt%  
 
 <!--chemistry-end-->
 
@@ -523,7 +524,7 @@
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
-**Definition:** Sigma value of the reported absolute analytical uncertainty.  
+**Definition:** Multiple of analytical uncertainty (sigma) of the reported absolute analytical uncertainty.  
 **Allowed values and other constraints:** 1, 2, 3  
 **Example:** 2  
 

@@ -1,3 +1,17 @@
+## Version 0.3.2
+
+* Merging of `B4.3 chemistry_icp_isotope` into `B4.2 chemistry_compound` to record values measured e.g. by mass spectrometry but reported as elements rather than isotope together with values reported by isotope
+* Renumbering of metadata fields `B4.4` to `B4.8` to `B4.3` to `B4.7` as consequence of the above change
+* Addition of new `B4.8. chemistry_relative_value` to record relative compositional values (e.g. +++, tr, <0.4, bdl = 0.5 wt%) 
+* Improved definition of `B4.6 chemistry_uncertainty_sigma`
+* Improved definition of `B6.4 lia_ratio_uncertainty_sigma`
+
+## Version 0.3.1
+
+* Addition of new `OP3.3 material_pigment_composition_chromophore`
+* Change field type of `AS 3.1 assemblage_investigation_unit_type` to free text
+* Change scope of `OP4.2 material_pigment_composition_compound` to all chemical formulas (or names) and its field type to free text
+
 ## Version 0.3
 
 * Addition of `OP5.3 material_pigment_production_details`
