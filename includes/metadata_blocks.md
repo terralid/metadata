@@ -227,7 +227,7 @@
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
-**Definition:** Is this an archaeological or geological age? Archaeological dates must be given in calendar years, with BCE dates as negative values. Geological dates must be given in million years.   
+**Definition:** Is this an archaeological or geological age? This field controls the behavior of some dating-related metadata fields such as the unit of the absolute age (archaeological dates in calendar years, with BCE dates as negative values; geological dates in million years).   
 **Allowed values and other constraints:** geological, archaeological  
 **Example:** archaeological  
 
@@ -245,7 +245,7 @@
 **Provided by:** data provider, API  
 **Obligation:** mandatory  
 **Occurrences:** 1  
-**Definition:** The oldest possible date of the period.   
+**Definition:** The oldest possible date of the range. A negative value indicates a BCE date.  
 **Allowed values and other constraints:** integer  
 **Example:** -15  
 
@@ -254,7 +254,7 @@
 **Provided by:** data provider, API  
 **Obligation:** recommended  
 **Occurrences:** 0–1  
-**Definition:** The youngest possible date of the period.   
+**Definition:** The youngest possible date of the range. A negative value indicates a BCE date.   
 **Allowed values and other constraints:** integer  
 **Example:** 15  
 
@@ -271,7 +271,7 @@
 **Provided by:** TerraLID system  
 **Obligation:** mandatory  
 **Occurrences:** 1  
-**Definition:** The unit of the date.   
+**Definition:** The unit of the date: "Ma" if `B3.2 Date type` = "geological"; "a" (calendar years) if `B3.2 Date type` = "archaeological".  
 **Allowed values and other constraints:** a, Ma  
 **Example:** a  
 

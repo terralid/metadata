@@ -190,8 +190,8 @@
 ## Registry
 **ID and name:** SI6 site_registry  
 **Provided by:** data provider  
-**Obligation:** mandatory  
-**Occurrences:** 1  
+**Obligation:** recommended  
+**Occurrences:** 0–1  
 **Definition:** The entry of the site in the registry of the local authority (e.g., heritage authority, geological survey).  
 
 *with the two subproperties:*

@@ -1,3 +1,8 @@
+## Version 0.3.3
+
+* Change Obligation of `SI6 site_registry` to *recommended*. 
+* Refined definitions of `B3.2 date_type`, `B3.3.1 date_absolute_start`, `B3.3.2 date_absolute_end`, `B3.3.4 date_absolute_unit`
+
 ## Version 0.3.2
 
 * Merging of `B4.3 chemistry_icp_isotope` into `B4.2 chemistry_compound` to record values measured e.g. by mass spectrometry but reported as elements rather than isotope together with values reported by isotope
