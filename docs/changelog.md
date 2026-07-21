@@ -1,3 +1,7 @@
+## Version 0.3.4
+
+* `OO8.1 material_ore_accessibility` has the new allowed value "unclear"
+
 ## Version 0.3.3
 
 * Change Obligation of `SI6 site_registry` to *recommended*. 

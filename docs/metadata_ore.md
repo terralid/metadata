@@ -175,7 +175,7 @@
 **Obligation:** recommended  
 **Occurrences:** 0–1  
 **Definition:** Was the ore accessible for pre–industrial societies?  
-**Allowed values and other constraints:** yes, no  
+**Allowed values and other constraints:** yes, no, unclear  
 **Example:** yes  
 
 ### Details
