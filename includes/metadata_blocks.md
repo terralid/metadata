@@ -360,9 +360,27 @@
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
+**Definition:** The concentration of the analysed chemical compound.
+
+*with the two subproperties:* 
+
+##### Absolute Value
+**ID and name:** B4.3.1 chemistry_value_absolute     
+**Provided by:** data provider  
+**Obligation:** recommended  
+**Occurrences:** 1–n  
 **Definition:** The concentration of the analysed chemical compound.   
 **Allowed values and other constraints:** decimal number  
-**Example:** 15.3  
+**Example:** 15.3
+
+##### Qualitative value
+**ID and name:** B4.3.2 chemistry_value_relative 
+**Provided by:** data provider  
+**Obligation:** recommended  
+**Occurrences:** 0–n  
+**Definition:** Value of qualitative results and other non-numeric values such as the reporting of detection or quantification limits rather than values.  
+**Allowed values and other constraints:** free text  
+**Example:** +++, tr, <0.4, bdl = 0.5 wt%
 
 #### Unit
 **ID and name:** B4.4 chemistry_unit  
@@ -397,15 +415,6 @@
 **Definition:** Value of the absolute analytical uncertainty.  
 **Allowed values and other constraints:** decimal number  
 **Example:** 0.3  
-
-#### Qualitative value
-**ID and name:** B4.8 chemistry_relative_value  
-**Provided by:** data provider  
-**Obligation:** recommended  
-**Occurrences:** 0–n  
-**Definition:** Value of qualitative results and other non-numeric values such as the reporting of detection or quantification limits rather than values.  
-**Allowed values and other constraints:** free text  
-**Example:** +++, tr, <0.4, bdl = 0.5 wt%  
 
 <!--chemistry-end-->
 
