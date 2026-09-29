@@ -93,8 +93,8 @@
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–1   
-**Definition:** Photograph of the sample location. File size must be smaller than 2 MB.   
-**Allowed values and other constraints:** file path  
+**Definition:** Photograph of the sample location.   
+**Allowed values and other constraints:** Image file (File size must be smaller than 2 MB)  
 **Example:** t.b.d.  
 
 ## Sample type

@@ -74,7 +74,7 @@
 **Obligation:** optional  
 **Occurrences:** 0–1  
 **Definition:** Image or drawing of site that makes exact location of assemblage clear.  
-**Allowed values and other constraints:** file path  
+**Allowed values and other constraints:** Image file (File size must be smaller than 2 MB)    
 **Example:** t.b.d.  
 
 ### Context
