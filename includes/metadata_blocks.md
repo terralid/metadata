@@ -374,7 +374,7 @@
 **Example:** 15.3
 
 ##### Qualitative value
-**ID and name:** B4.3.2 chemistry_value_relative 
+**ID and name:** B4.3.2 chemistry_value_relative      
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
