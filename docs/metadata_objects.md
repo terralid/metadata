@@ -155,7 +155,6 @@
 **Occurrences:** 0–n  
 **Definition:** Photograph of the object, preferably at the time of collection. For guidance on photographs, see e.g. [L. J. Fisher (2009), Photography for Archaeologists Part II: Artefact recording (BAJR Practical Guide Series 26)](https://www.bajr.org/wp-content/uploads/2024/08/Artefact-Photography-for-Archaeologists-2024.pdf).  
 **Allowed values and other constraints:** Image file (File size must be smaller than 2 MB)  
-**Example:** t.b.d.  
 
 ## Object weight
 **ID and name:** O10 object_weight  
