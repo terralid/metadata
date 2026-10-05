@@ -1,6 +1,10 @@
 ## Version 0.3.4
 
 * `OO8.1 material_ore_accessibility` has the new allowed value "unclear"
+* Restructuring of `B4.3 chemistry_value` with addition of `B4.3.1 chemistry_value_absolute` and renumbering of `B4.8 chemistry_relative_value` to `B4.3.2 chemistry_value_relative`
+* Addition of image file type and maximum file size constraints to `AS4.2 assemblage_stratigraphy_diagram`, `O9 object_photo`, and `S4.2 sample_location_photo`
+* Addition of examples to `SI6.1 site_registry_id` and `SI6.2 site_registry_name`
+* Correction of an internal link to `OP4.3.1 material_pigment_composition_mineral_name`
 
 ## Version 0.3.3
 

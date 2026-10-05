@@ -74,8 +74,7 @@
 **Obligation:** optional  
 **Occurrences:** 0–1  
 **Definition:** Image or drawing of site that makes exact location of assemblage clear.  
-**Allowed values and other constraints:** file path  
-**Example:** t.b.d.  
+**Allowed values and other constraints:** Image file (File size must be smaller than 2 MB)
 
 ### Context
 **ID and name:** AS4.3 assemblage_stratigraphy_context  

@@ -93,9 +93,8 @@
 **Provided by:** data provider  
 **Obligation:** optional  
 **Occurrences:** 0–1   
-**Definition:** Photograph of the sample location. File size must be smaller than 2 MB.   
-**Allowed values and other constraints:** file path  
-**Example:** t.b.d.  
+**Definition:** Photograph of the sample location.   
+**Allowed values and other constraints:** Image file (File size must be smaller than 2 MB)
 
 ## Sample type
 **ID and name:** S5 sample_type  

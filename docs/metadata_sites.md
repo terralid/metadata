@@ -203,7 +203,7 @@
 **Occurrences:** 0–1  
 **Definition:** The site's identifier in the registry of the local authority.  
 **Allowed values and other constraints:** free text  
-**Example:** t.b.d.  
+**Example:** 175/AAP/2015  
 
 ### Registry name
 **ID and name:** SI6.2 site_registry_name  
@@ -212,7 +212,7 @@
 **Occurrences:** 1  
 **Definition:** The name of the registry of the local authority.  
 **Allowed values and other constraints:** free text  
-**Example:** t.b.d.  
+**Example:** Hellenic Archaeological Cadastre 
 
 ## Dating
 **ID and name:** SI7 site_date  
