@@ -481,6 +481,28 @@
       
     </span>
 </a>
+<nav aria-label="12.3 Value" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1231-absolute-value">
+<span class="md-ellipsis">
+      
+        12.3.1 Absolute Value
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1232-qualitative-value">
+<span class="md-ellipsis">
+      
+        12.3.2 Qualitative value
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#124-unit">
@@ -514,15 +536,6 @@
 <span class="md-ellipsis">
       
         12.7 Uncertainty value
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#128-qualitative-value">
-<span class="md-ellipsis">
-      
-        12.8 Qualitative value
       
     </span>
 </a>
@@ -1218,6 +1231,28 @@
       
     </span>
 </a>
+<nav aria-label="12.3 Value" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1231-absolute-value">
+<span class="md-ellipsis">
+      
+        12.3.1 Absolute Value
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1232-qualitative-value">
+<span class="md-ellipsis">
+      
+        12.3.2 Qualitative value
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#124-unit">
@@ -1251,15 +1286,6 @@
 <span class="md-ellipsis">
       
         12.7 Uncertainty value
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#128-qualitative-value">
-<span class="md-ellipsis">
-      
-        12.8 Qualitative value
       
     </span>
 </a>
@@ -1650,9 +1676,8 @@
 <strong>Provided by:</strong> data provider<br/>
 <strong>Obligation:</strong> optional<br/>
 <strong>Occurrences:</strong> 0–1 <br/>
-<strong>Definition:</strong> Photograph of the sample location. File size must be smaller than 2 MB. <br/>
-<strong>Allowed values and other constraints:</strong> file path<br/>
-<strong>Example:</strong> t.b.d.  </p>
+<strong>Definition:</strong> Photograph of the sample location. <br/>
+<strong>Allowed values and other constraints:</strong> Image file (File size must be smaller than 2 MB)</p>
 <h2 id="5-sample-type">5. Sample type</h2>
 <p><strong>ID and name:</strong> S5 sample_type<br/>
 <strong>Provided by:</strong> data provider<br/>
@@ -1747,9 +1772,24 @@
 <strong>Provided by:</strong> data provider<br/>
 <strong>Obligation:</strong> mandatory<br/>
 <strong>Occurrences:</strong> 1–n<br/>
+<strong>Definition:</strong> The concentration of the analysed chemical compound.</p>
+<p><em>with the two subproperties:</em> </p>
+<h5 id="1231-absolute-value">12.3.1 Absolute Value</h5>
+<p><strong>ID and name:</strong> B4.3.1 chemistry_value_absolute   <br/>
+<strong>Provided by:</strong> data provider<br/>
+<strong>Obligation:</strong> recommended<br/>
+<strong>Occurrences:</strong> 1–n<br/>
 <strong>Definition:</strong> The concentration of the analysed chemical compound. <br/>
 <strong>Allowed values and other constraints:</strong> decimal number<br/>
-<strong>Example:</strong> 15.3  </p>
+<strong>Example:</strong> 15.3</p>
+<h5 id="1232-qualitative-value">12.3.2 Qualitative value</h5>
+<p><strong>ID and name:</strong> B4.3.2 chemistry_value_relative    <br/>
+<strong>Provided by:</strong> data provider<br/>
+<strong>Obligation:</strong> recommended<br/>
+<strong>Occurrences:</strong> 0–n<br/>
+<strong>Definition:</strong> Value of qualitative results and other non-numeric values such as the reporting of detection or quantification limits rather than values.<br/>
+<strong>Allowed values and other constraints:</strong> free text<br/>
+<strong>Example:</strong> +++, tr, &lt;0.4, bdl = 0.5 wt%</p>
 <h4 id="124-unit">12.4 Unit</h4>
 <p><strong>ID and name:</strong> B4.4 chemistry_unit<br/>
 <strong>Provided by:</strong> data provider<br/>
@@ -1780,14 +1820,6 @@
 <strong>Definition:</strong> Value of the absolute analytical uncertainty.<br/>
 <strong>Allowed values and other constraints:</strong> decimal number<br/>
 <strong>Example:</strong> 0.3  </p>
-<h4 id="128-qualitative-value">12.8 Qualitative value</h4>
-<p><strong>ID and name:</strong> B4.8 chemistry_relative_value<br/>
-<strong>Provided by:</strong> data provider<br/>
-<strong>Obligation:</strong> recommended<br/>
-<strong>Occurrences:</strong> 0–n<br/>
-<strong>Definition:</strong> Value of qualitative results and other non-numeric values such as the reporting of detection or quantification limits rather than values.<br/>
-<strong>Allowed values and other constraints:</strong> free text<br/>
-<strong>Example:</strong> +++, tr, &lt;0.4, bdl = 0.5 wt%  </p>
 <!-- END INCLUDE -->
 <h2 id="13-sampling-person">13. Sampling person</h2>
 <p><strong>ID and name:</strong> S13 sample_creator<br/>

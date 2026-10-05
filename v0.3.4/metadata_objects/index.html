@@ -750,6 +750,28 @@
       
     </span>
 </a>
+<nav aria-label="13.3 Value" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1331-absolute-value">
+<span class="md-ellipsis">
+      
+        13.3.1 Absolute Value
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1332-qualitative-value">
+<span class="md-ellipsis">
+      
+        13.3.2 Qualitative value
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#134-unit">
@@ -783,15 +805,6 @@
 <span class="md-ellipsis">
       
         13.7 Uncertainty value
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#138-qualitative-value">
-<span class="md-ellipsis">
-      
-        13.8 Qualitative value
       
     </span>
 </a>
@@ -1940,6 +1953,28 @@
       
     </span>
 </a>
+<nav aria-label="13.3 Value" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1331-absolute-value">
+<span class="md-ellipsis">
+      
+        13.3.1 Absolute Value
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1332-qualitative-value">
+<span class="md-ellipsis">
+      
+        13.3.2 Qualitative value
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#134-unit">
@@ -1973,15 +2008,6 @@
 <span class="md-ellipsis">
       
         13.7 Uncertainty value
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#138-qualitative-value">
-<span class="md-ellipsis">
-      
-        13.8 Qualitative value
       
     </span>
 </a>
@@ -2753,8 +2779,7 @@
 <strong>Obligation:</strong> recommended<br/>
 <strong>Occurrences:</strong> 0–n<br/>
 <strong>Definition:</strong> Photograph of the object, preferably at the time of collection. For guidance on photographs, see e.g. <a href="https://www.bajr.org/wp-content/uploads/2024/08/Artefact-Photography-for-Archaeologists-2024.pdf">L. J. Fisher (2009), Photography for Archaeologists Part II: Artefact recording (BAJR Practical Guide Series 26)</a>.<br/>
-<strong>Allowed values and other constraints:</strong> file path<br/>
-<strong>Example:</strong> t.b.d.  </p>
+<strong>Allowed values and other constraints:</strong> Image file (File size must be smaller than 2 MB)  </p>
 <h2 id="10-object-weight">10. Object weight</h2>
 <p><strong>ID and name:</strong> O10 object_weight<br/>
 <strong>Provided by:</strong> data provider<br/>
@@ -2857,9 +2882,24 @@
 <strong>Provided by:</strong> data provider<br/>
 <strong>Obligation:</strong> mandatory<br/>
 <strong>Occurrences:</strong> 1–n<br/>
+<strong>Definition:</strong> The concentration of the analysed chemical compound.</p>
+<p><em>with the two subproperties:</em> </p>
+<h5 id="1331-absolute-value">13.3.1 Absolute Value</h5>
+<p><strong>ID and name:</strong> B4.3.1 chemistry_value_absolute   <br/>
+<strong>Provided by:</strong> data provider<br/>
+<strong>Obligation:</strong> recommended<br/>
+<strong>Occurrences:</strong> 1–n<br/>
 <strong>Definition:</strong> The concentration of the analysed chemical compound. <br/>
 <strong>Allowed values and other constraints:</strong> decimal number<br/>
-<strong>Example:</strong> 15.3  </p>
+<strong>Example:</strong> 15.3</p>
+<h5 id="1332-qualitative-value">13.3.2 Qualitative value</h5>
+<p><strong>ID and name:</strong> B4.3.2 chemistry_value_relative    <br/>
+<strong>Provided by:</strong> data provider<br/>
+<strong>Obligation:</strong> recommended<br/>
+<strong>Occurrences:</strong> 0–n<br/>
+<strong>Definition:</strong> Value of qualitative results and other non-numeric values such as the reporting of detection or quantification limits rather than values.<br/>
+<strong>Allowed values and other constraints:</strong> free text<br/>
+<strong>Example:</strong> +++, tr, &lt;0.4, bdl = 0.5 wt%</p>
 <h4 id="134-unit">13.4 Unit</h4>
 <p><strong>ID and name:</strong> B4.4 chemistry_unit<br/>
 <strong>Provided by:</strong> data provider<br/>
@@ -2890,14 +2930,6 @@
 <strong>Definition:</strong> Value of the absolute analytical uncertainty.<br/>
 <strong>Allowed values and other constraints:</strong> decimal number<br/>
 <strong>Example:</strong> 0.3  </p>
-<h4 id="138-qualitative-value">13.8 Qualitative value</h4>
-<p><strong>ID and name:</strong> B4.8 chemistry_relative_value<br/>
-<strong>Provided by:</strong> data provider<br/>
-<strong>Obligation:</strong> recommended<br/>
-<strong>Occurrences:</strong> 0–n<br/>
-<strong>Definition:</strong> Value of qualitative results and other non-numeric values such as the reporting of detection or quantification limits rather than values.<br/>
-<strong>Allowed values and other constraints:</strong> free text<br/>
-<strong>Example:</strong> +++, tr, &lt;0.4, bdl = 0.5 wt%  </p>
 <!-- END INCLUDE -->
 <h2 id="14-dating-of-object">14. Dating of object</h2>
 <p><strong>ID and name:</strong> O14 object_date<br/>
