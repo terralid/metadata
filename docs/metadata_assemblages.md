@@ -13,7 +13,7 @@
 **Obligation:** recommended  
 **Occurrences:** 0–1  
 **Definition:** The type of assemblage. This can be either a finds complex in an archaeological site (e.g. hoard, workshop, mining gallery) or a geological feature (e.g. gossan, alteration zone, fault zone).  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([assemblage](https://vocab.terralid.org/#c_0fab0ef9))  
 
 ## Investigation type
 **ID and name:** AS2 assemblage_investigation  
@@ -21,7 +21,7 @@
 **Obligation:** recommended  
 **Occurrences:** 0–1  
 **Definition:** The type of investigation leading to the discovery of the assemblage.  
-**Allowed values and other constraints:** controlled vocabulary
+**Allowed values and other constraints:** controlled vocabulary ([discovery activity](https://vocab.terralid.org/#c_e95a9fbf))
 
 ## Investigation unit
 **ID and name:** AS3 assemblage_investigation_unit  
@@ -82,7 +82,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** Information about whether the material was disturbed during deposition or in a later event.   
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([context type](https://vocab.terralid.org/#c_ca223f0b))  
 
 ### Description
 **ID and name:** AS4.4 assemblage_stratigraphy_description  
@@ -126,7 +126,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** SI unit of the depth value of the assemblage.   
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([distance](https://vocab.terralid.org/#c_c83fe291))  
 
 ## Relations
 **ID and name:** AS6 assemblage_relation  
