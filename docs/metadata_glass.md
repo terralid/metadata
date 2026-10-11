@@ -6,7 +6,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** The production context the object is related to.  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([production context](https://vocab.terralid.org/#c_f5cb57a0))  
 
 ## Recycling
 **ID and name:** OG2 material_glass_recycling  
@@ -23,7 +23,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** Does the glass show indicators for recycling?  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([recycling indicator](https://vocab.terralid.org/#c_e4626b4d))  
 
 ### Indicators
 **ID and name:** OG2.2 material_glass_recycling_reason  
@@ -211,7 +211,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** The extent of corrosion affecting the glass.  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([corrosion extent](https://vocab.terralid.org/#c_3ba0ff02))  
 
 ### Details
 **ID and name:** OG13.2 material_glass_corrosion_reason  

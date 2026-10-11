@@ -51,7 +51,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
 **Definition:** The type of a persistent identifier that was assigned to the sample.  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([identifier](https://vocab.terralid.org/#c_c8cb9106))  
 
 ## Objective of sampling
 **ID and name:** S2 sample_objective  
@@ -68,7 +68,7 @@
 **Obligation:** recommended  
 **Occurrences:** 0–n  
 **Definition:** The material that was sampled. This may often be the material recorded at [`O12 Material`](metadata_objects.md#12-material) but can also be different, especially when a heterogeneous material is sampled.  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([sample material](https://vocab.terralid.org/#c_dd76eaab))  
 
 ## Sampling location
 **ID and name:** S4 sample_location  
@@ -128,7 +128,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1   
 **Definition:** SI unit in which the weight is given.  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([mass](https://vocab.terralid.org/#c_7550f509))  
 
 ## Sampling method
 **ID and name:** S7 sample_method  
@@ -136,7 +136,7 @@
 **Obligation:** recommended  
 **Occurrences:** 0–1  
 **Definition:** The method used to take the sample.   
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([sampling method](https://vocab.terralid.org/#c_2e6c0e69))  
 
 ## Sample condition
 **ID and name:** S8 sample_condition  

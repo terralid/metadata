@@ -59,7 +59,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** The name of the data infrastructure.   
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([gazetteer](https://vocab.terralid.org/#c_59d96666))  
 
 ## Geolocation
 **ID and name:** SI5 site_geolocation  

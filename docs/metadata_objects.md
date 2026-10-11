@@ -86,7 +86,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** The type of a persistent identifier that was assigned to the object.  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([identifier](https://vocab.terralid.org/#c_c8cb9106))  
 
 ### Value of other identifier
 **ID and name:** O5.2 object_id_value  
@@ -121,7 +121,7 @@
 **Obligation:** recommended  
 **Occurrences:** 0–1  
 **Definition:** How the object was collected or obtained.  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([discovery activity](https://vocab.terralid.org/#c_e95a9fbf))  
 
 ## Object housing
 **ID and name:** O8 object_housing  
@@ -138,7 +138,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** The material the object was or is stored in at the stage in its life cycle recorded in [`O8.2 Stage of Storage`](metadata_objects.md#82-stage-of-storage).  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([sample housing](https://vocab.terralid.org/#c_b53eb953))  
 
 ### Stage of Storage
 **ID and name:** O8.2 object_housing_stage  
@@ -146,7 +146,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** The stage of the object's life cycle when the object was stored in the material recorded in [`O8.1 Housing material`](metadata_objects.md#82-stage-of-storage).  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([object life cycle stage](https://vocab.terralid.org/#c_6eeee275))  
 
 ## Object photo
 **ID and name:** O9 object_photo  
@@ -180,7 +180,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** SI unit in which the weight is given.  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([mass](https://vocab.terralid.org/#c_7550f509))  
 
 ### Weight condition
 **ID and name:** O10.3 object_weight_condition  
@@ -233,7 +233,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** Unit in which the dimension(s) of the object are provided.  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([distance](https://vocab.terralid.org/#c_c83fe291))  
 
 ## Material
 **ID and name:** O12 object_material  
@@ -322,7 +322,7 @@
 **Obligation:** recommended  
 **Occurrences:** 1  
 **Definition:** The object's type of authenticity.  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([authenticity](https://vocab.terralid.org/#c_78d89252))  
 
 ### Reasoning
 **ID and name:** O18.2 object_authenticity_description  

@@ -40,7 +40,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
 **Definition:** The part of the ore to which the mineral belongs to.  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([ore](https://vocab.terralid.org/#c_4dffb82b))  
 
 ## Commodity
 **ID and name:** OO2 material_ore_commodity  
@@ -94,7 +94,7 @@
 **Obligation:** recommended  
 **Occurrences:** 0–n  
 **Definition:** The texture of the ore mineral.  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([mineral texture](https://vocab.terralid.org/#c_8441accd))  
 
 ### Mineralisation phase
 **ID and name:** OO3.2 material_ore_mineralisation_phase  
@@ -133,7 +133,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
 **Definition:** The abundance category of each element inferred from the chemical composition.  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([abundance (concentration)](https://vocab.terralid.org/#c_60b698fb))  
 
 ## Alteration
 **ID and name:** OO5 material_ore_alteration  
@@ -141,7 +141,7 @@
 **Obligation:** recommended  
 **Occurrences:** 1  
 **Definition:** The extent of alteration.  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([alteration extent](https://vocab.terralid.org/#c_4e14cebd))  
 
 ## Deposit type
 **ID and name:** OO6 material_ore_deposit  

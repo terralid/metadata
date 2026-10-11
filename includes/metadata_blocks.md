@@ -62,7 +62,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** The type of the persistent identifier.  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([registry](https://vocab.terralid.org/#c_062fe0b0))  
 
 #### Affiliation name
 **ID and name:** B1.5 person_affiliation_name  
@@ -182,7 +182,7 @@
 **Obligation:** recommended  
 **Occurrences:** 0–1  
 **Definition:** Is the material accessible to other researchers and do restrictions apply?   
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([sample access](https://vocab.terralid.org/#c_6de9e3f7))  
 
 <!--status-end-->
 
@@ -220,7 +220,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** The name of the data infrastructure.  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([registry](https://vocab.terralid.org/#c_062fe0b0))  
 
 #### Date type
 **ID and name:** B3.2 date_type  
@@ -264,7 +264,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
 **Definition:** The method used to determine the absolute date.  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([absolute dating](https://vocab.terralid.org/#c_70421df0))  
 
 ##### Unit of date
 **ID and name:** B3.3.4 date_absolute_unit  
@@ -272,7 +272,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** The unit of the date: "Ma" if `B3.2 Date type` = "geological"; "a" (calendar years) if `B3.2 Date type` = "archaeological".  
-**Allowed values and other constraints:** a, Ma  
+**Allowed values and other constraints:** a, Ma ([time](https://vocab.terralid.org/#c_fd424d2e))  
 **Example:** a  
 
 #### Relative Date
@@ -298,7 +298,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
 **Definition:** The method used to determine the relative date.  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([relative dating](https://vocab.terralid.org/#c_25bf9b34))  
 
 #### Cultural unit
 **ID and name:** B3.5 date_archaeo_cultural  
@@ -345,7 +345,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** The method used to determine the chemical composition.   
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([analytical method](https://vocab.terralid.org/#c_c1c261a2))  
 
 #### Analysed compound
 **ID and name:** B4.2 chemistry_compound  
@@ -353,7 +353,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
 **Definition:** The analysed chemical compound (chemical element, oxide, isotope).   
-**Allowed values and other constraints:** controlled vocabulary, the actual measured compound must be reported if available (e.g., the isotope for mass spectrometric values rather than the element).  
+**Allowed values and other constraints:** controlled vocabulary ([nuclide](https://vocab.terralid.org/#c_5264a37a), [oxide](https://vocab.terralid.org/#c_7014484c)), the actual measured compound must be reported if available (e.g., the isotope for mass spectrometric values rather than the element).  
 
 #### Value
 **ID and name:** B4.3 chemistry_value  
@@ -388,7 +388,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
 **Definition:** The unit in which the concentration of the analysed chemical compound is given.   
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([concentration](https://vocab.terralid.org/#c_2f3c3933))  
 
 #### Uncertainty type
 **ID and name:** B4.5 chemistry_uncertainty_type  
@@ -396,7 +396,7 @@
 **Obligation:** recommended  
 **Occurrences:** 0–n  
 **Definition:** The type of analytical uncertainty.  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([analytical uncertainty](https://vocab.terralid.org/#c_6ae288a3))  
 
 #### Confidence level
 **ID and name:** B4.6 chemistry_uncertainty_sigma  
@@ -526,7 +526,7 @@
 **Obligation:** recommended  
 **Occurrences:** 0–1  
 **Definition:** Type of analytical uncertainty for the lead isotope ratio.  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([analytical uncertainty](https://vocab.terralid.org/#c_6ae288a3))  
 
 #### Confidence level
 **ID and name:** B6.4 lia_ratio_uncertainty_sigma  

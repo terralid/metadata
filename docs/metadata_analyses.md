@@ -120,7 +120,7 @@
 **Obligation:** recommended  
 **Occurrences:** 0–1  
 **Definition:** The manufacturer and model name of the instrument.  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([instrument model](https://vocab.terralid.org/#c_345d9da9))  
 
 ### Persistent identifier (PIDinst)
 **ID and name:** A6.3 analysis_lia_instrument_pid  
@@ -168,7 +168,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** The SI unit in which the mean total intensity is given.  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([electric potential](https://vocab.terralid.org/#c_ded3a888), [cps](https://vocab.terralid.org/#c_ba8f4496))  
 
 ## Reference materials
 **ID and name:** A9 analysis_lia_standard-pb  
@@ -219,7 +219,7 @@
 **Obligation:** recommended  
 **Occurrences:** 0–1  
 **Definition:** The name of the thallium reference material used during the analysis for quality control and/or correction of instrumental fractionation.  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([Tl isotope CRMs](https://vocab.terralid.org/#c_1041fd60))  
 
 ### Measured ^205^Tl/^203^Tl ratio of thallium isotope reference material
 **ID and name:** A9.5 analysis_lia_standard-tl_measured  
@@ -246,7 +246,7 @@
 **Obligation:** recommended  
 **Occurrences:** 0–n  
 **Definition:** The model(s) used for mass bias correction of the lead isotope data.  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([mass bias correction](https://vocab.terralid.org/#c_5f1716a4))  
 
 ## Laboratory
 **ID and name:** A11 analysis_lia_laboratory  
@@ -307,7 +307,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** The age model used for calculating the parameters  
-**Allowed values and other constraints:** SK75, CR75, AJ84, representing the age models defined by [Stacey & Kramers (1975)](https://dx.doi.org/10.1016/0012-821X(75)90088-6), [Cumming & Richards (1975)](https://dx.doi.org/10.1016/0012-821X(75)90223-X), and [Albarède & Juteau (1984)](https://dx.doi.org/10.1016/0016-7037(84)90364-8), respectively.  
+**Allowed values and other constraints:** SK75, CR75, AJ84 ([lead isotope age model](https://vocab.terralid.org/#c_435c9bf2)), representing the age models defined by [Stacey & Kramers (1975)](https://dx.doi.org/10.1016/0012-821X(75)90088-6), [Cumming & Richards (1975)](https://dx.doi.org/10.1016/0012-821X(75)90223-X), and [Albarède & Juteau (1984)](https://dx.doi.org/10.1016/0016-7037(84)90364-8), respectively.  
 **Example:** SK75  
 
 ### Model age
