@@ -434,7 +434,7 @@
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
-**Definition:** The persistent identifier or TerraLID ID associated with a resource or related research output. If referring to another entity in the TerraLID database, the TerraLID identifier must be used.   
+**Definition:** The persistent identifier or TerraLID ID associated with a resource or related research output. Mandatory if referring to another entity in the TerraLID database; in this case, the TerraLID ID must be used and `B5.1.2 Type` is "TerraLID". Within a submission, the identifiers of the submitted records may be used; the TerraLID system replaces them with the assigned TerraLID IDs.
 
 *with the two subproperties:*  
 
@@ -443,8 +443,8 @@
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
-**Definition:** Value of the persistent identifier or TerraLID ID.   
-**Allowed values and other constraints:** valid persistent identifier according to the options listed in `B5.1.2 Type`.  
+**Definition:** Value of the persistent identifier or TerraLID ID.
+**Allowed values and other constraints:** valid persistent identifier according to the options listed in `B5.1.2 Type`, or a TerraLID ID if `B5.1.2 Type` = "TerraLID".
 **Example:** 10.60510/ICDP5054ESYI201  
 
 ##### Type
@@ -453,7 +453,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** The type of the identifier.  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary (identifier). Use "TerraLID" for entities in the TerraLID database.
 
 #### Full reference
 **ID and name:** B5.2 relation_text  
@@ -469,7 +469,7 @@
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
-**Definition:** Relationship between item and the research output.   
+**Definition:** Relationship between the item and the related resource, research output, or TerraLID entity (e.g., IsPartOf for a sample taken from an object).
 **Allowed values and other constraints:** controlled vocabulary  
 
 #### Type of resource
@@ -477,7 +477,7 @@
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
-**Definition:** Type of resource or research output.   
+**Definition:** Type of resource or research output. Mandatory unless `B5.1.2 Type` = "TerraLID", as the type of a TerraLID entity follows from its TerraLID ID.
 **Allowed values and other constraints:** controlled vocabulary  
 
 #### Additional details
