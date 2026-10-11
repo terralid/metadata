@@ -24,7 +24,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** The type of analysis for measuring the lead isotope composition.  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([analytical method](https://vocab.terralid.org/#c_c1c261a2))  
 
 ## Preparation protocol
 **ID and name:** A3 analysis_lia_preparation  
@@ -112,7 +112,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** The type of instrument.  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([instrument type](https://vocab.terralid.org/#c_e3df0ac6))  
 
 ### Instrument model
 **ID and name:** A6.2 analysis_lia_instrument_model  
@@ -185,7 +185,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
 **Definition:** The name of the reference material for lead isotopes.  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([reference material](https://vocab.terralid.org/#c_c7d45a2d))  
 
 ### Publication of lead isotope reference material
 **ID and name:** A9.2 analysis_lia_standard-pb_publication  

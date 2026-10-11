@@ -17,7 +17,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
 **Definition:** The role in which the person is related to the linked information.  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([contributorType](https://vocab.terralid.org/#c_e4ed600b))  
 **Example:** Author  
 
 #### First names
@@ -228,7 +228,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
 **Definition:** Is this an archaeological or geological age? This field controls the behavior of some dating-related metadata fields such as the unit of the absolute age (archaeological dates in calendar years, with BCE dates as negative values; geological dates in million years).   
-**Allowed values and other constraints:** geological, archaeological  
+**Allowed values and other constraints:** geological, archaeological ([date type](https://vocab.terralid.org/#c_5592fbc1))  
 **Example:** archaeological  
 
 #### Absolute Date
@@ -453,7 +453,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** The type of the identifier.  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([identifier](https://vocab.terralid.org/#c_c8cb9106))  
 
 #### Full reference
 **ID and name:** B5.2 relation_text  
@@ -470,7 +470,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
 **Definition:** Relationship between item and the research output.   
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([relationType](https://vocab.terralid.org/#c_2c9da0f0))  
 
 #### Type of resource
 **ID and name:** B5.4 relation_resource  
@@ -478,7 +478,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1–n  
 **Definition:** Type of resource or research output.   
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([resourceType](https://vocab.terralid.org/#c_4f75cdd5))  
 
 #### Additional details
 **ID and name:** B5.5 relation_detail  
@@ -508,7 +508,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** The lead isotope ratio for which the value is reported.  
-**Allowed values and other constraints:** 206Pb/204Pb, 207Pb/204Pb, 208Pb/204Pb, 204Pb/206Pb, 207Pb/206Pb, 208Pb/206Pb, 207Pb/208Pb, 206Pb/208Pb  
+**Allowed values and other constraints:** 206Pb/204Pb, 207Pb/204Pb, 208Pb/204Pb, 204Pb/206Pb, 207Pb/206Pb, 208Pb/206Pb, 207Pb/208Pb, 206Pb/208Pb ([lead isotope ratios](https://vocab.terralid.org/#c_e5dcadb1))  
 **Example:** 206Pb/204Pb  
 
 #### Value
@@ -561,7 +561,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** Whether the date was reported in the publication or calculated by the TerraLID system from other published values.  
-**Allowed values and other constraints:** original, calculated  
+**Allowed values and other constraints:** original, calculated ([information source](https://vocab.terralid.org/#c_f3916dc0))  
 **Example:** original  
 
 <!--lia-end-->

@@ -241,7 +241,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** The material the object is made of.  
-**Allowed values and other constraints:** controlled vocabulary. This property determines which material-specific metadata will be additionally recorded. 
+**Allowed values and other constraints:** controlled vocabulary ([object material](https://vocab.terralid.org/#c_9dd8c641)). This property determines which material-specific metadata will be additionally recorded. 
 
 ## Bulk Pb concentration
 **ID and name:** O13 object_bulk_chemistry_pb  

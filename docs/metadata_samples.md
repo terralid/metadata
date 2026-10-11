@@ -102,7 +102,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** The type of the sampled material.   
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([sample type](https://vocab.terralid.org/#c_f8762e3d))  
 
 ## Sample weight
 **ID and name:** S6 sample_weight  
@@ -144,7 +144,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** The state of the sample after analysis.  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([sample state](https://vocab.terralid.org/#c_9313eed2))  
 
 ## Sampling date
 **ID and name:** S9 sample_date  
