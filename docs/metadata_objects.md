@@ -311,7 +311,7 @@
 **ID and name:** O18 object_authenticity  
 **Provided by:** data provider  
 **Obligation:** mandatory  
-**Occurrences:** 0–1  
+**Occurrences:** 1  
 **Definition:** The contemporary legal status of an object: whether it is a genuine archaeological object, contemporary imitation, or a modern imitation. For example, authentic numismatic objects were created by an authority that had the rights to do so, while contemporary imitations were not.  
 
 *with the two subproperties:*  
@@ -319,7 +319,7 @@
 ### Authenticity type
 **ID and name:** O18.1 object_authenticity_type  
 **Provided by:** data provider  
-**Obligation:** recommended  
+**Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** The object's type of authenticity.  
 **Allowed values and other constraints:** controlled vocabulary  
