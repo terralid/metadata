@@ -12,8 +12,8 @@
 ## Collectors
 **ID and name:** O1 object_collectors  
 **Provided by:** data provider  
-**Obligation:** mandatory  
-**Occurrences:** 1–n  
+**Obligation:** recommended  
+**Occurrences:** 0–n  
 **Definition:** Details of the creator(s), excavator(s), or other person(s) intellectually responsible for the sample collection.  
 
 {%
