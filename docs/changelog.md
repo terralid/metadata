@@ -1,3 +1,9 @@
+## Version 0.3.5
+
+* `B5.1 relation_pid` is mandatory for relations to other TerraLID entities; submission identifiers are replaced by TerraLID IDs
+* `O18 object_authenticity` and `O18.1 object_authenticity_type` are mandatory and have exactly one occurrence
+* `O1 object_collectors` and `SI10 project_date` are recommended; their occurrence constraints have been relaxed to allow legacy data
+
 ## Version 0.3.4
 
 * `OO8.1 material_ore_accessibility` has the new allowed value "unclear"

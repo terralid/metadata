@@ -12,8 +12,8 @@
 ## Collectors
 **ID and name:** O1 object_collectors  
 **Provided by:** data provider  
-**Obligation:** mandatory  
-**Occurrences:** 1–n  
+**Obligation:** recommended  
+**Occurrences:** 0–n  
 **Definition:** Details of the creator(s), excavator(s), or other person(s) intellectually responsible for the sample collection.  
 
 {%
@@ -311,7 +311,7 @@
 **ID and name:** O18 object_authenticity  
 **Provided by:** data provider  
 **Obligation:** mandatory  
-**Occurrences:** 0–1  
+**Occurrences:** 1  
 **Definition:** The contemporary legal status of an object: whether it is a genuine archaeological object, contemporary imitation, or a modern imitation. For example, authentic numismatic objects were created by an authority that had the rights to do so, while contemporary imitations were not.  
 
 *with the two subproperties:*  
@@ -319,7 +319,7 @@
 ### Authenticity type
 **ID and name:** O18.1 object_authenticity_type  
 **Provided by:** data provider  
-**Obligation:** recommended  
+**Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** The object's type of authenticity.  
 **Allowed values and other constraints:** controlled vocabulary ([authenticity](https://vocab.terralid.org/#c_78d89252))  

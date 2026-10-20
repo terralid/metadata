@@ -254,8 +254,8 @@
 ## Project dates
 **ID and name:** SI10 project_date  
 **Provided by:** data provider  
-**Obligation:** mandatory  
-**Occurrences:** 1  
+**Obligation:** recommended  
+**Occurrences:** 0–1  
 **Definition:** The date of the investigation or project in which the site was/is studied.
 
 *with the two subproperties:*  
@@ -263,8 +263,8 @@
 ### Start date
 **ID and name:** SI10.1 project_date_start  
 **Provided by:** data provider  
-**Obligation:** mandatory  
-**Occurrences:** 1–n  
+**Obligation:** recommended  
+**Occurrences:** 0–n  
 **Definition:** Start date of the investigation or project in which the site was studied and sampled.  
 **Allowed values and other constraints:** date formatted as YYYY-MM-DD  
 **Example:** 1980-01-15  
