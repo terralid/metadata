@@ -23,8 +23,8 @@
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
-**Definition:** The type of analysis for measuring the lead isotope composition.  
-**Allowed values and other constraints:** controlled vocabulary ([analytical method](https://vocab.terralid.org/#c_c1c261a2))  
+**Definition:** The type of analysis for which preparation is carried out.  
+**Allowed values and other constraints:** controlled vocabulary ([sample introduction](https://vocab.terralid.org/#c_d31174dd))  
 
 ## Preparation protocol
 **ID and name:** A3 analysis_lia_preparation  
