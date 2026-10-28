@@ -62,7 +62,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** The type of the persistent identifier.  
-**Allowed values and other constraints:** controlled vocabulary ([registry](https://vocab.terralid.org/#c_062fe0b0))  
+**Allowed values and other constraints:** controlled vocabulary ([person identifier](http://vocab.terralid.org#skosCollection_05151bf3))  
 
 #### Affiliation name
 **ID and name:** B1.5 person_affiliation_name  
@@ -220,7 +220,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** The name of the data infrastructure.  
-**Allowed values and other constraints:** controlled vocabulary ([registry](https://vocab.terralid.org/#c_062fe0b0))  
+**Allowed values and other constraints:** controlled vocabulary ([period identifier](http://vocab.terralid.org#skosCollection_b1dd3bc5))  
 
 #### Date type
 **ID and name:** B3.2 date_type  
