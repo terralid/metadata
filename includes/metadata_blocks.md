@@ -290,7 +290,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** The relative date expressed as a chronological unit.   
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary, retrieved from the [PeriodO open backend](https://client.perio.do/?page=open-backend)  
 
 ##### Dating method
 **ID and name:** B3.4.2 date_relative_method  
@@ -315,7 +315,7 @@
 **Obligation:** recommended  
 **Occurrences:** 0–1  
 **Definition:** The relative date expressed as an orogenic event.  
-**Allowed values and other constraints:** controlled vocabulary, only available if `B3.2 Date type` = "geological".  
+**Allowed values and other constraints:** controlled vocabulary, retrieved from [Loterre](https://loterre.istex.fr/26L/en/page/-HPRR9JRW-J), only available if `B3.2 Date type` = "geological".  
 
 #### Definition of chronological unit
 **ID and name:** B3.7 date_relative_reference  

@@ -149,7 +149,7 @@
 **Obligation:** recommended  
 **Occurrences:** 0–1  
 **Definition:** The type of the ore deposit.  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary, retrieved from the [CGI mineral deposit model vocabulary](https://cgi.vocabs.ga.gov.au/object?uri=http://resource.geosciml.org/classifier/cgi/mineral-deposit-model)  
 
 ## Ore district
 **ID and name:** OO7 material_ore_district  
