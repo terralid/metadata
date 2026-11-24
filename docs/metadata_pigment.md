@@ -6,7 +6,7 @@
 **Obligation:** recommended  
 **Occurrences:** 0–n  
 **Definition:** Name(s) of the pigment.  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([pigment name](https://vocab.terralid.org/#c_38acd1d1))  
 
 ## Pigment form
 **ID and name:** OP2 material_pigment_archaeological_context  
@@ -32,7 +32,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** Is it an organic or inorganic pigment?  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([compound type](https://vocab.terralid.org/#c_f09f29c5))  
 
 ### Occurrence 
 **ID and name:** OP3.2 material_pigment_type_production  
@@ -40,7 +40,7 @@
 **Obligation:** recommended  
 **Occurrences:** 0–1  
 **Definition:** Is it a natural or synthetic pigment?  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([compound origin](https://vocab.terralid.org/#c_786deece))  
 
 ### Chromophore
 **ID and name:** OP3.3 material_pigment_composition_chromophore  
@@ -122,7 +122,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** The production context the object is related to.  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([production context](https://vocab.terralid.org/#c_f5cb57a0))  
 
 ### Treatment
 **ID and name:** OP5.2 material_pigment_production_treatment  
@@ -130,7 +130,7 @@
 **Obligation:** recommended  
 **Occurrences:** 0–n  
 **Definition:** Which treatments were done to the raw material(s) to produce the pigment?  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([production process](https://vocab.terralid.org/#c_25f0249a))  
 
 ### Details
 **ID and name:** OP5.3 material_pigment_production_details  
@@ -165,7 +165,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** The colour system used to determine the colour.   
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([colour system](https://vocab.terralid.org/#c_49d4f3c8))  
 
 ## Pigment alteration
 **ID and name:** OP7 material_pigment_alteration  
@@ -182,7 +182,7 @@
 **Obligation:** recommended  
 **Occurrences:** 0–n  
 **Definition:** The type of the observed alteration process.  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([alteration process](https://vocab.terralid.org/#c_8469dc11))  
 
 ### Details
 **ID and name:** OP7.2 material_pigment_alteration_description  
@@ -208,7 +208,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** Does the pigment show indicators for recycling or reuse?  
-**Allowed values and other constraints:** controlled vocabulary  
+**Allowed values and other constraints:** controlled vocabulary ([recycling indicator](https://vocab.terralid.org/#c_e4626b4d))  
 
 ### Reasoning
 **ID and name:** OP8.2 material_pigment_recycling_reason  

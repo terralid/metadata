@@ -45,7 +45,7 @@
 **Obligation:** mandatory  
 **Occurrences:** 1  
 **Definition:** The extent of corrosion affecting the metal.  
-**Allowed values and other constraints:** controlled vocabulary
+**Allowed values and other constraints:** controlled vocabulary ([corrosion extent](https://vocab.terralid.org/#c_3ba0ff02))
 
 ### Details
 **ID and name:** OM2.2 material_metal_corrosion_reason  
