@@ -434,7 +434,7 @@
 **Provided by:** data provider  
 **Obligation:** recommended  
 **Occurrences:** 0–n  
-**Definition:** The persistent identifier or TerraLID ID associated with a resource or related research output. Mandatory if referring to another entity in the TerraLID database; in this case, the TerraLID ID must be used and `B5.1.2 Type` is "TerraLID". Within a submission, the identifiers of the submitted records may be used; the TerraLID system replaces them with the assigned TerraLID IDs.
+**Definition:** The persistent identifier or TerraLID ID associated with a resource or related research output. Mandatory if referring to another entity in the TerraLID database; in this case, the TerraLID ID must be used and `B5.1.2 Type` is "TerraLID". Within a submission, the identifiers of the submitted records may be used; the TerraLID system replaces them with the assigned TerraLID IDs.  
 
 *with the two subproperties:*  
 
@@ -443,8 +443,8 @@
 **Provided by:** data provider  
 **Obligation:** mandatory  
 **Occurrences:** 1  
-**Definition:** Value of the persistent identifier or TerraLID ID.
-**Allowed values and other constraints:** valid persistent identifier according to the options listed in `B5.1.2 Type`, or a TerraLID ID if `B5.1.2 Type` = "TerraLID".
+**Definition:** Value of the persistent identifier or TerraLID ID.  
+**Allowed values and other constraints:** valid persistent identifier according to the options listed in `B5.1.2 Type`, or a TerraLID ID if `B5.1.2 Type` = "TerraLID".  
 **Example:** 10.60510/ICDP5054ESYI201  
 
 ##### Type
