@@ -34,30 +34,30 @@ summary::after {
   page-break-after: always;
   border: 1px solid #fff;
   position: relative;
+}
 
-  img {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    image-rendering: optimizeQuality;
-  }
+.front-cover img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  image-rendering: optimizeQuality;
+}
 
-  > section {
-    color: #fff;
-    padding: 0.635cm;
-    max-width: 10.25cm;
-    word-wrap: break-word;
-    margin-top: calc(var(--height) / 2 - var(--offset) - 2cm);
-    font-size: 13pt;
+.front-cover > section {
+  color: #fff;
+  padding: 0.635cm;
+  max-width: 10.25cm;
+  word-wrap: break-word;
+  margin-top: calc(var(--height) / 2 - var(--offset) - 2cm);
+  font-size: 13pt;
+}
 
-    > .title {
-      font-size: 26pt;
-      font-weight: 500;
-      line-height: 1.1;
-      color: #fff;
-    }
-  }
+.front-cover > section > .title {
+  font-size: 26pt;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #fff;
 }
 
 h1, h2, h3 {
@@ -76,8 +76,8 @@ body {
 .md-content .md-content__inner {
   margin: 0;
   padding: 0;
+}
 
-  &::before {
-    height: 0;
-  }
+.md-content .md-content__inner::before {
+  height: 0;
 }

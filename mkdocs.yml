@@ -86,7 +86,7 @@ plugins:
             enabled: true
             output: pdf/TerraLID_Metadata_Profile.pdf
           stylesheets:
-            - docs/stylesheets/pdf-export.scss
+            - docs/stylesheets/pdf-export.css
           concurrency: 8
 
 markdown_extensions:
